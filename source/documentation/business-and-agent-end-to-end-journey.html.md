@@ -10,7 +10,8 @@ description: Software developers, designers, product owners or business analysts
 
 INSERT MISSING CONTENT
 
-## Choose software
+## Choosing software
+
 
 HMRC publishes a list of MTD compatible software on GOV.UK at:
 
@@ -55,6 +56,7 @@ For an Agent, when connecting software to HMRC, the new GGW user Agent ID which 
 
 
 ## Business or Agent views previously submitted data in software
+
 
 A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes.  If the customer has recently started using your software, you may need to retrieve previous data.
 
