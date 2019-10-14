@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 <!--- Section owner: MTD Programme --->
 
-## Customer or agent signs up to MTD for Income Tax
+# Customer or agent signs up to MTD for Income Tax
 
 INSERT MISSING CONTENT
 
