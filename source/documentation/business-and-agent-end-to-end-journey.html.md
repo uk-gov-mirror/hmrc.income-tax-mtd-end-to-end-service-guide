@@ -13,9 +13,7 @@ INSERT MISSING CONTENT
 ## Choosing software
 
 
-HMRC publishes a list of MTD compatible software on GOV.UK at:
-
-https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax
+HMRC publishes a [list of compatible software](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) for Making Tax Digital on Gov.uk.
 
 A business or agent will need to complete the authentication process with HMRC within their chosen software to obtain their obligation dates from HMRC via an API call.
 
@@ -23,7 +21,7 @@ ADD CONTROL LIST
 
 They will be able to enter transactional level information into their record-keeping software for anything relating to business income as a minimum.
 Software can also provide users with the ability to provide information for non-business income (personal income).
-HMRC only require that each package made available to customers complies with the Terms of use.
+HMRC only require that each package made available to customers complies with the [Terms of use.](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use)
 
 Vendors and developers will need to agree to the terms of use which can be found at:
 
@@ -31,11 +29,7 @@ https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use
 
 These have to be accepted before production credentials are issued.
 
-Guidance listing software that's compatible with Making Tax Digital for Income Tax can be found at:
-
-https://www.gov.uk/guidance/software-for-sending-income-tax-updates
-
- 
+[Guidance listing software](https://www.gov.uk/guidance/software-for-sending-income-tax-updates) that is compatible with Making Tax Digital for Income Tax is available.
 
 ## Business or Agent links software to HMRC
 
@@ -45,10 +39,7 @@ The software user grants the software the authority to connect with HMRC on thei
 
 The software must include each scope for which the user must grant permission the authorise call. 
 
-This is explained in the authorisation section of the developer hub:
-
-https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation
-
+This is explained in the [authorisation section](https://developer.service.hmrc.gov.uk/api-documentation/docs/authorisation) of the developer hub.
 
 Once a user grants permission the software receives an authorisation code that is used to gain an oAuth access token.  The access token expires periodically and must be refreshed.  After 18 months the access token expires and the user must grant authority again.
 
@@ -56,7 +47,6 @@ For an Agent, when connecting software to HMRC, the new GGW user Agent ID which 
 
 
 ## Business or Agent views previously submitted data in software
-
 
 A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes.  If the customer has recently started using your software, you may need to retrieve previous data.
 
@@ -72,13 +62,9 @@ Software can use the ‘get a self employment/property (FHL and Non FHL) annual 
 
 #### Example responses
 
-An example JSON response for self-employment update periods can be seen at:
+Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion) for self-employment update periods.
 
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion
-
-Property responses follow the same format but data items may vary. An example JSON response can be seen at:
-
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion
+Property responses follow the same format but data items may vary. Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion)
  
 ## Business or Agent retrieves obligations in software
 
@@ -93,13 +79,9 @@ Customers can also find out their obligations for their income source, through t
 * retrieve self-employment business obligations - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
 * retrieve all UK property business obligations - provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
-An example JSON response to the list all self employment businesses can be seen at:
+Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion) to the list all self employment businesses.
 
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion
-
-An example JSON Obligation response can be seen at:
-
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-end-of-period-statement-obligations-for-a-selfemployment-business_get_accordion
+Here is an [example JSON Obligation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-end-of-period-statement-obligations-for-a-selfemployment-business_get_accordion) response.
 
 Note: at the moment in production the response only provides previous obligations and the next one it does not provide a full year but this will be available in the future.
 
@@ -152,9 +134,7 @@ Update 1 – 6 April to 1 May is accepted<br />
 Update 2 - 2 May to 31 May is accepted<br />
 Update 3 – 28 May to 6 June is rejected because it overlaps the previous updates
 
-An example JSON response can be seen at:
-
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-periodic-update_get_accordion
+Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-periodic-update_get_accordion).
 
 For property, the JSON structure is the same but the fields required can be different.
 
@@ -166,13 +146,10 @@ Annual updates are mandatory annually but we have provided the functionality for
 Checking if an obligation has been met 
 Once the customer has finished sending all the information for that period and you have retrieved the calculation, you can then check whether the customer's obligations have been met. Note: in some cases, it can take up to an hour for the results to be confirmed.
 
-An example JSON of ‘update a self-employment business annual summary allowances and adjustments and calculation’ response can be found at:
-
-https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion
+Here is an example JSON of [‘update a self-employment business annual summary allowances and adjustments and calculation’](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion).
 
 Property follows the same structure but with some different data items.
  
-
 ## Business or Agent changes and resubmits previously submitted data
 
 If a customer wants to make a change to the data that was included in a previously submitted update, software should use the following endpoints:
@@ -203,9 +180,7 @@ Some customers may wish to view information regarding their income tax for assur
 
 Vendors should make available within software products as many suitable features as possible to meet user needs.
 
-Vendors can direct users to visit their Business Tax Account to view certain information. The login page can be found at:
-
-https://www.access.service.gov.uk/login/signin/creds
+Vendors can direct users to visit their [Business Tax Account](https://www.access.service.gov.uk/login/signin/creds) to view certain information.
 
 A customer who has signed up for MTD and agreed to report using software, can choose to sign into their Business Tax Account and view information such as obligation periods, year-to-date and income tax calculations.
 User research will continue, and further iterations will be made which will enhance the functionality of the Business Tax Account and help to improve user experience.
@@ -231,7 +206,7 @@ Note: Data received must cover the whole accounting period.
 
 The customer must make sure they are happy with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
 
-Software should present to the customer the information listed below. This can either be totalled up by software, but we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for SE or property:
+Software should present to the customer the information listed below. This can either be totalled up by software, but we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for self-employment or property:
 
 * Total Business Income
 * Total Expenses
@@ -285,18 +260,18 @@ Customers can crystallise from 6 April Year 1. The deadline for Crystallisation 
 The customer must have completed any EOPS for each source of business income required for that tax year and provide information relating to any other income, expenses, allowances or adjustments they may have. 
 Software should prompt customers to make sure they have considered the following potential additional income sources (this functionality will be provided through APIs over the next year)
 
-* Any pension contributions
-* Any pension income
-* Capital Gains
-* Income from employment
-* Any income from partnerships
-* Any income from trusts
+* any pension contributions
+* any pension income
+* capital gains
+* income from employment
+* any income from partnerships
+* any income from trusts
 
 The following are available:
 
-* Any income from bank or building society interest
-* Any income from dividends
-* Any Gift Aid contributions they have made
+* any income from bank or building society interest
+* any income from dividends
+* any Gift Aid contributions they have made
 
 Note: Any information currently provided via the existing Self Assessment process
 If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.
