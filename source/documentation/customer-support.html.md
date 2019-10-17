@@ -1,6 +1,6 @@
 ---
 title: Customer support model | VAT (MTD) End-to-End Service Guide
-weight: 6
+weight: 8
 ---
 
 # Customer support model
