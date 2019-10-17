@@ -1,6 +1,6 @@
 ---
 title: Close down | VAT (MTD) End-to-End Service Guide
-weight: 7
+weight: 5
 ---
 
 <!--- Section owner: MTD Programme --->
