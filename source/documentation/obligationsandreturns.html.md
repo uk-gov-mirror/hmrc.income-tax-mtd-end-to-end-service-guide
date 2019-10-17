@@ -1,14 +1,14 @@
 ---
 title: Obligations and Returns | VAT (MTD) End-to-End Service Guide
-weight: 7
+weight: 3
 ---
 
 <!--- Section owner: MTD Programme --->
-# Obligations and Returns
+# Obligations and returns
 
-## Agent Journey Overview
+## Agent journey overview
 
-## Business Journey Overview
+## Business journey overview
 
 ## Receive obligations
 
@@ -28,16 +28,16 @@ weight: 7
 
 ## View previously submitted updates
 
-## View Liabilities and Payments
+## View liabilities and payments
 
  I don’t know if you want to include - if we are certian we will deliver it keep the place holder
  
 ## Make changes to previously submitted data
 
-## Making an amendment after crystallisation
+## Make an amendment after crystallisation
 
 ## Pay or get a repayment
 
 ## Make a change of circumstances
 
-## View Future obligations / previous returns in BTA
+## View Future obligations or previous returns in BTA
