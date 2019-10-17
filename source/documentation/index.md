@@ -1,10 +1,10 @@
 ---
-title: Making Tax Digital (MTD) Income Tax end-to-end service guide
+title: ITSA end-to-end service guide
 weight: 1
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
-# Making Tax Digital (MTD) Income Tax end-to-end service guide
+# Income Tax Self Assessment end-to-end service guide
 
 Version 2.0 issued XX August 2019
 ***
