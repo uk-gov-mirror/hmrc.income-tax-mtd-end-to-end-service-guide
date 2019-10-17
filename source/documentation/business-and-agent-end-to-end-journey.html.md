@@ -309,3 +309,143 @@ If a customer wants to make any changes following crystallisation they have 12 m
 As with the current process the customer will make changes to the relevant information in software and resubmit the relevant periodic or annual updates, and follow the same process of triggering the calculation, they will not have to re-declare.
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970 
+## Business or Agent can receive penalties
+
+HMRCs existing penalties and notification methods will remain in place for customers. 
+Further information can be found at:
+
+https://www.gov.uk/self-assessment-tax-returns/penalties
+ 
+ 
+## Appeals process
+
+HMRCs existing appeals process will remain in place. 
+Further information can be found at:
+https://www.gov.uk/tax-appeals/penalty 
+ 
+
+## Business or Agent can unsubscribe from MTD Income Tax
+
+A manual process is in place where a customer or agent can contact HMRC to notify their requirement to unsubscribe from the service.
+In the event that the customer continues to be Income Tax registered, if necessary, Income Tax returns can be submitted manually.  The customer does not need to leave the MTD pilot for Income Tax in order to submit a Self Assessment tax return.
+In the future this manual process will be replaced by an online one.
+
+ 
+## Agent services - Income Tax agent or client de-authorisation
+
+INSERT 4 SCREENS or  links
+
+### Agent able to notify their own change of circumstances
+
+This will initially be the usual process, which can be used to remove the agent reference number and Government Gateway (GGW) enrolment (HMRC-AS-AGENTS).
+The scenario is needed where an agency firm ceases trading.
+If an agent no longer wants to participate in MTD they can stop using their GGW ID.
+An online interface is being developed as part of the wider change of circumstances solution.
+ 
+
+## Subscription service for Businesses and Agents
+
+We will deliver a subscription service that will allow new self-employed businesses and landlords to subscribe for income tax and sign up to the MTD Service; using software and providing quarterly updates from the start of their business lifecycle. This will not be mandatory and if not chosen, existing subscription services will remain.
+
+The service will request information about the business (for example name, address, contact details, start of business) and the self-employed person or landlord running it (for example name, home address, date of birth, National Insurance number).
+Customers should get update deadlines from the software. Customers will need to make 4 quarterly updates and a Final report.
+For the MTD-Income Tax release this will mean that self-employed and landlords will have to go through the Personal Identity Check when subscribing. The Check is the same process shown to users on the Personal Tax Account today, and uses information HMRC holds on the individual.
+
+HMRC will provide subscription as an online service through Gov.uk, enabling software developers to provide links to the service in software.
+
+Once an agent has subscribed for Agent Services and either linked an existing client or added a new one, they will be able to subscribe a new business as self-employed or a landlord (or both) and sign them up to the MTD Income Tax service. 
+This will be a service available on GOV.UK. The service is currently in development and is expected in the summer of 2018. It will be a relatively straightforward service that captures key data about the business for example name, address. As analysis completes, we will provide details.  
+
+INSERT SCREENS
+ 
+
+## Business or Agent makes a payment by existing or new Direct Debit method
+
+Vendors should present messages to business users at key points in their journey that give them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows vendors to make users aware of payment dates.
+
+There are multiple ways to make a payment for the Self Assessment regime, they can be found on GOV.UK at:
+
+https://www.gov.uk/pay-self-assessment-tax-bill 
+
+Vendors should, in their messaging, ask customers to visit that link so the customer can make a payment in the method that suits them.
+
+The contents of this GOV.UK page will be updated and subject to change.
+
+For a business to view what previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their Business Tax Account at:
+
+https://www.access.service.gov.uk/login/signin/creds
+
+Vendors in their messaging should ask customers to visit that link. 
+
+Customers can pay their tax bill by direct debit, making it easy and convenient to pay.
+HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due.
+These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax
+account. Access to the services will be via the customer’s digital tax account at:
+https://www.access.service.gov.uk/login/signin/creds
+Vendors in their messaging should ask customers to visit that link.  
+
+## Business or agent makes a payment (other types)
+
+Vendors should present messages to business users at key points in their journey that give them the option to make payments ahead of any obligation date to help spread the cost. 
+Functionality will be delivered that allows vendors to make users aware of payment dates.
+There are multiple ways to make a payment for the Self Assessment regime. They can be found at:
+
+https://www.gov.uk/pay-self-assessment-tax-bill and advise
+
+Vendors in their messaging should ask customers to visit that link so the customer can make a payment in the method that best suits them.
+
+The contents of this GOV.UK page will be updated and subject to change.
+
+For a business to see what previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage customers to visit their Business Tax Account at:
+
+https://www.access.service.gov.uk/login/signin/creds 
+
+Vendors should in their messaging ask customers to visit that link.
+Customers can make payments through their bank or via online banking.
+The payment details, including the HMRC’s bank account, and the correct reference numbers to use can be found at:
+
+https://www.gov.uk/pay-self-assessment-tax-bill
+
+## Business or Agent views MTD payments in software
+
+Customers will be able to view payments made to HMRC in software. 
+Details will be updated here once they are available.
+
+ 
+
+## Business or Agent receives a repayment
+
+HMRC will identify repayment claims submitted via software. Customers awaiting repayment can track claims through a Repayment Tracker to be made available through the customer’s digital tax account, available at:
+
+https://www.access.service.gov.uk/login/signin/creds 
+
+Vendors should ask customers to visit that link in their messaging.
+HMRC will make repayments to customers electronically where possible. Customers are encouraged to provide HMRC with bank account details, and to keep them up to date to ensure quick repayment.
+Vendors should provide regular messages in software to remind customers to check and update the details HMRC holds. Updates can be made through a customer’s digital tax account at:
+
+https://www.access.service.gov.uk/login/signin/creds 
+
+## Business or agent notifies change of circumstances
+
+Functionality within the Business Tax Account will allow businesses to update their ‘change of circumstances’, until then they should call the HMRC helpline about a change of circumstances.
+When the online functionality is delivered, vendors should present messages to business users regularly to remind them to check and update their details with HMRC.
+Business users will then be able to do that by visiting their Business Tax Account at:
+https://www.access.service.gov.uk/login/signin/creds 
+Businesses will be able to update a range of information, including addresses, telephone numbers, e-mail and business type.
+
+## Business views and makes payments in BTA
+
+Vendors should present messages to Business users at key points in their journey that give them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows vendors to make users aware of payment dates. 
+
+There are multiple ways to make a payment for the Self Assessment regime, we can be found at 
+
+https://www.gov.uk/pay-self-assessment-tax-bill 
+
+Vendors in their messaging should ask customers to visit that link, so the customer can make a payment in the method that best suits them.
+
+For a business to see what previous payments they have made to HMRC, vendors should present messages at key points in their journey that encourage customers to visit their Business Tax Account. 
+
+The login page is https://www.tax.service.gov.uk/gg/sign-in?continue=/business-account 
+
+Vendors in their messaging to ask customers to visit that link.
+ 
