@@ -14,6 +14,12 @@ It covers elements of the service delivered by HMRC to show how the Income Tax e
 
 Product owners, developers and business analysts can also use this guide to learn more about Making Tax Digital for Income Tax Self Assessment (ITSA).
 
+## Overview
+
+AWAITING CONTENT
+
+## End to end journey
+
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
