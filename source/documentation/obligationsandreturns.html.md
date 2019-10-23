@@ -269,7 +269,28 @@ As with the current process the customer will make changes to the relevant infor
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970 
 
-INSERTION POINT FOR LOSSES?????
+### Losses and Claims
+
+A self-employed business can make a loss when the trade expenses are more than the trade income.
+If the business made a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
+
+<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:520px;" /></a>
+<a href="losses-api-diagram.svg" target="blank">Open the Losses process in a new tab</a>.
+
+Vendors can use the [Brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the Brought forward loss to HMRC.
+
+When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
+
+* utilise the loss against an income source for a specific year, or 
+* claim to carry the loss forward so that it is available to use in later years
+
+The Loss claims end point allows the user to:
+
+* provide a list of Loss claims
+* create a Loss Claim against an income source for a specific tax year
+* show the detail of an existing Loss claim
+* delete a previously entered Loss claim
+* update a previously entered Loss claim
 
 ## View previously submitted updates
 
