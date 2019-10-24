@@ -275,7 +275,8 @@ A self-employed business can make a loss when the trade expenses are more than t
 If the business made a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
 
 <a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:520px;" /></a>
-<a href="losses-api-diagram.svg" target="blank">Open the Losses process in a new tab</a>.
+
+<a href="figures/losses-api-diagram.svg" target="blank">Open the Losses process in a new tab</a>.
 
 Vendors can use the [Brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the Brought forward loss to HMRC.
 
