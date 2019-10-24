@@ -20,6 +20,8 @@ AWAITING CONTENT
 
 ## End to end journey
 
+ADD LINKS TO CONTENT WHEN AVAILABLE
+
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
 
