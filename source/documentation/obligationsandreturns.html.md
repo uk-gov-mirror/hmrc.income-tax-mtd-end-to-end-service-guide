@@ -109,7 +109,11 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 ## Retrieve a tax calculation
 
+AWAITING MISSING CONTENT
+
 ## Finalise business income (EOPS)
+
+AWAITING MISSING CONTENT
 
 ### Business or Agent able to submit End of Period Statement through software
 
@@ -162,7 +166,32 @@ Note: making changes to data for previously submitted periods is covered in Cust
 
 ## Provide information about how to treat a loss
 
+### Losses and Claims
+
+A self-employed business can make a loss when the trade expenses are more than the trade income.
+If the business made a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
+
+<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:520px;" /></a>
+<a href="losses-api-diagram.svg" target="blank">Open the Losses process in a new tab</a>.
+
+Vendors can use the [Brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the Brought forward loss to HMRC.
+
+When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
+
+* utilise the loss against an income source for a specific year, or 
+* claim to carry the loss forward so that it is available to use in later years
+
+The Loss claims end point allows the user to:
+
+* provide a list of Loss claims
+* create a Loss Claim against an income source for a specific tax year
+* show the detail of an existing Loss claim
+* delete a previously entered Loss claim
+* update a previously entered Loss claim
+
 ## Submit information about personal income
+
+AWAITING MISSING CONTENT
 
 ## Crystallise liability (SA return)
 
@@ -292,6 +321,7 @@ The Loss claims end point allows the user to:
 * show the detail of an existing Loss claim
 * delete a previously entered Loss claim
 * update a previously entered Loss claim
+
 
 ## View previously submitted updates
 
