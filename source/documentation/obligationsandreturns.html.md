@@ -8,7 +8,7 @@ weight: 3
 
 ## Agent and Business journey overview
 
-add steps and check with SME (JW)
+ADD STEPS AND CHECK WITH SME
 
 
 ## Receive obligations
@@ -69,8 +69,8 @@ A customer can provide the information as frequently as they need, however there
 Each update period cannot overlap the previous one, for example:
 
 Update 1 – 6 April to 1 May is accepted<br />
-Update 2 - 2 May to 31 May is accepted<br />
-Update 3 – 28 May to 6 June is rejected because it overlaps the previous updates
+Update 2 – 2 May to 31 May is accepted<br />
+Update 3 – 28 May to 6 June is rejected because it overlaps with previous updates
 
 ## Submit Annual updates for SE and Property businesses
 
@@ -92,7 +92,7 @@ The individual calculations API allows software to:
 * retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
 * retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID
 * retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID
-* 	retrieve “info”, “warning” and “error” level messages linked to a Calculation ID
+* retrieve “info”, “warning” and “error” level messages linked to a Calculation ID
 
 A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
 
@@ -116,8 +116,6 @@ Note: The self-assessment tax calculation endpoints under the Individual Calcula
 
 
 ## Finalise business income (EOPS)
-
-AWAITING MISSING CONTENT
 
 ### Business or Agent able to submit End of Period Statement through software
 
@@ -177,7 +175,7 @@ If the business made a loss for a year prior to signing up to Making Tax Digital
 
 <a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:520px;" /></a>
 
-<a href="figures/losses-api-diagram.svg" target="blank">Open the Losses process in a new tab</a>.
+<a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
 
 Vendors can use the [Brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the Brought forward loss to HMRC.
 
@@ -196,9 +194,7 @@ The Loss claims end point allows the user to:
 
 ## Submit information about personal income
 
-AWAITING MISSING CONTENT
-
-## Crystallise liability (SA return)
+### Crystallise liability (SA return)
 
 This is the process that allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 In other words, this process will bring together all the data that a taxpayer needs to provide to HMRC to reach their final tax liability for a specific year. 
@@ -213,7 +209,7 @@ Customers can crystallise from 6 April Year 1. The deadline for Crystallisation 
 
 The customer must have completed any EOPS for each source of business income required for that tax year and provide information relating to any other income, expenses, allowances or adjustments they may have. 
 
-Software should prompt customers to make sure they have considered the following potential additional income sources (this functionality will be provided through APIs over the next year)
+Software should prompt customers to make sure they have considered the following potential additional income sources (this functionality will be provided through APIs over the next year).
 
 * any pension contributions
 * any pension income
@@ -265,14 +261,11 @@ The following are available:
 * any income from dividends
 * any Gift Aid contributions they have made
 
-Note: Any information currently provided via the existing Self Assessment process
-If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.
-
-To carry back a loss, the customer should contact HMRC, who will be able to apply this manually.
+If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.  To carry back a loss the customer should contact HMRC.  HMRC will apply this manually.
 
 ## When the customer is ready to crystallise
 
-The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the Intent to crystallise API endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules and generate a final liability calculation.
+The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the Intent to crystallise API endpoint. This will start the crystallisation process and trigger the business validation rules and generate a final liability calculation.
 
 The intent to crystallise response includes a Calculation ID similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the ‘Retrieve a Tax Calculation’ endpoint to get the calculation output.
 
@@ -320,7 +313,7 @@ Software can use the ‘get a self employment/property (FHL and Non FHL) annual 
 
 ## View liabilities and payments
 
- I don’t know if you want to include - if we are certian we will deliver it keep the place holder
+The ability to view liabilities and payments is being developed and will be provided later in the year.
  
 ## Make changes to previously submitted data
 
@@ -346,7 +339,7 @@ There are some key points for changing previously submitted updates:
 
 ## Make an amendment after crystallisation
 
-We’ll have to add this later when functionality is there
+*** We’ll have to add this later when functionality is there ***
 
 ## Pay or get a repayment
 
