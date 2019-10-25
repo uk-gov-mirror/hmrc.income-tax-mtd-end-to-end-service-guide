@@ -24,12 +24,6 @@ Customers can also find out their obligations for their income source, through t
 * retrieve self-employment business obligations - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
 * retrieve all UK property business obligations - provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
-Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion) to the list all self employment businesses.
-
-Here is an [example JSON Obligation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-end-of-period-statement-obligations-for-a-selfemployment-business_get_accordion) response.
-
-Note: at the moment in production the response only provides previous obligations and the next one it does not provide a full year but this will be available in the future.
-
 ## Submit Periodic updates for SE and property businesses
 
 Businesses, and agents who represent them, will be required to provide summary level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often if they choose.
@@ -78,10 +72,6 @@ Update 1 – 6 April to 1 May is accepted<br />
 Update 2 - 2 May to 31 May is accepted<br />
 Update 3 – 28 May to 6 June is rejected because it overlaps the previous updates
 
-Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-periodic-update_get_accordion).
-
-For property, the JSON structure is the same but the fields required can be different.
-
 Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose. 
 
 * update a self-employment annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
@@ -89,11 +79,6 @@ Annual updates are mandatory annually but we have provided the functionality for
 * update an FHL property business annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
 Checking if an obligation has been met 
 Once the customer has finished sending all the information for that period and you have retrieved the calculation, you can then check whether the customer's obligations have been met. Note: in some cases, it can take up to an hour for the results to be confirmed.
-
-Here is an example JSON of [‘update a self-employment business annual summary allowances and adjustments and calculation’](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion).
-
-Property follows the same structure but with some different data items.
-
 
 ## Submit Annual updates for SE and Property businesses
 
@@ -311,12 +296,6 @@ The period ID is then used with the ‘get a self employment/property (FHL or No
 Annual information can be provided throughout the year but there is only one period a year for the annual summary.
 Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
 
-#### Example responses
-
-Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion) for self-employment update periods.
-
-Property responses follow the same format but data items may vary. Here is an [example JSON response](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion)
-
 ## View liabilities and payments
 
  I don’t know if you want to include - if we are certian we will deliver it keep the place holder
@@ -331,13 +310,12 @@ If a customer wants to make a change to the data that was included in a previous
 For all quarterly updates including self-employment, FHL property business and non-FHL property business:
 
 * software will have to resubmit the new summary totals for the specific update period, the dates of the update period have to match exactly
-* when a business resubmits an update period, the software will have to use the trigger calculation API and follow the same process as the submitting an update period process.
-Note: any changes that are made before the customer has crystallised is not a formal amendment.
+* when a business resubmits an update period, the software will have to use the trigger calculation API and follow the same process as the submitting an update period process
+Note: any changes that are made before the customer has crystallised is not a formal amendment
 For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
-* software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods.
-* where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information.
-* the software will have to use the trigger calculation API and follow the same process.
-JSON examples are the same as the create an update period. 
+* software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
+* where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information
+* the software will have to use the trigger calculation API and follow the same process
 
 There are some key points for changing previously submitted updates:
 
@@ -370,7 +348,9 @@ Customers can pay their tax bill by direct debit, making it easy and convenient 
 HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due.
 These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax
 account. Access to the services will be via the customer’s digital tax account at:
+
 https://www.access.service.gov.uk/login/signin/creds
+
 Vendors in their messaging should ask customers to visit that link.  
 
 Customers will be able to view payments made to HMRC in software. 
@@ -381,7 +361,9 @@ Details will be updated here once they are available.
 Functionality within the Business Tax Account will allow businesses to update their ‘change of circumstances’, until then they should call the HMRC helpline about a change of circumstances.
 When the online functionality is delivered, vendors should present messages to business users regularly to remind them to check and update their details with HMRC.
 Business users will then be able to do that by visiting their Business Tax Account at:
+
 https://www.access.service.gov.uk/login/signin/creds 
+
 Businesses will be able to update a range of information, including addresses, telephone numbers, e-mail and business type.
 
 ### Agent able to notify their own change of circumstances
