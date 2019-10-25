@@ -14,7 +14,7 @@ ADD STEPS AND CHECK WITH SME
 ## Receive obligations
 
 Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer has been provided at sign up and to find out the customer’s update obligation dates. 
-The software must make their customers aware of their obligations.  
+The software must make customers aware of their obligations.  
 
 Actions to take are as follows:
 
@@ -83,10 +83,10 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 ## Retrieve a tax calculation
 
-The individual calculations API allows software to:
+The Individual calculations API allows software to:
 
 * list self-assessment tax calculations for a given National Insurance number (NINO) and tax year
-* trigger a self-assessment tax calculation for a given tax year. The result of the calculation can be explored via the “Retrieve a self-assessment tax calculation metadata” endpoint
+* trigger a self-assessment tax calculation for a given tax year. The result of the calculation can be explored through the “Retrieve a self-assessment tax calculation metadata” endpoint
 * retrieve high-level calculation metadata for a given Calculation ID
 * retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID
 * retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
@@ -98,7 +98,7 @@ A calculation result once created (excluding metadata) is an immutable calculati
 
 It is possible to return both in-year and crystallisation calculations using these endpoints. 
 
-An in-year calculation is performed if the calculation was triggered by the "Trigger a self-assessment tax calculation" endpoint. A crystallisation calculation is performed if the calculation was triggered by the "Intent to crystallise" endpoint under the Self Assessment (MTD) API. 
+An in-year calculation is worked out if the calculation was triggered by the "Trigger a self-assessment tax calculation" endpoint. A crystallisation calculation is performed if the calculation was triggered by the "Intent to crystallise" endpoint under the Self Assessment (MTD) API. 
 
 For a crystallisation calculation the minimum number of endpoints that need to be called are: 
 
@@ -122,7 +122,7 @@ Note: The self-assessment tax calculation endpoints under the Individual Calcula
 This is the process that allows the customer to finalise the profit or loss for any one source of business income. 
 An EPOS (End of Period Statement) must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
 
-EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer does not need to complete it until 31 January Year 2. 
+EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer does not need to complete it until 31 January, Year 2. 
 
 The process will take into account all the periodic and annual data already provided by the customer throughout the year. 
 Note: Data received must cover the whole accounting period.
