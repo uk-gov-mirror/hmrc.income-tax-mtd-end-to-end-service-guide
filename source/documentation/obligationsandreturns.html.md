@@ -8,7 +8,7 @@ weight: 3
 
 ## Agent and Business journey overview
 
-AWAITING MISSING CONTENT
+add steps and check with SME (JW)
 
 
 ## Receive obligations
@@ -83,7 +83,37 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 ## Retrieve a tax calculation
 
-AWAITING MISSING CONTENT
+The individual calculations API allows software to:
+
+* list self-assessment tax calculations for a given National Insurance number (NINO) and tax year
+* trigger a self-assessment tax calculation for a given tax year. The result of the calculation can be explored via the “Retrieve a self-assessment tax calculation metadata” endpoint
+* retrieve high-level calculation metadata for a given Calculation ID
+* retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID
+* retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
+* retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID
+* retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID
+* 	retrieve “info”, “warning” and “error” level messages linked to a Calculation ID
+
+A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
+
+It is possible to return both in-year and crystallisation calculations using these endpoints. 
+
+An in-year calculation is performed if the calculation was triggered by the "Trigger a self-assessment tax calculation" endpoint. A crystallisation calculation is performed if the calculation was triggered by the "Intent to crystallise" endpoint under the Self Assessment (MTD) API. 
+
+For a crystallisation calculation the minimum number of endpoints that need to be called are: 
+
+* retrieve self assessment tax calculation metadata
+* retrieve self assessment tax calculation taxable income
+* retrieve self assessment tax calculation income tax NICs calculated
+* retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)
+* retrieve self assessment tax calculation messages (if applicable)
+
+A Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
+
+If calculation errors are present, these errors can be returned to the customer by the Retrieve self assessment tax calculation messages endpoint. 
+
+Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing Self Assessment API.
+
 
 ## Finalise business income (EOPS)
 
