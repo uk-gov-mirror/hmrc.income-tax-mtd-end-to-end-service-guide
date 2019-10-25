@@ -24,7 +24,7 @@ Customers can also find out their obligations for their income source, through t
 * retrieve self-employment business obligations - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
 * retrieve all UK property business obligations - provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
-## Submit Periodic updates for SE and property businesses
+## Submit Periodic updates for Self Employment and property businesses
 
 Businesses, and agents who represent them, will be required to provide summary level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often if they choose.
 
@@ -72,14 +72,6 @@ Update 1 – 6 April to 1 May is accepted<br />
 Update 2 - 2 May to 31 May is accepted<br />
 Update 3 – 28 May to 6 June is rejected because it overlaps the previous updates
 
-Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose. 
-
-* update a self-employment annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
-* update a non FHL property business annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
-* update an FHL property business annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
-Checking if an obligation has been met 
-Once the customer has finished sending all the information for that period and you have retrieved the calculation, you can then check whether the customer's obligations have been met. Note: in some cases, it can take up to an hour for the results to be confirmed.
-
 ## Submit Annual updates for SE and Property businesses
 
 Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose. 
@@ -91,37 +83,7 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 ## Retrieve a tax calculation
 
-The individual calculations API allows a customer to:
-
-•	list self-assessment tax calculations for a given National Insurance number (NINO) and tax year
-•	trigger a self-assessment tax calculation for a given tax year. The result of the calculation can be explored via the “Retrieve a self-assessment tax calculation metadata” endpoint
-•	retrieve high-level calculation metadata for a given Calculation ID
-•	retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID
-•	retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
-•	retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID
-•	retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID
-•	retrieve “info”, “warning” and “error” level messages linked to a Calculation ID
-
-A calculation result (excluding metadata), once created, is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
-
-It is possible to return both in-year and crystallisation calculations using these endpoints. 
-
-An in-year calculation is performed if the calculation was triggered by the "Trigger a self-assessment tax calculation" endpoint. A crystallisation calculation is performed if the calculation was triggered by the "Intent to crystallise" endpoint under the Self Assessment (MTD) API. 
-
-For a crystallisation calculation the minimum number of endpoints that need to be called are: 
-
-•	retrieve self assessment tax calculation metadata
-•	retrieve self assessment tax calculation taxable income
-•	retrieve self assessment tax calculation income tax NICs calculated
-•	retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)
-•	retrieve self assessment tax calculation messages (if applicable)
-
-A Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
-
-If calculation errors are present, these errors can be returned to the customer by the Retrieve self assessment tax calculation messages endpoint. 
-
-Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing Self Assessment API.
-
+AWAITING MISSING CONTENT
 
 ## Finalise business income (EOPS)
 
@@ -169,13 +131,12 @@ Note: The Declaration is the only mandatory API for this process, the exact text
 
  > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
-Note when making changes to previously submitted data during and after an End of Period Statement declaration:
+Making changes to previously submitted data during and after an End of Period Statement declaration
+* if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
+* if there are no error failures it is recommend that customers review any warning messages they have at this point or earlier as warnings will cause a failure at crystallisation.
+* if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation.
 
-* if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again
-* if there are no error failures it is recommend that customers review any warning messages they have at this point or earlier as warnings will cause a failure at crystallisation
-* if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation
-
-Making changes to data for previously submitted periods is covered in Customer or Agent changes and resubmits previously submitted data.
+Note: making changes to data for previously submitted periods is covered in Customer or Agent changes and resubmits previously submitted data
 
 ## Provide information about how to treat a loss
 
@@ -246,7 +207,7 @@ To carry back a loss, the customer should contact HMRC, who will be able to appl
 
 The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the Intent to crystallise API endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules and generate a final liability calculation.
 
-The intent to crystallise response includes a Calculation ID similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the ‘Retrieve a Tax Calculation’ endpoint to get the calculation output.
+The intent to crystallise response includes a calculationId similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the ‘Retrieve a Tax Calculation’ endpoint to get the calculation output.
 
 This is the process that allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 In other words, this process will bring together all the data that a taxpayer needs to provide to HMRC to reach their final tax liability for a specific year. 
@@ -289,7 +250,7 @@ The Calculation output provides a summary of each income source (e.g. self-emplo
 
 Once software has called the intent to crystallise API, this will trigger a final liability calculation and software will receive a Calculation ID. 
 
-The software must retrieve the intent to crystallise Calculation ID and display the calculation to the customer.  The customer must review this information and confirm it is complete and correct by sending the declaration.
+The software must retrieve the intent to crystallise calculationId and display the calculation to the customer.  The customer must review this information and confirm it is complete and correct by sending the declaration.
 
 If the customer thinks the calculation is incorrect as a result of incorrect data, they can go back and change any incorrect information they have provided. Once they have done this the software will have to call the ‘intent to crystallise’ API again to generate a new final liability.
 
