@@ -285,16 +285,13 @@ Once a customer is happy with all the information, they will have to agree to a 
  > **The Declaration**
 
 > “Before you can submit the information displayed here in response to your notice to file from HM Revenue & Customs, you must read and agree the following statement by 
-[developer to decide how you manage the actual declaration for example a tick box or click confirm button or other]
+
+[vendor to decide how you manage the actual declaration in the user interface for example a tick box, confirm button or other]
+
 The information I have provided is correct and complete to the best of my knowledge and belief
 If you give false information you may have to pay financial penalties and face prosecution.”
 
-Software must send the Calculation ID that matches the calculation the customer is declaring against with the declaration.
-If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later). 
-
-As with the current process the customer will make changes to the relevant information in software and resubmit the relevant periodic or annual updates, and follow the same process of triggering the calculation, they will not have to re-declare.
-
-Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970 
+Software must send the calculationId that matches the calculation the customer is declaring against with the declaration.
 
 
 ## View previously submitted updates
@@ -340,6 +337,12 @@ There are some key points for changing previously submitted updates:
 ## Make an amendment after crystallisation
 
 *** We’ll have to add this later when functionality is there ***
+
+If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later). 
+
+As with the current process the customer will make changes to the relevant information in software and resubmit the relevant periodic or annual updates, and follow the same process of triggering the calculation, they will not have to re-declare.
+
+Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
 ## Pay or get a repayment
 
