@@ -6,13 +6,10 @@ weight: 3
 <!--- Section owner: MTD Programme --->
 # Obligations and returns
 
-## Agent journey overview
+## Agent and Business journey overview
 
 AWAITING MISSING CONTENT
 
-## Business journey overview
-
-AWAITING MISSING CONTENT
 
 ## Receive obligations
 
@@ -145,17 +142,17 @@ You could use the Business Income Source Summary APIs or opt to create this info
 
 Note: The Declaration is the only mandatory API for this process, the exact text HMRC requires you to present is below 
 
-## Declaration for Self Employment EOPS
+ > **Declaration for Self Employment EOPS**
 
-“I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. 
+ > “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. 
 
-I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+ >I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
-## Declaration for Property EOPS
+ > **Declaration for Property EOPS**
 
-“I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data, including details of the properties for that period and that it is correct and complete to the best of my knowledge. 
+ > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data, including details of the properties for that period and that it is correct and complete to the best of my knowledge. 
 
-I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+ > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
 Making changes to previously submitted data during and after an End of Period Statement declaration
 * if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
@@ -285,9 +282,9 @@ If a software vendor identifies what they feel could be a technical issue with t
 
 Once a customer is happy with all the information, they will have to agree to a declaration and send it to HMRC.
 
-#### The Declaration
+ > **The Declaration**
 
-“Before you can submit the information displayed here in response to your notice to file from HM Revenue & Customs, you must read and agree the following statement by 
+> “Before you can submit the information displayed here in response to your notice to file from HM Revenue & Customs, you must read and agree the following statement by 
 [developer to decide how you manage the actual declaration for example a tick box or click confirm button or other]
 The information I have provided is correct and complete to the best of my knowledge and belief
 If you give false information you may have to pay financial penalties and face prosecution.”
