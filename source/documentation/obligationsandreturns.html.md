@@ -160,8 +160,11 @@ Note: The Declaration is the only mandatory API for this process, the exact text
  > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
 Making changes to previously submitted data during and after an End of Period Statement declaration
+
 * if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
+
 * if there are no error failures it is recommend that customers review any warning messages they have at this point or earlier as warnings will cause a failure at crystallisation.
+
 * if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation.
 
 Note: making changes to data for previously submitted periods is covered in Customer or Agent changes and resubmits previously submitted data
