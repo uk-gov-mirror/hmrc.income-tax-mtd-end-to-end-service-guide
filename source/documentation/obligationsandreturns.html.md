@@ -289,9 +289,9 @@ Once a customer is happy with all the information, they will have to agree to a 
 
 > “Before you can submit the information displayed here in response to your notice to file from HM Revenue & Customs, you must read and agree the following statement by 
 
-[vendor to decide how you manage the actual declaration in the user interface for example a tick box, confirm button or other]
+> [vendor to decide how you manage the actual declaration in the user interface for example a tick box, confirm button or other]
 
-The information I have provided is correct and complete to the best of my knowledge and belief
+> The information I have provided is correct and complete to the best of my knowledge and belief
 If you give false information you may have to pay financial penalties and face prosecution.”
 
 Software must send the calculationId that matches the calculation the customer is declaring against with the declaration.
