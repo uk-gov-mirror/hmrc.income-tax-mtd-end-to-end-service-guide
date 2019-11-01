@@ -18,11 +18,11 @@ The software must make customers aware of their obligations.
 
 Actions to take are as follows:
 
-* the [list all self-employment businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion) end point provides a list of all the customer’s self-employment businesses, along with the Business ID which the software will need to send to HMRC (this is currently limited to one but functionality to add more will be available later and stated in the roadmap)
+* the [list all self-employment businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion) endpoint provides a list of all the customer’s self-employment businesses, along with the Business ID which the software will need to send to HMRC (this is currently limited to one but functionality to add more will be available later and stated in the roadmap)
 * the [Get a self-employment business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-business_get_accordion) or [Get a UK property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_get-a-uk-property-business_get_accordion) endpoint will provide the information HMRC holds for a specific self-employment or property business
 Customers can also find out their obligations for their income source, through the following endpoints:
 * [retrieve self-employment business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-selfemployment-business-obligations_get_accordion) - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
-* [retrieve all UK property business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_retrieve-all-uk-property-business-obligations_get_accordion) end point provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
+* [retrieve all UK property business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_retrieve-all-uk-property-business-obligations_get_accordion) endpoint provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
 ## Submit Periodic updates for Self Employment and property businesses
 
@@ -32,7 +32,7 @@ The deadline for meeting a quarterly obligation is one month after the obligatio
 
 The software package will need to convert the transactional information into summary totals for each category, for example expenses by category.
 
-HMRC has provided the APIs to enable software to be able to send the summary information to HMRC for each income source and allow HMRC to provide a calculation based on all the information we have received to date.
+HMRC has provided APIs to enable software to be able to send the summary information to HMRC for each income source and allow HMRC to provide a calculation based on all the information we have received to date.
 
 When the update is received, HMRC checks if the submission is coming from an agent and if that agent is subscribed to agent services. If they are not subscribed to agent services an error is returned.
 
@@ -40,16 +40,16 @@ If the agent is subscribed, HMRC checks if the agent is authorised to act on beh
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
-Once all the information has been submitted to HMRC for that period, the software must use the [trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) API endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID.
+Once all the information has been submitted to HMRC for that period, the software must use the [trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID.
 
 Note: this does not mean the customer has to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
 
 Software will need to use that Calculation ID to use the [retrieve a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_retrieve-a-tax-calculation_get_accordion) endpoint.
-Software should use that Calculation ID to call the [individual calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) API endpoint a tax calculation API endpoint to get the result of the calculation.
+Software should use that Calculation ID to call the [individual calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint a tax calculation API endpoint to get the result of the calculation.
 
 The Calculation ID response includes:
 
-* a ‘Year to Date’ estimated liability (which will total all period calculations to give an up to date view of the estimated
+* a ‘year to date’ estimated liability (which will total all period calculations to give an up to date view of the estimated
 liability)
 * a breakdown of how the estimated liability has been reached - at a minimum it will be the equivalent to an SA302
 * a forecast figure of what the customer’s liability is likely to be at the end of the year based on the information provided to date. Customers will not be able to change this forecast figure as it is for information only.
@@ -187,7 +187,7 @@ When the loss detail has been submitted, or if a loss arises for a tax year foll
 * utilise the loss against an income source for a specific year, or 
 * claim to carry the loss forward so that it is available to use in later years
 
-The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims) end point allows the user to:
+The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims) endpoint allows the user to:
 
 * [provide a list of Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_list-loss-claims-test-only_get_accordion)
 * [create a Loss Claim against an income source for a specific tax year](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_create-a-loss-claim-test-only_post_accordion)
@@ -325,7 +325,7 @@ If a customer wants to make a change to the data that was included in a previous
 For all quarterly updates including self-employment, FHL property business and non-FHL property business:
 
 * software will have to resubmit the new summary totals for the specific update period, the dates of the update period have to match exactly
-* when a business resubmits an update period, the software will have to use the trigger calculation API and follow the same process as the submitting an update period process
+* when a business resubmits an update period, the software will have to use the trigger calculation endpoint and follow the same process as the submitting an update period process
 Note: any changes that are made before the customer has crystallised is not a formal amendment
 For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
 * software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
