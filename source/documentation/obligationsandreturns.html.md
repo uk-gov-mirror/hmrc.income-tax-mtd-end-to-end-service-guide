@@ -339,8 +339,6 @@ There are some key points for changing previously submitted updates:
 
 ## Make an amendment after crystallisation
 
-*** We’ll have to add this later when functionality is there ***
-
 If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later). 
 
 As with the current process the customer will make changes to the relevant information in software and resubmit the relevant periodic or annual updates, and follow the same process of triggering the calculation, they will not have to re-declare.
@@ -353,7 +351,7 @@ Vendors should present messages to business users at key points in their journey
 
 There are multiple ways to make a payment for the Self Assessment regime, they can be found on GOV.UK at:
 
-https://www.gov.uk/pay-self-assessment-tax-bill 
+[https://www.gov.uk/pay-self-assessment-tax-bill](https://www.gov.uk/pay-self-assessment-tax-bill) 
 
 Vendors should, in their messaging, ask customers to visit that link so the customer can make a payment in the method that suits them.
 
@@ -361,7 +359,7 @@ The contents of this GOV.UK page will be updated and subject to change.
 
 For a business to view what previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their Business Tax Account at:
 
-https://www.access.service.gov.uk/login/signin/creds
+[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
 
 Vendors in their messaging should ask customers to visit that link. 
 
@@ -370,7 +368,7 @@ HMRC is delivering functionality for customers to set up direct debit instructio
 These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax
 account. Access to the services will be via the customer’s digital tax account at:
 
-https://www.access.service.gov.uk/login/signin/creds
+[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
 
 Vendors in their messaging should ask customers to visit that link.  
 
@@ -383,7 +381,7 @@ Functionality within the Business Tax Account will allow businesses to update th
 When the online functionality is delivered, vendors should present messages to business users regularly to remind them to check and update their details with HMRC.
 Business users will then be able to do that by visiting their Business Tax Account at:
 
-https://www.access.service.gov.uk/login/signin/creds 
+[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
 
 Businesses will be able to update a range of information, including addresses, telephone numbers, e-mail and business type.
 
