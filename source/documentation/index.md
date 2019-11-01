@@ -31,6 +31,18 @@ HMRC are also providing the APIs for software to support a customer’s full sel
  
 By developing a product now, you will support mandation of the service, influence its design and ensure you have a product ready for the millions of business and agents that will need MTD compatible software.
 
+## Software vendor overview
+
+Awaiting content
+
+## Terms of use
+
+Exisiting terms of use to be moved here
+
+## Software choices
+
+Anish to provide text
+
 ## End-to-end journey
 
 ADD LINKS TO CONTENT WHEN AVAILABLE
