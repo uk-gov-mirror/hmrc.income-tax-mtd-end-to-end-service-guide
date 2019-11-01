@@ -18,11 +18,11 @@ The software must make customers aware of their obligations.
 
 Actions to take are as follows:
 
-* the list all self-employment businesses endpoint provides a list of all the customer’s self-employment businesses, along with the Business ID which the software will need to send to HMRC (this is currently limited to one but functionality to add more will be available later and stated in the roadmap)
-* the Get a self-employment business or Get a UK property Business endpoint will provide the information HMRC holds for a specific self-employment or property business
+* the [list all self-employment businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-businesses_get_accordion) end point provides a list of all the customer’s self-employment businesses, along with the Business ID which the software will need to send to HMRC (this is currently limited to one but functionality to add more will be available later and stated in the roadmap)
+* the [Get a self-employment business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-business_get_accordion) or [Get a UK property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_get-a-uk-property-business_get_accordion) endpoint will provide the information HMRC holds for a specific self-employment or property business
 Customers can also find out their obligations for their income source, through the following endpoints:
-* retrieve self-employment business obligations - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
-* retrieve all UK property business obligations - provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
+* [retrieve self-employment business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-selfemployment-business-obligations_get_accordion) - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
+* [retrieve all UK property business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_retrieve-all-uk-property-business-obligations_get_accordion) end point provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
 ## Submit Periodic updates for Self Employment and property businesses
 
@@ -40,12 +40,12 @@ If the agent is subscribed, HMRC checks if the agent is authorised to act on beh
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
-Once all the information has been submitted to HMRC for that period, the software must use the trigger calculation API endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID.
+Once all the information has been submitted to HMRC for that period, the software must use the [trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) API endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID.
 
 Note: this does not mean the customer has to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
 
-Software will need to use that Calculation ID to use the retrieve calculation API endpoint.
-Software should use that Calculation ID to call the individual calculation API endpoint a tax calculation API endpoint to get the result of the calculation.
+Software will need to use that Calculation ID to use the [retrieve a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_retrieve-a-tax-calculation_get_accordion) endpoint.
+Software should use that Calculation ID to call the [individual calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) API endpoint a tax calculation API endpoint to get the result of the calculation.
 
 The Calculation ID response includes:
 
@@ -61,9 +61,9 @@ When a customer wants to send an update for a self-employment or property busine
 Software will need to use the following endpoints for each relevant source of income.
 For three monthly updates:
 
-* create a self-employment update period - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
-* create a Furnished Holiday Lettings (FHL) property period - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
-* create a non FHL property update period - this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income
+* [create a self-employment update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
+* [create a Furnished Holiday Lettings (FHL) property period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-fhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
+* [create a non FHL property update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-nonfhl-uk-property-update-period_post_accordion)- this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income
 A customer can provide the information as frequently as they need, however there are a couple of validation rules that apply. 
 
 Each update period cannot overlap the previous one, for example:
@@ -76,43 +76,43 @@ Update 3 – 28 May to 6 June is rejected because it overlaps with previous upda
 
 Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose. 
 
-* update a self-employment annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
-* update a non FHL property business annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
+* update a [self-employment annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
+* update a [non FHL property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-nonfhl-uk-property-business-annual-summary_put_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
 * update an FHL property business annual summary - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
 
 
 ## Retrieve a tax calculation
 
-The Individual calculations API allows software to:
+The [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) allows software to:
 
-* list self-assessment tax calculations for a given National Insurance number (NINO) and tax year
-* trigger a self-assessment tax calculation for a given tax year. The result of the calculation can be explored through the “Retrieve a self-assessment tax calculation metadata” endpoint
-* retrieve high-level calculation metadata for a given Calculation ID
-* retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID
-* retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
-* retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID
+* [list self-assessment tax calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_list-self-assessment-tax-calculations-test-only_get_accordion) for a given National Insurance number (NINO) and tax year
+* trigger a [self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) for a given tax year. The result of the calculation can be explored through the [Retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) endpoint
+* [retrieve high-level calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) for a given Calculation ID
+* [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a given NINO and Calculation ID
+* [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
+* [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID
 * retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID
-* retrieve “info”, “warning” and “error” level messages linked to a Calculation ID
+* [retrieve “info”, “warning” and “error” level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID
 
 A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
 
 It is possible to return both in-year and crystallisation calculations using these endpoints. 
 
-An in-year calculation is worked out if the calculation was triggered by the "Trigger a self-assessment tax calculation" endpoint. A crystallisation calculation is performed if the calculation was triggered by the "Intent to crystallise" endpoint under the Self Assessment (MTD) API. 
+An in-year calculation is worked out if the calculation was triggered by the [Trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint. A crystallisation calculation is performed if the calculation was triggered by the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint under the Self Assessment (MTD) API. 
 
 For a crystallisation calculation the minimum number of endpoints that need to be called are: 
 
-* retrieve self assessment tax calculation metadata
-* retrieve self assessment tax calculation taxable income
-* retrieve self assessment tax calculation income tax NICs calculated
-* retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)
-* retrieve self assessment tax calculation messages (if applicable)
+* [retrieve self assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
+* [retrieve self assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
+* [retrieve self assessment tax calculation income tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
+* [retrieve self assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) (if applicable)
+* [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) (if applicable)
 
 A Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
 
-If calculation errors are present, these errors can be returned to the customer by the Retrieve self assessment tax calculation messages endpoint. 
+If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint. 
 
-Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing Self Assessment API.
+Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
 
 
 ## Finalise business income (EOPS)
@@ -180,20 +180,20 @@ If the business made a loss for a year prior to signing up to Making Tax Digital
 
 <a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
 
-Vendors can use the [Brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the Brought forward loss to HMRC.
+Vendors can use the [brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the brought forward loss to HMRC.
 
 When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
 
 * utilise the loss against an income source for a specific year, or 
 * claim to carry the loss forward so that it is available to use in later years
 
-The Loss claims end point allows the user to:
+The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims) end point allows the user to:
 
-* provide a list of Loss claims
-* create a Loss Claim against an income source for a specific tax year
-* show the detail of an existing Loss claim
-* delete a previously entered Loss claim
-* update a previously entered Loss claim
+* [provide a list of Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_list-loss-claims-test-only_get_accordion)
+* [create a Loss Claim against an income source for a specific tax year](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_create-a-loss-claim-test-only_post_accordion)
+* [show the detail of an existing Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_retrieve-a-loss-claim-test-only_get_accordion)
+* [delete a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_delete-a-loss-claim-test-only_delete_accordion)
+* [update a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_amend-a-loss-claim-test-only_post_accordion)
 
 ## Submit information about personal income
 
@@ -234,9 +234,9 @@ To carry back a loss, the customer should contact HMRC, who will be able to appl
 
 ## When the customer is ready to crystallise
 
-The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the Intent to crystallise API endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules and generate a final liability calculation.
+The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the [Intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules and generate a final liability calculation.
 
-The intent to crystallise response includes a calculationId similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the ‘Retrieve a Tax Calculation’ endpoint to get the calculation output.
+The intent to crystallise response includes a calculationId similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the [retrieve a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_retrieve-a-tax-calculation_get_accordion) endpoint to get the calculation output.
 
 This is the process that allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 In other words, this process will bring together all the data that a taxpayer needs to provide to HMRC to reach their final tax liability for a specific year. 
@@ -264,17 +264,17 @@ The following are available:
 * any income from dividends
 * any Gift Aid contributions they have made
 
-If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.  To carry back a loss the customer should contact HMRC.  HMRC will apply this manually.
+If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a [Self Assessment tax return](https://www.gov.uk/self-assessment-tax-returns).  To carry back a loss the customer should contact HMRC.  HMRC will apply this manually.
 
 ## When the customer is ready to crystallise
 
-The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the Intent to crystallise API endpoint. This will start the crystallisation process and trigger the business validation rules and generate a final liability calculation.
+The software will have to let HMRC know that the customer is ready to crystallise. You can do this by calling the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint. This will start the crystallisation process and trigger the business validation rules and generate a final liability calculation.
 
 The intent to crystallise response includes a Calculation ID similar to the trigger calculation endpoint. Software will then have to retrieve the calculation using the ‘Retrieve a Tax Calculation’ endpoint to get the calculation output.
 
-The Calculation output provides a summary of each income source (e.g. self-employment, UK Property, UK bank and building society interest, etc.), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable.) broadly the equivalent of the current SA302.
+The Calculation output provides a summary of each income source (for example self-employment, UK Property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable.) broadly the equivalent of the current SA302.
 
-Once software has called the intent to crystallise API, this will trigger a final liability calculation and software will receive a Calculation ID. 
+Once software has called the intent to crystallise endpoint, this will trigger a final liability calculation and software will receive a Calculation ID. 
 
 The software must retrieve the intent to crystallise calculationId and display the calculation to the customer.  The customer must review this information and confirm it is complete and correct by sending the declaration.
 
@@ -303,7 +303,7 @@ A customer may want to retrieve previously submitted data, for example before ma
 
 ### Periodic updates
 
-Software can use the ‘self employment or property periodic updates’ endpoint to retrieve the list of updates made for that income source, or to find one or more period IDs.
+Software can use the [self employment or property periodic updates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business) endpoint to retrieve the list of updates made for that income source, or to find one or more period IDs.
 The period ID is then used with the ‘get a self employment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
 
 ### Annual updates
@@ -330,7 +330,7 @@ Note: any changes that are made before the customer has crystallised is not a fo
 For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
 * software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
 * where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information
-* the software will have to use the trigger calculation API and follow the same process
+* the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
 
 There are some key points for changing previously submitted updates:
 
