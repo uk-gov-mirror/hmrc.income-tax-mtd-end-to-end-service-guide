@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 2.0 issued XX August 2019
+Version 3.0 issued XX November 2019
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -33,15 +33,27 @@ By developing a product now, you will support mandation of the service, influenc
 
 ## Software vendor overview
 
-Awaiting content
+to be populated after meeting in Shipley 26/27th November 
 
 ## Terms of use
 
-Exisiting terms of use to be moved here
+Your application must comply with our [terms of use](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use). You must accept the terms of use before we issue your application’s production credentials.
 
 ## Software choices
 
-Anish to provide text
+HMRC publishes a list of compatible software for Making Tax Digital for Income Tax on GOV.UK. HMRC will add software vendors to this list when they have completed the necessary steps in the ‘Software vendor overview’ section. 
+
+From our experience with VAT, businesses, agents and 3rd parties will use this as the definitive list of MTD compatible software. All software listed on the page must allow the user to submit a summary of business and/or property information up to and including the End of Period Statement. 
+
+The current flat text list will be developed over time in line with user needs, including filters that help users to find appropriate software. 
+
+HMRC expects demand for products that serve all of the requirements of MTD, including keeping the required digital records for business and/or property income and the ability to submit all relevant non-business information to HMRC. 
+
+HMRC has committed to the availability of free software for the simplest businesses, as set out here: 
+
+https://www.gov.uk/government/publications/making-tax-digital-software-suppliers-terms-of-collaboration/terms-of-collaboration-between-hm-revenue-and-customs-and-software-developers#Annex-C 
+
+
 
 ## End-to-end journey
 
