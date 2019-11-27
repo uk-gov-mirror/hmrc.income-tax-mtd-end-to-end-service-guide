@@ -60,7 +60,7 @@ Note:
 *	The customer will not receive any communication from HMRC to confirm that the obligation has been met. 
 *	For property businesses, an update for either FHL or Non FHL for the full quarter will mark the obligation as fulfilled, even if they have both income types. 
 
-Software will need to use the following endpoints for each relevant source of income. For quarterly  updates:
+Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
 
 *	create a self-employment update period - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
 
@@ -75,7 +75,7 @@ Note: In some cases, the obligation can take up to an hour to be confirmed as me
 This met obligation must be presented clearly to the customer in software. They will also check this information in their Business Tax Account. The customer will not receive any communication from HMRC to confirm that the obligation has been met. 
 When a customer wants to send an update for a self-employment or property business, the software will need to provide summary totals for any income or expenses by category (mandatory quarterly) and allowances and adjustments (mandatory annual).
 
-Software will need to use the following endpoints for each relevant source of income. For quarterly  updates:
+Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
 
 *	create a self-employment update period - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
 *	create a Furnished Holiday Lettings (FHL) property period - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
@@ -89,7 +89,7 @@ Update 3 – 28 May to 6 June is rejected because it overlaps with previous upda
 
 ## Retrieve a tax calculation 
 
-Software will need to use that Calculation ID when calling  the retrieve a tax calculation endpoint to get the calculation result. 
+Software will need to use that Calculation ID when calling the retrieve a tax calculation endpoint to get the calculation result. 
 The Calculation ID response includes:
 
 *	a ‘year to date’ estimated liability (which will total all period calculations to give an up to date view of the estimated liability)
@@ -139,9 +139,9 @@ A crystallisation Calculation ID will not always have a calculation result. It i
 
 The existing paper based SA302 form fields span the following endpoints in the new Individual Calculations API:
 
-*	Retrieve self assessment tax calculation taxable income
-*	Retrieve self assessment tax calculation Income Tax NICs calculated
-*	Retrieve self assessment tax calculation allowances, deductions and reliefs
+*	retrieve self assessment tax calculation taxable income
+*	retrieve self assessment tax calculation Income Tax NICs calculated
+*	retrieve self assessment tax calculation allowances, deductions and reliefs
 
 If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint.
 
@@ -154,7 +154,7 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 * update a [self-employment annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-annual-summary_get_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
 * update a [non FHL property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-nonfhl-uk-property-business-annual-summary_put_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
-* [update an FHL property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-fhl-uk-property-business-annual-summary_put_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
+* update an [FHL property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-fhl-uk-property-business-annual-summary_put_accordion) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation 
 
 
 ## Retrieve a tax calculation
@@ -188,9 +188,9 @@ A Calculation ID will not always have a calculation result. It is possible that 
 
 The existing paper based SA302 form fields span the following endpoints in the new Individual Calculations API:
 
-* Retrieve self assessment tax calculation taxable income
-* Retrieve self assessment tax calculation Income Tax NICs calculated
-* Retrieve self assessment tax calculation allowances, deductions and reliefs
+* retrieve self assessment tax calculation taxable income
+* retrieve self assessment tax calculation Income Tax NICs calculated
+* retrieve self assessment tax calculation allowances, deductions and reliefs
 
 If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint. 
 
@@ -212,7 +212,7 @@ The customer must make sure they are happy with the information they have provid
 Note: 
 
 *	Data received must cover the whole accounting period.
-* We will be providing an API for customers to provide annual adjustments 
+* We will be providing an API for customers to provide annual adjustments. 
 
 Software should present to the customer the information listed below. This can  be totalled up by software, or we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for self-employment or property:
 
@@ -302,35 +302,35 @@ To carry back a loss, the customer should contact HMRC, who will be able to appl
 
 Software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
 
-* Any income from bank/building society interest (supported in live)
-* Any income from dividends (supported in live)
-*	Any gift aid contributions they have made (supported in live)
-*	Any pension contributions 
-*	Any pension income
-*	Capital Gains
-*	Income from employment
-*	Additional information (currently provided on the SA101)
-*	Any income from partnerships
-*	Any income from trusts 
-*	Any Foreign income 
+* any income from bank/building society interest (supported in live)
+* any income from dividends (supported in live)
+*	any gift aid contributions they have made (supported in live)
+*	any pension contributions 
+*	any pension income
+*	capital gains
+*	income from employment
+*	additional information (currently provided on the SA101)
+*	any income from partnerships
+*	any income from trusts 
+*	any Foreign income 
 
-Note: Any information currently provided via the existing Self Assessment process If a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.
+Note: Any information currently provided via the existing Self Assessment process if a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.
 
 ## Crystallisation 
 
-The software will have to let HMRC know that the customer is ready to crystallise. To do this you must  call the Intent to crystallise endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
+The software will have to let HMRC know that the customer is ready to crystallise, to do this you must call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
 
 The intent to crystallise response includes a calculationId the same as the trigger calculation endpoint. Software will then have to retrieve the calculation using calculationId  to retrieve a tax calculation endpoint to get the calculation output.
 
 NEED TO ADD INFO HERE ABOUT THE TAX CALC FOR CRYSTALLISATION AS MENTIONED ABOVE IN TAX CALC SECTION 
 
-The Calculation output provides a summary of each income source (for example self-employment, UK Property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable.) broadly the equivalent of the current SA302.
+The Calculation ID output provides a summary of each income source (for example self-employment, UK Property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable - broadly the equivalent of the current SA302.
 
-Once software has called the intent to crystallise endpoint, this will trigger a final liability calculation and software will receive a Calculation ID.
+Once software has called the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint, this will trigger a final liability calculation and software will receive a Calculation ID.
 
-The software must us the  intent to crystallise calculationId to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation  and confirm it is complete and correct by sending the declaration.
+The software must us the intent to crystallise calculationId to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation  and confirm it is complete and correct by sending the declaration.
 
-If the customer thinks the calculation is incorrect as a result of data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. . Once they have done this the software will have to call the ‘intent to crystallise’ API again to generate a new final liability.
+If the customer thinks the calculation is incorrect as a result of data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. Once they have done this the software will have to call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint again to generate a new final liability.
 
 If the customer does not agree with the calculation based on rules HMRC have used, then they will still need to declare against this calculation and follow the existing process to challenge the calculation. If a software vendor identifies what they feel could be a technical issue with the Tax calculation API, they will need to contact the SDS Team immediately.
 
@@ -377,10 +377,10 @@ Note:
 
 * any changes that are made before the customer has crystallised is not a formal amendment For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
 
-## There are some key points for changing previously submitted updates:
+### Key points for changing previously submitted updates
 
 *	changes to Periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
-*	changes to Annual updates - all figures previously supplied must be provided again, a Zero or a Null will overwrite any previously submitted information.
+*	changes to Annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information.
 
 
 ## Make an amendment after crystallisation
