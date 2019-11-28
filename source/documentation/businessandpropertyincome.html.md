@@ -23,7 +23,7 @@ Customers can find out their obligations for their income source, through the fo
 * [retrieve self-employment business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_retrieve-selfemployment-business-obligations_get_accordion) - provides obligation dates for all self-employment businesses, including grace periods and whether obligations have been met or not 
 * [retrieve all UK property business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_retrieve-all-uk-property-business-obligations_get_accordion) endpoint provides obligation dates for their UK property, including grace periods and whether obligations have been met or not 
 
-Note: the obligations for property obligations cover both FHL and Non FHL
+Note: the obligations for property obligations cover both FHL and non-FHL.
 
 ## Submit Periodic updates for Self Employment and property businesses
 
@@ -47,7 +47,7 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 
 Note: 
 
-*	This does not need to be provided in one go, Customers can submit data as frequently as they like (i.e monthly) 
+*	This does not need to be provided in one go, customers can submit data as frequently as they like (i.e monthly) 
 *	This does not mean the customer has to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
 
 *	In some cases, the obligation can take up to an hour to be confirmed as met. 
@@ -66,16 +66,15 @@ The Calculation ID response includes:
 liability)
 * a breakdown of how the estimated liability has been reached - at a minimum it will be the equivalent to an SA302
 * a forecast figure of what the customer’s liability is likely to be at the end of the year based on the information provided to date. Customers will not be able to change this forecast figure as it is for information only.
-Software can then call the relevant Get obligations APIs to establish whether or not the customer’s obligation has been met.
-Note: In some cases, the obligation can take up to an hour to be confirmed as met.
+Software can then call the relevant Get obligations APIs to establish whether or not the customer’s obligation has been met. Note: In some cases, the obligation can take up to an hour to be confirmed as met.
 This met obligation must be presented clearly to the customer in software. They will also check this information in their Business Tax Account. The customer will not receive any communication from HMRC to confirm that the obligation has been met. 
 When a customer wants to send an update for a self-employment or property business, the software will need to provide summary totals for any income or expenses by category (mandatory quarterly) and allowances and adjustments (mandatory annual).
 
 Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
 
-*	create a self-employment update period - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
-*	create a Furnished Holiday Lettings (FHL) property period - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
-*	create a non FHL property update period- this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income A customer can provide the information as frequently as they need, however there are a couple of validation rules that apply.
+*	[create a self-employment update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
+*	[create a Furnished Holiday Lettings (FHL) property period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-fhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
+*	[create a non FHL property update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-nonfhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income A customer can provide the information as frequently as they need, however there are a couple of validation rules that apply.
 
 Each update period cannot overlap the previous one, for example:
 
@@ -110,7 +109,7 @@ This step will be withdrawn on XX MONTH XXXX
 
 * Software should use that Calculation ID to call the individual calculation endpoint a tax calculation API endpoint to get the result of the calculation.
 
-[NEED INFO ABOUT HOW TAX CACL WILL WORK HERE]
+[NEED INFO ABOUT HOW TAX CALC WILL WORK HERE]
 
 The [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) allows software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer
 
@@ -139,17 +138,15 @@ For a crystallisation calculation the minimum number of endpoints that need to b
 
 A crystallisation Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
 
-The existing paper based SA302 form fields span the following endpoints in the new Individual Calculations API:
+The existing paper based SA302 form fields span the following endpoints in the new [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion):
 
-*	retrieve self assessment tax calculation taxable income
-*	retrieve self assessment tax calculation Income Tax NICs calculated
-*	retrieve self assessment tax calculation allowances, deductions and reliefs
+*	[retrieve self-assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
+*	[retrieve self-assessment tax calculation Income Tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
+*	[retrieve self-assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion)
 
 If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint.
 
 Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
-
-
 
 ### Retrieve a tax calculation
 
@@ -264,20 +261,26 @@ Annual information can be provided throughout the year but there is only one per
 
 If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software recalculate the summary totals and submit to HMRC using the  following endpoints:
 
-* for quarterly updates - Amend a self-employment periodic update or Amend a (FHL or Non FHL) property periodic update
-* for Annual updates - use the same endpoints: Amend a self-employment annual summary or Amend an (FHL or Non FHL) property business annual summary
+* for quarterly updates - [amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion) or amend a (FHL or Non FHL) property periodic update
+* for annual updates - use the same endpoints: amend a self-employment annual summary or amend an (FHL or Non FHL) property business annual summary
+
 For all quarterly updates including self-employment, FHL property business and non-FHL property business:
+
 * software will have to resubmit the new summary totals for the specific update period, the dates of the update period have to match exactly
-* 	when a business resubmits an update period, the software will have to use the trigger calculation endpoint and follow the same process as the submitting an update period process 
+* 	when a business resubmits an update period, the software will have to use the [trigger calculation endpoint](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) and follow the same process as the submitting an update period process 
 * 	software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
 * 	where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information
 * the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
 
+<a href="figures/periodic-diagram.svg" target="blank"><img src="figures/periodic-diagram.svg" alt="periodics diagram" style="width:520px;" /></a>
+
+<a href="figures/periodic-diagram.svg" target="blank">Open the periodic diagram in a new tab</a>.
+
 Note: 
 
-* any changes that are made before the customer has crystallised is not a formal amendment For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
+* any changes that are made before the customer has crystallised is not a formal amendment. For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business.
 
 ### Key points for changing previously submitted updates
 
-*	changes to Periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
-*	changes to Annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information.
+*	changes to periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
+*	changes to annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information
