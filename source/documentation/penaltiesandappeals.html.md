@@ -1,6 +1,6 @@
 ---
 title: Penalties and Appeals | VAT (MTD) End-to-End Service Guide
-weight: 7
+weight: 6
 ---
 
 <!--- Section owner: MTD Programme --->
