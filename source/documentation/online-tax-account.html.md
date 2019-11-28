@@ -18,7 +18,7 @@ Business users will then be able to do that by visiting their Business Tax Accou
 
 Businesses will be able to update a range of information, including addresses, telephone numbers, e-mail and business type.
 
-### Agent able to notify their own change of circumstances
+## Agent able to notify their own change of circumstances
 
 This will initially be the usual process, which can be used to remove the agent reference number and Government Gateway (GGW) enrolment (HMRC-AS-AGENTS).
 The scenario is needed where an agency firm ceases trading.
