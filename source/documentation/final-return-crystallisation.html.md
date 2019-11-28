@@ -83,7 +83,7 @@ The software must us the intent to crystallise calculationId to retrieve the fin
 
 <a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:520px;" /></a>
 
-<a href="crystallisation-diagram.svg" target="blank">Open the crystallisation process in a new tab</a>.
+<a href="figures/crystallisation-diagram.svg" target="blank">Open the crystallisation process in a new tab</a>.
 
 
 If the customer thinks the calculation is incorrect as a result of data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. Once they have done this the software will have to call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint again to generate a new final liability.
