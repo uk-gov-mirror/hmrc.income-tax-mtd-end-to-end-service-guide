@@ -103,42 +103,6 @@ If you give false information you may have to pay financial penalties and face p
 
 Software must send the calculationId that matches the calculation the customer is declaring against with the declaration.
 
-
-## View previously submitted updates
-
-A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes. If the customer has recently started using your software, you may need to retrieve previous data.
-
-### Periodic updates
-
-Software can use the list all self employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a selfemployment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
-
-### Annual updates
-
-Annual information can be provided throughout the year but there is only one period a year for the annual summary. Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
- 
-## Make changes to previously submitted data
-
-If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software recalculate the summary totals and submit to HMRC using the  following endpoints:
-
-* for quarterly updates - Amend a self-employment periodic update or Amend a (FHL or Non FHL) property periodic update
-* for Annual updates - use the same endpoints: Amend a self-employment annual summary or Amend an (FHL or Non FHL) property business annual summary
-For all quarterly updates including self-employment, FHL property business and non-FHL property business:
-* software will have to resubmit the new summary totals for the specific update period, the dates of the update period have to match exactly
-* when a business resubmits an update period, the software will have to use the trigger calculation endpoint and follow the same process as the submitting an update period process 
-* software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
-* where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information
-* the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
-
-Note: 
-
-* any changes that are made before the customer has crystallised is not a formal amendment For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business:
-
-### Key points for changing previously submitted updates
-
-*	changes to Periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
-*	changes to Annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information.
-
-
 ## Make an amendment after crystallisation
 
 If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later).
@@ -182,38 +146,7 @@ Vendors in their messaging should ask customers to visit that link.  
 Customers will be able to view payments made to HMRC in software. 
 Details will be updated here once they are available.
 
-## Make a change of circumstances
 
-Functionality within the Business Tax Account will allow businesses to update their ‘change of circumstances’, until then they should call the HMRC helpline about a change of circumstances.
-When the online functionality is delivered, vendors should present messages to business users regularly to remind them to check and update their details with HMRC.
-Business users will then be able to do that by visiting their Business Tax Account at:
 
-[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
 
-Businesses will be able to update a range of information, including addresses, telephone numbers, e-mail and business type.
 
-### Agent able to notify their own change of circumstances
-
-This will initially be the usual process, which can be used to remove the agent reference number and Government Gateway (GGW) enrolment (HMRC-AS-AGENTS).
-The scenario is needed where an agency firm ceases trading.
-If an agent no longer wants to participate in MTD they can stop using their GGW ID.
-An online interface is being developed as part of the wider change of circumstances solution.
-
-## View Future obligations or previous returns in BTA
-
-Some customers may wish to view information regarding their income tax for assurance purposes, this may also include any previous updates that have been submitted.
-
-Vendors should make available within software products as many suitable features as possible to meet user needs.
-
-Vendors can direct users to visit their [Business Tax Account](https://www.access.service.gov.uk/login/signin/creds) to view certain information.
-
-A customer who has signed up for MTD and agreed to report using software, can choose to sign into their Business Tax Account and view information such as obligation periods, year-to-date and income tax calculations.
-User research will continue, and further iterations will be made which will enhance the functionality of the Business Tax Account and help to improve user experience.
-
-Future features will also enable customers to have a statement view, make a change of to their business information, along with links to make a card payments.
-
-The Business Tax Account displays the following information:
-
-* reporting obligations, and their status, per income source
-* tax estimates
-* year-to-date income tax calculation
