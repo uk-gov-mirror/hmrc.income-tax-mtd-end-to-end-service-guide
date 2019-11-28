@@ -40,9 +40,9 @@ Open the individual set up process diagram in a new tab.
 
 Individuals and agents can learn about Making Tax Digital for Income Tax by reading guidance on GOV.UK. In particular:
 
-●	Link 1
-●	Link 2
-●	Link 3
+* Link 1
+* Link 2
+* Link 3
 
 We encourage you to include links to the relevant guidance in your software.
 
@@ -81,8 +81,10 @@ https://www.gov.uk/guidance/authorise-new-clients-for-your-agent-services-accoun
 
 Since April 2019, most VAT registered businesses, and agents acting on their behalf, have been required to keep digital records using HMRC compatible software. This is known as Making Tax Digital for VAT (MTD).
 When the taxable turnover goes above the VAT threshold, the business must sign up to MTD and use their software to:
-●	keep their VAT records
-●	send their VAT Returns direct to HMRC
+
+* keep their VAT records
+* send their VAT Returns direct to HMRC
+
 Most modern accounting software can do this already but the business should check if theirs is compatible.
 
 ### For agents
@@ -101,11 +103,12 @@ After signing up, the business will receive details of when they should submit t
 
 Agents must already be subscribed to HMRC agent services to access the new VAT registration service on behalf of their clients.
 
-Agent signs up clients for Making Tax Digital for Income Tax
+## Agent signs up clients for Making Tax Digital for Income Tax
+
 Before signing up clients to Making Tax Digital for Income Tax, agents must first create a relationship by copying clients across to their agent services account.
 Once an agent has copied all clients across to their agent services account, they can sign them up.
 
-The process for agents signing up their clients
+## The process for agents signing up their clients
 
 1. Sign into HMRC online services using their agent services account.
 2. Provide client details including National Insurance number and postcode.
@@ -137,7 +140,7 @@ There’s an easy to follow step by step guide for agents on GOV.UK at Making Ta
 Individual owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
 They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
 
-The process for individuals signing up
+## The process for individuals signing up
 
 1. Sign into HMRC online services using Government Gateway user ID and password.
 2. Provide or confirm the VAT registration number.
@@ -147,23 +150,9 @@ The process for individuals signing up
 6. Wait up to 3 days to see if the sign up has been approved.
 7. Receive confirmation that the business can now start submitting VAT Returns using compatible accounting software.
 
-## Create an agent service account
-
-this can link to agent team guidance
- 
-## Link existing clients  
-
-this may be wrapped up in the one above
-
-## Link new clients 
-
-– this may be wrapped up in the one above
-
 ## Register for ITSA 
 
-we should link of to the existing process for this
-
-## Agent signs up client for MTD ITSA
+LINK TO EXISTING PROCESS FOR THIS
 
 ## Business signs up for MTD ITSA
 
