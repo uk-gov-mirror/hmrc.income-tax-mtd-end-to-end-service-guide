@@ -50,33 +50,6 @@ GOV.UK at https://www.gov.uk/guidance/link-clients-to-your-agent-services-accoun
 
 We encourage you to include these links in your software.
 
-## Ask a new Self Assessment client for authorisation
-
-After an agent creates an agent services account, they must 	ask any new clients to authorise them one by one. A new client must be signed up to Making Tax Digital for Income Tax before they can authorise an agent.
-
-[Process diagram]
-
-Open the ask a new Self Assessment client for authorisation process diagram in a new tab.
-
-Details about the process of asking a new Self Assessment client for authorisation are available on GOV.UK at 
-https://www.gov.uk/guidance/authorise-new-clients-for-your-agent-services-account. We encourage you to include this link in your software.
-
-## Register for Self Assessment
-
-### For businesses
-
-Since April 2019, most VAT registered businesses, and agents acting on their behalf, have been required to keep digital records using HMRC compatible software. This is known as Making Tax Digital for VAT (MTD).
-When the taxable turnover goes above the VAT threshold, the business must sign up to MTD and use their software to:
-
-* keep their VAT records
-* send their VAT Returns direct to HMRC
-
-Most modern accounting software can do this already but the business should check if theirs is compatible.
-
-### For agents
-
-Accountants and tax advisers need an agent services account to sign up their clients to Making Tax Digital for Income Tax. They’ll need to sign clients up individually as it’s currently not possible to sign all their clients up at the same time.
-
 ## Agent signs up clients for Making Tax Digital for Income Tax
 
 Before signing up clients to Making Tax Digital for Income Tax, agents must first create a relationship by copying clients across to their agent services account.
@@ -97,12 +70,12 @@ The agent can now use software to submit Income Tax updates for their client.
 
 Agents can complete the sign-up process without having to wait for their clients to verify their own email address.
 
-## Individual signs up for Making Tax Digital for Income Tax
+## Business signs up for Making Tax Digital for Income Tax
 
-Individual owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
+Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
 They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
 
-## The process for individuals signing up
+## The process for Businesses signing up
 
 1. Sign into HMRC online services using Government Gateway user ID and password.
 2. Provide or confirm the VAT registration number.
