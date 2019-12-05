@@ -22,20 +22,6 @@ Open the agent set up process diagram in a new tab.
 6. Agent chooses software.
 7. Agent links software to HMRC.
 
-## Individual journey overview
-
-Before individuals can use software to submit Income Tax updates, they must sign up for Making Tax Digital for Income Tax and set up their software.
-
-[Process diagram]
-
-Open the individual set up process diagram in a new tab.
-
-1. Individual reads guidance.
-2. Individual registers for Self Assessment.
-3. Individual signs up for Making Tax Digital for Income Tax.
-4. Individual chooses software.
-5. Individual links software to HMRC.
-
 ## Read guidance
 
 Individuals and agents can learn about Making Tax Digital for Income Tax by reading guidance on GOV.UK. In particular:
@@ -91,18 +77,6 @@ Most modern accounting software can do this already but the business should chec
 
 Accountants and tax advisers need an agent services account to sign up their clients to Making Tax Digital for Income Tax. They’ll need to sign clients up individually as it’s currently not possible to sign all their clients up at the same time.
 
-## Future developments
-
-In the future, new businesses will be able to register for VAT and sign up to Making Tax Digital at the same time.
-Until then, businesses should:
-
-* register for VAT using the current VAT registration service
-* complete the sign-up process and provide information about the business and the person running it
-
-After signing up, the business will receive details of when they should submit their VAT Return. These details can also be found in their HMRC services account.
-
-Agents must already be subscribed to HMRC agent services to access the new VAT registration service on behalf of their clients.
-
 ## Agent signs up clients for Making Tax Digital for Income Tax
 
 Before signing up clients to Making Tax Digital for Income Tax, agents must first create a relationship by copying clients across to their agent services account.
@@ -123,18 +97,6 @@ The agent can now use software to submit Income Tax updates for their client.
 
 Agents can complete the sign-up process without having to wait for their clients to verify their own email address.
 
-## Future developments
-
-In the future, agents will be able to do the following in one single process:
-
-* create a new company
-* register the new company for VAT
-* get the new company’s VAT registration number
-* sign up the new company for Making Tax Digital for VAT
-* use software to file and send client VAT Returns to HMRC
-
-There’s an easy to follow step by step guide for agents on GOV.UK at Making Tax Digital for VAT as an agent
-
 ## Individual signs up for Making Tax Digital for Income Tax
 
 Individual owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
@@ -149,23 +111,6 @@ They need to sign up before first use, even if they have already signed up for M
 5. Confirm and submit information.
 6. Wait up to 3 days to see if the sign up has been approved.
 7. Receive confirmation that the business can now start submitting VAT Returns using compatible accounting software.
-
-## Register for ITSA 
-
-LINK TO EXISTING PROCESS FOR THIS
-
-## Business signs up for MTD ITSA
-
-## Choose Software
-
-HMRC publishes a [list of compatible software](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) for Making Tax Digital on GOV.UK.
-
-A business or agent will need to complete the authentication process with HMRC within their chosen software to obtain their obligation dates from HMRC via an API call.
-
-They will be able to enter transactional level information into their record-keeping software for anything relating to business income as a minimum. Software can also provide users with the ability to provide information for non-business income (personal income). HMRC only require that each package made available to customers complies with the [Terms of use.](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use)  Vendors and developers will also need to agree to the [Terms of use.](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use) These have to be accepted before production credentials are issued.
-
-[Guidance listing software](https://www.gov.uk/guidance/software-for-sending-income-tax-updates) that is compatible with Making Tax Digital for Income Tax is available.
-
 
 ## Link software to HMRC
 
