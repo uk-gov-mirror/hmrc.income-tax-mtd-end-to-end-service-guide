@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 3.0 issued XX November 2019
+Version 1.0 issued XX December 2019
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -52,7 +52,7 @@ HMRC expects demand for products that serve all of the requirements of MTD, incl
 
 HMRC has committed to the [availability of free software](https://www.gov.uk/government/publications/making-tax-digital-software-suppliers-terms-of-collaboration/terms-of-collaboration-between-hm-revenue-and-customs-and-software-developers#Annex-C) for the simplest businesses.
 
-## End-to-end journey
+## End-to-end user journey
 
 ADD LINKS TO CONTENT WHEN AVAILABLE
 
