@@ -22,34 +22,6 @@ Open the agent set up process diagram in a new tab.
 6. Agent chooses software.
 7. Agent links software to HMRC.
 
-## Read guidance
-
-Individuals and agents can learn about Making Tax Digital for Income Tax by reading guidance on GOV.UK. In particular:
-
-* Link 1
-* Link 2
-* Link 3
-
-We encourage you to include links to the relevant guidance in your software.
-
-Create an agent services account and copy across existing Self Assessment clients
-To access Making Tax Digital for Income Tax, an agent must create an agent services account. This is a one-off process. 
-
-When an agent creates their account, they can copy across any existing Self Assessment clients associated with each Government Gateway user ID they use.
-
-An agent can also do this after creating their account, until they copied across all their existing Self Assessment clients.
-
-[Process diagram]
-
-Open the create an agent services account and copy across existing Self Assessment clients process diagram in a new tab.
-
-Details about the process of creating an agent services account is available on GOV.UK at www.gov.uk/guidance/get-an-hmrc-agent-services-account.
-
-Details about the process of copying existing Self Assessment clients across to an agent services account is available on 
-GOV.UK at https://www.gov.uk/guidance/link-clients-to-your-agent-services-account. 
-
-We encourage you to include these links in your software.
-
 ## Agent signs up clients for Making Tax Digital for Income Tax
 
 Before signing up clients to Making Tax Digital for Income Tax, agents must first create a relationship by copying clients across to their agent services account.
@@ -75,7 +47,7 @@ Agents can complete the sign-up process without having to wait for their clients
 Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
 They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
 
-## The process for Businesses signing up
+## The process for businesses signing up
 
 1. Sign into HMRC online services using Government Gateway user ID and password.
 2. Provide or confirm the VAT registration number.
