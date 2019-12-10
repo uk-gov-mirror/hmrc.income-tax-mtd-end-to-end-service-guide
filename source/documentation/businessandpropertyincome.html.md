@@ -44,6 +44,10 @@ Once all the information has been submitted to HMRC for that period, the softwar
 
 The triggering of the tax calculation will mark the obligation as fulfilled, if we have data covering the whole period. 
 
+<a href="figures/submit-periodics.svg" target="blank"><img src="figures/submit-periodics.svg" alt="submit periodics diagram" style="width:720px;" /></a>
+
+<a href="figures/submit-periodics.svg" target="blank">Open the submit periodics diagram in a new tab</a>.
+
 Note: 
 
 *	This does not need to be provided in one go, customers can submit data as frequently as they like (i.e monthly) 
