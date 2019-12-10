@@ -10,7 +10,6 @@ description: Software developers, designers, product owners or business analysts
 
 The steps in this section (up to end of period statement) will be the element that will be mandated for digital record keeping and submission through software under MTD.
 
-
 ## Receive obligations
 
 Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer provided at sign up and to find out the customer’s update obligation dates. The software must make customers aware of their obligations.
@@ -197,86 +196,3 @@ Software can use the list all self employment or property update periods endpoin
 ### Annual updates
 
 Annual information can be provided throughout the year but there is only one period a year for the annual summary. Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
-
-### Individual Calculation API
-
-* Software should use that Calculation ID to call the individual calculation endpoint a tax calculation API endpoint to get the result of the calculation.
-
-[NEED INFO ABOUT HOW TAX CALC WILL WORK HERE]
-
-The [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) allows software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer
-
-* [list self-assessment tax calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_list-self-assessment-tax-calculations-test-only_get_accordion) for a given National Insurance number (NINO) and tax year
-*	trigger a self-assessment tax calculation for a given tax year. This will replace the trigger tax calculation element of the process listed in the periodic updates section. The result of the calculation can be explored through the [Retrieve a self-assessment tax calculation metadata endpoint](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
-*	[retrieve high-level calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) for a given CalculationID 
-*	[retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a given NINO and Calculation ID
-*	[retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
-*	[retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID
-*	[retrieve the end-of-year Income Tax and National Insurance contribution estimates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate-test-only_get_accordion) for a given NINO and Calculation ID
-*	[retrieve “info”, “warning” and “error” level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID
-
-A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
-
-It is possible to return both in-year and crystallisation calculations using these endpoints.
-
-An in-year calculation is worked out if the calculation was triggered by the [Trigger a self-assessment tax calculation endpoint](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion). A crystallisation calculation is performed if the calculation was triggered by the intent to crystallise endpoint under the Self Assessment (MTD) API.
-
-For a crystallisation calculation the minimum number of endpoints that need to be called are:
-
-*	[retrieve self assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
-*	[retrieve self assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
-*	[retrieve self assessment tax calculation income tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
-*	[retrieve self assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) (if applicable)
-*	[retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) (if applicable)
-
-A crystallisation Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
-
-The existing paper based SA302 form fields span the following endpoints in the new [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion):
-
-*	[retrieve self-assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
-*	[retrieve self-assessment tax calculation Income Tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
-*	[retrieve self-assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion)
-
-If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint.
-
-Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
-
-### Retrieve a tax calculation
-
-The [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) allows software to:
-
-* [list self-assessment tax calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_list-self-assessment-tax-calculations-test-only_get_accordion) for a given National Insurance number (NINO) and tax year
-* trigger a [self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) for a given tax year. The result of the calculation can be explored through the [Retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) endpoint
-* [retrieve high-level calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) for a given Calculation ID
-* [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a given NINO and Calculation ID
-* [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
-* [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID
-* [retrieve the end-of-year Income Tax and National Insurance contribution](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate-test-only_get_accordion) estimates for a given NINO and Calculation ID
-* [retrieve “info”, “warning” and “error” level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID
-
-A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
-
-It is possible to return both in-year and crystallisation calculations using these endpoints. 
-
-An in-year calculation is worked out if the calculation was triggered by the [Trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint. A crystallisation calculation is performed if the calculation was triggered by the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint under the Self Assessment (MTD) API. 
-
-For a crystallisation calculation the minimum number of endpoints that need to be called are: 
-
-* [retrieve self assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
-* [retrieve self assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
-* [retrieve self assessment tax calculation income tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
-* [retrieve self assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) (if applicable)
-* [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) (if applicable)
-
-A Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
-
-The existing paper based SA302 form fields span the following endpoints in the new Individual Calculations API:
-
-* retrieve self assessment tax calculation taxable income
-* retrieve self assessment tax calculation Income Tax NICs calculated
-* retrieve self assessment tax calculation allowances, deductions and reliefs
-
-If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint. 
-
-Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
-
