@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Business and property income
 
-The steps in this section (up to end of period statement) will be the element that will be mandated under MTD 
+The steps in this section (up to end of period statement) will be the element that will be mandated for digital record keeping and submission through software under MTD.
 
 
 ## Receive obligations
@@ -29,19 +29,19 @@ Note: the obligations for property obligations cover both FHL and non-FHL.
 
 Businesses, and agents who represent them, will be required to provide summary level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often if they choose.
 
-The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. Software should communicate these deadlines clearly to the customer. Submissions of summary level information cannot span an obligation period, if it does software will need to send 2 updates that fall into different obligations.  
+The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. Software should communicate these deadlines clearly to the customer and prompt them to submit information when the update is due. Submissions of summary level information cannot span an obligation period, if it does software will need to send 2 updates that fall into different obligations.
 
 The software package will need to convert the transactional information into summary totals for each category, for example expenses by category.
 
 HMRC has provided APIs to enable software to be able to send the summary information to HMRC for each income source and allow HMRC to provide a calculation based on all the information we have received to date.
 
-When the update is received, HMRC checks if the customer is signed up to MTD and if the submission is coming from an agent,  if that agent is subscribed to agent services and authorised to act on behalf of the client. if not an error is returned. 
+When the update is received, HMRC checks if the customer is signed up to MTD and if the submission is coming from an agent,  if that agent is subscribed to agent services and authorised to act on behalf of the client. If not an error is returned. 
 
-If the agent is subscribed, HMRC checks if the agent is authorised to act on behalf of that customer.
+Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
-Once all the information has been submitted to HMRC for that period, the software must use the [trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID (calculationId).
+Once all the information has been submitted to HMRC for that period, the software must use the [Trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID (calculationId).
 
 The triggering of the tax calculation will mark the obligation as fulfilled, if we have data covering the whole period. 
 
@@ -52,9 +52,8 @@ Note:
 
 *	In some cases, the obligation can take up to an hour to be confirmed as met. 
 *	This met obligation must be presented clearly to the customer in software. 
-*	Customers can  also check this information in their Business Tax Account. 
-*	The customer will not receive any communication from HMRC to confirm that the obligation has been met. 
-*	For property businesses, an update for either FHL or Non FHL for the full quarter will mark the obligation as fulfilled, even if they have both income types. 
+*	Businesses can  also check this information in their Business Tax Account. 
+*	The customer will not receive any communication from HMRC to confirm that the obligation has been met.  Software should provide this confirmation to the customer. For property businesses, an update for either FHL or Non FHL for the full quarter will mark the obligation as fulfilled, even if they have both income types. 
 
 Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
 
