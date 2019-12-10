@@ -138,6 +138,9 @@ The process will take into account all the periodic and annual data already prov
 
 The customer must make sure they are happy with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
 
+<a href="figures/eops.svg" target="blank"><img src="figures/eops.svg" alt="end of period statement diagram" style="width:720px;" /></a>
+<a href="figures/eops.svg" target="blank">Open the EOPS diagram in a new tab</a>.
+
 Note: 
 
 *	Data received must cover the whole accounting period.
