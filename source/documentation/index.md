@@ -17,19 +17,23 @@ Product owners, developers and business analysts can also use this guide to lear
 ## Overview
 
 Making Tax Digital (MTD) for Income Tax is a service that will improve Self Assessment for the 7 million businesses that currently submit a tax return.
- 
-Like MTD for VAT, MTD for Income Tax requires businesses and landlords to keep their records digitally and submit information about business income to HMRC using MTD-compatible software. Instead of an annual tax return, businesses and landlords will be required to send HMRC a quarterly summary update of their business income and expenditure with a finalisation process at the end of the year. They will receive a view of their emerging tax position based on the information provided, helping them budget for their tax better throughout the year. There are no changes to payment dates.
- 
+
+Like MTD for VAT, MTD for Income Tax requires businesses and landlords to keep their records digitally and submit information about business income to HMRC using MTD-compatible software. 
+
+The other major change is that businesses and landlords will no longer send an annual tax return. Instead, they will be required to send HMRC quarterly summary updates of their business income and expenditure, and complete a process to finalise their overall tax position at the end of the year. They will receive a view of their emerging tax position based on the information provided, helping them budget for their tax better throughout the year. There are no changes to payment dates.
+
 Customers will be mandated to provide the following information through software:
 
 * income and expenses for each self-employment and property businesses at least every 3 months
 * allowances and adjustments for each self-employment and property business at least once a year, at the end of the accounting period
-* finalisation of income sources with an End of Period Statement (EoPS)
+* finalisation of business income sources with an End of Period Statement (EPS)
 
-In the future, partnerships will be required to provide the information mentioned above for the partnership. Individual partners will not be mandated to report the income as part of MTD but as part of their final tax return.
- 
-HMRC are also providing the APIs for software to support a customer’s full self-assessment journey, including providing personal data and the final tax return. Although these elements will not be mandated through software, there will be demand for software that enables all users to finalise the entirety of their tax affairs.
- 
+HMRC expects all software providers to also offer customers the ability to finalise their overall tax position using software (“crystallisation”). 
+
+In the future, partnerships will be required to provide the information mentioned above for the partnership. Individual partners will not be mandated to report their partner  income  quarterly.
+
+HMRC are also providing the APIs for software to support all of the personal data items that need to be submitted under Self Assessment. Although these elements will not be mandated through software, there will be demand for software that enables any user to finalise the entirety of their tax affairs.
+
 By developing a product now, you will support mandation of the service, influence its design and ensure you have a product ready for the millions of business and agents that will need MTD compatible software.
 
 ## Software vendor overview
