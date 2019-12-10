@@ -28,9 +28,9 @@ Customers will be mandated to provide the following information through software
 * allowances and adjustments for each self-employment and property business at least once a year, at the end of the accounting period
 * finalisation of business income sources with an End of Period Statement (EPS)
 
-HMRC expects all software providers to also offer customers the ability to finalise their overall tax position using software (“crystallisation”). 
+HMRC expects all software providers to also offer customers the ability to finalise their overall tax  position using software. This process is sometimes called crystallisation.
 
-In the future, partnerships will be required to provide the information mentioned above for the partnership. Individual partners will not be mandated to report their partner  income  quarterly.
+In the future, partnerships will be required to provide the information mentioned above for the partnership. Individual partners will not be mandated to report their partner income quarterly.
 
 HMRC are also providing the APIs for software to support all of the personal data items that need to be submitted under Self Assessment. Although these elements will not be mandated through software, there will be demand for software that enables any user to finalise the entirety of their tax affairs.
 
@@ -50,11 +50,11 @@ HMRC publishes a [list of compatible software](https://www.gov.uk/government/pub
 
 From our experience with MTD VAT, businesses, agents, and third parties will use this as the definitive list of MTD compatible software. All software listed on the page must allow the user to submit a summary of business or property information up to and including the End of Period Statement. 
 
-The current list will be further developed time in line with user needs, including filters that help users to find appropriate software. 
+The current page will be developed over time to meet user needs, including filters that help users to find software. 
 
 HMRC expects demand for products that serve all of the requirements of MTD, including keeping the required digital records for business or property income and the ability to submit all relevant non-business information to HMRC. 
 
-HMRC has committed to the [availability of free software](https://www.gov.uk/government/publications/making-tax-digital-software-suppliers-terms-of-collaboration/terms-of-collaboration-between-hm-revenue-and-customs-and-software-developers#Annex-C) for the simplest businesses.
+HMRC has committed to the [availability of free software](https://www.gov.uk/government/publications/making-tax-digital-software-suppliers-terms-of-collaboration/terms-of-collaboration-between-hm-revenue-and-customs-and-software-developers#Annex-C) for small businesses.
 
 ## End-to-end user journey
 
