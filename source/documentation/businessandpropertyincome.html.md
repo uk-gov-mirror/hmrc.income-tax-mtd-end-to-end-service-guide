@@ -57,20 +57,6 @@ Note:
 
 Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
 
-*	create a self-employment update period - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
-
-The Calculation ID response includes:
-
-* a ‘year to date’ estimated liability (which will total all period calculations to give an up to date view of the estimated
-liability)
-* a breakdown of how the estimated liability has been reached - at a minimum it will be the equivalent to an SA302
-* a forecast figure of what the customer’s liability is likely to be at the end of the year based on the information provided to date. Customers will not be able to change this forecast figure as it is for information only.
-Software can then call the relevant Get obligations APIs to establish whether or not the customer’s obligation has been met. Note: In some cases, the obligation can take up to an hour to be confirmed as met.
-This met obligation must be presented clearly to the customer in software. They will also check this information in their Business Tax Account. The customer will not receive any communication from HMRC to confirm that the obligation has been met. 
-When a customer wants to send an update for a self-employment or property business, the software will need to provide summary totals for any income or expenses by category (mandatory quarterly) and allowances and adjustments (mandatory annual).
-
-Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
-
 *	[create a self-employment update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
 *	[create a Furnished Holiday Lettings (FHL) property period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-fhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
 *	[create a non FHL property update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-nonfhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income A customer can provide the information as frequently as they need, however there are a couple of validation rules that apply.
@@ -91,18 +77,129 @@ Annual updates are mandatory annually but we have provided the functionality for
 
 ## Retrieve a tax calculation 
 
-Software will need to use that Calculation ID when calling the retrieve a tax calculation endpoint to get the calculation result. 
-The Calculation ID response includes:
+Software will need to use that Calculation ID when calling each endpoint within the [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0).
 
-*	a ‘year to date’ estimated liability (which will total all period calculations to give an up to date view of the estimated liability)
-*	a breakdown of how the estimated liability has been reached - at a minimum it will be the equivalent to an SA302
-*	a forecast figure of what the customer’s liability is likely to be at the end of the year based on the information provided to date. Customers will not be able to change this forecast figure as it is for information only. 
-*	Software can then call the relevant Get obligations APIs to establish whether or not the customer’s obligation has been met. 
+A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
+
+The [Individual calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) allows software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer:
+
+•	[list self-assessment tax calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_list-self-assessment-tax-calculations-test-only_get_accordion) for a given National Insurance number (NINO) and tax year
+•	trigger a self-assessment tax calculation for a given tax year. This will replace the trigger tax calculation element of the process listed in the periodic updates section. The result of the calculation can be explored through the [Retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) endpoint
+•	[retrieve high-level calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) for a given CalculationID
+•	[retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a given NINO and Calculation ID
+•	[retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID
+•	[retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID
+•	[retrieve the end-of-year Income Tax and National Insurance contribution estimates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate-test-only_get_accordion) for a given NINO and Calculation ID
+•	[retrieve “info”, “warning” and “error” level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID
 
 Note: 
 
-This step in the process is being replaced by a new Individual Calculation API – this new API will be going live in December 
-This step will be withdrawn on XX MONTH XXXX
+•	It can around 5 seconds for the Tax Calculation response to be ready to retrieve, please wait at least 5 seconds before retrieving the calculation or you may get an error
+•	The self-assessment tax calculation endpoints under the Individual Calculations API will replace the tax calculation endpoints under the existing Self Assessment API. 
+
+INSERT HYPERLINK
+
+•	The endpoints under the existing Self Assessment API will be supported until 30th June 2020, after that only the Individuals Calculation will be supported 
+•	It is possible to return both in-year and crystallisation calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [Trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint.
+
+## Make changes to previously submitted data
+
+If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software recalculate the summary totals and submit to HMRC using the following endpoints:
+
+* for quarterly updates - [amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion) or amend a (FHL or Non FHL) property periodic update
+* 	for annual updates - use the same endpoints: amend a self-employment annual summary or amend an (FHL or Non FHL) property business annual summary
+For all quarterly updates including self-employment, FHL property business and non-FHL property business:
+* software will have to recreate the update period including the new summary totals and resubmit the  specific update period, the dates of the update period have to match exactly or it will be rejected
+* when a business resubmits an update period, the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process as the submitting an update period process
+* 	software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
+* where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information
+* the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
+
+<a href="figures/periodic-diagram.svg" target="blank"><img src="figures/periodic-diagram.svg" alt="periodics diagram" style="width:720px;" /></a>
+
+<a href="figures/periodic-diagram.svg" target="blank">Open the periodic diagram in a new tab</a>.
+
+Note: 
+
+* any changes that are made before the customer has crystallised is not a formal amendment. For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business.
+
+### Key points for changing previously submitted updates
+
+*	changes to periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
+*	changes to annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information
+
+## Finalise business income end of period statement (EOPS)
+
+### Business or Agent able to submit End of Period Statement through software
+
+This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS (End of Period Statement) must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+
+EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31st January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However the deadline to complete is  31 January, Year 2. 
+
+The process will take into account all the periodic and annual data already provided by the customer throughout the year.
+
+The customer must make sure they are happy with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
+
+Note: 
+
+*	Data received must cover the whole accounting period.
+* We will be providing an API for customers to provide annual adjustments. 
+
+Software should present to the customer the information listed below. This can  be totalled up by software, or we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for self-employment or property:
+
+* Total Business Income
+* Total Expenses
+* Business Net Profit
+* Business Net Loss
+* Total Additions to net profit or deductions to net loss
+* Total Deductions to net profit or additions to net loss
+* Accounting Adjustments
+* Taxable Profit
+* Taxable Loss
+
+This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration. 
+
+You could use the Business Income Source Summary APIs or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
+
+Note: The Declaration is the only mandatory API for this process, the exact text HMRC requires you to present is below
+
+ > **Declaration for Self Employment EOPS**
+
+ > “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. 
+
+ >I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+
+ > **Declaration for Property EOPS**
+
+ > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data, including details of the properties for that period and that it is correct and complete to the best of my knowledge. 
+
+ > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+
+Making changes to previously submitted data during and after an End of Period Statement declaration
+
+* if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
+
+* if there are no error failures it is recommend that customers review any warning messages they have at this point or earlier as warnings will cause a failure at crystallisation.
+
+* if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation.
+
+Note: making changes to data for previously submitted periods is covered in Make changes [INSERT HYPERLINK] to previously submitted data section 
+
+## View previously submitted updates
+
+A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes. If the customer has recently started using your software, you may need to retrieve previous data.
+
+### Periodic updates
+
+Software can use the list all self employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a selfemployment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
+
+### Annual updates
+
+Annual information can be provided throughout the year but there is only one period a year for the annual summary. Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
+
+
+
+
 
 ### Individual Calculation API
 
@@ -186,100 +283,3 @@ If calculation errors are present, these errors can be returned to the customer 
 
 Note: The self-assessment tax calculation endpoints under the Individual Calculations API will eventually replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
 
-
-## Finalise business income end of period statement (EOPS)
-
-### Business or Agent able to submit End of Period Statement through software
-
-This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS (End of Period Statement) must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
-
-EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31st January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However the deadline to complete is  31 January, Year 2. 
-
-The process will take into account all the periodic and annual data already provided by the customer throughout the year.
-
-The customer must make sure they are happy with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
-
-Note: 
-
-*	Data received must cover the whole accounting period.
-* We will be providing an API for customers to provide annual adjustments. 
-
-Software should present to the customer the information listed below. This can  be totalled up by software, or we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for self-employment or property:
-
-* Total Business Income
-* Total Expenses
-* Business Net Profit
-* Business Net Loss
-* Total Additions to net profit or deductions to net loss
-* Total Deductions to net profit or additions to net loss
-* Accounting Adjustments
-* Taxable Profit
-* Taxable Loss
-
-This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration. 
-
-You could use the Business Income Source Summary APIs or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
-
-Note: The Declaration is the only mandatory API for this process, the exact text HMRC requires you to present is below
-
- > **Declaration for Self Employment EOPS**
-
- > “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. 
-
- >I understand that I may have to pay financial penalties or face prosecution if I give false information.”
-
- > **Declaration for Property EOPS**
-
- > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data, including details of the properties for that period and that it is correct and complete to the best of my knowledge. 
-
- > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
-
-Making changes to previously submitted data during and after an End of Period Statement declaration
-
-* if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
-
-* if there are no error failures it is recommend that customers review any warning messages they have at this point or earlier as warnings will cause a failure at crystallisation.
-
-* if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation.
-
-Note: making changes to data for previously submitted periods is covered in Make changes {INSERT HYPERLINK] to previously submitted data section 
-
-## View previously submitted updates
-
-A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes. If the customer has recently started using your software, you may need to retrieve previous data.
-
-### Periodic updates
-
-Software can use the list all self employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a selfemployment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
-
-### Annual updates
-
-Annual information can be provided throughout the year but there is only one period a year for the annual summary. Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
- 
-## Make changes to previously submitted data
-
-If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software recalculate the summary totals and submit to HMRC using the  following endpoints:
-
-* for quarterly updates - [amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion) or amend a (FHL or Non FHL) property periodic update
-* for annual updates - use the same endpoints: amend a self-employment annual summary or amend an (FHL or Non FHL) property business annual summary
-
-For all quarterly updates including self-employment, FHL property business and non-FHL property business:
-
-* software will have to resubmit the new summary totals for the specific update period, the dates of the update period have to match exactly
-* 	when a business resubmits an update period, the software will have to use the [trigger calculation endpoint](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) and follow the same process as the submitting an update period process 
-* 	software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
-* 	where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or null will overwrite previously provided information
-* the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
-
-<a href="figures/periodic-diagram.svg" target="blank"><img src="figures/periodic-diagram.svg" alt="periodics diagram" style="width:520px;" /></a>
-
-<a href="figures/periodic-diagram.svg" target="blank">Open the periodic diagram in a new tab</a>.
-
-Note: 
-
-* any changes that are made before the customer has crystallised is not a formal amendment. For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business.
-
-### Key points for changing previously submitted updates
-
-*	changes to periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
-*	changes to annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information
