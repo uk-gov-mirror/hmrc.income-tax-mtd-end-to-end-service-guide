@@ -27,7 +27,7 @@ INSERT ANNUAL ADJUSTMENTS CONTENT HERE
 A self-employed business can make a loss when the trade expenses are more than the trade income.
 If the business made a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
 
-<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:520px;" /></a>
+<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:720px;" /></a>
 
 <a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
 
@@ -41,7 +41,7 @@ When the loss detail has been submitted, or if a loss arises for a tax year foll
 The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims) endpoint allows the user to:
 
 * [provide a list of Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_list-loss-claims-test-only_get_accordion)
-* [create a Loss Claim against an income source for a specific tax year](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_create-a-loss-claim-test-only_post_accordion)
+* [create a Loss claim against an income source for a specific tax year](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_create-a-loss-claim-test-only_post_accordion)
 * [show the detail of an existing Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_retrieve-a-loss-claim-test-only_get_accordion)
 * [delete a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_delete-a-loss-claim-test-only_delete_accordion)
 * [update a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_amend-a-loss-claim-test-only_post_accordion)
@@ -73,17 +73,35 @@ The software will have to let HMRC know that the customer is ready to crystallis
 
 The intent to crystallise response includes a calculationId the same as the trigger calculation endpoint. Software will then have to retrieve the calculation using calculationId  to retrieve a tax calculation endpoint to get the calculation output.
 
-NEED TO ADD INFO HERE ABOUT THE TAX CALC FOR CRYSTALLISATION AS MENTIONED ABOVE IN TAX CALC SECTION 
+A crystallisation calculation is performed if the calculation was triggered by the intent to crystallise endpoint under the Self Assessment (MTD) API.
 
 The Calculation ID output provides a summary of each income source (for example self-employment, UK Property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable - broadly the equivalent of the current SA302.
 
+For a crystallisation calculation the minimum number of endpoints that need to be called are:
+
+* [retrieve self assessment tax calculation metadata(https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
+* [retrieve self assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
+* [retrieve self assessment tax calculation income tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
+* [retrieve self assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) (if applicable)
+* [retrieve self assessment tax calculation] messages(https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) (if applicable)
+
+A crystallisation Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
+
+The existing paper based SA302 form fields span the following endpoints in the new [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion):
+
+* [retrieve self-assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
+* [retrieve self-assessment tax calculation Income Tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
+* [retrieve self-assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion)
+
+If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-)documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint.
+
 Once software has called the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint, this will trigger a final liability calculation and software will receive a Calculation ID.
 
-The software must us the intent to crystallise calculationId to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation  and confirm it is complete and correct by sending the declaration.
+The software must use the intent to crystallise 'calculationId' to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation  and confirm it is complete and correct by sending the declaration.
 
-<a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:520px;" /></a>
+<a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:720px;" /></a>
 
-<a href="figures/crystallisation-diagram.svg" target="blank">Open the crystallisation process in a new tab</a>.
+<a href="figures/crystallisation-diagram.svg" target="blank">Open the crystallisation process diagram in a new tab</a>.
 
 
 If the customer thinks the calculation is incorrect as a result of data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. Once they have done this the software will have to call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint again to generate a new final liability.
@@ -101,7 +119,7 @@ Once a customer is happy with all the information, they will have to agree to a 
 > The information I have provided is correct and complete to the best of my knowledge and belief
 If you give false information you may have to pay financial penalties and face prosecution.”
 
-Software must send the calculationId that matches the calculation the customer is declaring against with the declaration.
+Software must send the 'calculationId' that matches the calculation the customer is declaring against with the declaration.
 
 ## Make an amendment after crystallisation
 
