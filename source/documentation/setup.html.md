@@ -10,9 +10,9 @@ description: Software developers, designers, product owners or business analysts
 
 Before agents can represent clients they must set up their relationships and software.
 
-[Process diagram]
+<a href="figures/agent-journey-overview.svg" target="blank"><img src="figures/agent-journey-overview.svg" alt="Link software to HMRC" style="width:720px;" /></a>
 
-Open the agent set up process diagram in a new tab.
+[Open the agent set up process diagram in a new tab.](https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/documentation/figures/agent-journey-overview.svg)
 
 1. Agent reads guidance.
 2. Agent creates an agent services account and copies across existing Self Assessment clients.
