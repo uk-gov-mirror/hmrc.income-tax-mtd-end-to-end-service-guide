@@ -36,6 +36,10 @@ HMRC has provided APIs to enable software to be able to send the summary informa
 
 When the update is received, HMRC checks if the customer is signed up to MTD and if the submission is coming from an agent,  if that agent is subscribed to agent services and authorised to act on behalf of the client. If not an error is returned. 
 
+<a href="figures/submit-periodics.svg.svg" target="blank"><img src="figures/submit-periodics.svg.svg" alt="submit-periodics.svg" style="width:720px;" /></a>
+
+<a href="figures/submit-periodics.svg.svg" target="blank">Open the submit periodics diagram in a new tab</a>.
+
 Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
