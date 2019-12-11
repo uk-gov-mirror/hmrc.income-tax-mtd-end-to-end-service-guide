@@ -49,7 +49,7 @@ The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/a
 To carry back a loss, the customer should contact HMRC, who will be able to apply this manually.
 
 ## Submit information about personal income
-### Crystallise liability (SA return)
+### Self Assessment return
 
 Software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
 
