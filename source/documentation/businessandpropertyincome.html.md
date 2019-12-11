@@ -110,10 +110,10 @@ If a customer wants to make a change to the data that was included in a previous
 * 	for annual updates - use the same endpoints: amend a self-employment annual summary or amend an (FHL or Non FHL) property business annual summary
 For all quarterly updates including self-employment, FHL property business and non-FHL property business:
 * software will have to recreate the update period including the new summary totals and resubmit the  specific update period, the dates of the update period have to match exactly or it will be rejected
-* when a business resubmits an update period, the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process as the submitting an update period process
+* when a business resubmits an update period, the software will have to use the [trigger a calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process as the submitting an update period process
 * 	software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
 * where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information
-* the software will have to use the [trigger calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
+* the software will have to use the [trigger a calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
 
 <a href="figures/periodic-diagram.svg" target="blank"><img src="figures/periodic-diagram.svg" alt="periodics diagram" style="width:720px;" /></a>
 
