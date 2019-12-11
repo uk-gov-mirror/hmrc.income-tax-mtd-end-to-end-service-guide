@@ -50,7 +50,7 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 
 Note: 
 
-*	This does not need to be provided in one go, customers can submit data as frequently as they like (i.e monthly) 
+*	This does not need to be provided in one go. Customers can submit data as frequently as they like, for example, monthly. 
 *	This does not mean the customer has to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
 
 *	In some cases, the obligation can take up to an hour to be confirmed as met. 
