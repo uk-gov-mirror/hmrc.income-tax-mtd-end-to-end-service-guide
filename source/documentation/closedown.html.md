@@ -7,14 +7,6 @@ weight: 7
 
 # Close down
 
-## Agent overview
-
-INSERT CONTENT 
-
-## Business overview
-
-INSERT CONTENT 
-
 ## Opting out of MTD for ITSA
 
 A manual process is in place where a customer or agent can contact HMRC to notify their requirement to unsubscribe from the service.
