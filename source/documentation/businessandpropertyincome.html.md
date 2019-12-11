@@ -97,11 +97,10 @@ The [individual calculations API](https://developer.service.hmrc.gov.uk/api-docu
 
 Note: 
 
-* It can around 5 seconds for the Tax Calculation response to be ready to retrieve, please wait at least 5 seconds before retrieving the calculation or you may get an error
-* The self-assessment tax calculation endpoints under the Individual Calculations API will replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0).
-
-* The endpoints under the existing Self Assessment API will be supported until 30th June 2020, after that only the Individuals Calculation will be supported 
-* It is possible to return both in-year and crystallisation calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint.
+* it can around 5 seconds for the Tax Calculation response to be ready to retrieve, please wait at least 5 seconds before retrieving the calculation or you may get an error
+* the self-assessment tax calculation endpoints under the Individual Calculations API will replace the tax calculation endpoints under the existing [Self Assessment API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
+* the endpoints under the existing Self Assessment API will be supported until 31th July 2020, after that only the Individuals Calculation will be supported
+* it is possible to return both in-year and crystallisation calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation-test-only_post_accordion) endpoint
 
 ## Make changes to previously submitted data
 
