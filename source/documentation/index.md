@@ -69,3 +69,4 @@ ADD LINKS TO CONTENT WHEN AVAILABLE
 * [Individual Losses (MTD)	REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0)
 * [Self Assessment (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
 * [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
+* [Fraud prevention and headers](https://developer.service.hmrc.gov.uk/api-documentation/docs/fraud-prevention)
