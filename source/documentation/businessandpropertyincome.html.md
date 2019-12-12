@@ -187,7 +187,7 @@ Making changes to previously submitted data during and after an End of Period St
 
 * if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation.
 
-Note: making changes to data for previously submitted periods is covered in Make changes [INSERT HYPERLINK] to previously submitted data section 
+Note: making changes to data for previously submitted periods is covered in [make changes to previously submitted data section](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#make-changes-to-previously-submitted-data)
 
 ## View previously submitted updates
 
