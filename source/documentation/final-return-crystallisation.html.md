@@ -63,9 +63,11 @@ Software should prompt customers to make sure they have considered the following
 *	additional information (currently provided on the SA101)
 *	any income from partnerships
 *	any income from trusts 
-*	any Foreign income 
+*	any Foreign income
 
-Note: Any information currently provided via the existing Self Assessment process if a customer needs to report information to HMRC that is not yet supported under MTD, they will need to complete a Self Assessment tax return.
+Note: 
+
+Information currently provided through the existing Self Assessment process: if a customer needs to report information to HMRC that is not yet supported under MTD or your software, they will need to complete a Self Assessment tax return.  Any information they have provided through MTD will not be considered and they will have to submit everything through the existing HMRC Self Assessment service.
 
 ## Crystallisation 
 
