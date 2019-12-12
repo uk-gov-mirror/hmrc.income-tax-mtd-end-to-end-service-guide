@@ -18,10 +18,6 @@ Customers can crystallise from 6 April Year 1. The deadline for Crystallisation 
 
 ## Provide information about how to treat a loss
 
-### Annual adjustments 
-
-INSERT ANNUAL ADJUSTMENTS CONTENT HERE
-
 ### Losses and Claims
 
 A self-employed business can make a loss when the trade expenses are more than the trade income.
