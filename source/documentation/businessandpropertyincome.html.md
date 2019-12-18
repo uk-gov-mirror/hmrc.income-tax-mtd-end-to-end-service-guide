@@ -227,16 +227,12 @@ You could use the Business Income Source Summary APIs or opt to create this info
 Note: The Declaration is the only mandatory API for this process, the exact text HMRC requires you to present is below
 
  > **Declaration for Self Employment EOPS**
-
- > “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. 
-
- >I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+ 
+> "I confirm that my client has reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
 
  > **Declaration for Property EOPS**
 
- > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data, including details of the properties for that period and that it is correct and complete to the best of my knowledge. 
-
- > I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+> "I confirm that my client has reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
 
 Making changes to previously submitted data during and after an End of Period Statement declaration
 
