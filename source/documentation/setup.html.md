@@ -38,9 +38,35 @@ Once an agent has copied all clients across to their agent services account, the
 7. Confirm all information is correct before submitting it to HMRC.
 8. Wait to hear if the client is approved. This can take up to 3 days.
 
+[DO THE BELOW STEPS REPLACE THE ABOVE]
+
+1. Agree to terms of participation.
+2. Income source check.
+3. Sign into HMRC using Agent Government Gateway user ID and password (this is a one-off process).
+4. Enter client's name, National Insurance number and date of birth (might not get this page if enrolment recognised).
+5. Select client's income type (sole trader, rent out property or both).
+6. Choose which year to sign-up for (current year or next year).
+7. Select how client records income and expenses.
+8. Confirm and submit information.
+9. Confirmation that the business can now start submitting income tax updates, declarations and returns using compatible software.
+
 The agent can now use software to submit Income Tax updates for their client.
 
 Agents can complete the sign-up process without having to wait for their clients to verify their own email address.
+
+## The process for individuals signing up
+
+1. Agree to terms of participation.
+2. Income source check.
+3. Sign into HMRC online services using Government Gateway user ID and password.
+4. Enter name, National Insurance number and date of birth (might not get this page if enrolment recognised).
+5. Choose preferred way of being contacted (though must agree to 'go paperless').
+6. Select whether self-employed, rent out of property or both.
+7. Choose which year to sign-up for (current year or next year).
+8. Select how they record their income and expenses.
+9. Confirm and submit information.
+10. Receive confirmation that the business can now start submitting income tax updates, declarations and returns using compatible software.
+
 
 ## Business signs up for Making Tax Digital for Income Tax
 
