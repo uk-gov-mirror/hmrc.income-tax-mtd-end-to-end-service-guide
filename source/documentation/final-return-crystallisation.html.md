@@ -126,6 +126,26 @@ As with the current process the customer will make changes to the relevant infor
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
+### Annual accounting adjustments
+
+Within the annual Self Assessment process, Annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
+during the active accounting period, this means a new process to accommodate these adjustments was required.
+
+### Submit annual accounting adjustments
+
+After an accounting period has ended a business or agent may need to submit accounting adjustments to the income and expenses that have been submitted throughout the year.
+
+Endpoints to call are:
+
+1. Trigger a Business source adjustable summary.
+2. Tetrieve a Self-employment business source adjustable summary (BSAS) or Retrieve a UK property business
+source adjustable summary - this endpoint provides the totals of all income and expenses submitted for that business that can have adjustments applied to them.
+3. Apply the adjustments as appropriate to the total figures returned via the Retrieve BSAS endpoint
+4. Submit accounting adjustments self-employment or submit accounting adjustments UK property
+
+Once submitted, if a further amendment is required to use the Retrieve self-employment accounting adjustments or Retrieve UK property adjustments endpoints to retrieve the previously submitted data and then repeat steps 3 and 4.
+
+
 ## View liabilities and payments
 
 The ability to view liabilities and payments is being developed and will be provided later. 
