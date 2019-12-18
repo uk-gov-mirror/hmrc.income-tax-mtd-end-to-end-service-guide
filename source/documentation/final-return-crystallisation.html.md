@@ -99,6 +99,32 @@ Once software has called the [intent to crystallise](https://developer.service.h
 
 <a href="figures/crystallisation-diagram.svg" target="blank">Open the crystallisation process diagram in a new tab</a>.
 
+1.	Customer is ready to complete their final tax return. 
+2.	Software calls the intent to crystallise endpoint – this endpoint triggers the creation of the crystallisation calculation for the customer to agree. 
+3.	HMRC receives the request and starts the tax calculation and returns Calculation ID. 
+4.	Software receives calculationId.
+5.	Generates the crystallisation tax calculation - this process will also convert any business validation warnings into errors, if there are any errors the calculation will not run and the customer will not be able to crystallise the liability.
+6.	HMRC Stores tax calculation with calculationId.
+7.	Software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
+a) retrieve self assessment tax calculation metadata </br>
+b) retrieve self assessment tax calculation taxable income</br>
+c) retrieve self assessment tax calculation income tax NICs calculated</br>
+d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)</br>
+e) retrieve self assessment tax calculation messages</br>
+
+[NOTE: NEED TEXT TO EXPLAIN HOW THEY KNOW THERE ARE BVR ERRORS] 
+
+8.	HMRC provides the calculation response. 
+9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise calculationId. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints MUST be called: </br>
+a) retrieve self assessment tax calculation taxable income</br>
+b) retrieve self assessment tax calculation income tax NICs calculated</br>
+c) retrieve self assessment tax calculation allowances, deductions and reliefs</br>
+10.	Customer reviews the calculation and declaration text. 
+11.	Customer confirms declaration and software calls the crystallisation endpoint using the crystallisation calculation ID to confirm the calculation the customer is agreeing. 
+12.	HMRC receives the submission, confirms receipt with a success message and marks the obligation as fulfilled.
+13.	Software receives success message and confirms that HMRC have received the return. 
+14.	Customer views confirmation that return has been successfully submitted to HMRC.
+
 The software must use the intent to crystallise 'calculationId' to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation and confirm it is complete and correct by sending the declaration.
 
 If the customer thinks the calculation is incorrect as a result of data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. Once they have done this the software will have to call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint again to generate a new final liability.
