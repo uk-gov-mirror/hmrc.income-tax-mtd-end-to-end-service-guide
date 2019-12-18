@@ -49,43 +49,24 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 <a href="figures/submit-periodics.svg" target="blank">Open the submit periodics diagram in a new tab</a>.
 
 1. The customer enters digital records through accountancy software or a spreadsheet. The records are uploaded digitally.  MTD mandates that a business keeps digital records for all self-employment and property businesses. 
-
 2. Software calls the list all self-employment businesses endpoint which provides the self-employment ID. You will need to call this the first time your customer uses the software but its not needed for every interaction.  Note: this is not relevant for property as there are no property business IDs. 
-
 3. The HMRC API returns the self-employment ID which is required to interact with other self-employment APIs.
-
 4. The software receives the self-employment ID.  You should store the self-employment ID which will save you having to repeatedly call this endpoint. 
-
 5. Software calls the retrieve Self Employment business obligations or retrieve all UK property business obligations - quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. The software should communicate these deadlines clearly to the customer and prompt them to submit the information when the update is due. 
-
 6. HMRC returns obligations for the requested date range.
-
 7. The software receives the obligations for the requested date range. It can hold on to this information and prompt the customer closer to the due date.
-
 8. Software prompts the customer when they are due to submit an update.
-
 9. The customer receives the prompt in software.   
-
 10. Software prepares the summary information and displays it to the customer.
-
 11. Customer reviews and submits information.
-
 12. The customer starts the process to submit data. 
-
 13. Software calls the create a Self Employment periodic update, create a non FHL UK property update period or create a FHL UK property update period endpoints, depending on the income source type being submitting.
-
 14. HMRC receives and stores information and provides success response. 
-
 15. Software receives the success response.
-
-15. a) Software confirms with the customer that the update has been received and stored by HMRC 
-
+15a. Software confirms with the customer that the update has been received and stored by HMRC 
 16. Software calls the trigger a self-assessment tax calculation endpoint to get the calculation and ensure the obligation is marked as met, once the update(s) complete an obligation period.
-
 17. HMRC mark the obligation as fulfilled, once the update(s) complete an obligation period Note this can take up to an hour to show on our systems as met.
-
 18. HMRC receives the request and returns a Calculation ID (calculationId) software must use this when calling the Self Assessment tax calculation endpoint 
-
 19. Software calls the relevant endpoints to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and software does not have to retrieve the tax calculation information at this point.
 
 > a) retrieve a self-assessment tax calculation metadata retrieve a self-assessment tax calculation metadata endpoint for a given >CalculationID – This provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the >total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation, this endpoint will show you that so you do not need to call >that endpoint.
@@ -100,11 +81,9 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 >
 >f) retrieve 'info', 'warning' and 'error' level messages linked to a Calculation ID – If any validation warnings or errors are >generated this endpoint enables software to find out what those warnings or errors are.
  
-21. Returns tax calculation.
- 
-22. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
-
-23. Customer reviews tax calculation.
+20. Returns tax calculation.
+21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
+22. Customer reviews tax calculation.
 
 
 Note: 
