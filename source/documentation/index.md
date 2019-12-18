@@ -170,7 +170,16 @@ HMRC has committed to the [availability of free software](https://www.gov.uk/gov
 
 ## End-to-end user journey
 
-ADD LINKS TO CONTENT WHEN AVAILABLE
+These journeys show examples of use.
+
+* Income Tax Self Assessment (ITSA) set up activities
+* receiving obligations 
+* submitting periodic updates for Self Employment and property businesses
+* retrieving a tax calculation
+* finalising business income End of Period Statement (EOPS)
+* Providing information about how to treat a loss
+* Crystallisation
+* ITSA (MTD) close down activities
 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
