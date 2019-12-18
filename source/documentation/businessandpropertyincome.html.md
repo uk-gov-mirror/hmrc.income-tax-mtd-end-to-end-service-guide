@@ -234,6 +234,7 @@ Note: The Declaration is the only mandatory API for this process, the exact text
 
 > "I confirm that my client has reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
 
+
 Making changes to previously submitted data during and after an End of Period Statement declaration
 
 * if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation or a periodic update is missing) then the EOPS declaration will be rejected and error messages returned.  The changes must be made to any relevant periodic or annual summaries, then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
