@@ -179,6 +179,84 @@ The customer must make sure they are happy with the information they have provid
 <a href="figures/eops.svg" target="blank"><img src="figures/eops.svg" alt="end of period statement diagram" style="width:720px;" /></a>
 <a href="figures/eops.svg" target="blank">Open the EOPS diagram in a new tab</a>.
 
+1. The customer inputs information about allowances and adjustments for the business
+income source. They can provide this information throughout the year, but must do it
+before they complete the EOPS.
+2. Software calls the Get Self Employment annual summary, Get a non FHL UK property
+business annual summary or Get a FHL UK property business annual summary.
+Depending on the business income type you need to submit. This step is optional but we
+recommend it to ensure you are updating the most up to date information.
+3. Customer views the allowances and adjustment information and updates relevant
+information.
+4. Software submits information using the Amend a self employment annual summary,
+Amend a non FHL UK property Business Annual Summary or Amend a FHL UK Property
+business annual summary. Depending on the business income type you need to update.
+5. HMRC receives and stores information
+6. Software calls the Trigger a self assessment tax calculation endpoint to get the
+calculation
+7. HMRC receives the request and returns a Calculation ID (calculationId) software must
+use this when calling the Self Assessment Tax Calculation endpoints
+8. Software receives calculationId. Note, you could surface the calculation to customers at
+this point if you choose, if you do follow steps 20 and 21 in the periodic update section
+9. Customer wants to make some accounting adjustments following the business accounts
+being finalised
+10. Software calls the SA Accounting summary API (currently in development)
+11. HMRC returns summary totals of all the information for that business income source
+12. Software displays information to the customer.
+13. Customer makes adjustments, confirms and submits
+14. Software sends information to HMRC using the SA Accounting summary API (currently in
+Development)
+15. HMRC confirms receipt and stores the information
+16. Software calls the relevant endpoints to retrieve the calculation note: the Tax
+Calculation can take up to 5 seconds to run, so we recommend you wait 5 seconds – this
+is optional, software does not have to retrieve the tax calculation information at this
+point
+>a. retrieve a self-assessment tax calculation metadata endpoint for a given
+CalculationID – This will provide high level data about the calculation including
+the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC
+calculated and details of which of the other calc end points are relevant to that
+calculation, for example, if no messages have been generated during the
+calculation, this end point will show you that so you do not need to call that end
+point.</br>
+>b. retrieve the calculated Income Tax and National Insurance contributions for a
+given NINO and Calculation ID – This end point provides the detail of Income Tax
+and NICs calculated, including detail of the rate bands applied to each income
+source and any tax deducted at source.</br>
+>c. retrieve the taxable income that has been used in the self-assessment tax
+calculation for a given NINO and Calculation ID – This end point provides detail
+of income across all sources that has formed part of the calculation.</br>
+>d. retrieve the allowances, deductions and reliefs that exist for the self-assessment
+tax calculation for a given NINO and Calculation ID - This end points provides
+the details of all allowances, deductions and reliefs that have been used in the
+calculation.</br>
+>e. retrieve the end-of-year Income Tax and National Insurance contribution
+estimates for a given NINO and Calculation ID – This end point provides a
+forecast of how much Income tax and NICs could be due for the full year based
+on the Income submitted for a period</br>
+>f. retrieve “info”, “warning” and “error” level messages linked to a Calculation ID –
+If any validation warnings or errors are generated this endpoint enables
+software to find out what those warnings or errors are.</br>
+
+17. Software displays the calculation to the user – this is optional software does not have to
+show the calculation to the customer at this point
+18. Customer is ready to finalise their business income source
+19. Software calls the Get Self Employment business income source summary or Get UK
+property business income source summary depending on the business income type you
+are finalising. Note there is only one BISS for property, it will show both FHL and Non
+FHL information in it.
+calling the BISS API is optional, software may choose to create a BISS themselves, but the
+information must be shown to the customer before they confirm the declaration
+20. Software displays BISS information to the customer
+21. Customer reviews and confirms information
+22. Software uses submit self-employment end of period statement or submit UK property
+end of period statement depending on the income source you are finalising. Note there
+is only one property EOPS which covers the property BISS
+23. HMRC receives declaration marks obligation as met and provides success response
+24. Software receives the success response
+25. Software confirms with the customer that the update has been received and stored by
+HMRC
+
+
 Note: 
 
 *	Data received must cover the whole accounting period.
