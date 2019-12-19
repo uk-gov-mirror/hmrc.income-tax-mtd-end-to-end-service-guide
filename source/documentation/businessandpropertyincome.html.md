@@ -143,24 +143,28 @@ Note:
 
 ## Make changes to previously submitted data
 
-If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software recalculate the summary totals and submit to HMRC using the following endpoints:
+If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software to recalculate the summary totals and submit to HMRC using the following endpoints:
 
-* for quarterly updates - [amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion) or amend a (FHL or Non FHL) property periodic update
-* 	for annual updates - use the same endpoints: amend a self-employment annual summary or amend an (FHL or Non FHL) property business annual summary
-For all quarterly updates including self-employment, FHL property business and non-FHL property business:
-* software will have to recreate the update period including the new summary totals and resubmit the  specific update period, the dates of the update period have to match exactly or it will be rejected
-* when a business resubmits an update period, the software will have to use the [trigger a calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process as the submitting an update period process
-* 	software will have to resubmit any changes to the summary totals for income source. The nature of this obligation means there is no need to create separate update periods
-* where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information
-* the software will have to use the [trigger a calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#tax-calculations_trigger-a-tax-calculation_post_accordion) endpoint and follow the same process
+### For quarterly updates
 
-<a href="figures/periodic-diagram.svg" target="blank"><img src="figures/periodic-diagram.svg" alt="periodics diagram" style="width:720px;" /></a>
+If a customer makes a change to a previously submitted periodic update, we suggest you call: 
+* [list Self Employment Update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion) 
+* [list all non FHL update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_list-all-nonfhl-uk-property-update-periods_get_accordion) or [list all FHL update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_list-all-fhl-uk-property-update-periods_get_accordion) periods (depending on business income type) to get the period ID and check the update period date range, to ensure any changes are made to the exact date range otherwise it will be rejected.
 
-<a href="figures/periodic-diagram.svg" target="blank">Open the periodic diagram in a new tab</a>.
+Software will have to recreate the update period including the new summary totals and resubmit the specific update period, using: 
 
-Note: 
+* [amend a self employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion) 
+* [amend a non FHL UK property periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-nonfhl-uk-property-periodic-update_put_accordion) or [amend a FHL UK property periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-fhl-uk-property-periodic-update_put_accordion) depending on the business income type.
 
-* any changes that are made before the customer has crystallised is not a formal amendment. For all changes to annual summary updates including Self-employment, FHL property business and non-FHL property business.
+When a business resubmits an update period, the software will have to use the trigger a calculation endpoint and follow the same process as the submitting an update period process.
+
+### For Annual updates
+
+Use the same endpoints and process for submitting annual information as mentioned 
+
+[insert link to submitting annual information]
+
+Note: where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information. The software will have to use the trigger a calculation endpoint and follow the same process.
 
 ### Key points for changing previously submitted updates
 
