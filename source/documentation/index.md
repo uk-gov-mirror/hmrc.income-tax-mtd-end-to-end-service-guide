@@ -26,7 +26,7 @@ Customers will be mandated to provide the following information through software
 
 * income and expenses for each self-employment and property businesses at least every 3 months
 * allowances and adjustments for each self-employment and property business at least once a year, at the end of the accounting period
-* finalisation of business income sources with an End of Period Statement (EPS)
+* finalisation of business income sources with an End of Period Statement (EOPS)
 
 HMRC expects all software providers to also offer customers the ability to finalise their overall tax  position using software. This process is sometimes called crystallisation.
 
@@ -53,7 +53,7 @@ Here, we describe the steps developers go through from initially registering an 
 7.	Developer testing is reviewed by HMRC (including fraud header validity).  If testing is satisfactory an email questionnaire and request for product demonstration is sent, otherwise further testing and development will be required for review.
 8.	Software vendor demonstrates their software to HMRC over online screen sharing.
 9.	Production credentials are issued if all requirements are met or further development required and a new demonstration needs to be organised.
-10.	Software is listed on [Find software for Making Tax Digital for VAT](https://www.tax.service.gov.uk/making-tax-digital-software) GOV.UK page for VAT after going through the HMRC recognition process.
+10.	Software is listed on GOV.UK after going through the HMRC recognition process.
 
 ## Production approvals process for Making Tax Digital for SA
 
@@ -115,29 +115,29 @@ The developer must test their fraud headers to derive the correct values and pro
 
 #### Example workflows for Self-employment
 
-1. Create an update.
-a. List all self-employment businesses.
-b. Create a self-employment periodic update.
+1. Create an update. 
+a. List all self-employment businesses.</br>
+b. Create a self-employment periodic update.</br>
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to
 meet the obligation.
 
-2. Amend an update.
-a. List all self-employment update periods.
+2. Amend an update. 
+a. List all self-employment update periods.</br>
 b. Amend a self-employment periodic update.
 
 3. End of Period Statement.
-a. Get a self-employment annual summary.
-b. Amend a self-employment annual summary.
-c. Get self-employment Business Income Summary Source (BISS).
-d. Retrieve end of period statement obligations for a self-employment business.
-e. Agree the declaration - within software.
-f. Submit self-employment end of period statement.
+a. Get a self-employment annual summary.</br>
+b. Amend a self-employment annual summary.</br>
+c. Get self-employment Business Income Summary Source (BISS).</br>
+d. Retrieve end of period statement obligations for a self-employment business.</br>
+e. Agree the declaration - within software.</br>
+f. Submit self-employment end of period statement.</br>
 
 4. Crystallisation.
-a. Intent to crystallise.
-b. Retrieve a tax calculation - to view the current calculation.
-c. Agree the declaration - within software.
-d. Crystallisation - agree the final calculation.
+a. Intent to crystallise.</br>
+b. Retrieve a tax calculation - to view the current calculation.</br>
+c. Agree the declaration - within software.</br>
+d. Crystallisation - agree the final calculation.</br>
 
 ### Product Demonstration
 
