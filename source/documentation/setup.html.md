@@ -29,17 +29,6 @@ Once an agent has copied all clients across to their agent services account, the
 
 ## The process for agents signing up their clients
 
-1. Sign into HMRC online services using their agent services account.
-2. Provide client details including National Insurance number and postcode.
-3. Give and verify agent’s own email address. This is only required once.
-4. Choose whether client prefers to get emails or letters.
-5. Enter client’s business email address.
-6. Tell clients they’ll get a verification email with a link to click on. This will verify their business email address. The link will expire after 3 days.
-7. Confirm all information is correct before submitting it to HMRC.
-8. Wait to hear if the client is approved. This can take up to 3 days.
-
-[DO THE BELOW STEPS REPLACE THE ABOVE]
-
 1. Agree to terms of participation.
 2. Income source check.
 3. Sign into HMRC using Agent Government Gateway user ID and password (this is a one-off process).
@@ -66,7 +55,6 @@ Agents can complete the sign-up process without having to wait for their clients
 8. Select how they record their income and expenses.
 9. Confirm and submit information.
 10. Receive confirmation that the business can now start submitting income tax updates, declarations and returns using compatible software.
-
 
 ## Business signs up for Making Tax Digital for Income Tax
 
