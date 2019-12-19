@@ -246,7 +246,22 @@ are finalising. Note there is only one BISS for property, it will show both FHL 
 FHL information in it.
 calling the BISS API is optional, software may choose to create a BISS themselves, but the
 information must be shown to the customer before they confirm the declaration
-20. Software displays BISS information to the customer
+20. Software displays BISS (Business Income Source Summary) information to the customer listed below:
+>This can be totalled up by software, or through the APIs from HMRC systems as well BISS for self-employment or property:
+
+>Total Business Income<br/>
+>Total Expenses<br/>
+>Business Net Profit<br/>
+>Business Net Loss<br/>
+>Total Additions to net profit or deductions to net loss<br/>
+>Total Deductions to net profit or additions to net loss<br/>
+>Accounting Adjustments<br/>
+>Taxable Profit<br/>
+>Taxable Loss<br/>
+>This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration.
+
+>You could use the Business Income Source Summary APIs or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
+
 21. Customer reviews and confirms information
 22. Software uses submit self-employment end of period statement or submit UK property
 end of period statement depending on the income source you are finalising. Note there
@@ -262,23 +277,7 @@ Note:
 *	Data received must cover the whole accounting period.
 * We will be providing an API for customers to provide annual adjustments. 
 
-Software should present to the customer the information listed below. This can  be totalled up by software, or we have provided APIs for you to get it from HMRC systems as well Business Income Source Summary (BISS) for self-employment or property:
-
-* Total Business Income
-* Total Expenses
-* Business Net Profit
-* Business Net Loss
-* Total Additions to net profit or deductions to net loss
-* Total Deductions to net profit or additions to net loss
-* Accounting Adjustments
-* Taxable Profit
-* Taxable Loss
-
-This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration. 
-
-You could use the Business Income Source Summary APIs or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
-
-Note: The Declaration is the only mandatory API for this process, the exact text HMRC requires you to present is below
+The Declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below
 
  > **Declaration for Self Employment EOPS**
  
@@ -287,7 +286,6 @@ Note: The Declaration is the only mandatory API for this process, the exact text
  > **Declaration for Property EOPS**
 
 > "I confirm that my client has reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
-
 
 Making changes to previously submitted data during and after an End of Period Statement declaration
 
