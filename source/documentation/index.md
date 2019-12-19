@@ -141,7 +141,7 @@ d. Crystallisation - agree the final calculation.</br>
 
 ### Product Demonstration
 
-The product demonstration is the final part of the process after all preceding steps have been completed.
+The product demonstration is the final part of the process after all preceding steps have been completed. Make sure you have completed the <a href="mtd-itsa-sa-demo-checklist-self-serve.docx" download>pre-demo checklist</a> before the demonstration.
 
 At the product demonstration HMRC will be expecting to see a consumer ready product and will wish to see software
 go through the following process flows:
@@ -184,10 +184,10 @@ These journeys show examples of use.
 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
-* [Income Tax (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax)
-* [Individual Calculations (MTD)	REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0)
-* [Individual Losses (MTD)	REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0)
-* [Self Assessment (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
 * [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
-* [Agent Authorisation	REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/agent-authorisation-api/1.0)
 * [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/1.0)
+* [Self Assessment (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
+* [Individual Calculations (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0)
+* [Individual Losses (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0)
+* [Income Tax (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax)
+* [Agent Authorisation REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/agent-authorisation-api/1.0)
