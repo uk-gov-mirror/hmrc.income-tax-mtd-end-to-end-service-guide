@@ -68,12 +68,13 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 17. HMRC mark the obligation as fulfilled, once the update(s) complete an obligation period Note this can take up to an hour to show on our systems as met.
 18. HMRC receives the request and returns a Calculation ID (calculationId) software must use this when calling the Self Assessment tax calculation endpoint 
 19. Software calls the relevant endpoints to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and software does not have to retrieve the tax calculation information at this point.
->a) retrieve a self-assessment tax calculation metadata retrieve a self-assessment tax calculation metadata endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.
->b) retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including detail of the rate bands applied to each income source and any tax deducted at source.
->c) retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that has formed part of the calculation.
+>a) retrieve a self-assessment tax calculation metadata retrieve a self-assessment tax calculation metadata endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
+>b) retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including detail of the rate bands applied to each income source and any tax deducted at source.<br/>
+>c) retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that has formed part of the calculation.<br/>
 >d) retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID - this endpoints provides the details of all allowances, deductions and reliefs that have been used in the calculation.
->e) retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.
->f) retrieve 'info', 'warning' and 'error' level messages linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.
+>e) retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
+>f) retrieve 'info', 'warning' and 'error' level messages linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
+
 20. Returns tax calculation.
 21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
 22. Customer reviews tax calculation.
@@ -155,7 +156,7 @@ When a business resubmits an update period, the software will have to use the tr
 
 Use the same endpoints and process for submitting annual information as mentioned 
 
-[insert link to submitting annual information]
+[INSERT link to submitting annual information]
 
 Note: where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information. The software will have to use the trigger a calculation endpoint and follow the same process.
 
