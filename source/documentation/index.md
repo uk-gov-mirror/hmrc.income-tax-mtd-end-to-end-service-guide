@@ -141,7 +141,7 @@ d. Crystallisation - agree the final calculation.</br>
 
 ### Product Demonstration
 
-The product demonstration is the final part of the process after all preceding steps have been completed. Make sure you have completed the <a href="mtd-itsa-sa-demo-checklist-self-serve.docx" download>pre-demo checklist</a> before the demonstration.
+The product demonstration is the final part of the process after all preceding steps have been completed. Make sure you have completed the <a href="/documentation/mtd-itsa-sa-demo-checklist-self-serve.docx" download>pre-demo checklist</a> before the demonstration.
 
 At the product demonstration HMRC will be expecting to see a consumer ready product and will wish to see software
 go through the following process flows:
