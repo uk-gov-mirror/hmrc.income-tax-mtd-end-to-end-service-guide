@@ -170,17 +170,18 @@ HMRC has committed to the [availability of free software](https://www.gov.uk/gov
 
 ## End-to-end user journey
 
-These journeys show examples of use.
+These journeys show examples of use:
 
-* Income Tax Self Assessment (ITSA) set up activities
-* receiving obligations 
-* submitting periodic updates for Self Employment and property businesses
-* submitting annual updates for Self Employment and property businesses
-* retrieving a tax calculations
-* finalising business income End of Period Statement (EOPS)
-* providing information about how to treat a loss
-* crystallisation
-* ITSA (MTD) close down activities
+* [Income Tax Self Assessment (ITSA) set up activities](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/setup.html)
+* [receiving obligations](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#receive-obligations) 
+* [submitting periodic updates for Self Employment and property businesses](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-periodic-updates-for-self-employment-and-property-businesses)
+* [submitting annual updates for Self Employment and property businesses](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-annual-updates-for-se-and-property-businesses)
+* [retrieving a tax calculations](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
+* [making changes to previously submitted data](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#make-changes-to-previously-submitted-data)
+* [finalising business income End of Period Statement (EOPS)](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
+* [providing information about how to treat a loss](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-return-crystallisation.html#provide-information-about-how-to-treat-a-loss)
+* [crystallisation](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-return-crystallisation.html#crystallisation)
+* [ITSA (MTD) close down activities](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
 
 ## Related API documentation
 <!--- Section owner: MTD Programme --->
