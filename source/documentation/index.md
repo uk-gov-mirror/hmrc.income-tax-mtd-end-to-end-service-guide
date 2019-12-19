@@ -46,7 +46,7 @@ Here, we describe the steps developers go through from initially registering an 
 
 1.	Sign into [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
 2.	Review the API documentation and Income Tax end-to-end service guide.
-3.	Test ITSA endpoints and develop software application, any queries during this phase should be sent to <SDSTeam@hmrc.gov.uk:SDSTeam@hmrc.gov.uk>.
+3.	Test ITSA endpoints and develop software application, any queries during this phase should be sent to <SDSTeam@hmrc.gov.uk>.
 4.	Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
 5.	Testing document sent to the developer by email.
 6.	Provide testing logs and credentials used for testing to HMRC.
@@ -78,7 +78,7 @@ The following endpoints are to be tested to cover EOPS (End of Period Statement)
 4. ‘Retrieve a calculation’ with the tax Calculation ID for crystallisation, to return the calculation liability, this will return a canned response in sandbox.
 5. ‘Crystallisation’ to finalise the tax liability.
 
-Once the testing is complete, send details of the dummy NINO used to call the above endpoints in sandbox to SDS team at <SDSTeam@hmrc.gov.uk:SDSTeam@hmrc.gsi.gov.uk>. 
+Once the testing is complete, send details of the dummy NINO used to call the above endpoints in sandbox to SDS team at <SDSTeam@hmrc.gsi.gov.uk>. 
 
 You will need to contact us within 2 weeks of completing your API testing to enable us to view the data within our logs. 
 It takes 10 working days to advise of the outcome and if testing is satisfactory a product demonstration will be arranged.
