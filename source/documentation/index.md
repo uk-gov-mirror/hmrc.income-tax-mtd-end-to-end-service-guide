@@ -44,22 +44,22 @@ It is important that quality software products are available for customers to su
 
 Here, we describe the steps developers go through from initially registering an application to gaining production credentials to submitting live data and also the support available at each stage and the interactions developers will have with HMRC.
 
-1.	Sign into developer hub and register your application for sandbox. testing. (https://developer.service.hmrc.gov.uk/api-documentation)
+1.	Sign into [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
 2.	Review the API documentation and Income Tax end-to-end service guide.
-3.	Test ITSA endpoints and develop software application, any queries during this phase should be sent to SDSTeam@hmrc.gov.uk.
-4.	Register your application for production credentials by creating a production application within your developer hub account and complete the requested sections.
-5.	Testing document sent to the developer by email (Appendix 1).
+3.	Test ITSA endpoints and develop software application, any queries during this phase should be sent to [mailto](SDSTeam@hmrc.gov.uk).
+4.	Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
+5.	Testing document sent to the developer by email.
 6.	Provide testing logs and credentials used for testing to HMRC.
-7.	Developer testing is reviewed by HMRC (including fraud header validity).  If testing is satisfactory an email questionnaire (Appendix 2) and request for product demonstration is sent, otherwise further testing and development will be required for review.
+7.	Developer testing is reviewed by HMRC (including fraud header validity).  If testing is satisfactory an email questionnaire and request for product demonstration is sent, otherwise further testing and development will be required for review.
 8.	Software vendor demonstrates their software to HMRC over online screen sharing.
-9.	Production credentials are issued if all requirements are met or further development required and new demonstration needs to be organised.
-10.	Software is listed on Find software for Making Tax Digital for VAT GOV.UK page for VAT after going through the HMRC recognition process.
+9.	Production credentials are issued if all requirements are met or further development required and a new demonstration needs to be organised.
+10.	Software is listed on [Find software for Making Tax Digital for VAT](https://www.tax.service.gov.uk/making-tax-digital-software) GOV.UK page for VAT after going through the HMRC recognition process.
 
 ## Production approvals process for Making Tax Digital for SA
 
 ### Testing requirements
 
-The following endpoints are required to be tested to cover the Self-employment reporting:
+The following endpoints are required to be tested to cover the self-employment reporting:
 
 1. ‘Create a test user which is an organisation’ to create test data.
 2. ‘Add a self-employment business’ endpoint to create an MTD subscription for an individual within the sandbox environment.
@@ -72,16 +72,16 @@ The following endpoints are required to be tested to cover the Self-employment r
 
 The following endpoints are to be tested to cover EOPS (End of Period Statement) and Crystallisation:
 
-1. ‘Submit self-employment End-of-Period Statement’ to finalise your self-employment income
+1. ‘Submit self-employment End-of-Period Statement’ to finalise your self-employment income.
 2. ‘Retrieve End of Period Statement Obligations for a Self-Employment Business’ to check if an EOPS obligation has been fulfilled, this will return a canned response in sandbox.
 3. ‘Intent to crystallise’ to return the tax Calculation ID for crystallisation.
 4. ‘Retrieve a calculation’ with the tax Calculation ID for crystallisation, to return the calculation liability, this will return a canned response in sandbox.
 5. ‘Crystallisation’ to finalise the tax liability.
 
-Once the testing is complete, send details of the dummy NINO used to call the above endpoints in sandbox to SDS team at SDSTeam@hmrc.gsi.gov.uk. 
+Once the testing is complete, send details of the dummy NINO used to call the above endpoints in sandbox to SDS team at [mailto](SDSTeam@hmrc.gsi.gov.uk). 
 
 You will need to contact us within 2 weeks of completing your API testing to enable us to view the data within our logs. 
-The current service level agreement for SDST checks is 10 working days to advise of the outcome. If testing is satisfactory a product demonstration will be arranged.
+It takes 10 working days to advise of the outcome and if testing is satisfactory a product demonstration will be arranged.
 
 Developers need to consider the following:
 
@@ -109,17 +109,17 @@ Developers need to consider the following:
 
 Transaction Monitoring (TxM) is a key security approach adopted in the UK and globally.
 
-Supplying header information for all our APIs will become mandatory, we recommend designing it into your applications now before approval can be granted, and production credentials issued HMRC must see evidence of fraud prevention headers being sent.
+Supplying header information for all our APIs will become mandatory. We recommend designing it into your applications now before approval can be granted, and production credentials issued.   HMRC must see evidence of fraud prevention headers being sent.
 
-The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. Guidance on Fraud Prevention Headers can be found here.
+The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/api-documentation/docs/fraud-prevention) is available.
 
 #### Example workflows for Self-employment
 
 1. Create an update.
 a. List all self-employment businesses.
 b. Create a self-employment periodic update.
-c. Trigger a tax calculation (can be triggered anytime but must be triggered at the end of the quarter to
-meet the obligation).
+c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to
+meet the obligation.
 
 2. Amend an update.
 a. List all self-employment update periods.
@@ -143,13 +143,13 @@ d. Crystallisation - agree the final calculation.
 
 The product demonstration is the final part of the process after all preceding steps have been completed.
 
-At the product demonstration HMRC will be expecting to see a market ready product and will wish to see software
-run through the following process flows:
+At the product demonstration HMRC will be expecting to see a consumer ready product and will wish to see software
+go through the following process flows:
 
-1. New customer registers with the software and set up an account.
-2. Customer authorises software (the OAuth 2.0 journey).
+1. New customer registers with the software and sets up an account.
+2. Customer authorises software (OAuth 2.0 journey).
 3. Customer views obligations and their status.
-4. Customer digitally imports data into the appropriate periodic update and submits.
+4. Customer digitally imports data into the appropriate periodic update and submits information.
 5. Software triggers a calculation and replays to customer.
 6. End of Period Statement (EOPs) and declaration.
 7. Customer crystallisation - appropriate display of the tax calculation, declarations, and error messages.
