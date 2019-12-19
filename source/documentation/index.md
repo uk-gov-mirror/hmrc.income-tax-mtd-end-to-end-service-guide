@@ -175,11 +175,11 @@ These journeys show examples of use.
 * Income Tax Self Assessment (ITSA) set up activities
 * receiving obligations 
 * submitting periodic updates for Self Employment and property businesses
-* Submit Annual updates for SE and Property businesses
+* submitting annual updates for Self Employment and property businesses
 * retrieving a tax calculations
 * finalising business income End of Period Statement (EOPS)
-* Providing information about how to treat a loss
-* Crystallisation
+* providing information about how to treat a loss
+* crystallisation
 * ITSA (MTD) close down activities
 
 ## Related API documentation
