@@ -141,8 +141,9 @@ If a customer wants to make a change to the data that was included in a previous
 
 ### For quarterly updates
 
-If a customer makes a change to a previously submitted periodic update, we suggest you call: 
-* [list Self Employment Update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion) 
+If a customer makes a change to a previously submitted periodic update, we suggest you call:
+
+* [list Self Employment Update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion)
 * [list all non FHL update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_list-all-nonfhl-uk-property-update-periods_get_accordion) or [list all FHL update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_list-all-fhl-uk-property-update-periods_get_accordion) periods (depending on business income type) to get the period ID and check the update period date range, to ensure any changes are made to the exact date range otherwise it will be rejected.
 
 Software will have to recreate the update period including the new summary totals and resubmit the specific update period, using: 
