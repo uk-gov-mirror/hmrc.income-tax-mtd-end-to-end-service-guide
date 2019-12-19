@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 1.0 issued XX December 2019
+Version 1.0 issued [XX ] December 2019
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -175,7 +175,8 @@ These journeys show examples of use.
 * Income Tax Self Assessment (ITSA) set up activities
 * receiving obligations 
 * submitting periodic updates for Self Employment and property businesses
-* retrieving a tax calculation
+* Submit Annual updates for SE and Property businesses
+* retrieving a tax calculations
 * finalising business income End of Period Statement (EOPS)
 * Providing information about how to treat a loss
 * Crystallisation
