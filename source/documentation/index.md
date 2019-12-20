@@ -16,7 +16,7 @@ Product owners, developers and business analysts can also use this guide to lear
 
 ## Overview
 
-Making Tax Digital (MTD) for Income Tax is a service that will improve Self Assessment for the 7 million businesses that currently submit a tax return.
+Making Tax Digital (MTD) for Income Tax is a service that will improve Self Assessment  businesses and landlords that currently submit a tax return.
 
 Like MTD for VAT, MTD for Income Tax requires businesses and landlords to keep their records digitally and submit information about business income to HMRC using MTD-compatible software. 
 
@@ -173,7 +173,7 @@ HMRC has committed to the [availability of free software](https://www.gov.uk/gov
 These journeys show examples of use:
 
 * [Income Tax Self Assessment (ITSA) set up activities](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/setup.html)
-* [receiving obligations](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#receive-obligations) 
+* [retrieving obligations](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#receive-obligations) 
 * [submitting periodic updates for Self Employment and property businesses](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-periodic-updates-for-self-employment-and-property-businesses)
 * [submitting annual updates for Self Employment and property businesses](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-annual-updates-for-se-and-property-businesses)
 * [retrieving a tax calculations](https://developer.qa.tax.service.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
@@ -190,5 +190,4 @@ These journeys show examples of use:
 * [Self Assessment (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
 * [Individual Calculations (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0)
 * [Individual Losses (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0)
-* [Income Tax (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax)
 * [Agent Authorisation REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/agent-authorisation-api/1.0)
