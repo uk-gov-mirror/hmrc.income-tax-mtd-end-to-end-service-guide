@@ -10,7 +10,7 @@ description: Software developers, designers, product owners or business analysts
 
 The steps in this section (up to end of period statement) will be the element that will be mandated for digital record keeping and submission through software under MTD.
 
-## Receive obligations
+## Retrieving obligations
 
 Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer provided at sign up and to find out the customer’s update obligation dates. The software must make customers aware of their obligations.
 
@@ -24,9 +24,11 @@ Customers can find out their obligations for their income source, through the fo
 
 Note: the obligations for property obligations cover both FHL and non-FHL.
 
-## Submit Periodic updates for Self Employment and property businesses
+## Submit income and expense updates for Self Employment and property businesses
 
 Businesses, and agents who represent them, will be required to provide summary level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often if they choose.
+
+GINAS COMMENTS - TIDY UP
 
 The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. Software should communicate these deadlines clearly to the customer and prompt them to submit information when the update is due. Submissions of summary level information cannot span an obligation period, if it does software will need to send 2 updates that fall into different obligations.
 
@@ -69,16 +71,16 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 18. HMRC receives the request and returns a Calculation ID (calculationId) software must use this when calling the Self Assessment tax calculation endpoint 
 19. Software calls the relevant endpoints to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and software does not have to retrieve the tax calculation information at this point.
 
->a) retrieve a self-assessment tax calculation metadata retrieve a self-assessment tax calculation metadata endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
+>a) [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion) endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
 
->b) retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including detail of the rate bands applied to each income source and any tax deducted at source.<br/>
+>b) [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including detail of the rate bands applied to each income source and any tax deducted at source.<br/>
 
->c) retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that has formed part of the calculation.<br/>
+>c) [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that has formed part of the calculation.<br/>
 
->d) retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID - this endpoints provides the details of all allowances, deductions and reliefs that have been used in the calculation.
->e) retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
+>d) [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID - this endpoints provides the details of all allowances, deductions and reliefs that have been used in the calculation.
+>e) [retrieve the end-of-year Income Tax and National Insurance contribution](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
 
->f) retrieve 'info', 'warning' and 'error' level messages linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
+>f) [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
 
 20. Returns tax calculation.
 21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
@@ -102,7 +104,7 @@ Update 1 – 6 April to 1 May is accepted<br />
 Update 2 – 2 May to 31 May is accepted<br />
 Update 3 – 28 May to 6 June is rejected because it overlaps with previous updates
 
-## Submit Annual updates for SE and Property businesses
+## Submit Allowance and Adjustment updates for SE and Property businesses
 
 Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose. 
 
@@ -139,7 +141,7 @@ Note:
 
 If a customer wants to make a change to the data that was included in a previously submitted update, customers should make the changes to the digital records and software to recalculate the summary totals and submit to HMRC using the following endpoints:
 
-### For quarterly updates
+### For Income and Expense updates (quarterly)
 
 If a customer makes a change to a previously submitted periodic update, we suggest you call:
 
@@ -153,7 +155,7 @@ Software will have to recreate the update period including the new summary total
 
 When a business resubmits an update period, the software will have to use the trigger a calculation endpoint and follow the same process as the submitting an update period process.
 
-### For Annual updates
+### For Allowance and Adjustment updates (Annual)
 
 Use the same endpoints and process for submitting annual information as mentioned 
 
@@ -304,10 +306,12 @@ Note: making changes to data for previously submitted periods is covered in [mak
 
 A customer may want to retrieve previously submitted data, for example before making a change the customer may want to request the last update provided before sending in any changes. If the customer has recently started using your software, you may need to retrieve previous data.
 
-### Periodic updates
+### Income and expense updates (Periodic) 
 
 Software can use the list all self employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a selfemployment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
 
-### Annual updates
+### Allowance and Adjustment updates (Annual) 
+
+ADD HYPERLINKS TO BELOW - RECAST SENTENCES
 
 Annual information can be provided throughout the year but there is only one period a year for the annual summary. Software can use the ‘get a self employment/property (FHL and Non FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
