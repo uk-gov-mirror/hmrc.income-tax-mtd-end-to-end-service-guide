@@ -220,22 +220,22 @@ calculated and details of which of the other calc end points are relevant to tha
 calculation, for example, if no messages have been generated during the
 calculation, this end point will show you that so you do not need to call that end
 point.</br>
->b. retrieve the calculated Income Tax and National Insurance contributions for a
+>b. [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion) for a
 given NINO and Calculation ID – This end point provides the detail of Income Tax
 and NICs calculated, including detail of the rate bands applied to each income
 source and any tax deducted at source.</br>
->c. retrieve the taxable income that has been used in the self-assessment tax
+>c. [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion) that has been used in the self-assessment tax
 calculation for a given NINO and Calculation ID – This end point provides detail
 of income across all sources that has formed part of the calculation.</br>
->d. retrieve the allowances, deductions and reliefs that exist for the self-assessment
+>d. [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) that exist for the self-assessment
 tax calculation for a given NINO and Calculation ID - This end points provides
 the details of all allowances, deductions and reliefs that have been used in the
 calculation.</br>
->e. retrieve the end-of-year Income Tax and National Insurance contribution
-estimates for a given NINO and Calculation ID – This end point provides a
+>e. [retrieve the end-of-year Income Tax and National Insurance contribution
+estimates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate-test-only_get_accordion) for a given NINO and Calculation ID – This end point provides a
 forecast of how much Income tax and NICs could be due for the full year based
 on the Income submitted for a period</br>
->f. retrieve “info”, “warning” and “error” level messages linked to a Calculation ID –
+>f. [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID –
 If any validation warnings or errors are generated this endpoint enables
 software to find out what those warnings or errors are.</br>
 
@@ -248,9 +248,8 @@ are finalising. Note there is only one BISS for property, it will show both FHL 
 FHL information in it.
 calling the BISS API is optional, software may choose to create a BISS themselves, but the
 information must be shown to the customer before they confirm the declaration
-20. Software displays BISS (Business Income Source Summary) information to the customer listed below:
+20. Software displays BISS (Business Income Source Summary) information to the customer listed below:</br>
 >This can be totalled up by software, or through the APIs from HMRC systems as well BISS for self-employment or property:
-
 >Total Business Income<br/>
 >Total Expenses<br/>
 >Business Net Profit<br/>
@@ -276,8 +275,8 @@ HMRC
 
 Note: 
 
-*	Data received must cover the whole accounting period.
-* We will be providing an API for customers to provide annual adjustments. 
+*	data received must cover the whole accounting period
+* we will be providing an API for customers to provide annual adjustments 
 
 The Declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below
 
