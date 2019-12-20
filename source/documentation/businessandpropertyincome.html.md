@@ -68,11 +68,16 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 17. HMRC mark the obligation as fulfilled, once the update(s) complete an obligation period Note this can take up to an hour to show on our systems as met.
 18. HMRC receives the request and returns a Calculation ID (calculationId) software must use this when calling the Self Assessment tax calculation endpoint 
 19. Software calls the relevant endpoints to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and software does not have to retrieve the tax calculation information at this point.
+
 >a) retrieve a self-assessment tax calculation metadata retrieve a self-assessment tax calculation metadata endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
+
 >b) retrieve the calculated Income Tax and National Insurance contributions for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including detail of the rate bands applied to each income source and any tax deducted at source.<br/>
+
 >c) retrieve the taxable income that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that has formed part of the calculation.<br/>
+
 >d) retrieve the allowances, deductions and reliefs that exist for the self-assessment tax calculation for a given NINO and Calculation ID - this endpoints provides the details of all allowances, deductions and reliefs that have been used in the calculation.
 >e) retrieve the end-of-year Income Tax and National Insurance contribution estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
+
 >f) retrieve 'info', 'warning' and 'error' level messages linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
 
 20. Returns tax calculation.
@@ -208,7 +213,7 @@ Development)
 Calculation can take up to 5 seconds to run, so we recommend you wait 5 seconds – this
 is optional, software does not have to retrieve the tax calculation information at this
 point
->a. retrieve a self-assessment tax calculation metadata endpoint for a given
+>a. [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata_get_accordion) endpoint for a given
 CalculationID – This will provide high level data about the calculation including
 the calculation type ‘crystallised’ or ‘In Year’, the total Income tax and NIC
 calculated and details of which of the other calc end points are relevant to that
@@ -245,6 +250,7 @@ calling the BISS API is optional, software may choose to create a BISS themselve
 information must be shown to the customer before they confirm the declaration
 20. Software displays BISS (Business Income Source Summary) information to the customer listed below:</br>
 >This can be totalled up by software, or through the APIs from HMRC systems as well BISS for self-employment or property:
+>
 >Total Business Income<br/>
 >Total Expenses<br/>
 >Business Net Profit<br/>
@@ -254,8 +260,9 @@ information must be shown to the customer before they confirm the declaration
 >Accounting Adjustments<br/>
 >Taxable Profit<br/>
 >Taxable Loss<br/>
->This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration.
-
+>
+>This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration.</br>
+>
 >You could use the Business Income Source Summary APIs or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
 
 21. Customer reviews and confirms information
