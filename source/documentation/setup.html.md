@@ -43,7 +43,12 @@ The agent can now use software to submit Income Tax updates for their client.
 
 Agents can complete the sign-up process without having to wait for their clients to verify their own email address.
 
-## The process for individuals signing up
+## Business signs up for Making Tax Digital for Income Tax
+
+Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service. They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
+
+
+## The process for Business and Landlords signing up
 
 1. Agree to terms of participation.
 2. Income source check.
@@ -55,21 +60,6 @@ Agents can complete the sign-up process without having to wait for their clients
 8. Select how they record their income and expenses.
 9. Confirm and submit information.
 10. Receive confirmation that the business can now start submitting income tax updates, declarations and returns using compatible software.
-
-## Business signs up for Making Tax Digital for Income Tax
-
-Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service.
-They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
-
-## The process for businesses signing up
-
-1. Sign into HMRC online services using Government Gateway user ID and password.
-2. Provide or confirm the VAT registration number.
-3. Select business type and give other business information.
-4. Choose preferred way of being contacted.
-5. Confirm and submit information.
-6. Wait up to 3 days to see if the sign up has been approved.
-7. Receive confirmation that the business can now start submitting VAT Returns using compatible accounting software.
 
 ## Link software to HMRC
 
