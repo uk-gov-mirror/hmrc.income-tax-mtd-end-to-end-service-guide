@@ -7,8 +7,4 @@ weight: 6
 
 # Penalties and Appeals
 
-HMRCs [existing appeals process](https://www.gov.uk/tax-appeals/penalty) will remain in place. 
-
-## Pay penalties and interest
-
-CONTENT MISSING
+HMRCs [existing appeals process](https://www.gov.uk/tax-appeals/penalty) will remain in place.
