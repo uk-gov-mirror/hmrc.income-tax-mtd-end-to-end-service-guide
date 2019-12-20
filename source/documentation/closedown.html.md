@@ -17,8 +17,8 @@ In the future this manual process will be replaced by an online one.
 
 ## Agent or client ends relationship 
 
-INSERT LINKS - these may be covered by the guidance link from agents
+INSERT LINKS - AWAITING WORDING these may be covered by the guidance link from agents
 
 ## Agent leaves agent services 
 
-INSERT LINKS - this may be covered by the guidance link from agents
+INSERT LINKS - AWAITING WORDING this may be covered by the guidance link from agents
