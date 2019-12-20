@@ -49,9 +49,9 @@ To carry back a loss, the customer should contact HMRC, who will be able to appl
 
 Software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
 
-* any income from bank/building society interest (supported in live)
-* any income from dividends (supported in live)
-*	any gift aid contributions they have made (supported in live)
+* any income from bank/building society interest (supported in live) - LINK TO ENDPOINT
+* any income from dividends (supported in live)  - LINK TO ENDPOINT
+*	any gift aid contributions they have made (supported in live)  - LINK TO ENDPOINT
 *	any pension contributions 
 *	any pension income
 *	capital gains
@@ -112,7 +112,7 @@ c) retrieve self assessment tax calculation income tax NICs calculated</br>
 d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)</br>
 e) retrieve self assessment tax calculation messages</br>
 
-[NOTE: NEED TEXT TO EXPLAIN HOW THEY KNOW THERE ARE BVR ERRORS] 
+We suggest that you retrieve the self assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again. 
 
 8.	HMRC provides the calculation response. 
 9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise calculationId. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints MUST be called: </br>
@@ -152,6 +152,8 @@ As with the current process the customer will make changes to the relevant infor
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
+[GINAS COMMENT This needs to go with the EOPS section. You may need to tinker with the diagram to align with this as I am not 100% confident on the journey]
+
 ### Annual accounting adjustments
 
 Within the annual Self Assessment process, Annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
@@ -164,7 +166,7 @@ After an accounting period has ended a business or agent may need to submit acco
 Endpoints to call are:
 
 1. Trigger a Business source adjustable summary.
-2. Tetrieve a Self-employment business source adjustable summary (BSAS) or Retrieve a UK property business
+2. Retrieve a Self-employment business source adjustable summary (BSAS) or Retrieve a UK property business
 source adjustable summary - this endpoint provides the totals of all income and expenses submitted for that business that can have adjustments applied to them.
 3. Apply the adjustments as appropriate to the total figures returned via the Retrieve BSAS endpoint
 4. Submit accounting adjustments self-employment or submit accounting adjustments UK property
