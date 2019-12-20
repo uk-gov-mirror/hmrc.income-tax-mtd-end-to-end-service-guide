@@ -79,7 +79,6 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
 22. Customer reviews tax calculation.
 
-
 Note: 
 
 *	This does not need to be provided in one go. Customers can submit data as frequently as they like, for example, monthly. 
@@ -90,11 +89,7 @@ Note:
 *	Businesses can  also check this information in their Business Tax Account. 
 *	The customer will not receive any communication from HMRC to confirm that the obligation has been met.  Software should provide this confirmation to the customer. For property businesses, an update for either FHL or Non FHL for the full quarter will mark the obligation as fulfilled, even if they have both income types. 
 
-Software will need to use the following endpoints for each relevant source of income. For quarterly updates:
-
-*	[create a self-employment update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for that specific self-employment business (this could be as little as a day or the whole 3 month obligation period)
-*	[create a Furnished Holiday Lettings (FHL) property period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-fhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for FHL property income
-*	[create a non FHL property update period](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_create-a-nonfhl-uk-property-update-period_post_accordion) - this creates the update period and enables software to provide the summary totals of income and expenses for non FHL property income A customer can provide the information as frequently as they need, however there are a couple of validation rules that apply.
+Note:
 
 Each update period cannot overlap the previous one, for example:
 
