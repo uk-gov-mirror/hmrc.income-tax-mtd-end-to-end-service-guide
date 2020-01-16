@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 ## Agent journey overview
 
-Before agents can represent clients they must set up their relationships and software.
+Before agents can represent clients they must set up their software and relationships with clients.
 
 <a href="figures/agent-journey-overview.svg" target="blank"><img src="figures/agent-journey-overview.svg" alt="Link software to HMRC" style="width:720px;" /></a>
 
@@ -45,7 +45,7 @@ Agents can complete the sign-up process without having to wait for their clients
 
 ## Business signs up for Making Tax Digital for Income Tax
 
-Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign up process completely before using the service. They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
+Business owners can sign up for Making Tax Digital for Income Tax either directly or through an agent. They must complete the sign-up process completely before using the service. They need to sign up before first use, even if they have already signed up for Making Tax Digital for Income Tax.
 
 
 ## The process for Business and Landlords signing up
@@ -54,7 +54,7 @@ Business owners can sign up for Making Tax Digital for Income Tax either directl
 2. Income source check.
 3. Sign into HMRC online services using Government Gateway user ID and password.
 4. Enter name, National Insurance number and date of birth (might not get this page if enrolment recognised).
-5. Choose preferred way of being contacted (though must agree to 'go paperless').
+5. Choose the preferred way of being contacted (though must agree to 'go paperless').
 6. Select whether self-employed, rent out of property or both.
 7. Choose which year to sign-up for (current year or next year).
 8. Select how they record their income and expenses.
