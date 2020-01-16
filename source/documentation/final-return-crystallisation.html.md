@@ -8,13 +8,13 @@ description: Software developers, designers, product owners or business analysts
 
 # Final return (crystallisation)
 
-This is the process that allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. In other words, this process will bring together all the data that a taxpayer needs to provide to HMRC to reach their final tax liability for a specific year.
+This is the process that allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. In other words, this process brings together all the data that a taxpayer needs to provide to HMRC to reach their final tax liability for a specific year.
 
-It is also the process by which most formal claims for reliefs and allowances and any elections will be made, where these were previously included within a Self Assessment tax return.
+It is also the process by which most formal claims for reliefs and allowances and any deductions will be made, where these were previously included within a Self Assessment tax return.
 
 Customers will also be able to tell us at this point (subject to the existing limits) how they wish any losses available to them to be treated.
 
-Customers can crystallise from 6 April Year 1. The deadline for Crystallisation is 31 January Year 2. Software should remind customers to help them to meet this deadline.
+Customers can crystallise from 6 April Year 1. The deadline for Crystallisation is 31 January Year 2. The software should remind customers to help them to meet this deadline.
 
 ## Provide information about how to treat a loss
 
@@ -42,12 +42,12 @@ The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/a
 * [delete a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_delete-a-loss-claim-test-only_delete_accordion)
 * [update a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_amend-a-loss-claim-test-only_post_accordion)
 
-To carry back a loss, the customer should contact HMRC, who will be able to apply this manually.
+To carry-back a loss, the customer should contact HMRC, who will be able to apply this manually.
 
 ## Submit information about personal income
 ### Self Assessment return
 
-Software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
+The software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
 
 * any income from bank/building society interest (supported in live) - LINK TO ENDPOINT
 * any income from dividends (supported in live)  - LINK TO ENDPOINT
@@ -69,7 +69,7 @@ Information currently provided through the existing Self Assessment process: if 
 
 The software will have to let HMRC know that the customer is ready to crystallise, to do this you must call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
 
-The intent to crystallise response includes a calculationId the same as the trigger calculation endpoint. Software will then have to retrieve the calculation using calculationId  to retrieve a tax calculation endpoint to get the calculation output.
+The intent to crystallise response includes a calculationId the same as the trigger calculation endpoint. The software will then have to retrieve the calculation using the ‘calculationId’ to retrieve a tax calculation endpoint to get the calculation output.
 
 A crystallisation calculation is performed if the calculation was triggered by the intent to crystallise endpoint under the Self Assessment (MTD) API.
 
@@ -85,7 +85,7 @@ For a crystallisation calculation the minimum number of endpoints that need to b
 
 A crystallisation Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data could prevent a calculation from being performed.
 
-The existing paper based SA302 form fields span the following endpoints in the new [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion):
+The existing paper-based SA302 form fields span the following endpoints in the new [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion):
 
 * [retrieve self-assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
 * [retrieve self-assessment tax calculation Income Tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
@@ -93,26 +93,26 @@ The existing paper based SA302 form fields span the following endpoints in the n
 
 If calculation errors are present, these errors can be returned to the customer by the [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) endpoint.
 
-Once software has called the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint, this will trigger a final liability calculation and software will receive a Calculation ID.
+Once the software has called the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint, this will trigger a final liability calculation and software will receive a Calculation ID.
 
 <a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:720px;" /></a>
 
 <a href="figures/crystallisation-diagram.svg" target="blank">Open the crystallisation process diagram in a new tab</a>.
 
 1.	Customer is ready to complete their final tax return. 
-2.	Software calls the intent to crystallise endpoint – this endpoint triggers the creation of the crystallisation calculation for the customer to agree. 
+2.	The software calls the intent to crystallise endpoint – this endpoint triggers the creation of the crystallisation calculation for the customer to agree. 
 3.	HMRC receives the request and starts the tax calculation and returns Calculation ID. 
-4.	Software receives calculationId.
+4.	The software receives the 'calculationId'.
 5.	Generates the crystallisation tax calculation - this process will also convert any business validation warnings into errors, if there are any errors the calculation will not run and the customer will not be able to crystallise the liability.
 6.	HMRC Stores tax calculation with calculationId.
-7.	Software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
+7.	The software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
 a) retrieve self assessment tax calculation metadata </br>
 b) retrieve self assessment tax calculation taxable income</br>
 c) retrieve self assessment tax calculation income tax NICs calculated</br>
 d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)</br>
 e) retrieve self assessment tax calculation messages</br>
 
-We suggest that you retrieve the self assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again. 
+We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again. 
 
 8.	HMRC provides the calculation response. 
 9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise calculationId. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints MUST be called: </br>
@@ -122,7 +122,7 @@ c) retrieve self assessment tax calculation allowances, deductions and reliefs</
 10.	Customer reviews the calculation and declaration text. 
 11.	Customer confirms declaration and software calls the crystallisation endpoint using the crystallisation calculation ID to confirm the calculation the customer is agreeing. 
 12.	HMRC receives the submission, confirms receipt with a success message and marks the obligation as fulfilled.
-13.	Software receives success message and confirms that HMRC have received the return. 
+13.	The software receives a success message and confirms that HMRC has received the return.
 14.	Customer views confirmation that return has been successfully submitted to HMRC.
 
 The software must use the intent to crystallise 'calculationId' to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation and confirm it is complete and correct by sending the declaration.
@@ -142,9 +142,9 @@ Once a customer is happy with all the information, they will have to agree to a 
 > The information I have provided is correct and complete to the best of my knowledge and belief
 If you give false information you may have to pay financial penalties and face prosecution.”
 
-Software must send the 'calculationId' that matches the calculation the customer is declaring against with the declaration.
+The software must send the ‘calculationId’ that matches the calculation the customer is declaring against with the declaration.
 
-## Make an amendment after crystallisation
+## Making an amendment after crystallisation
 
 If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later).
 
@@ -156,10 +156,10 @@ Note: any changes made following crystallisation will be a formal amendment unde
 
 ### Annual accounting adjustments
 
-Within the annual Self Assessment process, Annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
-during the active accounting period, this means a new process to accommodate these adjustments was required.
+Within the annual Self Assessment process, annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
+during the active accounting period, this means a new process to accommodate these adjustments were required.
 
-### Submit annual accounting adjustments
+### Submitting annual accounting adjustments
 
 After an accounting period has ended a business or agent may need to submit accounting adjustments to the income and expenses that have been submitted throughout the year.
 
@@ -182,7 +182,7 @@ The ability to view liabilities and payments is being developed and will be prov
 
 Vendors should present messages to business users at key points in their journey that give them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows vendors to make users aware of payment dates.
 
-There are multiple ways to make a payment for the Self Assessment regime, they can be found on GOV.UK at:
+There are multiple ways to make a payment for Self Assessment which can be found on GOV.UK at:
 
 [https://www.gov.uk/pay-self-assessment-tax-bill](https://www.gov.uk/pay-self-assessment-tax-bill) 
 
