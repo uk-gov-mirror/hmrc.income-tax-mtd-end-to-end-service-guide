@@ -275,7 +275,7 @@ Note:
 *	data received must cover the whole accounting period
 * we will be providing an API for customers to provide annual adjustments 
 
-The Declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below
+The declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below
 
  > **Declaration for Self Employment EOPS**
  
