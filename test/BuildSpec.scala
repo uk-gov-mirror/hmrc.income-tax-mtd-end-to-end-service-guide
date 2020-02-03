@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-import org.scalatest.{Matchers, WordSpec}
+import org.scalatest.should.Matchers
+import org.scalatest.AnyWordSpec
 import sys.process._
 
-class BuildSpec extends WordSpec with Matchers {
+class BuildSpec extends AnyWordSpec with Matchers {
   "Building the content" should {
     "produce static files" in {
       val result = "bundle install" #&& Process("bundle exec middleman build --verbose --build-dir=public/ --clean", None, "BASE_PATH" -> "/guides/income-tax-mtd-end-to-end-service-guide/") !
