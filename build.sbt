@@ -7,7 +7,6 @@ lazy val microservice = Project(appName, file("."))
   .settings(
     evictionWarningOptions in update := EvictionWarningOptions.default.withWarnScalaVersionEviction(false),
     majorVersion := 0
-
   )
 
   .settings(
