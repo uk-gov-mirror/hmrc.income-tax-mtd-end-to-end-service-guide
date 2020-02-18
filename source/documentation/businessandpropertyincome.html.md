@@ -83,6 +83,7 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 
 >f) [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
 
+ 
 20. Returns tax calculation.
 21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
 22. Customer reviews tax calculation.
