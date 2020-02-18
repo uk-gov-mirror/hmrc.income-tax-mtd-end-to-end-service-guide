@@ -27,7 +27,7 @@ If the business made a loss for a year prior to signing up to Making Tax Digital
 
 <a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
 
-Vendors can use the [brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0) endpoint to enable customers to submit the brought forward loss to HMRC.
+Vendors can use the [create a brought forward losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#brought-forward-losses_create-a-brought-forward-loss_post_accordion) endpoint to enable customers to submit the brought forward loss to HMRC.
 
 When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
 
@@ -42,7 +42,7 @@ The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/a
 * [delete a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_delete-a-loss-claim-test-only_delete_accordion)
 * [update a previously entered Loss claim](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0#loss-claims_amend-a-loss-claim-test-only_post_accordion)
 
-To carry-back a loss, the customer should contact HMRC, who will be able to apply this manually.
+To carry-back a loss, the customer should contact HMRC who will be able to apply this manually.
 
 ## Submit information about personal income
 ### Self Assessment return
