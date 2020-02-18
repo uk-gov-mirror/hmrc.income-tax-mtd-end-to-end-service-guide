@@ -42,7 +42,8 @@ Note: If you still get the error and the client insists they have met all of the
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
-Once all the information has been submitted to HMRC for that period, the software must use the [trigger a tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#taxtcalculations_trigger-a-tax-calculation_post_accordion) endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID (calculationId).
+Once all the information has been submitted to HMRC for that period, the software must use the [trigger a Self Assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation_post_accordion)
+endpoint to inform HMRC that the user has finished submitting their information. As a response HMRC will provide a Calculation ID (calculationId).
 
 The triggering of the tax calculation will mark the obligation as fulfilled, if we have data covering the whole period. 
 
@@ -52,8 +53,8 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 
 1. The customer enters digital records through accountancy software or a spreadsheet. The records are uploaded digitally.  MTD mandates that a business keeps digital records for all self-employment and property businesses. 
 2. The software calls the list all self-employment businesses endpoint which provides the self-employment ID. You will need to call this the first time your customer uses the software but its not needed for every interaction.  Note: this is not relevant for a property as there are no property business IDs. 
-3. The HMRC API returns the self-employment ID which is required to interact with other self-employment APIs.
-4. The software receives the self-employment ID.  You should store the self-employment ID which will save you having to repeatedly call this endpoint. 
+3. The HMRC API returns the self-employment ID which is required to interact with other self-employment APIs. Note: this is not relevant for a property as there are no property business IDs.
+4. The software receives the self-employment ID.  You should store the self-employment ID which will save you having to repeatedly call this endpoint. Note: this is not relevant for a property as there are no property business IDs.
 5. The software calls the retrieve Self Employment business obligations or retrieve all UK property business obligations - quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. The software should communicate these deadlines clearly to the customer and prompt them to submit the information when the update is due. 
 6. HMRC returns obligations for the requested date range.
 7. The software receives the obligations for the requested date range. It can hold on to this information and prompt the customer closer to the due date.
@@ -86,17 +87,14 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
 22. Customer reviews tax calculation.
 
-Note: 
+Note:
 
-*	This does not need to be provided in one go. Customers can submit data as frequently as they like, for example, monthly. 
-*	This does not mean the customer has to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them from providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
-
+* The periodic information does not need to be provided in one go. Customers can submit data as frequently as they like, for example, monthly.
+* The customer does not have to declare that the submissions are ‘complete and correct’ (there is no ‘accuracy’ statement required at this point), only that the customer must indicate that they do not intend to provide any additional information at this point. There is nothing to stop them from providing additional information anytime by resubmitting the update period with any changes that have been made to the previous submission.
 *	In some cases, the obligation can take up to an hour to be confirmed as met. 
-*	This met obligation must be presented clearly to the customer in the software. 
+*	The met obligation must be presented clearly to the customer in the software. 
 *	Businesses can  also check this information in their Business Tax Account. 
 *	The customer will not receive any communication from HMRC to confirm that the obligation has been met. The software should provide this confirmation to the customer. For property businesses, an update for either FHL or Non-FHL for the full quarter will mark the obligation as fulfilled, even if they have both income types. 
-
-Note:
 
 Each update period cannot overlap the previous one, for example:
 
