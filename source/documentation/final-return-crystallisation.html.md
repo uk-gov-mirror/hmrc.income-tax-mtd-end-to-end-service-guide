@@ -148,8 +148,6 @@ The software must send the ‘calculationId’ that matches the calculation the 
 
 If a customer wants to make any changes following crystallisation they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year, or 3 months from receipt of a Notice to File by the taxpayer whichever is the later).
 
-As with the current process the customer will make changes to the relevant information in software and resubmit the relevant periodic or annual updates, and follow the same process of triggering the calculation, they will not have to re-declare.
-
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
 [GINAS COMMENT This needs to go with the EOPS section. You may need to tinker with the diagram to align with this as I am not 100% confident on the journey]
