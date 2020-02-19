@@ -47,11 +47,11 @@ To carry-back a loss, the customer should contact HMRC who will be able to apply
 ## Submit information about personal income
 ### Self Assessment return
 
-The software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and will update this document when relevant) 
+The software should prompt customers to make sure they have considered the following potential additional income sources (links to the APIs where the functionality has been provided, we will continue to release additional functionality and update this page). 
 
-* any income from bank/building society interest (supported in live) - LINK TO ENDPOINT
-* any income from dividends (supported in live)  - LINK TO ENDPOINT
-*	any gift aid contributions they have made (supported in live)  - LINK TO ENDPOINT
+* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#savings-accounts) (supported in live)
+* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#dividends-income) (supported in live)  
+*	any [gift aid contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#charitable-giving) they have made (supported in live)  
 *	any pension contributions 
 *	any pension income
 *	capital gains
@@ -59,7 +59,7 @@ The software should prompt customers to make sure they have considered the follo
 *	additional information (currently provided on the SA101)
 *	any income from partnerships
 *	any income from trusts 
-*	any Foreign income
+*	any foreign income
 
 Note: 
 
@@ -203,5 +203,4 @@ account. Access to the services will be via the customer’s digital tax account
 
 Vendors in their messaging should ask customers to visit that link.  
 
-Customers will be able to view payments made to HMRC in software. 
-Details will be updated here once they are available.
+Customers will be able to view payments made to HMRC in software. Details will be updated here once they are available.
