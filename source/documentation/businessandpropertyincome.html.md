@@ -163,6 +163,11 @@ Use the same endpoints and process for submitting annual information as mentione
 
 Note: where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information. The software will have to use the trigger a calculation endpoint and follow the same process.
 
+### Key points for changing previously submitted updates
+
+* changes to periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
+* changes to annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information
+
 
 ## Finalise business income End of Period Statement (EOPS)
 
