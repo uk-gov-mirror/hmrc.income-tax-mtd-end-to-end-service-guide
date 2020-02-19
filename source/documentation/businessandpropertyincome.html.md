@@ -293,8 +293,6 @@ A customer may want to retrieve previously submitted data, for example before ma
 
 The software can use the list all self-employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a self-employment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
 
-### Allowance and Adjustment updates (Annual) 
+### Allowance and Adjustment updates (Annual)
 
-ADD HYPERLINKS TO BELOW - RECAST SENTENCES
-
-Annual information can be provided throughout the year but there is only one period a year for the annual summary. The software can use the ‘get a self-employment/property (FHL and Non-FHL) annual summary) endpoint providing the tax year for the annual period you are looking for.
+Annual information can be provided throughout the year but there is only one period a year for the annual summary. The software can use the ‘get a self-employment/property (FHL and Non-FHL) annual summary' endpoint.  You will need to provide the tax year for the annual period you are looking for.
