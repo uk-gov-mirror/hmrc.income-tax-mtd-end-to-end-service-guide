@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 1.0 issued [XX ] January 2020
+Version 1.0 issued 21 February 2020
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
