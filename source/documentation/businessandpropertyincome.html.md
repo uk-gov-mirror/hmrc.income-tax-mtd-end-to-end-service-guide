@@ -259,10 +259,7 @@ is only one property EOPS which covers the property BISS
 25. The software confirms with the customer that the update has been received and stored by
 HMRC
 
-
-Note: 
-
-*	data received must cover the whole accounting period
+Note:	data received must cover the whole accounting period.
 
 The declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below.
 
