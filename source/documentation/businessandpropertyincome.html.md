@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Business and property income
 
-The steps in this section (up to end of period statement) will be the element that will be mandated for digital record keeping and submission through software under MTD.
+The steps in this section (up to End of Period Statement) will be the element that will be mandated for digital record keeping and submission through software under Making Tax Digital.
 
 ## Retrieving obligations
 
@@ -78,9 +78,9 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
  >e) [retrieve the end-of-year Income Tax and National Insurance contribution](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated_get_accordion) estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
  >f) [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages_get_accordion) linked to a Calculation ID – if any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.<br/>
  
-20. Returns tax calculation.
-21. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point (some may want to do their own).
-22. Customer reviews tax calculation.
+20. HMRC returns tax calculation.
+21. The software displays the calculation to the user – this is optional, software does not have to show the calculation to the customer at this point (some may want to do their own).
+22. Customer reviews the tax calculation.
 
 Note:
 
@@ -122,11 +122,6 @@ The [individual calculations API](https://developer.service.hmrc.gov.uk/api-docu
 * [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID
 * [retrieve the end-of-year Income Tax and National Insurance contribution estimates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate_get_accordion) for a given NINO and Calculation ID
 * [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages_get_accordion) linked to a Calculation ID
-
-Key points for changing previously submitted updates:
-
-* changes to periodic updates - the update period you are trying to change must match the original update period exactly or it will be rejected
-* changes to annual updates - all figures previously supplied must be provided again, a zero or a null will overwrite any previously submitted information
 
 Note: 
 
@@ -173,9 +168,9 @@ Note: where a business resubmits an annual summary update, previous figures that
 
 ### Business or Agent able to submit End of Period Statement through software
 
-This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS (End of Period Statement) must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
 
-EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31st January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However the deadline to complete is  31 January, Year 2. 
+EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. The customer can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31st January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However, the deadline to complete is 31 January, Year 2. 
 
 The process will take into account all the periodic and annual data already provided by the customer throughout the year.
 
@@ -268,7 +263,7 @@ HMRC
 
 Note:	data received must cover the whole accounting period.
 
-The declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below.
+The declaration is the only mandatory requirement for this process, the exact text HMRC requires you to present is below. Developers should replace [insert tax year] with the correct tax year.
 
 Agent Declaration text is currently being finalised and will be added here soon. 
 
