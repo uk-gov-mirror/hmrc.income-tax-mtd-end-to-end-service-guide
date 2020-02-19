@@ -16,7 +16,7 @@ Before agents can represent clients they must set up their software and relation
 
 1. Agent reads guidance.
 2. Agent creates an agent services account and copies across existing Self Assessment clients.
-3. Agent is authorised by a new Self Assessment client who has signed up to Making Tax Digital for Income Tax (in the future we will simplify this process and introduce functionality that allows authorisation without a client having to sign up).
+3. Agent is authorised by a new Self Assessment client who has signed up to Making Tax Digital for Income Tax (in the future, we will simplify this process and introduce functionality that allows authorisation without a client having to sign up).
 4. Agent registers a client for Self Assessment.
 5. Agent signs up existing clients for Making Tax Digital for Income Tax.
 6. Agent chooses software.
