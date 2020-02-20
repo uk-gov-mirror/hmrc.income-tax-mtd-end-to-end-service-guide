@@ -150,8 +150,6 @@ If a customer wants to make any changes following crystallisation they have 12 m
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
-[GINAS COMMENT This needs to go with the EOPS section. You may need to tinker with the diagram to align with this as I am not 100% confident on the journey]
-
 ### Annual accounting adjustments
 
 Within the annual self-assessment process, annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
