@@ -25,13 +25,13 @@ The scenario is needed where an agency firm ceases trading. If an agent no longe
 
 ## View future obligations or previous returns in BTA
 
-Some customers may wish to view information regarding their income tax for assurance purposes, and this may also include any previous updates that have been submitted.
+Some customers may wish to view information regarding their Income Tax for assurance purposes, and this may also include any previous updates that have been submitted.
 
 Vendors should make available within software products as many suitable features as possible to meet user needs.
 
 Vendors can direct users to visit their [Business Tax Account](https://www.access.service.gov.uk/login/signin/creds) to view certain information.
 
-A customer who has signed up for MTD and agreed to report using the software, can choose to sign into their Business Tax Account and view information such as obligation periods, year-to-date and income tax calculations.
+A customer who has signed up for MTD and agreed to report using the software, can choose to sign into their Business Tax Account and view information such as obligation periods, year-to-date and Income Tax calculations.
 User research will continue, and further iterations will be made which will enhance the functionality of BTA and help improve the user experience.
 
 Future features developed will enable customers to have a statement view, make a change of their business information, along with links to make card payments.
@@ -40,5 +40,5 @@ The Business Tax Account displays the following information:
 
 * reporting obligations, and their status, per income source
 * tax estimates
-* year-to-date income tax calculation
+* year-to-date Income Tax calculation
 
