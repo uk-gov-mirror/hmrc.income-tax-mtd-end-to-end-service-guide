@@ -106,11 +106,11 @@ Once the software has called the [intent to crystallise](https://developer.servi
 5.	Generates the crystallisation tax calculation - this process will also convert any business validation warnings into errors, if there are any errors the calculation will not run and the customer will not be able to crystallise the liability.
 6.	HMRC Stores tax calculation with calculationId.
 7.	The software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
-a) retrieve self assessment tax calculation metadata </br>
-b) retrieve self assessment tax calculation taxable income</br>
-c) retrieve self assessment tax calculation Income Tax NICs calculated</br>
-d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)</br>
-e) retrieve self assessment tax calculation messages</br>
+a) retrieve self assessment tax calculation metadata. </br>
+b) retrieve self assessment tax calculation taxable income.</br>
+c) retrieve self assessment tax calculation Income Tax NICs calculated.</br>
+d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable).</br>
+e) retrieve self assessment tax calculation messages.</br>
 
 We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again. 
 
@@ -164,8 +164,8 @@ Endpoints to call are:
 1. Trigger a Business source adjustable summary.
 2. Retrieve a Self-employment business source adjustable summary (BSAS) or Retrieve a UK property business
 source adjustable summary - this endpoint provides the totals of all income and expenses submitted for that business that can have adjustments applied to them.
-3. Apply the adjustments as appropriate to the total figures returned via the Retrieve BSAS endpoint
-4. Submit accounting adjustments self-employment or accounting adjustments UK property
+3. Apply the adjustments as appropriate to the total figures returned via the Retrieve BSAS endpoint.
+4. Submit accounting adjustments self-employment or accounting adjustments UK property.
 
 Once submitted, if a further amendment is required to use the Retrieve self-employment accounting adjustments or Retrieve UK property adjustments endpoints to retrieve the previously submitted data and then repeat steps 3 and 4.
 
