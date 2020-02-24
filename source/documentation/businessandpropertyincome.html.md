@@ -71,11 +71,11 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 17. HMRC marks the obligation as fulfilled, once the update(s) complete an obligation period. Note: that this can take up to an hour to show on our systems as met.
 18. HMRC receives the request and returns a Calculation ID (calculationId). Software must use this when calling the Self Assessment tax calculation endpoint. 
 19. The software calls the relevant endpoints to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and the software does not have to retrieve the tax calculation information at this point.
->a) [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata_get_accordion) endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year,’ the total Income tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
+>a) [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata_get_accordion) endpoint for a given CalculationID – this provides high-level data about the calculation including the calculation type ‘crystallised’ or ‘In Year,’ the total Income Tax and NIC calculated and details of which of the other calculation endpoints are relevant to the calculation, for vexample, if no error messages have been generated during the calculation this endpoint will show you that so you do not need to call that endpoint.<br/>
  >b) [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated_get_accordion) for a given NINO and Calculation ID – this endpoint provides the detail of Income Tax and NICs calculated, including details of the rate bands applied to each income source and any tax deducted at source.<br/>
  >c) [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income_get_accordion) that has been used in the self-assessment tax calculation for a given NINO and Calculation ID – this endpoint provides detail of income across all sources that have formed part of the calculation.<br/>
  >d) [retrieve the allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs_get_accordion) that exist for the self-assessment tax calculation for a given NINO and Calculation ID - this endpoints provides the details of all allowances, deductions and reliefs that have been used in the calculation.<br/>
- >e) [retrieve the end-of-year Income Tax and National Insurance contribution](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated_get_accordion) estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
+ >e) [retrieve the end-of-year Income Tax and National Insurance contribution](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated_get_accordion) estimates for a given NINO and Calculation ID – this endpoint provides a forecast of how much Income Tax and NICs could be due for the full year based on the Income submitted for a period.<br/>
  >f) [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages_get_accordion) linked to a Calculation ID – if any validation warnings or errors are generated, this endpoint enables software to find out what those warnings or errors are.<br/>
  
 20. HMRC returns tax calculation.
@@ -168,7 +168,7 @@ Note: where a business resubmits an annual summary update, previous figures that
 
 ### Business or Agent able to submit End of Period Statement through software
 
-This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as, the current income tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as, the current Income Tax process for the SA103 and 105 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
 
 EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. Customers can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31 January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However, the deadline to complete is 31 January, Year 2. 
 
@@ -206,12 +206,12 @@ development)
 Calculation can take up to 5 seconds to run, so we recommend the software waits 5 seconds – this is optional, the software does not have to retrieve the tax calculation information at this point
 >a. [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata_get_accordion) endpoint for a given
 CalculationID – this will provide high-level data about the calculation including
-the calculation type ‘crystallised’ or ‘In Year’, the total income tax and NIC
+the calculation type ‘crystallised’ or ‘In Year’, the total Income Tax and NIC
 calculated, and details of which of the other calculation endpoints are relevant to that
 calculation. For example, if no messages have been generated during the
 calculation, this end point will show you that, so you do not need to call that endpoint.</br>
 >b. [retrieve the calculated Income Tax and National Insurance contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated_get_accordion) for a
-given NINO and Calculation ID – This endpoint provides the detail of income tax
+given NINO and Calculation ID – This endpoint provides the detail of Income Tax
 and NICs calculated, including detail of the rate bands applied to each income
 source and any tax deducted at source.</br>
 >c. [retrieve the taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income_get_accordion) that has been used in the self-assessment tax
@@ -223,7 +223,7 @@ the details of all allowances, deductions and reliefs that have been used in the
 calculation.</br>
 >e. [retrieve the end-of-year Income Tax and National Insurance contribution
 estimates](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-end-of-year-estimate_get_accordion) for a given NINO and Calculation ID – This end point provides a
-forecast of how much Income tax and NICs could be due for the full year based
+forecast of how much Income Tax and NICs could be due for the full year based
 on the Income submitted for a period</br>
 >f. [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages_get_accordion) linked to a Calculation ID –
 If any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.</br>
