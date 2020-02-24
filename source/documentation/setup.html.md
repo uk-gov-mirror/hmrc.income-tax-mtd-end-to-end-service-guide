@@ -59,7 +59,7 @@ Business owners can sign up for Making Tax Digital for Income Tax either directl
 7. Choose which year to sign-up for (current year or next year).
 8. Select how they record their income and expenses.
 9. Confirm and submit information.
-10. Receive confirmation that the business can now start submitting income tax updates, declarations and returns using compatible software.
+10. Receive confirmation that the business can now start submitting Income Tax updates, declarations and returns using compatible software.
 
 ## Link software to HMRC
 
