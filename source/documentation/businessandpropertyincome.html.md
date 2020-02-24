@@ -152,9 +152,9 @@ When a business resubmits an update period, the software will have to use the tr
 
 Use the same endpoints and process for submitting annual information as mentioned.
 
-* [Amend a self-employment annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-annual-summary_put_accordion)
-* [Amend a non-FHL UK property business annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-nonfhl-uk-property-business-annual-summary_put_accordion)
-* [Amend a FHL UK property business annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-fhl-uk-property-business-annual-summary_put_accordion)
+* [amend a self-employment annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-annual-summary_put_accordion)
+* [amend a non-FHL UK property business annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-nonfhl-uk-property-business-annual-summary_put_accordion)
+* [amend a FHL UK property business annual summary](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_amend-a-fhl-uk-property-business-annual-summary_put_accordion)
 
 Note: where a business resubmits an annual summary update, previous figures that have been submitted must be sent again as well as any additional information. A zero or empty filed will overwrite previously provided information. The software will have to use the trigger a calculation endpoint and follow the same process.
 
