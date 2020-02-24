@@ -288,6 +288,21 @@ A customer may want to retrieve previously submitted data, for example before ma
 
 The software can use the list all self-employment or property update periods endpoints to retrieve the list of updates made for that income source, or to find one or more period IDs. The period ID is then used with the ‘get a self-employment/property (FHL or Non FHL) periodic update’ endpoint to retrieve data for that update.
 
-### Allowance and Adjustment updates (Annual)
+### Annual accounting adjustments
 
-Annual information can be provided throughout the year but there is only one period a year for the annual summary. The software can use the ‘get a self-employment/property (FHL and Non-FHL) annual summary' endpoint.  You will need to provide the tax year for the annual period you are looking for.
+Within the annual self-assessment process, annual accounting adjustments are applied to income and expenses before the business or agent submits their tax return to HMRC. Within Making Tax Digital as the income and expenses are submitted to HMRC at least quarterly
+during the active accounting period, this means a new process to accommodate these adjustments is required.
+
+### Submitting annual accounting adjustments
+
+After an accounting period has ended, a business or agent may need to submit accounting adjustments to the income and expenses that have been submitted throughout the year.
+
+Endpoints to call are:
+
+1. Trigger a Business source adjustable summary.
+2. Retrieve a Self-employment business source adjustable summary (BSAS) or Retrieve a UK property business
+source adjustable summary - this endpoint provides the totals of all income and expenses submitted for that business that can have adjustments applied to them.
+3. Apply the adjustments as appropriate to the total figures returned via the Retrieve BSAS endpoint.
+4. Submit accounting adjustments self-employment or accounting adjustments UK property.
+
+Once submitted, if a further amendment is required to use the Retrieve self-employment accounting adjustments or Retrieve UK property adjustments endpoints to retrieve the previously submitted data and then repeat steps 3 and 4.
