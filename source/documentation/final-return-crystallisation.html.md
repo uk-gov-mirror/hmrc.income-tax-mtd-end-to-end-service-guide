@@ -73,13 +73,13 @@ The intent-to-crystallise response includes a 'calculationId' the same as the tr
 
 A crystallisation calculation is performed if the calculation was triggered by the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint under the Self Assessment (MTD) API.
 
-The Calculation ID output provides a summary of each income source (for example self-employment, UK property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the income tax and NIC payable - broadly the equivalent of the current SA302.
+The Calculation ID output provides a summary of each income source (for example self-employment, UK property, UK bank and building society interest), plus a breakdown of allowances and reliefs applied, and a breakdown of the Income Tax and NIC payable - broadly the equivalent of the current SA302.
 
 For a crystallisation calculation the minimum number of endpoints that need to be called are the following:
 
 * [retrieve self assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata-test-only_get_accordion)
 * [retrieve self assessment tax calculation taxable income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-taxable-income-test-only_get_accordion)
-* [retrieve self assessment tax calculation income tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
+* [retrieve self assessment tax calculation Income Tax NICs calculated](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-income-tax-and-nics-calculated-test-only_get_accordion)
 * [retrieve self assessment tax calculation allowances, deductions and reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-allowances-deductions-and-reliefs-test-only_get_accordion) (if applicable)
 * [retrieve self assessment tax calculation messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages-test-only_get_accordion) (if applicable)
 
@@ -108,7 +108,7 @@ Once the software has called the [intent to crystallise](https://developer.servi
 7.	The software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
 a) retrieve self assessment tax calculation metadata </br>
 b) retrieve self assessment tax calculation taxable income</br>
-c) retrieve self assessment tax calculation income tax NICs calculated</br>
+c) retrieve self assessment tax calculation Income Tax NICs calculated</br>
 d) retrieve self assessment tax calculation allowances, deductions and reliefs (if applicable)</br>
 e) retrieve self assessment tax calculation messages</br>
 
@@ -117,7 +117,7 @@ We suggest that you retrieve the self-assessment metadata first to check there a
 8.	HMRC provides the calculation response. 
 9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise calculationId. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints must be called: </br>
 a) retrieve self assessment tax calculation taxable income</br>
-b) retrieve self assessment tax calculation income tax NICs calculated</br>
+b) retrieve self assessment tax calculation Income Tax NICs calculated</br>
 c) retrieve self assessment tax calculation allowances, deductions and reliefs</br>
 10.	The customer reviews the calculation and declaration text. 
 11.	The customer confirms the declaration and the software calls the crystallisation endpoint using the crystallisation Calculation ID to confirm the calculation to which the customer is agreeing. 
