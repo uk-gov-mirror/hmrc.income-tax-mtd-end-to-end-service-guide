@@ -117,17 +117,17 @@ The developer must test their fraud headers to derive the correct values and pro
 
 #### Example workflows for self-employment
 
-1. Create an update. 
+1. Create an update. </br>
 a. List all self-employment businesses.</br>
 b. Create a self-employment periodic update.</br>
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to
 meet the obligation.
 
-2. Amend an update. 
+2. Amend an update. </br>
 a. List all self-employment update periods.</br>
 b. Amend a self-employment periodic update.
 
-3. End of Period Statement.
+3. End of Period Statement.</br>
 a. Get a self-employment annual summary.</br>
 b. Amend a self-employment annual summary.</br>
 c. Get self-employment Business Income Summary Source (BISS).</br>
@@ -135,7 +135,7 @@ d. Retrieve end of period statement obligations for a self-employment business.<
 e. Agree with the declaration within the software.</br>
 f. Submit self-employment end of period statement.</br>
 
-4. Crystallisation.
+4. Crystallisation.</br>
 a. Intent to crystallise.</br>
 b. Retrieve a tax calculation - to view the current calculation.</br>
 c. Agree with the declaration within the software.</br>
