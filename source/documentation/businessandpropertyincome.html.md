@@ -66,7 +66,7 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 13. The software calls the create a Self Employment periodic update, create a non FHL UK property update period or create a FHL UK property update period endpoints, depending on the income source type being submitting.
 14. HMRC receives and stores information and provides success response. 
 15. The software receives the success response.
-15a. The software confirms with the customer that the update has been received and stored by HMRC 
+15a. The software confirms with the customer that the update has been received and stored by HMRC. 
 16. The software calls the trigger a self-assessment tax calculation endpoint to get the calculation and ensure the obligation is marked as met, once the update(s) complete an obligation period.
 17. HMRC marks the obligation as fulfilled, once the update(s) complete an obligation period. Note: that this can take up to an hour to show on our systems as met.
 18. HMRC receives the request and returns a Calculation ID (calculationId). Software must use this when calling the Self Assessment tax calculation endpoint. 
@@ -190,20 +190,20 @@ or [Get a FHL UK property business annual summary](https://developer.service.hmr
 5. HMRC receives and stores information
 6. The software calls the [Trigger a self-assessment tax calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_trigger-a-self-assessment-tax-calculation_post_accordion) endpoint to get the calculation
 7. HMRC receives the request and returns a Calculation ID (calculationId) software must
-use this when calling the Self Assessment Tax Calculation endpoints
+use this when calling the Self Assessment Tax Calculation endpoints.
 8. The software receives the calculationId. Note: you could display the calculation to customers at
-this point if you choose, if you do follow steps 20 and 21 in the periodic update section
+this point if you choose, if you do follow steps 20 and 21 in the periodic update section.
 9. The customer wants to make some accounting adjustments following the business accounts
-being finalised
-10. The software calls the SA Accounting summary API (currently in development)
+being finalised.
+10. The software calls the SA Accounting summary API (currently in development).
 11. HMRC returns summary totals of all the information for that business income source.
 12. The software displays information to the customer.
-13. The customer makes adjustments, confirms and submits
+13. The customer makes adjustments, confirms and submits.
 14. The software sends information to HMRC using the SA Accounting summary API (currently in
-development)
-15. HMRC confirms receipt and stores the information
+development).
+15. HMRC confirms receipt and stores the information.
 16. The software calls the relevant endpoints to retrieve the calculation. Note: the Tax
-Calculation can take up to 5 seconds to run, so we recommend the software waits 5 seconds – this is optional, the software does not have to retrieve the tax calculation information at this point
+Calculation can take up to 5 seconds to run, so we recommend the software waits 5 seconds – this is optional, the software does not have to retrieve the tax calculation information at this point.
 >a. [retrieve a self-assessment tax calculation metadata](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-metadata_get_accordion) endpoint for a given
 CalculationID – this will provide high-level data about the calculation including
 the calculation type ‘crystallised’ or ‘In Year’, the total Income Tax and NIC
@@ -228,8 +228,8 @@ on the Income submitted for a period</br>
 >f. [retrieve 'info', 'warning' and 'error' level messages](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0#self-assessment_retrieve-self-assessment-tax-calculation-messages_get_accordion) linked to a Calculation ID –
 If any validation warnings or errors are generated this endpoint enables software to find out what those warnings or errors are.</br>
 
-17. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point
-18. The customer is ready to finalise their business income source
+17. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point.
+18. The customer is ready to finalise their business income source.
 19. The software calls the [Get Self Employment business income source summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-selfemployment-business-income-source-summary-biss_get_accordion) or [Get UK property business income source summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#uk-property-business_get-uk-property-business-income-source-summary-biss_get_accordion) depending on the business income type you are finalising. Note: there is only one BISS for a property, it will show both FHL and Non-FHL information in it. Calling the BISS API is optional, the software may choose to create a BISS themselves, but the information must be shown to the customer before they confirm the declaration.
 20. The software displays BISS (Business Income Source Summary) information to the customer (listed below).</br>
 >This can be totalled up by software, or through the APIs from HMRC systems as well as BISS for self-employment or property:
@@ -248,13 +248,13 @@ If any validation warnings or errors are generated this endpoint enables softwar
 >
 >You could use the BISS API or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
 
-21. Customer reviews and confirms the information
-22. The software uses submit self-employment end of period statement or submit UK property
-end of period statement endpoints depending on the income source you are finalising. Note: there is only one property EOPS which covers the property BISS
-23. HMRC receives the declaration and marks the obligation as met and provides a success response
-24. The software receives the success response
+21. Customer reviews and confirms the information.
+22. The software uses submit self-employment end of period statement or submit UK property.
+end of period statement endpoints depending on the income source you are finalising. Note: there is only one property EOPS which covers the property BISS.
+23. HMRC receives the declaration and marks the obligation as met and provides a success response.
+24. The software receives the success response.
 25. The software confirms with the customer that the update has been received and stored by
-HMRC
+HMRC.
 
 Note:	data received must cover the whole accounting period.
 
