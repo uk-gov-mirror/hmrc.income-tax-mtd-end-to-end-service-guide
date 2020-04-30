@@ -316,9 +316,8 @@ The Self Assessment BISS (Business Income Source Summary) API allows you to retr
 
 <a href="figures/biss.svg" target="blank">Open the BISS diagram in a new tab</a>.
  
-* Retrieve a Self-Employment Business Income Source Summary (BISS) 
-* Retrieve a UK Property Business Income Source Summary (BISS) 
- 
+* [Retrieve a Self-Employment Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-selfemployment-business-income-source-summary-biss_get_accordion)
+* [Retrieve a UK Property Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-uk-property-business-income-source-summary-biss_get_accordion)
  
 ## Business Source Adjustable Summary
 
@@ -337,7 +336,7 @@ This API should be used to submit any Annual Accounting Adjustments. The adjustm
 * provide accounting adjustments against a specified BSAS
 *request the adjustments made to a specific UK property BSAS
 
-List Business Source Adjustable Summaries (BSAS)
-Trigger a Business Source Adjustable Summary (BSAS)
+[List Business Source Adjustable Summaries (BSAS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#_list-business-source-adjustable-summaries-bsas-test-only_get_accordion)
+[Trigger a Business Source Adjustable Summary (BSAS) - Test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#_trigger-a-business-source-adjustable-summary-bsas_post_accordion)
  
 
