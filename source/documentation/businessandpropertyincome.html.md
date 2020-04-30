@@ -312,7 +312,9 @@ Once submitted, if a further amendment is required to use the Retrieve self-empl
 
 The Self Assessment BISS (Business Income Source Summary) API allows you to retrieve a summary of income and expenditure that has been submitted for a specified self-employment or UK property business for a given tax year. The data returned is the equivalent of the existing SA103 and SA105 schedule.
  
-[INSERT FLOW DIAGRAM]
+<a href="figures/biss.svg" target="blank"><img src="figures/biss.svg" alt="BISS (Business Income Source Summary) diagram" style="width:720px;" /></a>
+
+<a href="figures/biss.svg" target="blank">Open the BISS diagram in a new tab</a>.
  
 * Retrieve a Self-Employment Business Income Source Summary (BISS) 
 * Retrieve a UK Property Business Income Source Summary (BISS) 
@@ -324,7 +326,9 @@ The Self Assessment BSAS (Business Source Adjustable Summary) API allows you to 
 
 This API should be used to submit any Annual Accounting Adjustments. The adjustments should be submitted as positive or negative amounts, for example, if advertising costs in the BSAS is £250 but the figure should be £200, then the adjustment required would be -50.
  
-[INSERT DIAGRAM]
+<a href="figures/bsas.svg" target="blank"><img src="figures/bsas.svg" alt="BSAS (Business Source Adjustable Summary) diagram" style="width:720px;" /></a>
+
+<a href="figures/bsas.svg" target="blank">Open the BSAS diagram in a new tab</a>.
 
 * generate a list of business source adjustable summaries
 * generate an end of accounting period BSAS
