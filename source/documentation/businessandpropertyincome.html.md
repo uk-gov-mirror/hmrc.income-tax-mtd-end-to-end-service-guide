@@ -307,3 +307,33 @@ source adjustable summary - this endpoint provides the totals of all income and 
 4. Submit accounting adjustments self-employment or accounting adjustments UK property.
 
 Once submitted, if a further amendment is required to use the Retrieve self-employment accounting adjustments or Retrieve UK property adjustments endpoints to retrieve the previously submitted data and then repeat steps 3 and 4.
+
+## Business Income Source Summary
+
+The Self Assessment BISS (Business Income Source Summary) API allows you to retrieve a summary of income and expenditure that has been submitted for a specified self-employment or UK property business for a given tax year. The data returned is the equivalent of the existing SA103 and SA105 schedule.
+ 
+[INSERT FLOW DIAGRAM]
+ 
+* Retrieve a Self-Employment Business Income Source Summary (BISS) 
+* Retrieve a UK Property Business Income Source Summary (BISS) 
+ 
+ 
+## Business Source Adjustable Summary
+
+The Self Assessment BSAS (Business Source Adjustable Summary) API allows you to retrieve an adjustable summary calculation for a specified self-employment or UK property business, for a given accounting period.
+
+This API should be used to submit any Annual Accounting Adjustments. The adjustments should be submitted as positive or negative amounts, for example, if advertising costs in the BSAS is £250 but the figure should be £200, then the adjustment required would be -50.
+ 
+[INSERT DIAGRAM]
+
+* generate a list of business source adjustable summaries
+* generate an end of accounting period BSAS
+* request a specific BSAS
+* request the adjustments made to a specific self-employment BSAS
+* provide accounting adjustments against a specified BSAS
+*request the adjustments made to a specific UK property BSAS
+
+List Business Source Adjustable Summaries (BSAS)
+Trigger a Business Source Adjustable Summary (BSAS)
+ 
+
