@@ -334,9 +334,10 @@ This API should be used to submit any Annual Accounting Adjustments. The adjustm
 * request a specific BSAS
 * request the adjustments made to a specific self-employment BSAS
 * provide accounting adjustments against a specified BSAS
-*request the adjustments made to a specific UK property BSAS
+* request the adjustments made to a specific UK property BSAS
 
 [List Business Source Adjustable Summaries (BSAS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#_list-business-source-adjustable-summaries-bsas-test-only_get_accordion)
+
 [Trigger a Business Source Adjustable Summary (BSAS) - Test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#_trigger-a-business-source-adjustable-summary-bsas_post_accordion)
  
 
