@@ -337,4 +337,30 @@ This API should be used to submit any Annual Accounting Adjustments. The adjustm
 * [Submit an Adjustment to a Self-Employment Business Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#selfemployment-business_submit-an-adjustment-to-a-selfemployment-business-summary_post_accordion)
 * [Retrieve a UK Property Business Source Adjustable Summary (BSAS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#uk-property-business_retrieve-a-uk-property-business-source-adjustable-summary-bsas_get_accordion)
 * [Retrieve a UK Property Business' Summary Adjustments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#uk-property-business_retrieve-a-uk-property-business-summary-adjustments_get_accordion)
-* [Submit an Adjustment to a UK Property Business Summary](Submit an Adjustment to a UK Property Business Summary)
+* [Submit an Adjustment to a UK Property Business Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0#uk-property-business_submit-an-adjustment-to-a-uk-property-business-summary_post_accordion)
+
+## Payments and Liabilities
+ 
+The Self Assessment Accounts API allows a developer to:
+
+* retrieve the overall liability broken down into overdue, payable and pending amounts
+* retrieve a list of charges and payments for a given date range
+* list self-assessment charges between two dates
+* retrieve the history of changes to an individual charge
+* retrieve a list of payments for a given date range
+* retrieve the allocation details of a specific payment against one or more liabilities
+ 
+Retrieve a Self Assessment Balance [test only]  This endpoint allows a developer to retrieve the overall liability broken down into overdue, currently due (payable) and pending (not yet due) amounts. A unique identifier (National Insurance Number) for the account must be used.
+ 
+List Self Assessment Transactions [test only]  This endpoint allows a developer to retrieve a list of charges and payments for a given date range. The developer must quote a unique identifier (National Insurance number) for the account and provide a search period.
+
+List Self Assessment Charges [test only]  This endpoint allows a developer to retrieve the details of charges made to an account between two dates. The developer must use a unique identifier for the account (National Insurance number) and provide a valid date range.
+
+Retrieve a Self Assessment Charge's History [test only]  This endpoint allows a developer to retrieve the history of changes to an individual charge. The user must quote a unique identifier (National Insurance Number) for the account and also the charge identifier.
+
+List Self Assessment Payments [test only]  This endpoint allows a developer to retrieve a list of payments for a given date range. The developer must use a unique identifier for the account (National Insurance Number) and provide a date range.
+
+Retrieve a Self Assessment Payment's Allocation Details [test only]  This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance Number) and the payment (Payment Reference).
+
+
+
