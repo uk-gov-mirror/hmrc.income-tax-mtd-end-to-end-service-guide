@@ -350,17 +350,17 @@ The Self Assessment Accounts API allows a developer to:
 * retrieve a list of payments for a given date range
 * retrieve the allocation details of a specific payment against one or more liabilities
  
-Retrieve a Self Assessment Balance [test only]  This endpoint allows a developer to retrieve the overall liability broken down into overdue, currently due (payable) and pending (not yet due) amounts. A unique identifier (National Insurance Number) for the account must be used.
+[Retrieve a Self Assessment Balance [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-balance-test-only_get_accordion)  This endpoint allows a developer to retrieve the overall liability broken down into overdue, currently due (payable) and pending (not yet due) amounts. A unique identifier (National Insurance Number) for the account must be used.
  
-List Self Assessment Transactions [test only]  This endpoint allows a developer to retrieve a list of charges and payments for a given date range. The developer must quote a unique identifier (National Insurance number) for the account and provide a search period.
+[List Self Assessment Transactions [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_list-self-assessment-transactions-test-only_get_accordion)  This endpoint allows a developer to retrieve a list of charges and payments for a given date range. The developer must quote a unique identifier (National Insurance number) for the account and provide a search period.
 
-List Self Assessment Charges [test only]  This endpoint allows a developer to retrieve the details of charges made to an account between two dates. The developer must use a unique identifier for the account (National Insurance number) and provide a valid date range.
+[List Self Assessment Charges [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-transactions-detail-test-only_get_accordion)  This endpoint allows a developer to retrieve the details of charges made to an account between two dates. The developer must use a unique identifier for the account (National Insurance number) and provide a valid date range.
 
-Retrieve a Self Assessment Charge's History [test only]  This endpoint allows a developer to retrieve the history of changes to an individual charge. The user must quote a unique identifier (National Insurance Number) for the account and also the charge identifier.
+[Retrieve a Self Assessment Charge's History [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-charges-history-test-only_get_accordion)  This endpoint allows a developer to retrieve the history of changes to an individual charge. The user must quote a unique identifier (National Insurance Number) for the account and also the charge identifier.
 
-List Self Assessment Payments [test only]  This endpoint allows a developer to retrieve a list of payments for a given date range. The developer must use a unique identifier for the account (National Insurance Number) and provide a date range.
+[List Self Assessment Payments [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_list-self-assessment-payments-test-only_get_accordion)  This endpoint allows a developer to retrieve a list of payments for a given date range. The developer must use a unique identifier for the account (National Insurance Number) and provide a date range.
 
-Retrieve a Self Assessment Payment's Allocation Details [test only]  This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance Number) and the payment (Payment Reference).
+[Retrieve a Self Assessment Payment's Allocation Details [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-payments-allocation-details-test-only_get_accordion)  This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance Number) and the payment (Payment Reference).
 
 
 
