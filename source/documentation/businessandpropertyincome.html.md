@@ -316,8 +316,8 @@ The Self Assessment BISS (Business Income Source Summary) API allows a developer
 
 <a href="figures/biss.svg" target="blank">Open the BISS diagram in a new tab</a>.
  
-* [Retrieve a Self-Employment Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-selfemployment-business-income-source-summary-biss_get_accordion)
-* [Retrieve a UK Property Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-uk-property-business-income-source-summary-biss_get_accordion)
+* [retrieve a self-employment business income source summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-selfemployment-business-income-source-summary-biss_get_accordion)
+* [retrieve a UK property business income source summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0#_retrieve-a-uk-property-business-income-source-summary-biss_get_accordion)
  
 ## Business Source Adjustable Summary
 
@@ -349,7 +349,11 @@ The Self Assessment Accounts API allows a developer to:
 * retrieve the history of changes to an individual charge
 * retrieve a list of payments for a given date range
 * retrieve the allocation details of a specific payment against one or more liabilities
- 
+
+<a href="figures/payments-and-liabilities.svg" target="blank"><img src="figures/payments-and-liabilities.svg" alt="payments and liabilities diagram" style="width:720px;" /></a>
+
+<a href="figures/payments-and-liabilities.svg" target="blank">Open the payments and liabilities diagram in a new tab</a>.
+
 [Retrieve a Self Assessment Balance [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-balance-test-only_get_accordion)  This endpoint allows a developer to retrieve the overall liability broken down into overdue, currently due (payable) and pending (not yet due) amounts. A unique identifier (National Insurance Number) for the account must be used.
  
 [List Self Assessment Transactions [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_list-self-assessment-transactions-test-only_get_accordion)  This endpoint allows a developer to retrieve a list of charges and payments for a given date range. The developer must quote a unique identifier (National Insurance number) for the account and provide a search period.
