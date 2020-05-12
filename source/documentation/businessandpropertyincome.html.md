@@ -262,7 +262,7 @@ The declaration is the only mandatory requirement for this process, the exact te
 
 Developers must replace '[insert tax year]' with the correct tax year.
 
-> **Declaration for Agents EOPS**
+> **Declaration for Agents**
 
  > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. If you give false information your client may have to pay financial penalties and face prosecution."
 
@@ -274,7 +274,18 @@ Developers must replace '[insert tax year]' with the correct tax year.
 
 > "I confirm that my client has reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
 
-Making changes to previously submitted data during and after an EOPS declaration
+
+### Declaration for Individuals
+
+ > ** Declaration for Self Employment EOPS**
+ 
+> “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+
+> **Declaration for Property EOPS**
+
+> “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of my knowledge. I understand that I may have to pay financial penalties or face prosecution if I give false information.”
+
+Making changes to previously submitted data during and after an EOPS declaration:
 
 * if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation, or a periodic update is missing), then the EOPS declaration is rejected, and error messages are returned. The changes must be made to any relevant periodic or annual summaries and then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
 
