@@ -258,10 +258,13 @@ HMRC.
 
 Note:	data received must cover the whole accounting period.
 
-The declaration is the only mandatory requirement for this process, the exact text that HMRC requires you to present is below. The declaration text for agents is currently being finalised and will be added here soon.  
+The declaration is the only mandatory requirement for this process, the exact text that HMRC requires you to present is below. 
+
 Developers must replace '[insert tax year]' with the correct tax year.
 
+> **Declaration for Agents EOPS**
 
+ > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. If you give false information your client may have to pay financial penalties and face prosecution."
 
  > **Declaration for Self Employment EOPS**
  
