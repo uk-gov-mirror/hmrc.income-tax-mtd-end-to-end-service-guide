@@ -139,8 +139,7 @@ Once a customer is confident with all the information, they will have to agree t
 
 > [Here the vendor can decide how to manage the actual declaration in the user interface, for example a tick box, confirm button or other]
 
-> The information I have provided is correct and complete to the best of my knowledge and belief
-If you give false information you may have to pay financial penalties and face prosecution.”
+> The information I have provided is correct and complete to the best of my knowledge and belief. If you give false information you may have to pay financial penalties and face prosecution.”
 
 The software must send the ‘calculationId’ that matches the calculation the customer is declaring against with the declaration.
 
