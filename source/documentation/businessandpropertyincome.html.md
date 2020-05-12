@@ -277,7 +277,7 @@ Developers must replace '[insert tax year]' with the correct tax year.
 
 ### Declaration for Individuals
 
- > ** Declaration for Self Employment EOPS**
+ > **Declaration for Self Employment EOPS**
  
 > “I confirm that I have reviewed the information provided to establish the taxable profits for the relevant period ending in [insert tax year] together with the designatory data provided for that period and that it is correct and complete to the best of my knowledge. I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
