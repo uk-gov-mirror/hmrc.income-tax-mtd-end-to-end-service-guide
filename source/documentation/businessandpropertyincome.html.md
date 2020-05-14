@@ -262,9 +262,7 @@ The declaration is the only mandatory requirement for this process, the exact te
 
 Developers must replace '[insert tax year]' with the correct tax year.
 
-> **Declaration for Agents**
-
- > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. If you give false information your client may have to pay financial penalties and face prosecution."
+### Declaration for Agents
 
  > **Declaration for Self Employment EOPS**
  
