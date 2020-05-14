@@ -141,6 +141,10 @@ Once a customer is confident with all the information, they will have to agree t
 
 > The information I have provided is correct and complete to the best of my knowledge and belief. If you give false information you may have to pay financial penalties and face prosecution.”
 
+> **Declaration for Agents**
+
+ > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. I understand that if I give false information my client may have to pay financial penalties or face prosecution."
+
 The software must send the ‘calculationId’ that matches the calculation the customer is declaring against with the declaration.
 
 ## Making an amendment after crystallisation
