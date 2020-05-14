@@ -1,6 +1,6 @@
 ---
 title: Business Validation Rules (BVRs) | Income Tax (MTD) End-to-End Service Guide
-weight: 9
+weight: 12
 ---
 
 # Business validation rules (BVRs)
