@@ -196,4 +196,5 @@ These journeys show examples of use:
 ## Changelog
 
 Version 1.1
+
 * Payments and Liabilities added
