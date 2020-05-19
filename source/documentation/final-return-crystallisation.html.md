@@ -69,7 +69,7 @@ Information currently provided through the existing self-assessment process: if 
 
 The software will have to let HMRC know that the customer is ready to crystallise, to do this you must call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint. This will start the crystallisation process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
 
-The intent-to-crystallise response includes a 'calculationId' the same as the trigger calculation endpoint. The software will then have to retrieve the calculation using the 'calculationId' to retrieve a tax calculation endpoint to get the calculation output.
+The intent-to-crystallise response includes a ```calculationId``` the same as the trigger calculation endpoint. The software will then have to retrieve the calculation using the ```calculationId``` to retrieve a tax calculation endpoint to get the calculation output.
 
 A crystallisation calculation is performed if the calculation was triggered by the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint under the Self Assessment (MTD) API.
 
@@ -102,9 +102,9 @@ Once the software has called the [intent to crystallise](https://developer.servi
 1.	Customer is ready to complete their final tax return. 
 2.	The software calls the intent to crystallise endpoint – this endpoint triggers the creation of the crystallisation calculation for the customer to agree. 
 3.	HMRC receives the request and starts the tax calculation and returns Calculation ID. 
-4.	The software receives the 'calculationId'.
+4.	The software receives the ```calculationId```.
 5.	Generates the crystallisation tax calculation - this process will also convert any business validation warnings into errors, if there are any errors the calculation will not run and the customer will not be able to crystallise the liability.
-6.	HMRC Stores tax calculation with calculationId.
+6.	HMRC Stores tax calculation with ```calculationId```.
 7.	The software uses the Individuals Tax Calculation API to call the relevant endpoints, the minimum number of endpoints that need to be called are: </br>
 a) retrieve self assessment tax calculation metadata. </br>
 b) retrieve self assessment tax calculation taxable income.</br>
@@ -115,7 +115,7 @@ e) retrieve self assessment tax calculation messages.</br>
 We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again. 
 
 8.	HMRC provides the calculation response. 
-9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise calculationId. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints must be called: </br>
+9.	Software surfaces the calculation to the customer – at this point in the journey, it is mandatory that the customer is shown a copy of the calculation resulting from the intent to crystallise ```calculationId```. As a minimum a customer must view the equivalent of what is currently in the SA302, to do that the following endpoints must be called: </br>
 a) retrieve self assessment tax calculation taxable income</br>
 b) retrieve self assessment tax calculation Income Tax NICs calculated</br>
 c) retrieve self assessment tax calculation allowances, deductions and reliefs</br>
@@ -125,7 +125,7 @@ c) retrieve self assessment tax calculation allowances, deductions and reliefs</
 13.	The software receives a success message and confirms that HMRC has received the return.
 14.	The customer views confirmation that the return has been successfully submitted to HMRC.
 
-The software must use the intent to crystallise 'calculationId' to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation and confirm it is complete and correct by sending the declaration.
+The software must use the intent to crystallise ```calculationId``` to retrieve the final calculation and display that calculation to the customer. The customer must review this calculation and confirm it is complete and correct by sending the declaration.
 
 If the customer thinks the calculation is incorrect as a result of the data they have submitted, they can go back and change the information, by resubmitting the relevant update with the correct information. Once they have done this the software will have to call the [intent to crystallise](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#crystallisation_intent-to-crystallise_post_accordion) endpoint again to generate a new final liability.
 
@@ -137,15 +137,15 @@ Once a customer is confident with all the information, they will have to agree t
 
 > “Before you can submit the information displayed here in response to your notice to file from HM Revenue & Customs, you must read and agree to the following statement by 
 
-> [Here the vendor can decide how to manage the actual declaration in the user interface, for example a tick box, confirm button or other]
+> [Here the vendor can decide how to manage the actual declaration in the user interface, for example a tick box, confirm button or other method]
 
 > The information I have provided is correct and complete to the best of my knowledge and belief. If you give false information you may have to pay financial penalties and face prosecution.”
 
 > **Declaration for Agents**
 
- > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. I understand that if I give false information my client may have to pay financial penalties or face prosecution."
+ > "The information I have provided on behalf of my client is correct and complete to the best of my knowledge and belief. I understand that if I give false information my client may have to pay financial penalties and face prosecution."
 
-The software must send the ‘calculationId’ that matches the calculation the customer is declaring against with the declaration.
+The software must send the ```calculationId``` that matches the calculation the customer is declaring against with the declaration.
 
 ## Making an amendment after crystallisation
 
