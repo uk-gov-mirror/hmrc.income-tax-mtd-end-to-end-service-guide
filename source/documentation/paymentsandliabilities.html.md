@@ -6,11 +6,13 @@ weight: 5
 # Payments and Liabilities
  
 The Self Assessment Account API allows a developer to retrieve accounting information to be shown back to the customer. This includes listing payments the customer has made, how these payments have been allocated and details of any upcoming or outstanding liabilities. 
+The data returned only relates to payments and liabilities arising for tax years since the customer joined the new service. There may also be outstanding liabilities and payment information a customer needs to view for the years prior to signing up to Making Tax Digital for Income Tax Self Assessment that can be viewed using their existing Personal Tax Account.
 
-Here a developer can:
+With these endpoints a developer can:
 
 * retrieve the overall liability broken down into overdue, payable and pending amounts
-* retrieve a list of charges and payments for a given date range
+* retrieve a list of crystallised charges and payments for a given date
+range
 * list self-assessment charges between two dates
 * retrieve the history of changes to an individual charge
 * retrieve a list of payments for a given date range
