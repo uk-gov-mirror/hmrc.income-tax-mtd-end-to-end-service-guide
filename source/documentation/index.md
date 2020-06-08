@@ -197,4 +197,4 @@ These journeys show examples of use:
 
 Version 1.1
 
-* Payments and Liabilities added
+* Payments and Liabilities added.
