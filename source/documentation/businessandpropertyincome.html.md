@@ -398,5 +398,26 @@ The Self Assessment Account API allows a developer to retrieve accounting inform
 
 [Retrieve a Self Assessment Payment's Allocation Details [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-payments-allocation-details-test-only_get_accordion)  This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance number) and the payment (Payment Reference).
 
+## Multiple Business
+
+Users with multiple self-employment businesses and those with a foreign property business will be able to sign up for Making Tax Digital. To enable this we are providing a number of new endpoints:
+
+* List All Businesses - returns a list of the business income sources
+* Retrieve Business Details - returns further information about a single business income source
+* Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations - returns the quarterly obligations for each business income source
+* Retrieve Income Tax (Self Assessment) End of Period Statement Obligations - returns the End of Period Statement obligations for a user’s business income sources
+* Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
+* Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
+
+The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
+ 
+A user with multiple businesses may choose to list their businesses so that they can obtain the business IDs of their active businesses. A developer can then return information about a specific business or retrieve obligations quoting a business ID, so the user knows when they need to submit information.
+  
+Where more than one business income source has incurred a loss at the end of the tax year and the user has opted to carry-sideways these losses, then by listing loss claims, they will see the current order in which these loss claims will be applied.  If they wish to change the order they can amend the loss claim order preference and list loss claims to review.
+
+Not all loss claims will have a sequence number to indicate the order of use (currently only carry-sideways). When changing the order, all the loss claims of the same type (carry-sideways) must be included in the submission.
+
+To obtain the Business ID a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
+Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
 
