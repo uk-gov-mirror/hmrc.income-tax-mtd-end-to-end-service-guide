@@ -400,7 +400,7 @@ The Self Assessment Account API allows a developer to retrieve accounting inform
 
 ## Multiple Business
 
-Users with multiple self-employment businesses and those with a foreign property business will be able to sign up for Making Tax Digital. To enable this we are providing a number of new endpoints:
+Users with multiple self-employment businesses and those with a foreign property business will be able to sign up to Making Tax Digital. To enable this we are providing a number of new endpoints:
 
 * List All Businesses - returns a list of the business income sources
 * Retrieve Business Details - returns further information about a single business income source
@@ -409,15 +409,18 @@ Users with multiple self-employment businesses and those with a foreign property
 * Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
 * Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
 
+<a href="figures/multiple-businesses.svg" target="blank"><img src="figures/multiple-businesses.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
+<a href="figures/multiple-businesses.svg" target="blank">Open the multiple businesses diagram in a new tab</a>.
+
 The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
  
-A user with multiple businesses may choose to list their businesses so that they can obtain the business IDs of their active businesses. A developer can then return information about a specific business or retrieve obligations quoting a business ID, so the user knows when they need to submit information.
+A user with multiple businesses may choose to list their businesses so that they can obtain the Business IDs of their active businesses. A developer can then return information about a specific business or retrieve obligations quoting a ```businessID```, so the user knows when they need to submit information.
   
-Where more than one business income source has incurred a loss at the end of the tax year and the user has opted to carry-sideways these losses, then by listing loss claims, they will see the current order in which these loss claims will be applied.  If they wish to change the order they can amend the loss claim order preference and list loss claims to review.
+Where more than one business income source has incurred a loss at the end of the tax year and the user has opted to carry-sideways these losses (by listing loss claims) they will see the current order in which these loss claims will be applied.  If they wish to change the order they can amend the loss claim order preference and list loss claims to review.
 
-Not all loss claims will have a sequence number to indicate the order of use (currently only carry-sideways). When changing the order, all the loss claims of the same type (carry-sideways) must be included in the submission.
+Not all loss claims will have a sequence number to indicate the order of use (currently only carry-sideways, future functionality will enable you to carry backwards). When changing the order, all the loss claims of the same type (for example carry-sideways) must be included in the submission.
 
-To obtain the Business ID a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
+To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
 ## Additional income
