@@ -398,9 +398,11 @@ The Self Assessment Account API allows a developer to retrieve accounting inform
 
 [Retrieve a Self Assessment Payment's Allocation Details [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-payments-allocation-details-test-only_get_accordion)  This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance number) and the payment (Payment Reference).
 
-## Multiple Business
+## Multiple businesses
 
 Users with multiple self-employment businesses and those with a foreign property business will be able to sign up to Making Tax Digital. To enable this we are providing a number of new endpoints:
+
+[LINK TO ENDPOINTS]
 
 * List All Businesses - returns a list of the business income sources
 * Retrieve Business Details - returns further information about a single business income source
