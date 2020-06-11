@@ -153,11 +153,6 @@ If a customer wants to make any changes following crystallisation they have 12 m
 
 Note: any changes made following crystallisation will be a formal amendment under section 9ZA TMA 1970
 
-
-## View liabilities and payments
-
-The ability to view liabilities and payments is being developed and will be provided later. 
-
 ## Pay or get a repayment
 
 Vendors should present messages to business users at key points in their user journey that gives them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows vendors to make users aware of payment dates.
