@@ -402,8 +402,6 @@ The Self Assessment Account API allows a developer to retrieve accounting inform
 
 Users with multiple self-employment businesses and those with a foreign property business will be able to sign up to Making Tax Digital. To enable this we are providing a number of new endpoints:
 
-[LINK TO ENDPOINTS]
-
 * List All Businesses - returns a list of the business income sources
 * Retrieve Business Details - returns further information about a single business income source
 * Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations - returns the quarterly obligations for each business income source
@@ -438,19 +436,16 @@ Not all loss claims will have a sequence number to indicate the order of use (cu
 To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
+<!---
 ## Additional income
-
 ### Investments
-
 This set of endpoints allows a user to manage data related to reliefs on investments.  The user can submit details of investment reliefs for a specific tax year, as well as amend submissions already made.   Additionally, the user can delete previous submissions, and retrieve data previously submitted. 
-
 The new functionality provides three new endpoints, to submit or amend new investment reliefs, delete a submission, or retrieve details of a submission.
-
 [INSERT ACTUAL LINKS HERE]
-
 * Amend /individuals/reliefs/investment/{nino}/{taxYear}
 * Delete individuals/reliefs/investment/{nino}/{taxYear}
 * Retrieve individuals/reliefs/investment/{nino}/{taxYear}
+--->
 
 ## [TEMP MOVE INTO OWN SECTION]
 ## Construction Industry Scheme 
