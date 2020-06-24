@@ -14,7 +14,7 @@ The user may use these endpoints at least at the point of every quarterly submis
 
 [INSERT DIAGRAMS]
 
-CREATE CIS Deductions for Subcontractor - This endpoint allows a developer to create a customer amendment to the CIS deductions which have been previously populated by data submitted directly to HMRC by the contractor. A National Insurance number must be provided
-AMEND CIS Deductions for Subcontractor - This endpoint allows a developer to amend customer CIS deductions that have been previously submitted by the user. A National Insurance number and submission ID must be provided.
-LIST CIS Deductions for Subcontractor -This endpoint allows a developer to retrieve the latest CIS deductions position and whether contractor or user data has been used. A National Insurance number and submission ID must be provided.
-DELETE CIS Deductions for Subcontractor - This endpoint allows a developer to delete customer CIS amendment deductions which have been previously submitted. A National Insurance number and submission ID must be provided.
+* CREATE CIS Deductions for Subcontractor - This endpoint allows a developer to create a customer amendment to the CIS deductions which have been previously populated by data submitted directly to HMRC by the contractor. A National Insurance number must be provided
+* AMEND CIS Deductions for Subcontractor - This endpoint allows a developer to amend customer CIS deductions that have been previously submitted by the user.  A National Insurance number and submission ID must be provided.
+* LIST CIS Deductions for Subcontractor -This endpoint allows a developer to retrieve the latest CIS deductions position and whether contractor or user data has been used. A National Insurance number and submission ID must be provided. 
+* DELETE CIS Deductions for Subcontractor - This endpoint allows a developer to delete customer CIS amendment deductions which have been previously submitted. A National Insurance number and submission ID must be provided.
