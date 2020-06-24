@@ -411,8 +411,21 @@ Users with multiple self-employment businesses and those with a foreign property
 * Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
 * Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
 
-<a href="figures/multiple-businesses.svg" target="blank"><img src="figures/multiple-businesses.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
-<a href="figures/multiple-businesses.svg" target="blank">Open the multiple businesses diagram in a new tab</a>.
+<a href="figures/list-all-businesses.svg" target="blank"><img src="figures/list-all-businesses.svg" alt="list all businesses diagram" style="width:720px;" /></a>
+<a href="figures/list-all-businesses.svg" target="blank">Open the list all businesses diagram in a new tab</a>.
+
+<a href="figures/retrieve-business-details.svg" target="blank"><img src="figures/retrieve-business-details.svg" alt="retrieve business details diagram" style="width:720px;" /></a>
+<a href="figures/retrieve-business-details.svg" target="blank">Open the retrieve details businesses diagram in a new tab</a>.
+
+<a href="figures/retrieve-income-tax-crystalisaiton-obligations.svg" target="blank"><img src="figures/retrieve-income-tax-crystalisaiton-obligations.svg" alt="retrieve-income-tax-crystalisaiton-obligations.svg diagram" style="width:720px;" /></a>
+<a href="figures/rretrieve-income-tax-crystalisaiton-obligations.svg" target="blank">Open the retrieve income tax crystalisaiton obligations diagram in a new tab</a>.
+
+<a href="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" target="blank"><img src="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
+<a href="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" target="blank">Open the retrieve income tax self assessment income expenditure obligations diagram in a new tab</a>.
+
+<a href="figures/list-self-assessment-payments.svg" target="blank"><img src="figures/list-self-assessment-payments.svg" alt="list self assessment payments diagram" style="width:720px;" /></a>
+<a href="figures/list-self-assessment-payments.svg" target="blank">Open the multiple businesses diagram in a new tab</a>.
+
 
 The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
  
