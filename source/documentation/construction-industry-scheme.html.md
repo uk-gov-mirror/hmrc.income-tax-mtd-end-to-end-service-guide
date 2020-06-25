@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Construction Industry Scheme
 
-These endpoints allow a subcontractor working within the Construction Industry Scheme to retrieve, submit, amend and delete the gross income, cost of materials and tax deducted amounts if they disagree with the amounts submitted on their behalf by the contractors they have worked for during the tax year. The tax deducted by the contractor will be credited to the subcontractor within their tax calculation.
+These endpoints allow a subcontractor working under the (Construction Industry Scheme (CIS))[https://www.gov.uk/what-is-the-construction-industry-scheme] to retrieve, submit, amend and delete the gross income, cost of materials and tax deducted amounts if they disagree with the amounts submitted on their behalf by the contractors they have worked for during the tax year. The tax deducted by the contractor will be credited to the subcontractor within their tax calculation.
 
 The user may use these endpoints at least at the point of every quarterly submission. When sending their quarterly update and retrieving a tax calculation that will include the tax deducted by the contractor, the user may want to call these endpoints to query or check the data supplied by the contractor and correct or amend as needed. If no data from the contractor is included in the calculation, the user may want to submit the details so that they can be given credit for the tax the contractor has deducted on their behalf. If the user later realises the data they have is incorrect they can simply delete the data using the delete endpoint.
 
