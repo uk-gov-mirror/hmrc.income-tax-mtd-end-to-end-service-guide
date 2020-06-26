@@ -24,13 +24,13 @@ Amend CIS Deductions for Subcontractor - this endpoint allows a developer to ame
 
 Retrieve CIS Deductions for Subcontractor - this endpoint allows a developer to retrieve the latest CIS deductions position and whether contractor or user data has been used. A National Insurance number and submission ID must be provided. 
 
-<a href="figures/cis-create-cis.svg" target="blank"><img src="figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
-<a href="figures/cis-create-cis.svg" target="blank">Open the CIS create deduction diagram in a new tab</a>.
+<a href="figures/cis-retrieve-cis.svg" target="blank"><img src="figures/cis-retrieve-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
+<a href="figures/cis-retrieve-cis.svg" target="blank">Open the CIS retrieve deduction diagram in a new tab</a>.
 
 Delete CIS Deductions for Subcontractor - this endpoint allows a developer to delete customer CIS amendment deductions which have been previously submitted. A National Insurance number and submission ID must be provided.
 
-<a href="figures/cis-create-cis.svg" target="blank"><img src="figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
-<a href="figures/cis-create-cis.svg" target="blank">Open the CIS create deduction diagram in a new tab</a>.
+<a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
+<a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>.
 
 
 
