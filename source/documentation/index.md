@@ -197,10 +197,10 @@ These journeys show examples of use:
 
 Version 1.1
 
-* Payments and Liabilities added.
+* Payments and Liabilities section added.
 
 Version 1.2
 
-* Multiple business section added.
+* Multiple businesses section added.
 * Construction Industry Scheme (CIS) section added.
 
