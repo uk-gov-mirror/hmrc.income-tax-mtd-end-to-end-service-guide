@@ -415,14 +415,11 @@ Users with multiple self-employment businesses and those with a foreign property
 <a href="figures/retrieve-business-details.svg" target="blank"><img src="figures/retrieve-business-details.svg" alt="retrieve business details diagram" style="width:720px;" /></a>
 <a href="figures/retrieve-business-details.svg" target="blank">Open the retrieve details businesses diagram in a new tab</a>.
 
+<a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg.svg" target="blank"><img src="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
+<a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" target="blank">Open the retrieve income tax (Self Assessment) End of Period statement obligations diagram in a new tab</a>.
+
 <a href="figures/retrieve-income-tax-crystallisation-obligations.svg" target="blank"><img src="figures/retrieve-income-tax-crystallisation-obligations.svg" alt="retrieve-income-tax-crystallisation-obligations.svg diagram" style="width:720px;" /></a>
 <a href="figures/rretrieve-income-tax-crystallisation-obligations.svg" target="blank">  Open the retrieve income tax crystallisation obligations diagram in a new tab.</a>.
-
-<a href="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" target="blank"><img src="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
-<a href="figures/retrieve-income-tax-self-assessment-income-expenditure-obligations.svg" target="blank">Open the retrieve income tax self assessment income expenditure obligations diagram in a new tab</a>.
-
-<a href="figures/list-self-assessment-payments.svg" target="blank"><img src="figures/list-self-assessment-payments.svg" alt="list self assessment payments diagram" style="width:720px;" /></a>
-<a href="figures/list-self-assessment-payments.svg" target="blank">Open the list self assessment payments diagram in a new tab</a>.
 
 
 The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
