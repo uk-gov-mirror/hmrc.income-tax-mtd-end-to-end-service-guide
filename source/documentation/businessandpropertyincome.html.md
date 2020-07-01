@@ -420,6 +420,9 @@ Users with multiple self-employment businesses and those with a foreign property
 <a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg.svg" target="blank"><img src="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
 <a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" target="blank">Open the retrieve Income Tax (Self Assessment) End of Period Statement obligations diagram in a new tab.</a>
 
+<a href="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" target="blank"><img src="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
+<a href="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" target="blank">Open the retrieve Income Tax (Self Assessment) crystallisation obligations diagram in a new tab.</a>
+
 The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
  
 A user with multiple businesses may choose to list their businesses so that they can obtain the Business IDs of their active businesses. A developer can then return information about a specific business or retrieve obligations quoting a ```businessID```, so the user knows when they need to submit information.
