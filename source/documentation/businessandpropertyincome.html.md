@@ -436,9 +436,12 @@ Once loss claims have been generated a user will be able to list them and determ
 
 ## Additional income
 ### Investments
+
 This set of endpoints allows a user to manage data related to reliefs on investments.  The user can submit details of investment reliefs for a specific tax year, as well as amend submissions already made.   Additionally, the user can delete previous submissions, and retrieve data previously submitted. 
 The new functionality provides three new endpoints, to submit or amend new investment reliefs, delete a submission, or retrieve details of a submission.
+
 [INSERT ACTUAL LINKS HERE]
+
 * Amend /individuals/reliefs/investment/{nino}/{taxYear}
 * Delete individuals/reliefs/investment/{nino}/{taxYear}
 * Retrieve individuals/reliefs/investment/{nino}/{taxYear}
