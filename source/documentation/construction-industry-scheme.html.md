@@ -12,6 +12,9 @@ These endpoints allow a subcontractor working under the [Construction Industry S
 
 The user may use these endpoints at least at the point of every quarterly submission. When sending their quarterly update and retrieving a tax calculation that will include the tax deducted by the contractor, the user may want to call these endpoints to query or check the data supplied by the contractor and correct or amend as needed. If no data from the contractor is included in the calculation, the user may want to submit the details so that they can be given credit for the tax the contractor has deducted on their behalf. If the user later realises the data they have is incorrect they can simply delete the data using the delete endpoint.
 
+If data is different from the records HMRC hold the user data is accepted. Any discrepancies will be flagged by the system for a HMRC review.   If the subcontractor does not agree with the data the Contractor has reported to HMRC, the subcontractor can submit what they believe to be the correct amounts.  The Subcontractor should also query this with the Contractor as they may need to amend the monthly return they make to HMRC. 
+
+
 [Create CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0#_create-cis-deductions-for-subcontractor-test-only_post_accordion) - this endpoint allows a developer to create a customer amendment to the CIS deductions which have been previously populated by data submitted directly to HMRC by the contractor. A National Insurance number must be provided.
 
 <a href="figures/cis-create-cis.svg" target="blank"><img src="figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
