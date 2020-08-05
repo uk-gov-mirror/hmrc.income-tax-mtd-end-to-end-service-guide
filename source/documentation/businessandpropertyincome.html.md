@@ -409,8 +409,12 @@ Users with multiple self-employment businesses and those with a foreign property
 * Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
 * Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
 
+Property unspecified in the Gov test scenario means where we are unable to identify the type of property business - whether UK or foreign. In exceptional cases, we return a type of "property-unspecified".
+
 <a href="figures/list-all-businesses.svg" target="blank"><img src="figures/list-all-businesses.svg" alt="list all businesses diagram" style="width:720px;" /></a>
 <a href="figures/list-all-businesses.svg" target="blank">Open the list all businesses diagram in a new tab</a>.
+
+In the case where the query is made with a validly formed but incorrect National Insurance number for a user a “not found” can be returned.
 
 <a href="figures/retrieve-business-details.svg" target="blank"><img src="figures/retrieve-business-details.svg" alt="retrieve business details diagram" style="width:720px;" /></a> <a href="figures/retrieve-business-details.svg" target="blank">Open the retrieve details businesses diagram in a new tab</a>.
 
