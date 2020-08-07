@@ -409,17 +409,16 @@ Users with multiple self-employment businesses and those with a foreign property
 * Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
 * Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
 
-Property unspecified in the Gov test scenario means where we are unable to identify the type of property business - whether UK or foreign. In exceptional cases, we return a type of "property-unspecified".
-
 <a href="figures/list-all-businesses.svg" target="blank"><img src="figures/list-all-businesses.svg" alt="list all businesses diagram" style="width:720px;" /></a>
 <a href="figures/list-all-businesses.svg" target="blank">Open the list all businesses diagram in a new tab</a>.
 
+Property unspecified in the Gov test scenario means where we are unable to identify the type of property business - whether UK or foreign. In exceptional cases, we return a type of "property-unspecified".
 In the case where the query is made with a validly formed but incorrect National Insurance number for a user a “not found” can be returned.
 
 <a href="figures/retrieve-business-details.svg" target="blank"><img src="figures/retrieve-business-details.svg" alt="retrieve business details diagram" style="width:720px;" /></a> <a href="figures/retrieve-business-details.svg" target="blank">Open the retrieve details businesses diagram in a new tab</a>.
 
 <a href="figures/multiple-businesses-retrieve-itsa-income-expenditure-obligations.svg" target="blank"><img src="figures/multiple-businesses-retrieve-itsa-income-expenditure-obligations.svg" alt="retrieve business details diagram" style="width:720px;" /></a> <a href="figures/multiple-businesses-retrieve-itsa-income-expenditure-obligations.svg" target="blank">Open the retrieve Income Tax (Self Assessment) income and expenditure diagram in a new tab</a>.
-
+In the case where the query is made with a validly formed but incorrect National Insurance number for a user a “not found” can be returned.
 
 <a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg.svg" target="blank"><img src="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
 <a href="figures/multiple-businesses-retrieve-itsa-eops-statement.svg" target="blank">Open the retrieve Income Tax (Self Assessment) End of Period Statement obligations diagram in a new tab.</a>
@@ -438,6 +437,7 @@ Not all loss claims will have a sequence number to indicate the order of use (cu
 To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
+<---
 ## Additional income
 ### Investments
 
@@ -463,5 +463,5 @@ The user would normally call this when they have all the information necessary f
 * Amend (PUT) disclosures/{nino}/{taxYear}
 * Delete (Delete) disclosures/{nino}/{taxYear}
 * Retrieve (GET) disclosures/{nino}/{taxYear}
-
+-->
 
