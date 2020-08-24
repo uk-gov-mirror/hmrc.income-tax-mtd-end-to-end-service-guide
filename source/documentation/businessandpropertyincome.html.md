@@ -391,7 +391,6 @@ Not all loss claims will have a sequence number to indicate the order of use (cu
 To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
-<---
 ## Additional income
 ### Investments
 
@@ -417,5 +416,12 @@ The user would normally call this when they have all the information necessary f
 * Amend (PUT) disclosures/{nino}/{taxYear}
 * Delete (Delete) disclosures/{nino}/{taxYear}
 * Retrieve (GET) disclosures/{nino}/{taxYear}
--->
+
+
+## Pension charges
+
+This endpoint allows the end-user  to manage data related to pension charges.  The user can submit details of pension charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
+ 
+The new functionality provides three new endpoints: amend new pension charges, delete a submission, and retrieve details of a submission.
+
 
