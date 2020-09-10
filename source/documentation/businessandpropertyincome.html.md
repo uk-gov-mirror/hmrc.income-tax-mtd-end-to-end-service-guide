@@ -391,10 +391,11 @@ Not all loss claims will have a sequence number to indicate the order of use (cu
 To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
+### NEW CONTENT STARTS HERE ------------------------------------------------------------------------------------------------------------------------
 
 ## Additional income
 
-[CHECK HEADING WITH DSM]
+[CHECK STRUCTURE WITH DSM]
 
 ## Investments
 
@@ -518,6 +519,7 @@ These endpoints can be broken into three categories:
 * financial data and benefits from a specific employment
 * employment expenses from all of the user’s employments
 
+
 Add a Custom Employment
 Amend a Custom Employment
 Retrieve an Employment
@@ -596,6 +598,7 @@ These endpoints allow a user to retrieve, amend and delete insurance policies an
 
 [INSERT DIAGRAM]
 
+
 Retrieve Insurance Policies Income [test only]
 Amend Insurance Policies Income [test only]
 Delete Insurance Policies Income [test only]
@@ -605,6 +608,7 @@ Delete Insurance Policies Income [test only]
 These endpoints allow a user to retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
 
 [INSERT DIAGRAM]
+
 
 Retrieve Pensions Income [test only]
 Amend Pensions Income [test only]
@@ -616,6 +620,7 @@ These endpoints allow a user to retrieve other income: business receipts, all ot
 
 [INSERT DIAGRAM]
 
+
 Retrieve Other Income [test only]
 Amend Other Income [test only]
 Delete Other Income [test only]
@@ -625,6 +630,7 @@ Delete Other Income [test only]
 These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest. 
 
 [INSERT DIAGRAM]
+
 
 Retrieve Savings Income [test only]
 Amend Savings Income [test only]
