@@ -391,7 +391,12 @@ Not all loss claims will have a sequence number to indicate the order of use (cu
 To obtain the ```businessID``` a developer will need to call the List All businesses endpoint.  This will then permit obligations to be retrieved for a particular Business ID so that the user is clear by when they must submit their business data.
 Once loss claims have been generated a user will be able to list them and determine if the order in which they are used needs to change.
 
+
 ## Additional income
+
+[CHECK HEADING WITH DSM]
+
+
 ### Investments
 
 This set of endpoints allows a user to manage data related to reliefs on investments.  The user can submit details of investment reliefs for a specific tax year, as well as amend submissions already made.   Additionally, the user can delete previous submissions, and retrieve data previously submitted. 
@@ -420,8 +425,222 @@ The user would normally call this when they have all the information necessary f
 
 ## Pension charges
 
-This endpoint allows the end-user  to manage data related to pension charges.  The user can submit details of pension charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
+These endpoints allow a the end-user to manage data related to pension charges.  The user can submit details of pension charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
  
 The new functionality provides three new endpoints: amend new pension charges, delete a submission, and retrieve details of a submission.
+
+## Individual Reliefs
+
+These endpoints allow a user to retrieve relief investments from: VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
+
+## Individual Expenses other
+
+These endpoints allow the user to manage their data related to expenses income for trade union and patent royalties.
+
+The user can submit details of their expenses income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+
+The new functionality provides three endpoints, to submit or amend expenses income, delete a submission, or retrieve details of a submission.
+
+[INSERT DIAGRAM]
+
+Amend (PUT)
+individuals/expenses/other/{nino}/{taxYear}
+
+Delete (Delete)
+individuals/expenses/other/{nino}/{taxYear}
+
+Retrieve (GET)
+individuals/expenses/other/{nino}/{taxYear}
+
+
+## Other deductions
+
+These endpoints allow a user to manage their data related to deductions from their tax bill.
+
+The user can submit details of their deductions for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+
+The new functionality provides three endpoints, to submit or amend deductions, delete a submission, or retrieve details of a submission.
+
+[INSERT DIAGRAM]
+
+Amend (PUT)
+individuals/deductions/other/{nino}/{taxYear}
+
+Delete (Delete)
+individuals/deductions/other/{nino}/{taxYear}
+
+Retrieve (GET)
+individuals/deductions/other/{nino}/{taxYear}
+
+
+## Individual expenses other
+
+These endpoints allow the user to  manage their data related to expenses income for trade union and patent royalties.
+
+The user can submit details of their expenses income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+
+The new functionality provides three endpoints, to submit or amend expenses income, delete a submission, or retrieve details of a submission.
+
+Amend (PUT)
+individuals/expenses/other/{nino}/{taxYear}
+
+Delete (Delete)
+individuals/expenses/other/{nino}/{taxYear}
+
+Retrieve (GET)
+individuals/expenses/other/{nino}/{taxYear}
+
+
+### Individuals income received
+
+[CHECK WITH DSM ON SECTION]
+
+These endpoints allow a user to manage their data related to savings income for securities or foreign interest. The user can submit details of their savings income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and retrieve information they have previously submitted. 
+
+The new functionality provides three new endpoints, to submit or amend new savings income, delete a submission, or retrieve details of a submission.
+
+[INSERT DIAGRAM]
+
+Amend (PUT)
+individuals/income-received/savings/{nino}/{taxYear}
+
+Delete (Delete)
+individuals/income-received/savings/{nino}/{taxYear}
+
+Retrieve (GET)
+individuals/income-received/savings/{nino}/{taxYear}
+
+
+## Employments
+
+This suite of endpoints display the PAYE information returned to HMRC by a user’s employers.
+
+The user will be able to add to or supply different employment data after the tax year has ended.  This can include details of missing employments, or financial data.  In addition, the user can choose to ignore the data HMRC holds, for the purpose of their self-assessment calculation.
+
+These endpoints can be broken into three categories:
+
+* details of the Employment  
+* financial data and benefits from a specific employment
+* employment expenses from all of the user’s employments
+
+Add a Custom Employment
+Amend a Custom Employment
+Retrieve an Employment
+List Employments
+Delete a Custom Employment
+Ignore Employment
+
+Amend Employment Financial Details
+Retrieve an Employment and its Financial Details
+Delete Employment Financial Details
+
+Amend Employment Expenses
+Retrieve Employment Expenses
+Delete Employment Expenses
+Ignore Employment Expenses
+
+[INSERT DIAGRAM]
+
+HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to Crystallisation. 
+
+*Note:* 
+
+Pre-populated data can only be stopped (ignored) from being used in any tax calculation.
+
+User-generated content:
+
+* can be deleted
+* will only be applied in the tax calculation 
+* will not overwrite pre-populated data
+
+Custom employments will only apply to the tax year and will not be carried over in subsequent years.  The expenses values are summed values from all PAYE employments, they are not available by employment.
+
+
+### Other Employment Income
+
+These endpoints allow a user to retrieve other employment income: Share options, Shares awarded or received, Disability and Foreign service.
+
+[INSERT DIAGRAM]
+
+Retrieve other employment Income [test only]
+Amend other employment Income [test only]
+Delete other employment Income [test only]
+
+
+
+### Dividends income
+
+These endpoints allow a user to retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
+
+[INSERT DIAGRAM]
+
+Retrieve Dividends Income [test only]
+Amend Dividends Income [test only]
+Delete Dividends Income [test only]
+
+### Foreign income
+
+These endpoints give the user the ability to manage their data related to foreign earnings and unremittable foreign income.
+
+The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+
+The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
+
+[INSERT DIAGRAM]
+
+Amend (PUT)
+/income-received/foreign/{nino}/{taxYear}
+
+Delete (Delete)
+/income-received/foreign/{nino}/{taxYear}
+
+Retrieve (GET)
+/income-received/foreign/{nino}/{taxYear}
+
+
+
+### Insurance policies income
+
+These endpoints allow a user to retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, Foreign Policies. A National Insurance number and tax year must be provided.
+
+[INSERT DIAGRAM]
+
+Retrieve Insurance Policies Income [test only]
+Amend Insurance Policies Income [test only]
+Delete Insurance Policies Income [test only]
+
+
+### Pensions income
+
+These endpoints allow a user to retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
+
+[INSERT DIAGRAM]
+
+Retrieve Pensions Income [test only]
+Amend Pensions Income [test only]
+Delete Pensions Income [test only]
+
+
+### Other income
+
+These endpoints allow a user to retrieve other income: business receipts, all other income received whilst abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
+
+[INSERT DIAGRAM]
+
+Retrieve Other Income [test only]
+Amend Other Income [test only]
+Delete Other Income [test only]
+
+
+### Savings income
+
+These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest. 
+
+[INSERT DIAGRAM]
+
+Retrieve Savings Income [test only]
+Amend Savings Income [test only]
+Delete Savings Income [test only]
+
 
 
