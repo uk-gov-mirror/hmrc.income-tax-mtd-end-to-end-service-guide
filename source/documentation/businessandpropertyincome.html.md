@@ -396,7 +396,7 @@ Once loss claims have been generated a user will be able to list them and determ
 
 [CHECK HEADING WITH DSM]
 
-### Investments
+## Investments
 
 This set of endpoints allows a user to manage data related to reliefs on investments.  The user can submit details of investment reliefs for a specific tax year, as well as amend submissions already made.   Additionally, the user can delete previous submissions, and retrieve data previously submitted. 
 The new functionality provides three new endpoints, to submit or amend new investment reliefs, delete a submission, or retrieve details of a submission.
@@ -445,24 +445,7 @@ These endpoints allow a user to retrieve relief investments from: VCT subscripti
 * delete
 * retrieve
 
-## Individual expenses other
 
-These endpoints allow the user to manage their data related to expenses income for trade union and patent royalties.
-
-The user can submit details of their expenses income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
-
-The new functionality provides three endpoints, to submit or amend expenses income, delete a submission, or retrieve details of a submission.
-
-[INSERT DIAGRAM]
-
-Amend (PUT)
-individuals/expenses/other/{nino}/{taxYear}
-
-Delete (Delete)
-individuals/expenses/other/{nino}/{taxYear}
-
-Retrieve (GET)
-individuals/expenses/other/{nino}/{taxYear}
 
 
 ## Other deductions
