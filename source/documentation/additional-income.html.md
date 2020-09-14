@@ -18,25 +18,37 @@ These endpoints can be broken into three categories:
 * financial data and benefits from a specific employment
 * employment expenses from all of the user’s employments
 
+
 Add a custom employment
+
 Amend a custom employment
+
 Retrieve an employment
+
 List employments
+
 Delete a custom employment
+
 Ignore employment
 
 Amend employment financial details
+
 Retrieve an employment and its financial details
+
 Delete employment financial details
 
 Amend employment expenses
+
 Retrieve employment expenses
+
 Delete employment expenses
+
 Ignore employment expenses
+
 
 [INSERT DIAGRAM]
 
-HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to Crystallisation. 
+HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to crystallisation. 
 
 **Note:** 
 
@@ -57,9 +69,9 @@ These endpoints allow a user to retrieve other employment income: Share options,
 
 [INSERT DIAGRAM]
 
-Retrieve other employment Income [test only]
-Amend other employment Income [test only]
-Delete other employment Income [test only]
+* retrieve other employment Income [test only]
+* amend other employment Income [test only]
+* delete other employment Income [test only]
 
 ## Dividends income
 
@@ -67,9 +79,9 @@ These endpoints allow a user to retrieve, amend and delete dividends income: for
 
 [INSERT DIAGRAM]
 
-Retrieve dividends income [test only]
-Amend dividends income [test only]
-Delete dividends income [test only]
+* retrieve dividends income [test only]
+* amend dividends income [test only]
+* delete dividends income [test only]
 
 ## Foreign income
 
@@ -81,9 +93,9 @@ The new functionality provides three endpoints, to submit or amend foreign earni
 
 [INSERT DIAGRAM]
 
-Amend foreign income
-Delete foreign income
-Retrieve foreign income
+* amend foreign income
+* delete foreign income
+* retrieve foreign income
 
 ## Insurance policies income
 
@@ -91,9 +103,9 @@ These endpoints allow a user to retrieve, amend and delete insurance policies an
 
 [INSERT DIAGRAM]
 
-Retrieve Insurance Policies Income [test only]
-Amend Insurance Policies Income [test only]
-Delete Insurance Policies Income [test only]
+* retrieve Insurance Policies Income [test only]
+* amend Insurance Policies Income [test only]
+* delete Insurance Policies Income [test only]
 
 ## Pensions income
 
@@ -101,9 +113,9 @@ These endpoints allow a user to retrieve, amend and delete previously populated 
 
 [INSERT DIAGRAM]
 
-Retrieve Pensions Income [test only]
-Amend Pensions Income [test only]
-Delete Pensions Income [test only]
+* retrieve Pensions Income [test only]
+* amend Pensions Income [test only]
+* delete Pensions Income [test only]
 
 ## Other income
 
@@ -111,9 +123,9 @@ These endpoints allow a user to retrieve other income: business receipts, all ot
 
 [INSERT DIAGRAM]
 
-Retrieve Other Income [test only]
-Amend Other Income [test only]
-Delete Other Income [test only]
+* retrieve Other Income [test only]
+* amend Other Income [test only]
+* delete Other Income [test only]
 
 ### Savings income
 
@@ -122,9 +134,9 @@ These endpoints allow a user to retrieve, amend and delete savings income for se
 [INSERT DIAGRAM]
 
 
-Retrieve Savings Income [test only]
-Amend Savings Income [test only]
-Delete Savings Income [test only]
+* retrieve Savings Income [test only]
+* amend Savings Income [test only]
+* delete Savings Income [test only]
 
 #### Disclosures
 
@@ -134,13 +146,11 @@ The user can submit details of any disclosures for a specific tax year, as well 
 
 The new functionality provides three endpoints, to submit or amend disclosures, delete a submission, or retrieve details of a submission.
 
-The user would normally call this when they have all the information necessary for disclosures for the tax year (and presumably, make any amendments prior to the crystallisation process).
-[THIS THIS PARA IS CORRECT WITH - DSM]
+The user would normally call this when they have all the information necessary for disclosures for the tax year.
 
-* Amend disclosures
-* Delete disclosures
-* Retrieve disclosures
-
+* amend disclosures
+* delete disclosures
+* retrieve disclosures
 
 #### Pension charges
 
@@ -176,9 +186,9 @@ The new functionality provides three endpoints, to submit or amend deductions, d
 
 [INSERT DIAGRAM]
 
-Amend (PUT)
-Delete (Delete)
-Retrieve (GET)
+* amend (PUT)
+* delete (Delete)
+* retrieve (GET)
 
 #### Individual expenses other
 
@@ -188,6 +198,6 @@ The user can submit details of their expenses income for a specific tax year, as
 
 The new functionality provides three endpoints, to submit or amend expenses income, delete a submission, or retrieve details of a submission.
 
-Amend (PUT)
-Delete (Delete)
-Retrieve (GET)
+* amend (PUT)
+* delete (Delete)
+* retrieve (GET)
