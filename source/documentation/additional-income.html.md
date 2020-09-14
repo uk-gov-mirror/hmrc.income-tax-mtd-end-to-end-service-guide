@@ -208,13 +208,37 @@ The new functionality provides three new endpoints: submit or amend new reliefs 
 
 ## Individual Reliefs
 
+### Relief Investments
+
 These endpoints allow a user to amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
 
-* amend individual reliefs
-* delete individual reliefs
-* retrieve individual reliefs
+* Retrieve Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_retrieve-relief-investments-test-only_get_accordion)
+* Amend Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_amend-relief-investments-test-only_put_accordion)
+* Delete Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_delete-relief-investments-test-only_delete_accordion)
 
+### Other reliefs
 
+This endpoint allows a user to amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post cessation reliefs, annual payments and qualifying loan interest payments. 
+
+* Retrieve Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_retrieve-other-reliefs-test-only_get_accordion)
+* Amend Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_amend-other-reliefs-test-only_put_accordion)
+* Delete Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_delete-other-reliefs-test-only_delete_accordion)
+
+### Foreign reliefs
+
+This endpoint allow a user to retrieve, amend, and delete foreign reliefs that have been previously submitted. 
+
+* Retrieve Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_retrieve-foreign-reliefs-test-only_get_accordion)
+* Amend Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_amend-foreign-reliefs-test-only_put_accordion)
+* Delete Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_delete-foreign-reliefs-test-only_delete_accordion)
+
+### Pensions reliefs
+
+This endpoint allows a user to retrieve, amend, delete tax relief on pension contributions.
+
+* Retrieve Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_retrieve-pensions-reliefs-test-only_get_accordion)
+* Amend Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_amend-pensions-reliefs-test-only_put_accordion)
+* Delete Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_delete-pensions-reliefs-test-only_delete_accordion)
 
 ## Other deductions
 
@@ -264,6 +288,7 @@ The new functionality provides seven new endpoints: Add State Benefit, Delete St
 * if the customer attempts to delete a pre-populated state benefit then the operation will fail with a forbidden response.
 * a customer can only update amounts in-year for ‘Job Seeker Allowance’ and Employment Support Allowance
 
+
 * [List State Benefits [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_list-state-benefits-test-only_get_accordion)
 * [Add State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_add-state-benefit-test-only_post_accordion)
 * [Update State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-test-only_put_accordion)
@@ -271,14 +296,3 @@ The new functionality provides seven new endpoints: Add State Benefit, Delete St
 * [Update State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-amounts-test-only_put_accordion)
 * [Delete State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-amounts-test-only_delete_accordion)
 * [Ignore State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_ignore-state-benefit-test-only_put_accordion)
-
-
-
-
-
-
-
-
-
-
-
