@@ -188,9 +188,6 @@ These journeys show examples of use:
 <!--- Section owner: MTD Programme --->
 * [Create Test User API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0)
 * [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/1.0)
-* [Self Assessment (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
-* [Individual Calculations (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0)
-* [Individual Losses (MTD) REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/1.0)
 * [Agent Authorisation REST API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/agent-authorisation-api/1.0)
 
 ## Changelog
