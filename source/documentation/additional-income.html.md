@@ -71,6 +71,12 @@ These endpoints allow a user to retrieve other employment income: Share options,
 * amend other employment Income [test only]
 * delete other employment Income [test only]
 
+
+* [Retrieve Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_retrieve-other-employment-income-test-only_get_accordion)
+* [Amend Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_amend-other-employment-income-test-only_put_accordion)
+* [Delete Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_delete-other-employment-income-test-only_delete_accordion)
+
+
 <a href="figures/other-employment-income.svg" target="blank">
 <img src="figures/other-employment-income.svg" alt=" " style="width:720px;" />
 </a>
