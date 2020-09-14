@@ -46,11 +46,11 @@ The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/a
 
 These resources allow software packages to provide a taxpayers' financial data for their brought forward losses. Here the developer can:
 
-* Provide a list of brought forward losses
-* Create a new brought forward loss to submit against Self-employment, Self-employment class 4, UK FHL property and UK other (Non-FHL) property
-* Show a single brought forward loss
-* Delete an existing brought forward loss
-* Update an existing brought forward loss
+* provide a list of brought forward losses
+* create a new brought forward loss to submit against self-employment, self-employment class 4, UK FHL property and UK other (Non-FHL) property
+* show a single brought forward loss
+* delete an existing brought forward loss
+* update an existing brought forward loss
 
 To carry-back a loss, the customer should contact HMRC who will be able to apply this manually.
 
