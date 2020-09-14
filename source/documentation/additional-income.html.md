@@ -251,3 +251,34 @@ The new functionality provides three endpoints, to submit or amend expenses inco
 <img src="figures/expenses-other.svg" alt=" " style="width:720px;" />
 </a>
 <a href="figures/expenses-other.svg" target="blank">Open diagram in a new tab.</a>
+
+## State benefits
+
+These endpoints give a user the ability to manage data related to state benefits.  The user can add details about state benefits for a specific tax year, as well as update submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
+ 
+The new functionality provides seven new endpoints: Add State Benefit, Delete State Benefit Amounts, Delete State Benefit, Ignore State Benefit, Update State Benefit Amounts, Update State Benefit and Retrieve anlist of all state benefits.
+
+**Note**
+
+* only pre-populated HMRC benefits can be ignored (end-of-year)
+* if the customer attempts to delete a pre-populated state benefit then the operation will fail with a forbidden response.
+* a customer can only update amounts in-year for ‘Job Seeker Allowance’ and Employment Support Allowance
+
+* [List State Benefits [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_list-state-benefits-test-only_get_accordion)
+* [Add State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_add-state-benefit-test-only_post_accordion)
+* [Update State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-test-only_put_accordion)
+* [Delete State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-test-only_delete_accordion)
+* [Update State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-amounts-test-only_put_accordion)
+* [Delete State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-amounts-test-only_delete_accordion)
+* [Ignore State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_ignore-state-benefit-test-only_put_accordion)
+
+
+
+
+
+
+
+
+
+
+
