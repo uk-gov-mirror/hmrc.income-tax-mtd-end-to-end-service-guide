@@ -190,6 +190,22 @@ The new functionality provides three new endpoints: amend new pension charges, d
 </a>
 <a href="figures/pension-charges.svg" target="blank">Open diagram in a new tab.</a>
 
+## Pension reliefs
+
+These endpoints give the user the ability to manage data related to reliefs on pensions.  The user can submit details of reliefs on pensions for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
+ 
+The new functionality provides three new endpoints: submit or amend new reliefs on pensions, delete a submission, or retrieve details of a submission.
+
+* [Retrieve Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_retrieve-pensions-reliefs-test-only_get_accordion)
+* [Amend Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_amend-pensions-reliefs-test-only_put_accordion)
+* [Delete Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_delete-pensions-reliefs-test-only_delete_accordion)
+
+<a href="figures/pension-reliefs.svg" target="blank">
+<img src="figures/pension-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/pension-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+
+
 ## Individual Reliefs
 
 These endpoints allow a user to amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
@@ -199,10 +215,6 @@ These endpoints allow a user to amend, delete and retrieve relief investments fr
 * retrieve individual reliefs
 
 
-<a href="figures/individual-reliefs.svg" target="blank">
-<img src="figures/individual-reliefs.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/individual-reliefs.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Other deductions
 
@@ -214,9 +226,9 @@ The user can submit details of their deductions for a specific tax year, as well
 
 The new functionality provides three endpoints, to submit or amend deductions, delete a submission, or retrieve details of a submission.
 
-* amend other deductions
-* delete other deductions
-* retrieve other deductions
+* Retrieve deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_retrieve-deductions-test-only_get_accordion)
+* Amend deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_amend-deductions-test-only_put_accordion)
+* Delete deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_delete-deductions-test-only_delete_accordion)
 
 <a href="figures/other-deductions.svg" target="blank">
 <img src="figures/other-deductions.svg" alt=" " style="width:720px;" />
@@ -231,9 +243,9 @@ The user can submit details of their expenses income for a specific tax year, as
 
 The new functionality provides three endpoints, to submit or amend expenses income, delete a submission, or retrieve details of a submission.
 
-* amend (PUT)
-* delete (Delete)
-* retrieve (GET)
+* [Retrieve Other Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_retrieve-other-expenses-test-only_get_accordion)
+* [Amend Other Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_amend-other-expenses-test-only_put_accordion)
+* [Delete Other Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_delete-other-expenses-test-only_delete_accordion)
 
 <a href="figures/expenses-other.svg" target="blank">
 <img src="figures/expenses-other.svg" alt=" " style="width:720px;" />
