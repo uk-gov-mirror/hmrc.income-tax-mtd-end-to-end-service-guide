@@ -67,11 +67,14 @@ Custom employments will only apply to the tax year and will not be carried over 
 
 These endpoints allow a user to retrieve other employment income: Share options, Shares awarded or received, Disability and Foreign service.
 
-[INSERT DIAGRAM]
-
 * retrieve other employment Income [test only]
 * amend other employment Income [test only]
 * delete other employment Income [test only]
+
+<a href="figures/other-employment-income.svg" target="blank">
+<img src="figures/other-employment-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/other-employment-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Dividends income
 
