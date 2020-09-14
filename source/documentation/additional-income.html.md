@@ -127,7 +127,7 @@ These endpoints allow a user to retrieve other income: business receipts, all ot
 * amend Other Income [test only]
 * delete Other Income [test only]
 
-### Savings income
+## Savings income
 
 These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest. 
 
@@ -138,7 +138,7 @@ These endpoints allow a user to retrieve, amend and delete savings income for se
 * amend Savings Income [test only]
 * delete Savings Income [test only]
 
-#### Disclosures
+## Disclosures
 
 This endpoint allows the user to manage their data related to the disclosure of tax avoidance schemes and undeclared income, for a given tax year. 
 
@@ -152,7 +152,7 @@ The user would normally call this when they have all the information necessary f
 * delete disclosures
 * retrieve disclosures
 
-#### Pension charges
+## Pension charges
 
 These endpoints allow a user to manage data related to pension contributions and charges. The user can submit details of pension contributions and charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
  
@@ -164,7 +164,7 @@ The new functionality provides three new endpoints: amend new pension charges, d
 * delete pension charges
 * retrieve pension charges
 
-#### Individual Reliefs
+## Individual Reliefs
 
 These endpoints allow a user to amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
 
@@ -174,7 +174,7 @@ These endpoints allow a user to amend, delete and retrieve relief investments fr
 * delete individual reliefs
 * retrieve individual reliefs
 
-#### Other deductions
+## Other deductions
 
 At present this only relates to seafarers, but other deductions will be added in future.
 
@@ -190,7 +190,7 @@ The new functionality provides three endpoints, to submit or amend deductions, d
 * delete (Delete)
 * retrieve (GET)
 
-#### Individual expenses other
+## Individual expenses other
 
 These endpoints allow the user to  manage their data related to expenses income for trade union and patent royalties.
 
