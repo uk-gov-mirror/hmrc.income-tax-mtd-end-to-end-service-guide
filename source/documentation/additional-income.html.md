@@ -80,11 +80,14 @@ These endpoints allow a user to retrieve other employment income: Share options,
 
 These endpoints allow a user to retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
 
-[INSERT DIAGRAM]
-
 * retrieve dividends income [test only]
 * amend dividends income [test only]
 * delete dividends income [test only]
+
+<a href="figures/dividends-income.svg" target="blank">
+<img src="figures/dividends-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/dividends-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Foreign income
 
@@ -94,52 +97,67 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
 
-[INSERT DIAGRAM]
-
 * amend foreign income
 * delete foreign income
 * retrieve foreign income
+
+<a href="figures/foreign-reliefs.svg" target="blank">
+<img src="figures/foreign-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/foreign-reliefs.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Insurance policies income
 
 These endpoints allow a user to retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, Foreign Policies. A National Insurance number and tax year must be provided.
 
-[INSERT DIAGRAM]
-
 * retrieve Insurance Policies Income [test only]
 * amend Insurance Policies Income [test only]
 * delete Insurance Policies Income [test only]
+
+<a href="figures/insurance-policies-income.svg" target="blank">
+<img src="figures/insurance-policies-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/insurance-policies-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Pensions income
 
 These endpoints allow a user to retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
 
-[INSERT DIAGRAM]
-
 * retrieve Pensions Income [test only]
 * amend Pensions Income [test only]
 * delete Pensions Income [test only]
+
+<a href="figures/pensions-income.svg" target="blank">
+<img src="figures/pensions-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/pensions-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Other income
 
 These endpoints allow a user to retrieve other income: business receipts, all other income received whilst abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
 
-[INSERT DIAGRAM]
-
 * retrieve Other Income [test only]
 * amend Other Income [test only]
 * delete Other Income [test only]
+
+<a href="figures/other-income.svg" target="blank">
+<img src="figures/other-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/other-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Savings income
 
 These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest. 
 
-[INSERT DIAGRAM]
-
 
 * retrieve Savings Income [test only]
 * amend Savings Income [test only]
 * delete Savings Income [test only]
+
+<a href="figures/savings-income.svg" target="blank">
+<img src="figures/savings-income.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/savings-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Disclosures
 
@@ -155,27 +173,40 @@ The user would normally call this when they have all the information necessary f
 * delete disclosures
 * retrieve disclosures
 
+<a href="figures/disclosures.svg" target="blank">
+<img src="figures/disclosures.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/disclosures.svg" target="blank">Open diagram in a new tab.</a>
+
 ## Pension charges
 
 These endpoints allow a user to manage data related to pension contributions and charges. The user can submit details of pension contributions and charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
  
 The new functionality provides three new endpoints: amend new pension charges, delete a submission, and retrieve details of a submission.
 
-[INSERT DIAGRAM]
-
 * amend pension charges
 * delete pension charges
 * retrieve pension charges
+
+
+<a href="figures/pension-charges.svg" target="blank">
+<img src="figures/pension-charges.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/pension-charges.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Individual Reliefs
 
 These endpoints allow a user to amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
 
-[INSERT DIAGRAM]
-
 * amend individual reliefs
 * delete individual reliefs
 * retrieve individual reliefs
+
+
+<a href="figures/individual-reliefs.svg" target="blank">
+<img src="figures/individual-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/individual-reliefs.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Other deductions
 
@@ -187,11 +218,14 @@ The user can submit details of their deductions for a specific tax year, as well
 
 The new functionality provides three endpoints, to submit or amend deductions, delete a submission, or retrieve details of a submission.
 
-[INSERT DIAGRAM]
+* amend other deductions
+* delete other deductions
+* retrieve other deductions
 
-* amend (PUT)
-* delete (Delete)
-* retrieve (GET)
+<a href="figures/other-deductions.svg" target="blank">
+<img src="figures/other-deductions.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/other-deductions.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Individual expenses other
 
@@ -204,3 +238,8 @@ The new functionality provides three endpoints, to submit or amend expenses inco
 * amend (PUT)
 * delete (Delete)
 * retrieve (GET)
+
+<a href="figures/expenses-other.svg" target="blank">
+<img src="figures/expenses-other.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/expenses-other.svg" target="blank">Open diagram in a new tab.</a>
