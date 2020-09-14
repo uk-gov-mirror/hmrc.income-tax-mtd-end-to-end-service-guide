@@ -108,9 +108,9 @@ The new functionality provides three endpoints, to submit or amend foreign earni
 
 These endpoints allow a user to retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, Foreign Policies. A National Insurance number and tax year must be provided.
 
-[Retrieve Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_retrieve-insurance-policies-income-test-only_get_accordion)
-[Amend Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_amend-insurance-policies-income-test-only_put_accordion)
-[Delete Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_delete-insurance-policies-income-test-only_delete_accordion)
+* [Retrieve Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_retrieve-insurance-policies-income-test-only_get_accordion)
+* [Amend Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_amend-insurance-policies-income-test-only_put_accordion)
+* [Delete Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_delete-insurance-policies-income-test-only_delete_accordion)
 
 <a href="figures/insurance-policies-income.svg" target="blank">
 <img src="figures/insurance-policies-income.svg" alt=" " style="width:720px;" />
@@ -149,7 +149,7 @@ These endpoints allow a user to retrieve, amend and delete savings income for se
 
 * [Retrieve Savings Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_retrieve-savings-income-test-only_get_accordion)
 * [Amend Savings Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_amend-savings-income-test-only_put_accordion)
-* [Delete Savings Income [test only](]https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_delete-savings-income-test-only_delete_accordion)
+* [Delete Savings Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_delete-savings-income-test-only_delete_accordion)
 
 <a href="figures/savings-income.svg" target="blank">
 <img src="figures/savings-income.svg" alt=" " style="width:720px;" />
