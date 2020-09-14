@@ -45,9 +45,6 @@ Delete employment expenses
 
 Ignore employment expenses
 
-
-[INSERT DIAGRAM]
-
 HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to crystallisation. 
 
 **Note:** 
@@ -67,11 +64,6 @@ Custom employments will only apply to the tax year and will not be carried over 
 
 These endpoints allow a user to retrieve other employment income: Share options, Shares awarded or received, Disability and Foreign service.
 
-* retrieve other employment Income [test only]
-* amend other employment Income [test only]
-* delete other employment Income [test only]
-
-
 * [Retrieve Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_retrieve-other-employment-income-test-only_get_accordion)
 * [Amend Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_amend-other-employment-income-test-only_put_accordion)
 * [Delete Other Employment Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_delete-other-employment-income-test-only_delete_accordion)
@@ -86,9 +78,9 @@ These endpoints allow a user to retrieve other employment income: Share options,
 
 These endpoints allow a user to retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
 
-* retrieve dividends income [test only]
-* amend dividends income [test only]
-* delete dividends income [test only]
+* [Retrieve Dividends Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_retrieve-dividends-income-test-only_get_accordion)
+* [Amend Dividends Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_amend-dividends-income-test-only_put_accordion)
+* [Delete Dividends Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_delete-dividends-income-test-only_delete_accordion)
 
 <a href="figures/dividends-income.svg" target="blank">
 <img src="figures/dividends-income.svg" alt=" " style="width:720px;" />
@@ -103,9 +95,9 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
 
-* amend foreign income
-* delete foreign income
-* retrieve foreign income
+* [Amend Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
+* [Retrieve Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_retrieve-foreign-income-test-only_get_accordion)
+* [Delete Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
 
 <a href="figures/foreign-reliefs.svg" target="blank">
 <img src="figures/foreign-reliefs.svg" alt=" " style="width:720px;" />
@@ -116,9 +108,9 @@ The new functionality provides three endpoints, to submit or amend foreign earni
 
 These endpoints allow a user to retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, Foreign Policies. A National Insurance number and tax year must be provided.
 
-* retrieve Insurance Policies Income [test only]
-* amend Insurance Policies Income [test only]
-* delete Insurance Policies Income [test only]
+[Retrieve Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_retrieve-insurance-policies-income-test-only_get_accordion)
+[Amend Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_amend-insurance-policies-income-test-only_put_accordion)
+[Delete Insurance Policies Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_delete-insurance-policies-income-test-only_delete_accordion)
 
 <a href="figures/insurance-policies-income.svg" target="blank">
 <img src="figures/insurance-policies-income.svg" alt=" " style="width:720px;" />
@@ -129,9 +121,9 @@ These endpoints allow a user to retrieve, amend and delete insurance policies an
 
 These endpoints allow a user to retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
 
-* retrieve Pensions Income [test only]
-* amend Pensions Income [test only]
-* delete Pensions Income [test only]
+* [Retrieve Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_retrieve-pensions-income-test-only_get_accordion)
+* [Amend Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_amend-pensions-income-test-only_put_accordion)
+* [Delete Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_delete-pensions-income-test-only_delete_accordion)
 
 <a href="figures/pensions-income.svg" target="blank">
 <img src="figures/pensions-income.svg" alt=" " style="width:720px;" />
@@ -142,9 +134,9 @@ These endpoints allow a user to retrieve, amend and delete previously populated 
 
 These endpoints allow a user to retrieve other income: business receipts, all other income received whilst abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
 
-* retrieve Other Income [test only]
-* amend Other Income [test only]
-* delete Other Income [test only]
+* [Retrieve Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_retrieve-pensions-income-test-only_get_accordion)
+* [Amend Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_amend-pensions-income-test-only_put_accordion)
+* [Delete Pensions Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#pensions-income_delete-pensions-income-test-only_delete_accordion)
 
 <a href="figures/other-income.svg" target="blank">
 <img src="figures/other-income.svg" alt=" " style="width:720px;" />
@@ -153,12 +145,11 @@ These endpoints allow a user to retrieve other income: business receipts, all ot
 
 ## Savings income
 
-These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest. 
+These endpoints allow a user to retrieve, amend and delete savings income for securities or foreign interest.
 
-
-* retrieve Savings Income [test only]
-* amend Savings Income [test only]
-* delete Savings Income [test only]
+* [Retrieve Savings Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_retrieve-savings-income-test-only_get_accordion)
+* [Amend Savings Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_amend-savings-income-test-only_put_accordion)
+* [Delete Savings Income [test only](]https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#savings-income_delete-savings-income-test-only_delete_accordion)
 
 <a href="figures/savings-income.svg" target="blank">
 <img src="figures/savings-income.svg" alt=" " style="width:720px;" />
@@ -175,9 +166,9 @@ The new functionality provides three endpoints, to submit or amend disclosures, 
 
 The user would normally call this when they have all the information necessary for disclosures for the tax year.
 
-* amend disclosures
-* delete disclosures
-* retrieve disclosures
+* [Retrieve Disclosures [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0#disclosures_retrieve-disclosures-test-only_get_accordion)
+* [Amend Disclosures [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0#disclosures_amend-disclosures-test-only_put_accordion)
+* [Delete Disclosures [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0#disclosures_delete-disclosures-test-only_delete_accordion)
 
 <a href="figures/disclosures.svg" target="blank">
 <img src="figures/disclosures.svg" alt=" " style="width:720px;" />
@@ -190,10 +181,9 @@ These endpoints allow a user to manage data related to pension contributions and
  
 The new functionality provides three new endpoints: amend new pension charges, delete a submission, and retrieve details of a submission.
 
-* amend pension charges
-* delete pension charges
-* retrieve pension charges
-
+* [Retrieve Pension Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/1.0#_retrieve-pension-charges_get_accordion)
+* [Amend Pension Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/1.0#_amend-pension-charges_put_accordion)
+* [Delete Pension Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/1.0#_delete-pension-charges_delete_accordion)
 
 <a href="figures/pension-charges.svg" target="blank">
 <img src="figures/pension-charges.svg" alt=" " style="width:720px;" />
