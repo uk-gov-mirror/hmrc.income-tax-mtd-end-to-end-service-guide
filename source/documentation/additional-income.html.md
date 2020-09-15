@@ -99,10 +99,10 @@ The new functionality provides three endpoints, to submit or amend foreign earni
 * [Amend Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
 * [Delete Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
 
-<a href="figures/foreign-reliefs.svg" target="blank">
-<img src="figures/foreign-reliefs.svg" alt=" " style="width:720px;" />
+<a href="figures/foreign-income.svg" target="blank">
+<img src="figures/foreign-income.svg" alt=" " style="width:720px;" />
 </a>
-<a href="figures/foreign-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+<a href="figures/foreign-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Insurance policies income
 
