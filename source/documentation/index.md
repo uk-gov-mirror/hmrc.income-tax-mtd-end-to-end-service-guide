@@ -203,6 +203,6 @@ Version 1.2
 
 Verison 1.3
 
-* Losses updated
+* Losses updated.
 * Additional income section added.
 
