@@ -19,31 +19,31 @@ These endpoints can be broken into three categories:
 * employment expenses from all of the user’s employments
 
 
-Add a custom employment
+[Add a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_add-a-custom-employment-test-only_post_accordion)
 
-Amend a custom employment
+[Amend a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-a-custom-employment-test-only_put_accordion)
 
-Retrieve an employment
+[Retrieve an Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-test-only_get_accordion)
 
-List employments
+[List Employments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_list-employments-test-only_get_accordion)
 
-Delete a custom employment
+[Delete a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-a-custom-employment-test-only_delete_accordion)
 
-Ignore employment
+[Ignore an Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_ignore-an-employment-test-only_put_accordion)
 
-Amend employment financial details
+[Amend Employment Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-employment-financial-details-test-only_put_accordion)
 
-Retrieve an employment and its financial details
+[Retrieve an Employment and its Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-and-its-financial-details-test-only_get_accordion)
 
-Delete employment financial details
+[Delete Employment Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-employment-financial-details-test-only_delete_accordion)
 
-Amend employment expenses
+[Amend Employment Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_amend-employment-expenses-test-only_put_accordion)
 
-Retrieve employment expenses
+[Retrieve Employment Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_retrieve-employment-expenses-test-only_get_accordion)
 
-Delete employment expenses
+[Delete Employment Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_delete-employment-expenses-test-only_delete_accordion)
 
-Ignore employment expenses
+[Ignore Employment Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_ignore-employment-expenses-test-only_put_accordion)
 
 HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to crystallisation. 
 
@@ -95,8 +95,8 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
 
-* [Amend Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
 * [Retrieve Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_retrieve-foreign-income-test-only_get_accordion)
+* [Amend Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
 * [Delete Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
 
 <a href="figures/foreign-reliefs.svg" target="blank">
@@ -212,33 +212,33 @@ The new functionality provides three new endpoints: submit or amend new reliefs 
 
 These endpoints allow a user to amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
 
-* Retrieve Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_retrieve-relief-investments-test-only_get_accordion)
-* Amend Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_amend-relief-investments-test-only_put_accordion)
-* Delete Relief Investments [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_delete-relief-investments-test-only_delete_accordion)
+* [Retrieve Relief Investments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_retrieve-relief-investments-test-only_get_accordion)
+* [Amend Relief Investments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_amend-relief-investments-test-only_put_accordion)
+* [Delete Relief Investments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_delete-relief-investments-test-only_delete_accordion)
 
 ### Other reliefs
 
 This endpoint allows a user to amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post cessation reliefs, annual payments and qualifying loan interest payments. 
 
-* Retrieve Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_retrieve-other-reliefs-test-only_get_accordion)
-* Amend Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_amend-other-reliefs-test-only_put_accordion)
-* Delete Other Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_delete-other-reliefs-test-only_delete_accordion)
+* [Retrieve Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_retrieve-other-reliefs-test-only_get_accordion)
+* [Amend Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_amend-other-reliefs-test-only_put_accordion)
+* [Delete Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_delete-other-reliefs-test-only_delete_accordion)
 
 ### Foreign reliefs
 
 This endpoint allow a user to retrieve, amend, and delete foreign reliefs that have been previously submitted. 
 
-* Retrieve Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_retrieve-foreign-reliefs-test-only_get_accordion)
-* Amend Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_amend-foreign-reliefs-test-only_put_accordion)
-* Delete Foreign Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_delete-foreign-reliefs-test-only_delete_accordion)
+* [Retrieve Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_retrieve-foreign-reliefs-test-only_get_accordion)
+* [Amend Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_amend-foreign-reliefs-test-only_put_accordion)
+* [Delete Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_delete-foreign-reliefs-test-only_delete_accordion)
 
 ### Pensions reliefs
 
 This endpoint allows a user to retrieve, amend, delete tax relief on pension contributions.
 
-* Retrieve Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_retrieve-pensions-reliefs-test-only_get_accordion)
-* Amend Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_amend-pensions-reliefs-test-only_put_accordion)
-* Delete Pensions Reliefs [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_delete-pensions-reliefs-test-only_delete_accordion)
+* [Retrieve Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_retrieve-pensions-reliefs-test-only_get_accordion)
+* [Amend Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_amend-pensions-reliefs-test-only_put_accordion)
+* [Delete Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_delete-pensions-reliefs-test-only_delete_accordion)
 
 ## Other deductions
 
@@ -250,9 +250,9 @@ The user can submit details of their deductions for a specific tax year, as well
 
 The new functionality provides three endpoints, to submit or amend deductions, delete a submission, or retrieve details of a submission.
 
-* Retrieve deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_retrieve-deductions-test-only_get_accordion)
-* Amend deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_amend-deductions-test-only_put_accordion)
-* Delete deductions [test only](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_delete-deductions-test-only_delete_accordion)
+* [Retrieve deductions [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_retrieve-deductions-test-only_get_accordion)
+* [Amend deductions [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_amend-deductions-test-only_put_accordion)
+* [Delete deductions [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0#_delete-deductions-test-only_delete_accordion)
 
 <a href="figures/other-deductions.svg" target="blank">
 <img src="figures/other-deductions.svg" alt=" " style="width:720px;" />
