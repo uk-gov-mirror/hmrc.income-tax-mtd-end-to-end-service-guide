@@ -14,7 +14,7 @@ The user will be able to add to or supply different employment data after the ta
 
 These endpoints can be broken into three categories:
 
-* details of the Employment  
+* details of the employment  
 * financial data and benefits from a specific employment
 * employment expenses from all of the user’s employments
 
@@ -91,7 +91,7 @@ These endpoints allow a user to retrieve, amend and delete dividends income: for
 
 These endpoints give the user the ability to manage their data related to foreign earnings and unremittable foreign income.
 
-The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted. 
 
 The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
 
@@ -160,7 +160,7 @@ These endpoints allow a user to retrieve, amend and delete savings income for se
 
 This endpoint allows the user to manage their data related to the disclosure of tax avoidance schemes and undeclared income, for a given tax year. 
 
-The user can submit details of any disclosures for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted. 
+The user can submit details of any disclosures for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted. 
 
 The new functionality provides three endpoints, to submit or amend disclosures, delete a submission, or retrieve details of a submission.
 
@@ -218,7 +218,7 @@ These endpoints allow a user to amend, delete and retrieve relief investments fr
 
 ### Other reliefs
 
-This endpoint allows a user to amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post cessation reliefs, annual payments and qualifying loan interest payments. 
+This endpoint allows a user to amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post-cessation reliefs, annual payments and qualifying loan interest payments. 
 
 * [Retrieve Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_retrieve-other-reliefs-test-only_get_accordion)
 * [Amend Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_amend-other-reliefs-test-only_put_accordion)
@@ -226,7 +226,7 @@ This endpoint allows a user to amend, retrieve and delete reliefs other than inv
 
 ### Foreign reliefs
 
-This endpoint allow a user to retrieve, amend, and delete foreign reliefs that have been previously submitted. 
+This endpoint allows a user to retrieve, amend, and delete foreign reliefs that have been previously submitted. 
 
 * [Retrieve Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_retrieve-foreign-reliefs-test-only_get_accordion)
 * [Amend Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_amend-foreign-reliefs-test-only_put_accordion)
@@ -280,13 +280,13 @@ The new functionality provides three endpoints, to submit or amend expenses inco
 
 These endpoints give a user the ability to manage data related to state benefits.  The user can add details about state benefits for a specific tax year, as well as update submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
  
-The new functionality provides seven new endpoints: Add State Benefit, Delete State Benefit Amounts, Delete State Benefit, Ignore State Benefit, Update State Benefit Amounts, Update State Benefit and Retrieve anlist of all state benefits.
+The new functionality provides seven new endpoints: Add State Benefit, Delete State Benefit Amounts, Delete State Benefit, Ignore State Benefit, Update State Benefit Amounts, Update State Benefit and Retrieve a list of all state benefits.
 
 **Note**
 
 * only pre-populated HMRC benefits can be ignored (end-of-year)
-* if the customer attempts to delete a pre-populated state benefit then the operation will fail with a forbidden response.
-* a customer can only update amounts in-year for ‘Job Seeker Allowance’ and Employment Support Allowance
+* if the customer attempts to delete a pre-populated state benefit, then the operation will fail with a forbidden response.
+* a customer can only update amounts in-year for Job Seeker Allowance and Employment Support Allowance
 
 
 * [List State Benefits [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_list-state-benefits-test-only_get_accordion)
