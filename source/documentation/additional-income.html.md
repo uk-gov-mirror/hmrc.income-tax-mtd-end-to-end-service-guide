@@ -296,3 +296,8 @@ The new functionality provides seven new endpoints: Add State Benefit, Delete St
 * [Update State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-amounts-test-only_put_accordion)
 * [Delete State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-amounts-test-only_delete_accordion)
 * [Ignore State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_ignore-state-benefit-test-only_put_accordion)
+
+<a href="figures/state-benefitssvg" target="blank">
+<img src="figures/state-benefits.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/state-benefits.svg" target="blank">Open diagram in a new tab.</a>
