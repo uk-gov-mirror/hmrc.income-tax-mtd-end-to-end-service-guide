@@ -216,6 +216,12 @@ These endpoints allow a user to amend, delete and retrieve relief investments fr
 * [Amend Relief Investments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_amend-relief-investments-test-only_put_accordion)
 * [Delete Relief Investments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#relief-investments_delete-relief-investments-test-only_delete_accordion)
 
+<a href="figures/relief-investments.svg" target="blank">
+<img src="figures/relief-investments.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/relief-investments.svg" target="blank">Open diagram in a new tab.</a>
+
+
 ### Other reliefs
 
 This endpoint allows a user to amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post-cessation reliefs, annual payments and qualifying loan interest payments. 
@@ -223,6 +229,12 @@ This endpoint allows a user to amend, retrieve and delete reliefs other than inv
 * [Retrieve Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_retrieve-other-reliefs-test-only_get_accordion)
 * [Amend Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_amend-other-reliefs-test-only_put_accordion)
 * [Delete Other Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#other-reliefs_delete-other-reliefs-test-only_delete_accordion)
+
+<a href="figures/other-reliefs.svg" target="blank">
+<img src="figures/other-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/other-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+
 
 ### Foreign reliefs
 
@@ -232,6 +244,12 @@ This endpoint allows a user to retrieve, amend, and delete foreign reliefs that 
 * [Amend Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_amend-foreign-reliefs-test-only_put_accordion)
 * [Delete Foreign Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#foreign-reliefs_delete-foreign-reliefs-test-only_delete_accordion)
 
+<a href="figures/foreign-reliefs.svg" target="blank">
+<img src="figures/foreign-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/foreign-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+
+
 ### Pensions reliefs
 
 This endpoint allows a user to retrieve, amend, delete tax relief on pension contributions.
@@ -239,6 +257,12 @@ This endpoint allows a user to retrieve, amend, delete tax relief on pension con
 * [Retrieve Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_retrieve-pensions-reliefs-test-only_get_accordion)
 * [Amend Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_amend-pensions-reliefs-test-only_put_accordion)
 * [Delete Pensions Reliefs [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0#pensions-reliefs_delete-pensions-reliefs-test-only_delete_accordion)
+
+<a href="figures/individual-pension-reliefs.svg" target="blank">
+<img src="figures/individual-pension-reliefs.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/individual-pension-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+
 
 ## Other deductions
 
