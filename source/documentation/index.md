@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 1.3 issued 14 September 2020
+Version 1.4 issued 5 November 2020
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -201,8 +201,12 @@ Version 1.2
 * Multiple businesses section added.
 * Construction Industry Scheme (CIS) section added.
 
-Verison 1.3
+Version 1.3
 
 * Losses updated.
 * Additional income section added.
+
+Version 1.4
+
+* Construction Industry Scheme (CIS) section updated.
 
