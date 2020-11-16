@@ -109,11 +109,17 @@ Developers need to consider the following:
 
 ### Fraud Prevention Headers
 
-Transaction Monitoring (TxM) is a key security approach adopted in the UK and globally.
+HMRC monitors transactions to help protect your customers' confidential data from criminals and fraudsters. 
 
-Supplying header information for all our APIs will become mandatory. We recommend designing it into your applications now before approval can be granted, and production credentials issued.   HMRC must see evidence of fraud prevention headers being sent.
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    You are required by law to submit header data for this API.
+  </strong>
+</div>
 
-The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/api-documentation/docs/fraud-prevention) is available.
+[Check the data you need to send](/guides/fraud-prevention/). You can also use the [Test API](/api-documentation/docs/api/service/txm-fph-validator-api/1.0) during initial development and as part of your quality assurance checks.
 
 #### Example workflows for self-employment
 
