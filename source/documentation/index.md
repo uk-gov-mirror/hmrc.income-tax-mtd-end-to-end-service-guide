@@ -111,11 +111,7 @@ Developers need to consider the following:
 
 HMRC monitors transactions to help protect your customers' confidential data from criminals and fraudsters. 
 
- <strong>
-    <span class="govuk-warning-text__assistive">Warning</span>
-    You are required by law to submit header data for this API.
-  </strong>
-
+You are required by law to submit header data for this API.
 
 [Check the data you need to send](/guides/fraud-prevention/). You can also use the [Test API](/api-documentation/docs/api/service/txm-fph-validator-api/1.0) during initial development and as part of your quality assurance checks.
 
