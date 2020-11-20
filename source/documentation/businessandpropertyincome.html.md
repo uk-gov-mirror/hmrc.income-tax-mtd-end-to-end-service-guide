@@ -28,6 +28,30 @@ Note: the obligations for property obligations cover both FHL and non-FHL.
 
 ## Submit income and expense updates for self-employment and property businesses
 
+Businesses and agents who represent them, will be required to provide summary-level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often.
+
+The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. The software should present these deadlines clearly to the customer and prompt them to submit information when the update is due. Submissions of summary-level information cannot span an obligation period. If it does, the software will need to send two updates that fall into different obligations.
+
+The software package will need to convert the transactional information into summary totals for each category, for example, expenses by category.
+
+HMRC has provided APIs to enable the software to be able to send the summary information to HMRC for each income source and allow HMRC to provide a calculation based on all the information we have received to date.
+
+When the update is received, HMRC checks if the customer is signed up to MTD, if the submission is coming from an agent and if that agent is subscribed to agent services and authorised to act on behalf of the client if not, an error is returned.
+
+Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
+
+[List all self-employment update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_list-all-selfemployment-update-periods_get_accordion)
+
+[Create a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion)
+
+[Get a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_get-a-selfemployment-periodic-update_get_accordion
+
+[Amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion)
+
+
+
+## OLD CONTET REMOVE
+
 Businesses and agents who represent them, will be required to provide summary-level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often if they choose.
 
 The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date. The software should present these deadlines clearly to the customer and prompt them to submit information when the update is due. Submissions of summary-level information cannot span an obligation period. If it does, the software will need to send two updates that fall into different obligations.
@@ -39,6 +63,8 @@ HMRC has provided APIs to enable the software to be able to send the summary inf
 When the update is received, HMRC checks if the customer is signed up to MTD, if the submission is coming from an agent and if that agent is subscribed to agent services and authorised to act on behalf of the client if not, an error is returned. 
 
 Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
+
+## OLD CONTENT REMOVE
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
