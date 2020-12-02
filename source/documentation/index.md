@@ -113,7 +113,7 @@ HMRC monitors transactions to help protect your customers' confidential data fro
 
 You are required by law to submit header data for this API.
 
-[Check the data you need to send](/guides/fraud-prevention/). You can also use the [Test API](/api-documentation/docs/api/service/txm-fph-validator-api/1.0) during initial development and as part of your quality assurance checks.
+[Check the data you need to send](/guides/fraud-prevention/). You can also use the [Fraud Prevention Headers Test API](/api-documentation/docs/api/service/txm-fph-validator-api/1.0) during initial development and as part of your quality assurance checks.
 
 #### Example workflows for self-employment
 
