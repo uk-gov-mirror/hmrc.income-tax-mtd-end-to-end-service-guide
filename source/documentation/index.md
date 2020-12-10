@@ -99,7 +99,7 @@ Transaction Monitoring is a key security approach adopted in the UK and globally
 
 Supplying fraud prevention header information for all our APIs is mandatory. Therefore, it is essential that they are included in your products now before approval can be granted, and production credentials issued. HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
 
-The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. [Guidance on Fraud Prevention] Headers(https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
+The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
 
 
 
@@ -131,7 +131,7 @@ The following endpoints are to be tested to cover EOPS (End of Period Statement)
 sandbox.
 13.	‘Crystallisation’ to finalise the tax liability. (Developers must also build the facility for a user to make a declaration of correctness and completeness when crystallising.)
 
-Once the testing is complete, send details of the dummy NINO (National Insurance Number) used to call the above endpoints in the sandbox to the SDS team at SDSTeam@hmrc.gsi.gov.uk.
+Once the testing is complete, send details of the dummy NINO (National Insurance Number) used to call the above endpoints in the sandbox to the SDS team at <SDSTeam@hmrc.gsi.gov.uk>.
 
 You will need to contact us within 2 weeks of completing your API testing to enable us to view the data within our logs. It takes 10 working days to advise of the outcome. If the testing is satisfactory a product demonstration will be arranged.
 Developers need to consider the following:
@@ -220,7 +220,7 @@ For the avoidance of any doubt, there is no expectation that a free product will
 In addition to the minimum standards set out in the terms of use, and the general functionality standards applicable to all MTD for Income Tax software, we expect any free software product you provide to small businesses to:
 
 * enable the provision of a dataset that correlates to the current [SA103S (self-employment supplementary page) (short) (2020 version](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/604987/sa103s-2017.pdf)
-* enable the provision of a dataset that correlates to the current (SA105 UK property pages (2019-20 version))[https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/604310/sa105-2017.pdf] where the number of properties does not exceed one
+* enable the provision of a dataset that correlates to the current [SA105 UK property pages (2019-20 version)](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/604310/sa105-2017.pdf) where the number of properties does not exceed one
 * provide a reasonable level of guidance, help and support to users (HMRC is open to views on what might be ‘reasonable’ for a free product and will publish further advice on this in due course)
 * allow the end user to own and have access to all their records created using the software product (past and present) to enable them to retrieve data and promptly export it if necessary
 * be free for the business to use to comply with their MTD for Income Tax obligations for a full annual accounting period on the understanding the business continues to meet the eligibility criteria below
