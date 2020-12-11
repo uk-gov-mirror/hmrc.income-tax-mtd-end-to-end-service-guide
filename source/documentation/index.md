@@ -77,7 +77,7 @@ The production approvals process will include an assessment of whether a product
 ** Commented [WJ(T2]: Editors to add hyperlink here to where we discuss ‘fraud prevention headers’ further down **
 
 1.	The creation and maintenance of all business records a customer is required by law to keep and maintain in digital form
-2.	Submission of quarterly update information for each business income	 source (Self-employment, Multiple self-employments, UK Property Income)
+2.	Submission of quarterly update information for each business income	 source (self-employment, multiple self-employments, UK property income)
 3.	Customers to have the option to report data using the ‘Annual API’ at any time
 4.	Submission of an End of Period Statement for each business income source (with declaration of completeness)
 5.	Customers to call for and view an estimate of their Income Tax liability for each tax year at any time
@@ -87,10 +87,11 @@ The production approvals process will include an assessment of whether a product
 
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described in points 1 to 8 above are:
 
-1.	Self assessment
-2.	Individual losses
-
-** Commented [RT6]: Justine can you please add the relevant endpoints please **
+* [Self Assessment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
+* [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/1.0)
+* [Self Assessment BSAS](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/1.0)
+* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/2.0)
+* [Individuals Disclosures](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0)
 
 
 ## Fraud Prevention Headers
@@ -100,8 +101,6 @@ Transaction Monitoring is a key security approach adopted in the UK and globally
 Supplying fraud prevention header information for all our APIs is mandatory. Therefore, it is essential that they are included in your products now before approval can be granted, and production credentials issued. HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
 
 The developer must test their fraud headers to derive the correct values and provide SDST with a screenshot of the response received from the Test Fraud Header API. [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
-
-
 
 ### Testing requirements
 
@@ -120,15 +119,14 @@ summary information.
 7.	‘Trigger a calculation’ to request a calculation.
 8.	‘Retrieve a calculation’ to return the calculation liability (this will return a canned response from the sandbox).
 
-
-** NUMBERING HAS CHANGED BELOW -- IS THIS CORRECT? **
-
 The following endpoints are to be tested to cover EOPS (End of Period Statement) and Crystallisation:
 
 9.	‘Submit self-employment End of Period Statement’ to finalise your self- employment income. (Developers must also build the facility for a user to make a declaration of correctness and completeness in relation to the EOPS)
 10.	‘Retrieve End of Period Statement Obligations for a Self-Employment Business’ to check if an EOPS obligation has been fulfilled, this will return a canned response in the sandbox.
-11.	‘Intent to crystallise’ to return the tax Calculation ID for crystallisation. 12.‘Retrieve a calculation’ with the tax Calculation ID for crystallisation, to return the calculation liability. This will return a canned response in the
-sandbox.
+11.	‘Intent to crystallise’ to return the tax Calculation ID for crystallisation. 
+
+12.‘Retrieve a calculation’ with the tax Calculation ID for crystallisation, to return the calculation liability. This will return a canned response in the sandbox.
+
 13.	‘Crystallisation’ to finalise the tax liability. (Developers must also build the facility for a user to make a declaration of correctness and completeness when crystallising.)
 
 Once the testing is complete, send details of the dummy NINO (National Insurance Number) used to call the above endpoints in the sandbox to the SDS team at <SDSTeam@hmrc.gsi.gov.uk>.
@@ -145,12 +143,7 @@ Developers need to consider the following:
 * when authorising software, the correct MTD gateway credentials or agent services credentials, need to be used when logging into the system
 * consider providing notifications to customers when periodic submissions are due
 
-
-
-
 #### Example workflows for self-employment
-
-** NUMBERING HAS CHANGED FIX NUMBERING **
 
 Example workflows for self-employment
 
@@ -158,6 +151,7 @@ Example workflows for self-employment
 a. List all self-employment businesses.
 b. Create a self-employment periodic update.
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
+
 15. Amend an update.
 a. List all self-employment update periods.
 b. Amend a self-employment periodic update.
@@ -183,13 +177,13 @@ The product demonstration is the final part of the process after all preceding s
 
 At the product demonstration HMRC expects to see a consumer-ready product and see software go through the following process flows:
 
-1. New customer registers with the software and sets up an account.
-2. Customer authorises software (OAuth 2.0 journey).
-3. Customer views obligations and his or her status.
-4. Customer digitally imports data into the appropriate periodic update and submits information.
-5. Software triggers a calculation and replays to customer.
-6. End of Period Statement (EOPs) and declaration.
-7. Customer crystallisation - the appropriate display of the tax calculation, declarations, and error messages.
+18. New customer registers with the software and sets up an account.
+19. Customer authorises software (OAuth 2.0 journey).
+20. Customer views obligations and his or her status.
+21. Customer digitally imports data into the appropriate periodic update and submits information.
+22. Software triggers a calculation and replays to customer.
+23. End of Period Statement (EOPs) and declaration.
+24. Customer crystallisation - the appropriate display of the tax calculation, declarations, and error messages.
 
 ## Terms of use
 
@@ -268,4 +262,9 @@ Version 1.3
 Version 1.4
 
 * Construction Industry Scheme (CIS) section updated.
+
+Version 1.5
+
+* Production approvals process for Making Tax Digital for Self Assessment
+* Early draft MTD ITSA Regulations 2021 section added
 
