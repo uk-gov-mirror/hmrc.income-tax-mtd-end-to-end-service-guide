@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 1.4 issued 5 November 2020
+Version 1.5 issued 14 December 2020
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -69,15 +69,10 @@ This section of the guide explains which things your product must always include
 
 ### Minimum functionality standards
 
-The production approvals process will include an assessment of whether a product includes certain minimum functionality. In order to be granted production credentials for an MTD for Income Tax product, a software product must:
-
-* capture and submit fraud prevention header data to the specifications required by law
-* include functionality that enables
-
-** Commented [WJ(T2]: Editors to add hyperlink here to where we discuss ‘fraud prevention headers’ further down **
+The production approvals process will include an assessment of whether a product includes certain minimum functionality. In order to be granted production credentials for an MTD for Income Tax product, a software product must capture and submit fraud prevention header data to the specifications required by law and include functionality that enables:
 
 1.	The creation and maintenance of all business records a customer is required by law to keep and maintain in digital form
-2.	Submission of quarterly update information for each business income	 source (self-employment, multiple self-employments, UK property income)
+2.	Submission of quarterly update information for each business income	source (self-employment, multiple self-employments, UK property income)
 3.	Customers to have the option to report data using the ‘Annual API’ at any time
 4.	Submission of an End of Period Statement for each business income source (with declaration of completeness)
 5.	Customers to call for and view an estimate of their Income Tax liability for each tax year at any time
@@ -148,15 +143,18 @@ Developers need to consider the following:
 Example workflows for self-employment
 
 14.	Create an update.
+
 a. List all self-employment businesses.
 b. Create a self-employment periodic update.
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
 
 15. Amend an update.
+
 a. List all self-employment update periods.
 b. Amend a self-employment periodic update.
  
 16.	End of Period Statement.
+
 a. Get a self-employment annual summary.
 b. Amend a self-employment annual summary.
 c. Get self-employment Business Income Summary Source (BISS).
@@ -165,6 +163,7 @@ e. Agree with the declaration within the software.
 f. Submit self-employment end of period statement.
 
 17.	Crystallisation.
+
 a. Intent to crystallise.
 b. Retrieve a tax calculation - to view the current calculation.
 c. Agree with the declaration within the software.
