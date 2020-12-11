@@ -143,18 +143,15 @@ Developers need to consider the following:
 Example workflows for self-employment
 
 14.	Create an update.
-
-a. List all self-employment businesses.
+a. List all self-employment businesses.</br>
 b. Create a self-employment periodic update.
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
 
 15. Amend an update.
-
 a. List all self-employment update periods.
 b. Amend a self-employment periodic update.
  
 16.	End of Period Statement.
-
 a. Get a self-employment annual summary.
 b. Amend a self-employment annual summary.
 c. Get self-employment Business Income Summary Source (BISS).
