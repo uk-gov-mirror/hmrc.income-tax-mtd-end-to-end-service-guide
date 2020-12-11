@@ -17,5 +17,5 @@ All ITSA customers earning more than £10,000 business and property income per y
 
 We are sharing early draft ITSA Regulations which sets out our policy position in legislation – see below.  Software companies may find it helpful to use these draft Regulations when developing software products for ITSA customers joining the MTD ITSA pilot in April 2021 onwards. 
 
-<a href="documentation/early-draft-MTD-ITSA-regulations-2021.doc" download>Early draft MTD ITSA Regulations 2021</a>
+<a href="/early-draft-MTD-ITSA-regulations-2021.doc" download>Early draft MTD ITSA Regulations 2021</a>
 
