@@ -4,7 +4,9 @@ weight: 2
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
-# Scope of Making Tax Digital for Income Tax Self-Assessment – policy update
+# Draft MTD ITSA Regulations 2021
+
+## Making Tax Digital for Income Tax Self-Assessment – policy update
 
 Making Tax Digital (MTD) is making significant progress to realise HMRC’s vision to become a modern digital system, which works closer to real time, making it easier for customers to pay the right tax.  Since April 2019 over 1.4 million VAT customers above the VAT threshold (£85,000) have joined MTD (including over 300,000 businesses under the threshold joining voluntarily) and we are making good progress to deliver on bringing in the remaining VAT population in April 2022. 
 
