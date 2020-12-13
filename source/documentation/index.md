@@ -61,7 +61,7 @@ Here, we describe the steps developers go through from initially registering an 
 
 Our key objectives for MTD for Income Tax are to:
 
-* ensure customers have a streamlined end to end journey whereby, as far as is possible, software supports everything a business customer needs to do to meet their Income Tax obligations
+* ensure customers have a streamlined end-to-end journey whereby, as far as is possible, software supports everything a business customer needs to do to meet their Income Tax obligations
 * safeguard customer data and protect HMRC systems against fraud and criminal attack
 
 This section of the guide explains which things your product must always include before production credentials are sought and also describes things you should consider building into your products.
@@ -71,13 +71,13 @@ This section of the guide explains which things your product must always include
 
 The production approvals process will include an assessment of whether a product includes certain minimum functionality. In order to be granted production credentials for an MTD for Income Tax product, a software product must capture and submit fraud prevention header data to the specifications required by law and include functionality that enables:
 
-1.	The creation and maintenance of all business records a customer is required by law to keep and maintain in digital form
-2.	Submission of quarterly update information for each business income	source (self-employment, multiple self-employments, UK property income)
-3.	Customers to have the option to report data using the ‘Annual API’ at any time
-4.	Submission of an End of Period Statement for each business income source (with declaration of completeness)
-5.	Customers to call for and view an estimate of their Income Tax liability for each tax year at any time
-6.	Customers to make a self-assessment of the tax and Class 4 NIC due on their total taxable income and a final declaration of completeness and correctness (‘Crystallisation’) no later than 31 January following the end of tax year in which that income is taxable
-7.	Losses and adjustments allowing the customer to carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
+1.	The creation and maintenance of all business records a customer is required by law to keep and maintain in digital form.
+2.	Submission of quarterly update information for each business income	source (self-employment, multiple self-employments, UK property income).
+3.	Customers to have the option to report data using the ‘Annual API’ at any time.
+4.	Submission of an End of Period Statement for each business income source (with declaration of completeness).
+5.	Customers to call for and view an estimate of their Income Tax liability for each tax year at any time.
+6.	Customers to make a self-assessment of the tax and Class 4 NIC due on their total taxable income and a final declaration of completeness and correctness (‘Crystallisation’). no later than 31 January following the end of tax year in which that income is taxable.
+7.	Losses and adjustments allowing the customer to carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits.
 8.	Customers to pay voluntary Class 2 National Insurance contributions should they wish to.
 
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described in points 1 to 8 above are:
@@ -143,27 +143,38 @@ Developers need to consider the following:
 Example workflows for self-employment
 
 14.	Create an update.
-a. List all self-employment businesses.</br>
+a. List all self-employment businesses.
+
 b. Create a self-employment periodic update.
+
 c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
 
 15. Amend an update.
 a. List all self-employment update periods.
+
 b. Amend a self-employment periodic update.
  
 16.	End of Period Statement.
 a. Get a self-employment annual summary.
+
 b. Amend a self-employment annual summary.
+
 c. Get self-employment Business Income Summary Source (BISS).
+
 d. Retrieve end of period statement obligations for a self-employment business.
+
 e. Agree with the declaration within the software.
+
 f. Submit self-employment end of period statement.
 
 17.	Crystallisation.
 
 a. Intent to crystallise.
+
 b. Retrieve a tax calculation - to view the current calculation.
+
 c. Agree with the declaration within the software.
+
 d. Crystallisation - agree on the final calculation
 
 
