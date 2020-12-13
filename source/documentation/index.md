@@ -143,39 +143,27 @@ Developers need to consider the following:
 Example workflows for self-employment
 
 14.	Create an update.
-a. List all self-employment businesses.
-
-b. Create a self-employment periodic update.
-
-c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
+>a. List all self-employment businesses.
+>b. Create a self-employment periodic update.
+>c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
 
 15. Amend an update.
-a. List all self-employment update periods.
+>a. List all self-employment update periods.
+>b. Amend a self-employment periodic update.
 
-b. Amend a self-employment periodic update.
- 
 16.	End of Period Statement.
-a. Get a self-employment annual summary.
-
-b. Amend a self-employment annual summary.
-
-c. Get self-employment Business Income Summary Source (BISS).
-
-d. Retrieve end of period statement obligations for a self-employment business.
-
-e. Agree with the declaration within the software.
-
-f. Submit self-employment end of period statement.
+>a. Get a self-employment annual summary.
+>b. Amend a self-employment annual summary.
+>c. Get self-employment Business Income Summary Source (BISS).
+>d. Retrieve end of period statement obligations for a self-employment business.
+>e. Agree with the declaration within the software.
+>f. Submit self-employment end of period statement.
 
 17.	Crystallisation.
-
-a. Intent to crystallise.
-
-b. Retrieve a tax calculation - to view the current calculation.
-
-c. Agree with the declaration within the software.
-
-d. Crystallisation - agree on the final calculation
+>a. Intent to crystallise.
+>b. Retrieve a tax calculation - to view the current calculation.
+>c. Agree with the declaration within the software.
+>d. Crystallisation - agree on the final calculation
 
 
 ### Product Demonstration
