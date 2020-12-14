@@ -114,14 +114,12 @@ summary information.
 7.	‘Trigger a calculation’ to request a calculation.
 8.	‘Retrieve a calculation’ to return the calculation liability (this will return a canned response from the sandbox).
 
-The following endpoints are to be tested to cover EOPS (End of Period Statement) and Crystallisation:
+    The following endpoints are to be tested to cover EOPS (End of Period Statement) and Crystallisation:
 
 9.	‘Submit self-employment End of Period Statement’ to finalise your self- employment income. (Developers must also build the facility for a user to make a declaration of correctness and completeness in relation to the EOPS)
 10.	‘Retrieve End of Period Statement Obligations for a Self-Employment Business’ to check if an EOPS obligation has been fulfilled, this will return a canned response in the sandbox.
 11.	‘Intent to crystallise’ to return the tax Calculation ID for crystallisation. 
-
 12.‘Retrieve a calculation’ with the tax Calculation ID for crystallisation, to return the calculation liability. This will return a canned response in the sandbox.
-
 13.	‘Crystallisation’ to finalise the tax liability. (Developers must also build the facility for a user to make a declaration of correctness and completeness when crystallising.)
 
 Once the testing is complete, send details of the dummy NINO (National Insurance Number) used to call the above endpoints in the sandbox to the SDS team at <SDSTeam@hmrc.gsi.gov.uk>.
@@ -160,7 +158,7 @@ Example workflows for self-employment
     >f. Submit self-employment end of period statement.
 
  17.	Crystallisation.
-     >a. Intent to crystallise.
+    >a. Intent to crystallise.
     >b. Retrieve a tax calculation - to view the current calculation.
     >c. Agree with the declaration within the software.
     >d. Crystallisation - agree on the final calculation.
@@ -171,14 +169,15 @@ Example workflows for self-employment
 The product demonstration is the final part of the process after all preceding steps have been completed. Make sure you have completed the <a href="documentation/mtd-itsa-sa-demo-checklist-self-serve.docx" download>pre-demo checklist</a> before the demonstration.
 
 At the product demonstration HMRC expects to see a consumer-ready product and see software go through the following process flows:
-
-18. New customer registers with the software and sets up an account.
-19. Customer authorises software (OAuth 2.0 journey).
-20. Customer views obligations and his or her status.
-21. Customer digitally imports data into the appropriate periodic update and submits information.
-22. Software triggers a calculation and replays to customer.
-23. End of Period Statement (EOPs) and declaration.
-24. Customer crystallisation - the appropriate display of the tax calculation, declarations, and error messages.
+<ol start="18">
+ <li>New customer registers with the software and sets up an account.</li>
+ <li>Customer authorises software (OAuth 2.0 journey).</li>
+ <li>Customer views obligations and his or her status.</li>
+ <li>Customer digitally imports data into the appropriate periodic update and submits information.</li>
+ <li>Software triggers a calculation and replays to customer.</li>
+ <li>End of Period Statement (EOPs) and declaration.</li>
+ <li>Customer crystallisation - the appropriate display of the tax calculation, declarations, and error messages.</li>
+</ol>
 
 ## Terms of use
 
