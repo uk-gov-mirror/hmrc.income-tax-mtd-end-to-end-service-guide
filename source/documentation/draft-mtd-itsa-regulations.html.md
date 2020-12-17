@@ -15,7 +15,7 @@ We are also making significant progress with preparations to extend MTD to incom
 All ITSA customers earning more than £10,000 business and property income per year are required to join MTD from April 2023 with the following exceptions:
 
 * Trusts, estates, trustees of registered pension schemes and non-resident companies will not be required to join MTD for ITSA
-* Partnerships that earn more than £10,000 per year and have only individuals as partners are required to join MTD for ITSA from April 2023 but all other partnerships (for example those that have corporate partners and Limited Liability Partnerships) are not required to join MTD for ITSA in April 2023 but will be required to join MTD at a future date to be confirmed
+* General partnerships (as defined by the Partnership Act 1890) that earn more than £10,000 per year and have only individuals as partners are required to join MTD for ITSA from April 2023. All other partnerships are not required to join MTD for ITSA in April 2023 (examples include those that have corporate partners, Limited Partnerships or Limited Liability Partnerships) but will be required to join MTD for ITSA at a future date to be confirmed
 
 We are sharing early draft ITSA Regulations which sets out our policy position in legislation – see below.  Software companies may find it helpful to use these draft Regulations when developing software products for ITSA customers joining the MTD ITSA pilot in April 2021 onwards. 
 
