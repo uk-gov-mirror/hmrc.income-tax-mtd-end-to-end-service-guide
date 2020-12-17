@@ -6,7 +6,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax Self Assessment end-to-end service guide
 
-Version 1.5 issued 14 December 2020
+Version 1.6 issued 17 December 2020
 ***
 
 This service guide is to help software designers and vendors understand how their software fits in with HMRC APIs.
@@ -273,4 +273,8 @@ Version 1.5
 
 * Production approvals process for Making Tax Digital for Self Assessment
 * Early draft MTD ITSA Regulations 2021 section added
+
+Version 1.6
+
+* Revised wording for Draft MTD ITSA Regulations 2021 page
 
