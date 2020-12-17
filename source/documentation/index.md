@@ -277,4 +277,3 @@ Version 1.5
 Version 1.6
 
 * Revised wording for Draft MTD ITSA Regulations 2021 page
-
