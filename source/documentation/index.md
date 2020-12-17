@@ -271,9 +271,9 @@ Version 1.4
 
 Version 1.5
 
-* Production approvals process for Making Tax Digital for Self Assessment
-* Early draft MTD ITSA Regulations 2021 section added
+* Production approvals process for Making Tax Digital for Self Assessment.
+* Early draft MTD ITSA Regulations 2021 section added.
 
 Version 1.6
 
-* Revised wording for Draft MTD ITSA Regulations 2021 page
+* Revised wording for Draft MTD ITSA Regulations 2021 page.
