@@ -362,12 +362,12 @@ This API should be used to submit any Annual Accounting Adjustments. The adjustm
 
 Users with multiple self-employment businesses and those with a foreign property business will be able to sign up to Making Tax Digital. To enable this we are providing a number of new endpoints:
 
-* List All Businesses - returns a list of the business income sources
-* Retrieve Business Details - returns further information about a single business income source
-* Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations - returns the quarterly obligations for each business income source
-* Retrieve Income Tax (Self Assessment) End of Period Statement Obligations - returns the End of Period Statement obligations for a user’s business income sources
-* Retrieve Income Tax (Self Assessment) Crystallisation Obligations - returns the Crystallisation obligation for a user
-* Amend Loss Claim Order Preference - permits a change in the order in which loss claims are consumed 
+* [List All Businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0#_list-all-businesses_get_accordion) - returns a list of the business income sources
+* [Retrieve Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0#_retrieve-business-details_get_accordion) - returns further information about a single business income source
+* [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/1.0#_retrieve-income-tax-self-assessment-income-and-expenditure-obligations_get_accordion) - returns the quarterly obligations for each business income source
+* [Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/1.0#_retrieve-income-tax-self-assessment-end-of-period-statement_get_accordion) - returns the End of Period Statement obligations for a user’s business income sources
+* [Retrieve Income Tax (Self Assessment) Crystallisation Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/1.0#_retrieve-income-tax-self-assessment-crystallisation-obligations_get_accordion) - returns the Crystallisation obligation for a user
+* [Amend Loss Claim Order Preference](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/2.0#loss-claims_amend-loss-claims-order-test-only_put_accordion) - permits a change in the order in which loss claims are consumed 
 
 <a href="figures/list-all-businesses.svg" target="blank"><img src="figures/list-all-businesses.svg" alt="list all businesses diagram" style="width:720px;" /></a>
 <a href="figures/list-all-businesses.svg" target="blank">Open the list all businesses diagram in a new tab</a>.
