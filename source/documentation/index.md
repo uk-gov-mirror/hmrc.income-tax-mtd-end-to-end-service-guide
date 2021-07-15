@@ -99,11 +99,11 @@ This API has no effect on the existing XML API.
 
 ### Business Income Source Summary API
 
-This API allows a developer to retrieve a summary of income and expenditure for a specified self-employment, or property business for a given tax year.
+[This API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0) allows a developer to retrieve a summary of income and expenditure for a specified self-employment, or property business for a given tax year.
 
 ### Business Source Adjustable Summary API
 
-[This API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/1.0) allows a developer to retrieve a Business Source Adjustable Summary (BSAS) calculation for a specified self-employment or property business, for a given accounting period. Here a developer can:
+[This API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/2.0) allows a developer to retrieve a Business Source Adjustable Summary (BSAS) calculation for a specified self-employment or property business, for a given accounting period. Here a developer can:
 
 * generate a list of BSAS
 * generate an end of accounting period BSAS
