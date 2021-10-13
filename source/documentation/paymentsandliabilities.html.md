@@ -1,7 +1,10 @@
 ---
 title: Payments and Liabilities | Income Tax (MTD) End-to-End Service Guide
 weight: 5
+description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
+
+<!--- Section owner: MTD Programme --->
 
 # Payments and Liabilities
  
@@ -65,4 +68,3 @@ This endpoint allows a developer to retrieve a list of payments for a given date
 [Retrieve a Self Assessment Payment's Allocation Details [test only]](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/1.0#_retrieve-a-self-assessment-payments-allocation-details-test-only_get_accordion)
 
 This endpoint allows a developer to retrieve the allocation details of a specific payment against one or more liabilities. The unique identifier must be used for both the account (National Insurance number) and the payment (Payment Reference).
-
