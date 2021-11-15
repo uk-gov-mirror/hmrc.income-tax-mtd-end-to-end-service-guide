@@ -19,23 +19,23 @@ These endpoints can be broken into three categories:
 * employment expenses from all of the user’s employments
 
 
-[Add a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_add-a-custom-employment-test-only_post_accordion)
+[Add a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_add-a-custom-employment-test-only_post_accordion)
 
-[Amend a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-a-custom-employment-test-only_put_accordion)
+[Amend a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-a-custom-employment-test-only_put_accordion)
 
-[Retrieve an Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-test-only_get_accordion)
+[Retrieve an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-test-only_get_accordion)
 
-[List Employments [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_list-employments-test-only_get_accordion)
+[List Employments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_list-employments-test-only_get_accordion)
 
-[Delete a Custom Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-a-custom-employment-test-only_delete_accordion)
+[Delete a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-a-custom-employment-test-only_delete_accordion)
 
-[Ignore an Employment [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_ignore-an-employment-test-only_put_accordion)
+[Ignore an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_ignore-an-employment-test-only_put_accordion)
 
-[Amend Employment Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-employment-financial-details-test-only_put_accordion)
+[Amend Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-employment-financial-details-test-only_put_accordion)
 
-[Retrieve an Employment and its Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-and-its-financial-details-test-only_get_accordion)
+[Retrieve an Employment and its Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-and-its-financial-details-test-only_get_accordion)
 
-[Delete Employment Financial Details [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-employment-financial-details-test-only_delete_accordion)
+[Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-employment-financial-details-test-only_delete_accordion)
 
 [Amend Employment Expenses [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_amend-employment-expenses-test-only_put_accordion)
 
@@ -95,9 +95,9 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 The new functionality provides three endpoints, to submit or amend foreign earnings and foreign income, delete a submission, or retrieve details of a submission.
 
-* [Retrieve Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_retrieve-foreign-income-test-only_get_accordion)
-* [Amend Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
-* [Delete Foreign Income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
+* [Retrieve Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_retrieve-foreign-income-test-only_get_accordion)
+* [Amend Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
+* [Delete Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
 
 <a href="figures/foreign-income.svg" target="blank">
 <img src="figures/foreign-income.svg" alt=" " style="width:720px;" />
@@ -304,9 +304,9 @@ The new functionality provides three endpoints, to submit or amend expenses inco
 
 Use the Non-PAYE Income resources of the Individuals Income Received API to create, amend, retrieve and delete data relating to non PAYE income and tips:
 
-* [Create and Amend Non-PAYE employment income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Create-and-Amend-Non-PAYE-employment-income-test-only_put_accordion)
-* [Retrieve Non-PAYE employment income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Retrieve-Non-PAYE-employment-income-test-only_get_accordion)
-* [Delete Non-PAYE employment income [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Delete-Non-PAYE-employment-income-test-only_delete_accordion)
+* [Create and Amend Non-PAYE employment income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Create-and-Amend-Non-PAYE-employment-income-test-only_put_accordion)
+* [Retrieve Non-PAYE employment income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Retrieve-Non-PAYE-employment-income-test-only_get_accordion)
+* [Delete Non-PAYE employment income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#_Delete-Non-PAYE-employment-income-test-only_delete_accordion)
 
 ## State Benefits
 
@@ -321,13 +321,13 @@ The new functionality provides seven new endpoints: Add State Benefit, Delete St
 * a customer can only update amounts in-year for Job Seeker Allowance and Employment Support Allowance
 
 
-* [List State Benefits [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_list-state-benefits-test-only_get_accordion)
-* [Add State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_add-state-benefit-test-only_post_accordion)
-* [Update State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-test-only_put_accordion)
-* [Delete State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-test-only_delete_accordion)
-* [Update State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-amounts-test-only_put_accordion)
-* [Delete State Benefit Amounts [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-amounts-test-only_delete_accordion)
-* [Ignore State Benefit [test only]](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_ignore-state-benefit-test-only_put_accordion)
+* [List State Benefits](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_list-state-benefits-test-only_get_accordion)
+* [Add State Benefit](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_add-state-benefit-test-only_post_accordion)
+* [Update State Benefit](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-test-only_put_accordion)
+* [Delete State Benefit](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-test-only_delete_accordion)
+* [Update State Benefit Amounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_update-state-benefit-amounts-test-only_put_accordion)
+* [Delete State Benefit Amounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_delete-state-benefit-amounts-test-only_delete_accordion)
+* [Ignore State Benefit](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0#_ignore-state-benefit-test-only_put_accordion)
 
 <a href="figures/state-benefitssvg" target="blank">
 <img src="figures/state-benefits.svg" alt=" " style="width:720px;" />
