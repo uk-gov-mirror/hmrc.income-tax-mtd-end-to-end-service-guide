@@ -336,15 +336,15 @@ In response to developer feedback, we are content for software developers to bui
 The minimum required functionality is as follows:  
 
 * A software product must submit the fraud prevention header data required by law.
-* An MTD Income Tax product must allow the customer to;
-* create and maintain all business records a customer is required by law to keep in digital form (but see below regarding bridging software)
-* submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
-* have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
-* submit an End of Period Statement for each business income source (with declaration of completeness)
-* call for and view an estimate of their Income Tax liability for each tax year at any time
-* make a self-assessment of the tax and Class 4 NIC due on their total taxable income and a final declaration of completeness and correctness no later than 31 January following the end of tax year in which that income is taxable
-* carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
-* have visibility of all their Class 2 National Insurance contributions (so that they can make additional voluntary contributions if they wish)
+* A Making Tax Digital for Income Tax product must allow the customer to;
+* Create and maintain all business records a customer is required by law to keep in digital form (but see below regarding bridging software)
+* Submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
+* Have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
+* Submit an End of Period Statement for each business income source (with declaration of completeness)
+* Call for and view an estimate of their Income Tax liability for each tax year at any time
+* Make a self-assessment of the tax and Class 4 National Insurance contributions due on their total taxable income and a final declaration of completeness and correctness no later than 31 January following the end of tax year in which that income is taxable
+* Carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
+* Have visibility of all their Class 2 National Insurance contributions (so that they can make additional voluntary contributions if they wish)
 * The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
 * [Self Assessment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0)
 * [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/2.0)
@@ -361,7 +361,7 @@ Some customers may wish to integrate their existing software solution for digita
 
 ### Non-MTD products
 
-Software products whom wish to selectively use MTD Income Tax APIs and not build an MTD product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
+Software products who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
 
 ### Testing requirements
 
