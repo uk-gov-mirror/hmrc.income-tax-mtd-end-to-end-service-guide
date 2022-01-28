@@ -65,7 +65,7 @@ No, instead we have created a MTD newsletter to provide all information that we 
 
 **15. Can you confirm if periodic updates can be posted on the sandbox and if so what business/employment do you use. We get the error that matching resource cannot be found.**
 
-Yes you can, if it is not working then you may be using the wrong API. Please see the End to End Service Guide
+Yes you can, if it is not working then you may be using the wrong API. Please see the [End to End Service Guide](/documentation/businessandpropertyincome.html#submit-income-and-expense-updates-for-self-employment-and-property-businesses)
 
 In order to post periodic updates in Sandbox for self-employment and UK property, a business has to be added using the "Add a self-employment business [test support]" and "Add a UK property business [test support]" endpoints within the Self Assessment (MTD) API.
 
@@ -82,6 +82,7 @@ At the moment no, as we have not granted production credentials, but we are look
 **18. The statutory instrument references a calendar quarters election, but the stakeholders pack does not. Which is correct?**
 
 As per regulation 7, the standard quarterly periods for most customers will be:
+
 * 6th April to 5th July
 * 6th July to 5th October
 * 6th October to 5th January
@@ -99,7 +100,7 @@ The employer, if you support employment it would be advisable to support endpoin
 
 The employment endpoints are held in the "Individuals Income Received (MTD) API" and these can be used to check and correct the information after the tax year has ended. So, if you support employment income it is advisable to support the appropriate endpoints.
 
-Please see [further guidance](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#employments).
+Please see [further guidance](/documentation/additional-income.html#employments).
 
 **21. Can you confirm that free software only needs to provide replacement for SA1xx forms and not full tracking of the users’ accounts? Documentation describes it needs the full data of the results e.g. customer transactions.**
 
