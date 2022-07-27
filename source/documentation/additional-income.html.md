@@ -19,34 +19,33 @@ These endpoints can be broken into three categories:
 * employment expenses from all of the user’s employments
 
 
-[Add a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_add-a-custom-employment-test-only_post_accordion)
+[Add a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Add%20a%20Custom%20Employment)
 
-[Amend a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_amend-a-custom-employment-test-only_put_accordion)
+[Amend a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Amend%20a%20Custom%20Employment)
 
-[Retrieve an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-test-only_get_accordion)
+[Retrieve an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20an%20Employment%20and%20its%20Financial%20Details)
 
-[List Employments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_list-employments-test-only_get_accordion)
+[List Employments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#List%20Employments)
 
-[Delete a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-a-custom-employment-test-only_delete_accordion)
+[Delete a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20a%20Custom%20Employment)
 
-[Ignore an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_ignore-an-employment-test-only_put_accordion)
+[Ignore an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Ignore%20an%20Employment)
 
 [Unignore an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Unignore%20an%20Employment)
 
-[Create and Amend Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_unignore-an-employment-test-only_put_accordion)
+[Create and Amend Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Create%20and%20amend%20Employment%20Financial%20Details)
 
-[Retrieve an Employment and its Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_retrieve-an-employment-and-its-financial-details-test-only_get_accordion)
+[Retrieve an Employment and its Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20an%20Employment%20and%20its%20Financial%20Details)
 
-[Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#employments_delete-employment-financial-details-test-only_delete_accordion)
+[Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20Employment%20Financial%20Details)
 
-[Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_amend-employment-expenses_put_accordion)
+[Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Amend%20Employment%20Expenses)
 
-[Retrieve Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_retrieve-employment-expenses-test-only_get_accordion)
+[Retrieve Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Retrieve%20Employment%20Expenses)
 
-[Delete Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_delete-employment-expenses-test-only_delete_accordion)
+[Delete Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Delete%20Employment%20Expenses)
 
-[Ignore Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#_ignore-employment-expenses-test-only_put_accordion)
-
+[Ignore Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Ignore%20Employment%20Expenses)
 HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to final declaration.
 
 **Note:**
@@ -66,9 +65,9 @@ Custom employments will only apply to the tax year and will not be carried over 
 
 These endpoints allow a user to create, amend, retrieve and delete other employment income: Share options, Shares awarded or received, Lump sums, Disability and Foreign service.
 
-* [Retrieve Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_retrieve-other-employment-income-test-only_get_accordion)
-* [Create and Amend Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_amend-other-employment-income-test-only_put_accordion)
-* [Delete Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#other-employment-income_delete-other-employment-income-test-only_delete_accordion)
+* [Retrieve Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20Other%20Employment%20Income)
+* [Create and Amend Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Create%20and%20Amend%20Other%20Employment%20Income)
+* [Delete Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20Other%20Employment%20Income)
 
 
 <a href="figures/other-employment-income.svg" target="blank">
@@ -80,9 +79,9 @@ These endpoints allow a user to create, amend, retrieve and delete other employm
 
 These endpoints allow a user to create, retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
 
-* [Retrieve Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_retrieve-dividends-income-test-only_get_accordion)
-* [Create and Amend Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_amend-dividends-income-test-only_put_accordion)
-* [Delete Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#dividends-income_delete-dividends-income-test-only_delete_accordion)
+* [Retrieve Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20Dividends%20Income)
+* [Create and Amend Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Create%20and%20Amend%20Dividends%20Income)
+* [Delete Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20Dividends%20Income)
 
 <a href="figures/dividends-income.svg" target="blank">
 <img src="figures/dividends-income.svg" alt=" " style="width:720px;" />
@@ -95,9 +94,9 @@ These endpoints give a user the ability to manage their data related to foreign 
 
 The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted.
 
-* [Retrieve Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_retrieve-foreign-income-test-only_get_accordion)
-* [Create and Amend Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_amend-foreign-income-test-only_put_accordion)
-* [Delete Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#foreign-income_delete-foreign-income-test-only_delete_accordion)
+* [Retrieve Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20Foreign%20Income)
+* [Create and Amend Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Create%20and%20Amend%20Foreign%20Income)
+* [Delete Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20Foreign%20Income)
 
 <a href="figures/foreign-income.svg" target="blank">
 <img src="figures/foreign-income.svg" alt=" " style="width:720px;" />
@@ -108,7 +107,7 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 These endpoints allow a user to create, retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, and Foreign Policies.
 
-* [Retrieve Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_retrieve-insurance-policies-income-test-only_get_accordion)
+* [Retrieve Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20Insurance%20Policies%20Income)
 * [Create and Amend Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_amend-insurance-policies-income-test-only_put_accordion)
 * [Delete Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#insurance-policies-income_delete-insurance-policies-income-test-only_delete_accordion)
 
