@@ -9,8 +9,6 @@ description: Software developers, designers, product owners or business analysts
 
 ## Overview
 
-### What is HMRC Assist
-
 As part of Making Tax Digital, HMRC Assist is a set of APIs that will create a better customer experience by prompting customers with help via software they use when submitting quarterly updates.
 
 HMRC Assist will provide guidance and links encouraging customers to get their tax affairs right the first time.  
@@ -42,7 +40,7 @@ The report contains targeted feedback based on what the customer advises HMRC in
 
 <a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank"><img src="figures/customer-journey-transactional-risking-produce-report.svg" alt="Procuce report" style="width:720px;" /></a>
 
-<a href="figures/losses-api-diagram.svg" target="blank">Open the Produce report diagram in a new tab</a>.
+<a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank">Open the produce a report diagram in a new tab</a>.
 
 A HTTP 200 success code is returned with the targeted message, recommended action and guidance links are within the JSON for the software to display.
 
