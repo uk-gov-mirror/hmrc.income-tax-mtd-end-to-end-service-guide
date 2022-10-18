@@ -270,6 +270,8 @@ Amendments to Job Seekers Allowance (JSA) or Employment Support Allowance (ESA) 
 * list, retrieve, create or amend an individual's Foreign Property Income & Expenses Period Summaries
 * retrieve, create, amend or delete an individual's Foreign Property Annual Summary
 
+From December 2022, this API will provide separate production endpoints for submitting historic data for tax years from 2017-18 to 2021-22. See the API documentation for details.
+
 **From 22 March 2022, this API will be at V2.0. On 14 April 2022, V1.0 was deprecated and cannot be subscribed to any longer. However, V1.0 can still be called if the subscription was made before this status change.**
 
 ### Self Assessment API
