@@ -155,6 +155,20 @@ These endpoints allow a user to create, retrieve, amend and delete savings incom
 </a>
 <a href="figures/savings-income.svg" target="blank">Open diagram in a new tab.</a>
 
+## Savings Accounts
+
+These endpoints allow a user to retrieve and maintain information about an individual's UK savings account.
+
+* [List All UK Savings Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#List%20All%20UK%20Savings%20Accounts%20[test%20only])
+* [Add A UK Savings Account](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Add%20a%20UK%20Savings%20Account%20[test%20only])
+* [Retrieve UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Retrieve%20UK%20Savings%20Account%20Annual%20Summary%20[test%20only])
+* [Create and Amend a UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Create%20and%20Amend%20a%20UK%20Savings%20Account%20Annual%20Summary%20[test%20only])
+
+<a href="figures/savings-accounts.svg" target="blank">
+<img src="figures/savings-accounts.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/savings-accounts.svg" target="blank">Open diagram in a new tab.</a>
+
 ## Disclosures
 
 These endpoints allow the user to manage their data related to the disclosure of tax avoidance schemes and undeclared income, for a given tax year.
