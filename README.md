@@ -2,9 +2,9 @@
 
 ## Getting started
 
-To preview or build the website, we need to use the terminal.
+To preview or build the website, you need to use the terminal.
 
-Install Ruby with Rubygems, perferably with a [Ruby version manager][rvm],
+Install Ruby with Rubygems, preferably with a [Ruby version manager][rvm],
 and the [Bundler gem][bundler].
 
 In the application folder type the following to install the required gems:
@@ -12,6 +12,14 @@ In the application folder type the following to install the required gems:
 ```
 bundle install
 ```
+### Installation guidance by operating system
+
+macOS: do not use the built-in Ruby that comes with macOS. It is best to install
+a separate Ruby and rvm using [Homebrew](https://brew.sh/).
+
+Windows: the best approach on Windows is to use
+[RubyInstaller](https://rubyinstaller.org/). The guide is known to build
+correctly on Windows 10 using RubyInstaller 3.1.1-1.
 
 ## Making changes
 
@@ -19,7 +27,7 @@ To make changes edit the source files in the `source` folder.
 
 ### Single page output
 
-Although a single page of HTML is generated the markdown is spread across
+Although a single page of HTML is generated, the markdown is spread across
 multiple files to make it easier to manage. They can be found in
 `source/documentation`.
 
@@ -32,8 +40,12 @@ generated output.
 <%= partial 'documentation/agile/scrum' %>
 ```
 
-Including files manually like this lets us specify the position they appear in
+Including files manually like this lets you specify the position they appear in
 the page.
+
+The `weight` variable specified at the beginning of each markdown file can be
+used to specify the order of sections - a higher `weight` value is displayed
+lower on the output page.
 
 ### Multiple pages
 
@@ -43,11 +55,13 @@ For example, `source/about.html.md` will be accessible on <http://localhost:4567
 
 ## Preview
 
-Whilst writing documentation we can run a middleman server to preview how the
+Whilst writing documentation you can run a middleman server to preview how the
 published version will look in the browser. After saving a change the preview in
 the browser will automatically refresh.
 
-The preview is only available on our own computer. Others won't be able to
+Make sure to preview your changes locally before you commit them.
+
+The preview is only available on your own computer. Others won't be able to
 access it if they are given the link.
 
 Type the following to start the server:
