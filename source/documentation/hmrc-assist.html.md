@@ -27,7 +27,7 @@ It will allow customers to:
 
 ### HMRC Assist endpoints
 
-There are two end points:
+There are two endpoints:
 
 * [Produce a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Produce%20a%20HMRC%20Assist%20Report) - this endpoint allows a developer to generate and return a HMRC Assist report for a tax calculation for a given customer
 * [Acknowledge a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Acknowledge%20a%20HMRC%20Assist%20Report) - this endpoint allows a developer to acknowledge that the given report has been read by the customer or agent
