@@ -17,7 +17,7 @@ It will allow customers to:
 
 * correct and understand entitlements and reliefs allowable
 * have predictable tax bills
-* a better cashflow
+* have a better cash flow
 
 ### High-level HMRC Assist customer journey
 
@@ -27,18 +27,17 @@ It will allow customers to:
 
 ### HMRC Assist endpoints
 
-We are providing two endpoints:
+There are two end points:
 
-* [Produce a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Produce%20a%20HMRC%20Assist%20Report) - this endpoint enables a developer to generate and return a HMRC Assist report for a tax calculation for a given customer
-* [Acknowledge a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Acknowledge%20a%20HMRC%20Assist%20Report) - this endpoint enables a developer to acknowledge that the customer or agent has read the given report
+* [Produce a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Produce%20a%20HMRC%20Assist%20Report) - this endpoint allows a developer to generate and return a HMRC Assist report for a tax calculation for a given customer
+* [Acknowledge a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/transactional-risking/1.0#Acknowledge%20a%20HMRC%20Assist%20Report) - this endpoint allows a developer to acknowledge that the given report has been read by the customer or agent
 
 ### Produce a HMRC Assist Report
 
-The HMRC Assist report is based on the customer’s National Insurance number (nino) and Calculation ID.
-The report contains targeted feedback based on what the customer advises HMRC in their update for the given National Insurance number (nino) and Calculation ID.
+The HMRC Assist report is based on the customer’s National Insurance number (NINO) and Calculation ID. The report contains targeted feedback based on what the customer is advising HMRC in their update for the given National Insurance number (NINO) and Calculation ID.
 
 
-<a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank"><img src="figures/customer-journey-transactional-risking-produce-report.svg" alt="Procuce report" style="width:720px;" /></a>
+<a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank"><img src="figures/customer-journey-transactional-risking-produce-report.svg" alt="Produce report" style="width:720px;" /></a>
 
 <a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank">Open the produce a report diagram in a new tab</a>.
 
@@ -46,11 +45,10 @@ A HTTP 200 success code is returned with the targeted message, recommended actio
 
 ### Acknowledge a HMRC Assist Report
 
-This endpoint enables a developer to acknowledge that the given report has been read by either the customer or agent.
+This endpoint allows a developer to acknowledge that the given report has been read by either the customer or agent.
 
-<a href="figures/customer-journey-transactional-risking-acknowledge.svg" target="blank"><img src="figures/customer-journey-transactional-risking-acknowledge.svg" alt="Losses API calls" style="width:720px;" /></a>
+<a href="figures/customer-journey-transactional-risking-acknowledge.svg" target="blank"><img src="figures/customer-journey-transactional-risking-acknowledge.svg" alt="Acknowledge a HMRC Assist Report" style="width:720px;" /></a>
 
-<a href="figures/customer-journey-transactional-risking-acknowledge.svg" target="blank">Open the Acknowledge diagram in a new tab</a>.
-
+<a href="figures/customer-journey-transactional-risking-acknowledge.svg" target="blank">Open the Acknowledge HMRC Assist report diagram in a new tab</a>.
 
 To acknowledge the report, a HTTP 204 code is returned which contains no content.
