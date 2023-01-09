@@ -39,7 +39,7 @@ These endpoints can be broken into three categories:
 
 [Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0#Delete%20Employment%20Financial%20Details)
 
-[Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Amend%20Employment%20Expenses)
+[Create and Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Create%20and%20Amend%20Employment%20Expenses)
 
 [Retrieve Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0#Retrieve%20Employment%20Expenses)
 
