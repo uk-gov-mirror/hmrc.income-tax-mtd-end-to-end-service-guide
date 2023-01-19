@@ -652,32 +652,54 @@ These journeys show examples of use:
 
 ## Changelog
 
-Version 1.1
+The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/income-tax-mtd-changelog](https://github.com/hmrc/income-tax-mtd-changelog) - that is the best source for detailed and comprehensive information about API changes.
 
-* Payments and Liabilities section added.
+Below is a summary of significant updates to this service guide:
 
-Version 1.2
+Version 2.6
 
-* Multiple businesses section added.
-* Construction Industry Scheme (CIS) section added.
+* Updated guide to reflect API changes including refactored Self Assessment Accounts API.
 
-Version 1.3
+Version 2.5
 
-* Losses updated.
-* Additional income section added.
+* Updated guide to reflect new API versions, update links and correct and clarify some content.
 
-Version 1.4
+Version 2.4
 
-* Construction Industry Scheme (CIS) section updated.
+* Updated Frequently Asked Questions section to remove some items.
 
-Version 1.5
+Version 2.3
 
-* Production approvals process for Making Tax Digital for Self Assessment.
-* Early draft MTD ITSA Regulations 2021 section added.
+* Added note and an example table demonstrating how adjustments submitted work
 
-Version 1.6
+Version 2.2
 
-* Revised wording for Draft MTD ITSA Regulations 2021 page.
+* Added a Frequently Asked Questions section to the menu tree
+
+Version 2.1
+
+* Notice of version change to Business Income Source Summary V1.0
+* "Set up" heading replaced by "Sign up" with the menu tree updated to only have three sections: **Agent**, **Individual** and **Link software to HMRC**.
+* Updated content in the **Minimum functionality standards** section with two other sections added: **Bridging software** and **Non-MTD products**
+* Updated content in the **Declaration** and **Declaration for agents** sections of **Final declaration** (previously called "crystallisation")
+
+Version 2.0
+
+* Addition of Capital Gains Tax, Marriage Allowance, Non-PAYE Income, Coding out underpayments and debts.
+
+Version 1.9
+
+* Addition of requirement for businesses and landlords to provide information about residential property disposals
+* Addition of information regarding BSAS adjustments
+* Addition of content changes to meet MTD Style Guide V2.2
+* Replacing the term ‘crystallisation’ with ‘final declaration'
+
+Version 1.8
+
+* Addition of deprecation dates for Self Assessment API Endpoints
+* Notice of version change to Business Source Adjustable Summary (MTD) - V 1.0
+* Notice of version change to Individual Losses (MTD) - V1.0
+* Notice of version change to Individual Calculations v 1.0
 
 Version 1.7
 
@@ -688,47 +710,29 @@ Version 1.7
 * Replaced the term, ‘taxpayers’ with ‘customers’
 * Replaced references to SA Accounting Summary API with BSAS API
 
-Version 1.8
+Version 1.6
 
-* Addition of deprecation dates for Self Assessment API Endpoints
-* Notice of version change to Business Source Adjustable Summary (MTD) - V 1.0
-* Notice of version change to Individual Losses (MTD) - V1.0
-* Notice of version change to Individual Calculations v 1.0
+* Revised wording for Draft MTD ITSA Regulations 2021 page.
 
-Version 1.9
+Version 1.5
 
-* Addition of requirement for businesses and landlords to provide information about residential property disposals
-* Addition of information regarding BSAS adjustments
-* Addition of content changes to meet MTD Style Guide V2.2
-* Replacing the term ‘crystallisation’ with ‘final declaration
+* Production approvals process for Making Tax Digital for Self Assessment.
+* Early draft MTD ITSA Regulations 2021 section added.
 
-Version 2.0
+Version 1.4
 
-* Addition of Capital Gains Tax, Marriage Allowance, Non-PAYE Income, Coding out underpayments and debts.
+* Construction Industry Scheme (CIS) section updated.
 
-Version 2.1
+Version 1.3
 
-* Notice of version change to Business Income Source Summary V1.0
-* "Set up" heading replaced by "Sign up" with the menu tree updated to only have three sections: **Agent**, **Individual** and **Link software to HMRC**.
-* Updated content in the **Minimum functionality standards** section with two other sections added: **Bridging software** and **Non-MTD products**
-* Updated content in the **Declaration** and **Declaration for agents** sections of **Final declaration** (previously called "crystallisation")
+* Losses updated.
+* Additional income section added.
 
-Version 2.2
+Version 1.2
 
-* Added a Frequently Asked Questions section to the menu tree
+* Multiple businesses section added.
+* Construction Industry Scheme (CIS) section added.
 
-Version 2.3
+Version 1.1
 
-* Added note and an example table demonstrating how adjustments submitted work
-
-Version 2.4
-
-* Updated Frequently Asked Questions section to remove some items.
-
-Version 2.5
-
-* Updated guide to reflect new API versions, update links and correct and clarify some content.
-
-Version 2.6
-
-* Updated guide to reflect API changes including refactored Self Assessment Accounts API.
+* Payments and Liabilities section added.
