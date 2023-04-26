@@ -6,7 +6,11 @@ description: Software developers, designers, product owners or business analysts
 
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-Version 2.6 issued December 2022
+Version 2.8 issued April 2022
+
+
+**Note:** This guide is currently under review to ensure it meets the needs of software providers. See the [changelog](#changelog) for latest updates.
+
 ***
 
 This service guide describes HMRC’s Making Tax Digital (MTD) for Income Tax and explains how developers can connect their software to the MTD APIs.
@@ -655,6 +659,14 @@ These journeys show examples of use:
 The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/income-tax-mtd-changelog](https://github.com/hmrc/income-tax-mtd-changelog) - that is the best source for detailed and comprehensive information about API changes.
 
 Below is a summary of significant updates to this service guide:
+
+Version 2.8
+
+* Updated HMRC Assist section
+
+Version 2.7
+
+* Updated guide to reflect simplified v3.0 Final Declaration process and update section on customers opting out of MTD. 
 
 Version 2.6
 

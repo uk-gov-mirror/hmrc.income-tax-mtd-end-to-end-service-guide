@@ -20,22 +20,22 @@ If the user has submitted data after the end of the year because no data was sup
 
 If any data the user has submitted is different from the records HMRC hold the user data is accepted. Any discrepancies will be flagged by the system for a HMRC review.
 
-[Create CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0#Create%20CIS%20Deductions%20for%20Subcontractor) - this endpoint allows a user to create a customer override to the CIS deductions which have been previously populated by data submitted directly to HMRC by the contractor, or create CIS deductions if no data has been submitted to HMRC by the Contractor. A National Insurance number must be provided.
+[Create CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments/post) - this endpoint allows a user to create a customer override to the CIS deductions which have been previously populated by data submitted directly to HMRC by the contractor, or create CIS deductions if no data has been submitted to HMRC by the Contractor. A National Insurance number must be provided.
 
 <a href="figures/cis-create-cis.svg" target="blank"><img src="figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
 <a href="figures/cis-create-cis.svg" target="blank">Open the CIS create deduction diagram in a new tab</a>.
 
-[Amend CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0#Amend%20CIS%20Deductions%20for%20Subcontractor) - this endpoint allows a user to amend the override CIS deductions that have been previously submitted by the user. A National Insurance number and submission ID must be provided.
+[Amend CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments~1%7BsubmissionId%7D/put) - this endpoint allows a user to amend the override CIS deductions that have been previously submitted by the user. A National Insurance number and submission ID must be provided.
 
 <a href="figures/cis-amend-cis.svg" target="blank"><img src="figures/cis-amend-cis.svg" alt="CIS amend diagram" style="width:720px;" /></a>
 <a href="figures/cis-amend-cis.svg" target="blank">Open the CIS amend deduction diagram in a new tab</a>.
 
-[Retrieve CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0#Retrieve%20CIS%20Deductions%20for%20Subcontractor) - this endpoint allows a user to retrieve the latest CIS deductions position and whether contractor or user data has been used in the latest calculation. A National Insurance number and submission ID must be provided.
+[Retrieve CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1current-position/get) - this endpoint allows a user to retrieve the latest CIS deductions position and whether contractor or user data has been used in the latest calculation. A National Insurance number and submission ID must be provided.
 
 <a href="figures/cis-retrieve-cis.svg" target="blank"><img src="figures/cis-retrieve-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
 <a href="figures/cis-retrieve-cis.svg" target="blank">Open the CIS retrieve deduction diagram in a new tab</a>.
 
-[Delete CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0#Delete%20CIS%20Deductions%20for%20Subcontractor) - this endpoint allows a user to delete user submitted CIS overrides which have been previously submitted. A National Insurance number and submission ID must be provided.
+[Delete CIS Deductions for Subcontractor](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments~1%7BsubmissionId%7D/delete) - this endpoint allows a user to delete user submitted CIS overrides which have been previously submitted. A National Insurance number and submission ID must be provided.
 
 <a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
 <a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>.
