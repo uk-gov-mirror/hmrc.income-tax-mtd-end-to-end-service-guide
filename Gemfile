@@ -16,6 +16,3 @@ gem 'govuk_tech_docs'
 # gem 'middleman-search', git: 'https://github.com/alphagov/middleman-search'
 
 gem 'thin', '~> 1.7.0'
-
-gem 'execjs'
-gem 'middleman-autoprefixer', '~> 2.7.0'
