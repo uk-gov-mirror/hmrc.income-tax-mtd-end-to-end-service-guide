@@ -19,6 +19,5 @@ lazy val microservice = Project(appName, file("."))
     publishingSettings: _*
   )
   .settings(
-    resolvers += Resolver.bintrayRepo("hmrc", "releases"),
     resolvers += Resolver.jcenterRepo
   )
