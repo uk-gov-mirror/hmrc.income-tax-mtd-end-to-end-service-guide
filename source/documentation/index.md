@@ -378,14 +378,16 @@ The minimum required functionality is as follows:
 * Carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
 * Have visibility of all their Class 2 National Insurance contributions (so that they can make additional voluntary contributions if they wish)
 * The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
-* [Self Assessment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api)
-* [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/2.0)
-* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
-* [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
-* [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api)
-* [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
-* [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/1.0)
-* [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api)
+    * [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/)
+    * [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
+    * [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/)
+    * [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/)
+    * [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api)
+    * [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
+    * [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
+    * [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
+   
+   
 
 ### Bridging software
 
@@ -399,25 +401,25 @@ Software products who wish to selectively use Making Tax Digital for Income Tax 
 
 The following endpoints are required to be tested to cover the self-employment reporting:
 
-1.	‘Create a test user which is an organisation’ to create test data.
+1.	[Create a test user which is an organisation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanorganisation) to create test data.
 2.	‘Add a self-employment business’ endpoint to create an MTD
 subscription for an individual within the sandbox environment.
-3.	‘Retrieve self-employment business obligations’ to return obligation
+3.	[Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get) to return obligation
 periods (this will return a canned response the sandbox).
-4.	‘Create a self-employment periodic update’ to make a submission.
-5.	‘Amend a self-employment periodic update’ to amend a submission
+4.	[Create a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post) to make a submission.
+5.	[Amend a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/put) to amend a submission
 already made.
-6.	‘Amend a self-employment annual summary’ to create or amend annual
+6.	[Create and Amend Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) to create or amend annual
 summary information.
-7.	‘Trigger a calculation’ to request a calculation.
-8.	‘Retrieve a calculation’ to return the calculation liability (this will return a canned response from the sandbox).
+7.	[Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) to request a calculation.
+8.	[Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) to return the calculation liability (this will return a canned response from the sandbox).
 
     The following endpoints are to be tested to cover EOPS (End of Period Statement) and final declaration:
 
-9.	‘Submit self-employment End of Period Statement’ to finalise your self- employment income. (Developers must also build the facility for a user to make a declaration of correctness and completeness in relation to the EOPS)
-10.	‘Retrieve End of Period Statement Obligations for a Self-Employment Business’ to check if an EOPS obligation has been fulfilled, this will return a canned response in the sandbox.
+9.	[Submit End of Period Statement for a Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/2.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post) to finalise your self- employment income. (Developers must also build the facility for a user to make a declaration of correctness and completeness in relation to the EOPS)
+10.	[Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1end-of-period-statement/get) to check if an EOPS obligation has been fulfilled, this will return a canned response in the sandbox.
 11.	‘Intent to crystallise’ to return the tax Calculation ID for final declaration.
-12. ‘Retrieve a calculation’ with the tax Calculation ID for final declaration, to return the calculation liability. This will return a canned response in the sandbox.
+12. [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) with the tax Calculation ID for final declaration, to return the calculation liability. This will return a canned response in the sandbox.
 13.	‘Final declaration’ to finalise the tax liability. (Developers must also build the facility for a user to make a declaration of correctness and completeness when making the final declaration.)
 
 Once the testing is complete, send details of the dummy NINO (National Insurance Number) used to call the above endpoints in the sandbox to the SDS team at <SDSTeam@hmrc.gsi.gov.uk>.
@@ -441,29 +443,24 @@ Developers need to:
 Example workflows for self-employment
 
 1. Create an update
-
-    a. List all self-employment businesses.<br>
-    b. Create a self-employment periodic update.<br>
-    c. Trigger a tax calculation - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
-
+    1. [List all businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1list/get).
+    2. [Create a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post).
+    3. [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) - can be triggered anytime but must be triggered at the end of the quarter to meet the obligation.
 2. Amend an update
-
-    a. List all self-employment update periods.<br>
-    b. Amend a self-employment periodic update.<br>
-    c. End of Period Statement.<br>
-    d. Get a self-employment annual summary.<br>
-    e. Amend a self-employment annual summary.<br>
-    f. Get self-employment Business Income Summary Source (BISS).<br>
-    g. Retrieve end of period statement obligations for a self-employment business.<br>
-    h. Agree with the declaration within the software.<br>
-    i. Submit self-employment end of period statement.
-
+    1. [List Self-Employment Period Summaries](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/get).
+    2. [Amend a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/put).
+    3. [Submit End of Period Statement for a Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/2.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post).
+    4. [Retrieve a Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/get).
+    5. [Create and Amend Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put).
+    6. [Retrieve a Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0/oas/page#/paths/~1individuals~1self-assessment~1income-summary~1%7Bnino%7D~1%7BtypeOfBusiness%7D~1%7BtaxYear%7D~1%7BbusinessId%7D/get).
+    7. [Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1end-of-period-statement/get).
+    8. Agree with the declaration within the software.
+    9. [Submit End of Period Statement for a Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/2.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post).
 3. Final declaration
-
-    a. Intent to crystallise.<br>
-    b. Retrieve a tax calculation - to view the current calculation.<br>
-    c. Agree with the declaration within the software.<br>
-    d. Make a final declaration - agree on the final calculation.<br>
+    1. Intent to crystallise.
+    2. [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) - to view the current calculation.
+    3. Agree with the declaration within the software.
+    4. Make a final declaration - agree on the final calculation.
 
 
 ### Product Demonstration
@@ -548,10 +545,10 @@ When the update is received, HMRC checks if the customer is signed up to MTD, if
 
 Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
 
-* [List all self-employment update periods](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_list-all-selfemployment-update-periods_get_accordion)
-* [Create a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_create-a-selfemployment-periodic-update_post_accordion)
-* [Get a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_get-a-selfemployment-periodic-update_get_accordion)
-* [Amend a self-employment periodic update](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_amend-a-selfemployment-periodic-update_put_accordion)
+* [List Self-Employment Period Summaries](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/get)
+* [Create a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post)
+* [Retrieve a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/get)
+* [Amend a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/put)
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted.
 
@@ -578,11 +575,13 @@ Customers must make sure they are confident with the information they have provi
 <!--- some endpoints below are deprecated, need to update with equivalents -->
 
 1. The customer inputs information about allowances and adjustments for the business income source. They can provide this information throughout the year, but must do it before they complete the EOPS.
-2. Depending on the business income type you need to submit, the software calls the [Get a self-employment annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Get%20a%20self-employment%20annual%20summary), [Get a non-FHL UK property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Get%20a%20non-FHL%20UK%20property%20business%20annual%20summary) or [Get a FHL UK property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Get%20a%20FHL%20UK%20property%20business%20annual%20summary). This step is optional, but we recommend it to ensure you are getting the most up-to-date information.
+2. Depending on the business income type you need to submit, the software calls the [Retrieve a Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/get), [Retrieve a Historic Non-FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/get)
+or [Retrieve a Historic FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/get). This step is optional, but we recommend it to ensure you are getting the most up-to-date information.
 3. The customer views the allowances and adjustment information and updates relevant information.
-4. Depending on the business income type you need to update, the software submits information using the [Amend a self-employment annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Amend%20a%20self-employment%20annual%20summary), [Amend a non-FHL UK property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Amend%20a%20non-FHL%20UK%20property%20business%20annual%20summary) or [Amend a FHL UK Property business annual summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/2.0#Amend%20a%20FHL%20UK%20property%20business%20annual%20summary).
+4. Depending on the business income type you need to update, the software submits information using the [Create and Amend Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put),
+[Create and Amend a Historic Non-FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put) or [Create and Amend a Historic FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put).
 5. HMRC receives and stores information
-6. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/2.0#Trigger%20a%20Self%20Assessment%20Tax%20Calculation) endpoint to get the calculation.
+6. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation.
 7. HMRC receives the request and returns a Calculation ID (calculationId) software must use this when calling the Self Assessment Tax Calculation endpoints.
 8. The software receives the calculationId. Note: you could display the calculation to customers at this point if you choose, if you do follow steps 20 and 21 in the periodic update section.
 9. The customer wants to make some accounting adjustments following the business accounts being finalised.
