@@ -29,10 +29,10 @@ HMRC Assist will be integrated into HMRC’s ITSA Submission Service so that cus
 
 There are two endpoints:
 
-* [Produce a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0#self-assessment-assist_produce-a-hmrc-self-assessment-assist-report_post_details) - this endpoint enables you to generate and return a HMRC Assist report for a tax calculation for a given customer.
-* [Acknowledge a HMRC Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0#self-assessment-assist_acknowledge-a-hmrc-self-assessment-assist-report_post_details) - this endpoint enables you to acknowledge that the customer or agent has read the report.
+* [Produce a HMRC Self Assessment Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Generate-Report/paths/~1individuals~1self-assessment~1assist~1reports~1%7Bnino%7D~1%7BtaxYear%7D~1%7BcalculationId%7D/post) - this endpoint enables you to generate and return a HMRC Self Assessment Assist report for a tax calculation for a given customer.
+* [Acknowledge a HMRC Self Assessment Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Acknowledge-Report/paths/~1individuals~1self-assessment~1assist~1reports~1acknowledge~1%7Bnino%7D~1%7BreportId%7D~1%7BcorrelationId%7D/post) - this endpoint enables you to acknowledge that the customer or agent has read the report.
 
-### Produce a HMRC Assist Report
+### Produce a HMRC Self Assessment Assist Report
 
 The report contains targeted feedback based on what the customer advises HMRC in their update for the given National Insurance number (NINO), Calculation ID, and tax year.
 
@@ -43,7 +43,7 @@ The report contains targeted feedback based on what the customer advises HMRC in
 
 A HTTP 200 success code is returned and the targeted message, recommended action and guidance links are within the JSON for the software to display.
 
-### Acknowledge a HMRC Assist Report
+### Acknowledge a HMRC Self Assessment Assist Report
 
 This endpoint enables you to acknowledge that the given report has been read by either the customer or agent.
 
