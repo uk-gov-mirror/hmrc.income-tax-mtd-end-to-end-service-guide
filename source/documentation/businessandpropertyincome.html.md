@@ -47,7 +47,7 @@ Note: If you still get the error and the client insists they have met all of the
 
 The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted. HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
 
-Once all the information has been submitted to HMRC for that period, the software must use the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post)
+Once all the information has been submitted to HMRC for that period, the software must use the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post)
 endpoint to inform HMRC that the user has finished submitting their information. As a response, HMRC will provide a Calculation ID (calculationId).
 
 The triggering of the tax calculation will mark the obligation as fulfilled, if we have data covering the whole period.
@@ -72,10 +72,10 @@ The triggering of the tax calculation will mark the obligation as fulfilled, if 
 14. HMRC receives and stores information and provides success response.
 15. The software receives the success response.
 15a. The software confirms with the customer that the update has been received and stored by HMRC.
-16. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation and ensure the obligation is marked as met, once the update(s) complete an obligation period.
+16. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation and ensure the obligation is marked as met, once the update(s) complete an obligation period.
 17. HMRC marks the obligation as fulfilled, once the update(s) complete an obligation period. Note: that this can take up to an hour to show on our systems as met.
 18. HMRC receives the request and returns a Calculation ID (calculationId). Software must use this when calling the Self Assessment tax calculation endpoint.
-19. The software calls the [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and the software does not have to retrieve the tax calculation information at this point.
+19. The software calls the [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint to retrieve the calculation. Note: the tax calculation can take up to 5 seconds to run.  We recommend you wait 5 seconds – this is optional and the software does not have to retrieve the tax calculation information at this point.
 20. HMRC returns tax calculation.
 21. The software displays the calculation to the user – this is optional, the software does not have to show the calculation to the customer at this point (some may want to do their own).
 22. Customer reviews the tax calculation.
@@ -112,10 +112,10 @@ A calculation result once created (excluding metadata) is an immutable calculati
 
 The [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0) allows the software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer:
 
-* [List Self Assessment Tax Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment/get) for a given National Insurance number (NINO) and tax year
-* [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) for a given tax year. The software must use the trigger a self-assessment tax calculation endpoint to inform HMRC that the user has finished submitting their information. As a response, HMRC will provide a Calculation ID (calculationId).
+* [List Self Assessment Tax Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment/get) for a given National Insurance number (NINO) and tax year
+* [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) for a given tax year. The software must use the trigger a self-assessment tax calculation endpoint to inform HMRC that the user has finished submitting their information. As a response, HMRC will provide a Calculation ID (calculationId).
 * The triggering of the tax calculation will mark the obligation as fulfilled, if HMRC has data covering the whole period.
-* [Retrieve Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) for a given CalculationID
+* [Retrieve Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) for a given CalculationID
 
 Notes:
 
@@ -182,7 +182,7 @@ or [Retrieve a Historic FHL UK Property Business Annual Submission](https://deve
 4. The software submits information using the [Create and Amend Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put),
 [Create and Amend a Historic Non-FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put) or [Create and Amend a Historic FHL UK Property Business Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/2.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put). Depending on the business income type you need to update.
 5. HMRC receives and stores information
-6. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation
+6. The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation
 7. HMRC receives the request and returns a Calculation ID (calculationId) software must
 use this when calling the Self Assessment Tax Calculation endpoints.
 8. The software receives the calculationId. Note: you could display the calculation to customers at
@@ -196,7 +196,7 @@ being finalised.
 14. The software sends information to HMRC using the SA Accounting summary API (currently in
 development).
 15. HMRC confirms receipt and stores the information.
-16. The software calls the [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint to retrieve the calculation. Note: the Tax
+16. The software calls the [Retrieve a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint to retrieve the calculation. Note: the Tax
 Calculation can take up to 5 seconds to run, so we recommend the software waits 5 seconds – this is optional, the software does not have to retrieve the tax calculation information at this point.
 
 17. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point.

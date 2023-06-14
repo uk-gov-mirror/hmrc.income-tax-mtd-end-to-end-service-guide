@@ -19,25 +19,25 @@ These endpoints can be broken into three categories:
 * employment expenses from all of the user’s employments
 
 
-[Add a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/post)
+[Add a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/post)
 
-[Amend a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/put)
+[Amend a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/put)
 
-[Retrieve an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/get)
+[Retrieve an Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/get)
 
-[List Employments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
+[List Employments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
 
-[Delete a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/delete)
+[Delete a Custom Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/delete)
 
-[Ignore Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1ignore/post)
+[Ignore Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1ignore/post)
 
-[Unignore Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1unignore/post)
+[Unignore Employment](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1unignore/post)
 
-[Create and Amend Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/put)
+[Create and Amend Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/put)
 
-[Retrieve an Employment and its Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get)
+[Retrieve an Employment and its Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get)
 
-[Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/delete)
+[Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/delete)
 
 [Create and Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/put)
 
@@ -65,9 +65,9 @@ Custom employments will only apply to the tax year and will not be carried over 
 
 These endpoints allow a user to create, amend, retrieve and delete other employment income: Share options, Shares awarded or received, Lump sums, Disability and Foreign service.
 
-* [Retrieve Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Other Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 
 <a href="figures/other-employment-income.svg" target="blank">
@@ -79,9 +79,9 @@ These endpoints allow a user to create, amend, retrieve and delete other employm
 
 These endpoints allow a user to create, retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
 
-* [Retrieve Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/dividends-income.svg" target="blank">
 <img src="figures/dividends-income.svg" alt=" " style="width:720px;" />
@@ -94,9 +94,9 @@ These endpoints give a user the ability to manage their data related to foreign 
 
 The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted.
 
-* [Retrieve Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/foreign-income.svg" target="blank">
 <img src="figures/foreign-income.svg" alt=" " style="width:720px;" />
@@ -107,9 +107,9 @@ The user can submit details of their foreign earnings and foreign income for a s
 
 These endpoints allow a user to create, retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, and Foreign Policies.
 
-* [Retrieve Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/insurance-policies-income.svg" target="blank">
 <img src="figures/insurance-policies-income.svg" alt=" " style="width:720px;" />
@@ -120,9 +120,9 @@ These endpoints allow a user to create, retrieve, amend and delete insurance pol
 
 These endpoints allow a user to create, retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
 
-* [Retrieve Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/pensions-income.svg" target="blank">
 <img src="figures/pensions-income.svg" alt=" " style="width:720px;" />
@@ -133,9 +133,9 @@ These endpoints allow a user to create, retrieve, amend and delete previously po
 
 These endpoints allow a user to create, retrieve, amend and delete other income: business receipts, all other income received whilst abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
 
-* [Retrieve Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/other-income.svg" target="blank">
 <img src="figures/other-income.svg" alt=" " style="width:720px;" />
@@ -146,9 +146,9 @@ These endpoints allow a user to create, retrieve, amend and delete other income:
 
 These endpoints allow a user to create, retrieve, amend and delete savings income for securities or foreign interest.
 
-* [Retrieve Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/savings-income.svg" target="blank">
 <img src="figures/savings-income.svg" alt=" " style="width:720px;" />
@@ -159,10 +159,10 @@ These endpoints allow a user to create, retrieve, amend and delete savings incom
 
 These endpoints allow a user to retrieve and maintain information about an individual's UK savings account.
 
-* [List All UK Savings Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D/get)
-* [Add a UK Savings Account](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D/post)
-* [Retrieve UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D~1%7BtaxYear%7D~1%7BsavingsAccountId%7D/get)
-* [Create and Amend a UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D~1%7BtaxYear%7D~1%7BsavingsAccountId%7D/put)
+* [List All UK Savings Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D/get)
+* [Add a UK Savings Account](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D/post)
+* [Retrieve UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D~1%7BtaxYear%7D~1%7BsavingsAccountId%7D/get)
+* [Create and Amend a UK Savings Account Annual Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Savings-Account/paths/~1individuals~1income-received~1savings~1uk-accounts~1%7Bnino%7D~1%7BtaxYear%7D~1%7BsavingsAccountId%7D/put)
 
 <a href="figures/savings-accounts.svg" target="blank">
 <img src="figures/savings-accounts.svg" alt=" " style="width:720px;" />
@@ -295,9 +295,9 @@ The user can submit details of their expenses income for a specific tax year, as
 
 Use the Non-PAYE Income resources of the Individuals Income Received API to create, amend, retrieve and delete data relating to non PAYE income and tips:
 
-* [Create and Amend Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Retrieve Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Delete Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Create and Amend Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Retrieve Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Delete Non-PAYE Employment Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 ## State Benefits
 

@@ -78,7 +78,7 @@ Information currently provided through the existing self-assessment process: if 
 
 ## Final Declaration
 
-The software will have to let HMRC know that the customer is ready to submit a final declaration, to do this you must call the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint under the **Individual Calculations (MTD) API** with the ```finalDeclaration``` parameter set to true. This will start the final declaration process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
+The software will have to let HMRC know that the customer is ready to submit a final declaration, to do this you must call the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint under the **Individual Calculations (MTD) API** with the ```finalDeclaration``` parameter set to true. This will start the final declaration process in HMRC. It will trigger the business validation rules (which will become errors rather than warnings) and generate a final liability calculation.
 
 
 The response includes a ```calculationId```. The software will then have to retrieve the calculation using the ```calculationId``` to get the calculation output.
@@ -87,7 +87,7 @@ The Calculation ID output provides a summary of each income source (for example 
 
 As of v3.0, the results of the final declaration calculation are available at a single endpoint:
 
-* [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get)
+* [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get)
 
 
 A final declaration Calculation ID will not always have a calculation result. It is possible that errors in previously submitted income data can prevent a calculation from being performed.
@@ -100,12 +100,12 @@ If calculation errors are present, these errors are returned in the response to 
 <a href="figures/crystallisation-diagram.svg" target="blank">Open the final declaration process diagram in a new tab</a>.
 
 1.	Customer is ready to complete their final tax return.
-2.	The software calls the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with ```finalDeclaration``` as true – this triggers the creation of the final declaration calculation for the customer to agree.
+2.	The software calls the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with ```finalDeclaration``` as true – this triggers the creation of the final declaration calculation for the customer to agree.
 3.	HMRC receives the request and starts the tax calculation and returns a Calculation ID.
 4.	The software receives the ```calculationId```.
 5.	Generates the final declaration tax calculation - this process will also convert any business validation warnings into errors, if there are any errors the calculation will not run and the customer will not be able to declare the liability.
 6.	HMRC Stores tax calculation with ```calculationId```.
-7.	The software uses the [Submit a Self Assessment Final Declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/3.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) to agree to the final declaration.
+7.	The software uses the [Submit a Self Assessment Final Declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) to agree to the final declaration.
 
 We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.  If there are errors the calculation will not have been generated. The customer must go back and amend the digital records, software should resubmit the revised summary totals for the relevant periods, then call the Trigger A Self Assessment Tax Calculation endpoint again.
 
