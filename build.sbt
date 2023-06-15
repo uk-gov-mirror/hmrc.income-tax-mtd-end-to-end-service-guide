@@ -1,5 +1,3 @@
-import uk.gov.hmrc.sbtdistributables.SbtDistributablesPlugin.publishingSettings
-
 val appName = "income-tax-mtd-end-to-end-service-guide"
 
 lazy val microservice = Project(appName, file("."))
@@ -14,9 +12,6 @@ lazy val microservice = Project(appName, file("."))
       "-Wconf:src=routes/.*:silent",
       "-feature"
     )
-  )
-  .settings(
-    publishingSettings: _*
   )
   .settings(
     resolvers += Resolver.jcenterRepo
