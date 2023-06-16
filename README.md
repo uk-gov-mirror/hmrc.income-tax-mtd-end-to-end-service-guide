@@ -19,7 +19,7 @@ a separate Ruby and rvm using [Homebrew](https://brew.sh/).
 
 Windows: the best approach on Windows is to use
 [RubyInstaller](https://rubyinstaller.org/). The guide is known to build
-correctly on Windows 10 using RubyInstaller 3.1.1-1.
+correctly on Windows 10 using RubyInstaller 3.2.2.
 
 ## Making changes
 
