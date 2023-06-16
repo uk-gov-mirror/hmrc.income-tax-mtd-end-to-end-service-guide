@@ -8,10 +8,10 @@ service_link: https://developer.service.hmrc.gov.uk/api-documentation
 
 # Links to show on right-hand-side of header
 header_links:
-  Income Tax (MTD) End-to-End Service Guide: /guides/income-tax-mtd-end-to-end-service-guide
-  Documentation: /api-documentation/docs/using-the-hub
-  Applications: /developer/applications
-  Support: /developer/support
+  Income Tax (MTD) End-to-End Service Guide: /
+  Documentation: https://developer.service.hmrc.gov.uk/api-documentation/docs/using-the-hub
+  Applications: https://developer.service.hmrc.gov.uk/developer/applications
+  Support: https://developer.service.hmrc.gov.uk/developer/support
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
