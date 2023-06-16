@@ -1,9 +1,3 @@
----
-title: ITSA end-to-end service guide
-weight: 1
-description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
----
-
 # Income Tax (Making Tax Digital) end-to-end service guide
 
 Version 3.0 issued June 2023
