@@ -60,9 +60,9 @@ To carry-back a loss, the customer should contact HMRC who will be able to apply
 
 The software should prompt customers to make sure they have considered the following potential additional income sources (there are links to the APIs where the functionality is available, we will continue to release additional functionality and update this page).
 
-* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/#savings-accounts) (supported in live)
-* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/#dividends-income) (supported in live)  
-*	any [gift aid contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api/#charitable-giving) they have made (supported in live)  
+* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account) (supported in live)
+* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income) (supported in live)  
+*	any [gift aid contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings) they have made (supported in live)  
 *	any pension contributions
 *	any pension income
 *	capital gains
@@ -72,7 +72,7 @@ The software should prompt customers to make sure they have considered the follo
 *	any income from trusts
 *	any foreign income
 
-Note:
+**Note:**
 
 Information currently provided through the existing self-assessment process: if a customer needs to report information to HMRC that is not yet supported under MTD or your software, they will need to complete a Self Assessment tax return.  Any information they have provided through MTD will not be considered and they will have to submit everything through the existing HMRC Self Assessment service.
 

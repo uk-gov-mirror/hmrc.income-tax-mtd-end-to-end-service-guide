@@ -80,7 +80,6 @@ This service guide explains how you can integrate your software with the MTD API
 * Obligations
 * Other Deductions
 * Property Business
-* Self Assessment
 * Self Assessment Accounts
 * Self Employment Business
 
@@ -272,28 +271,6 @@ Amendments to Job Seekers Allowance (JSA) or Employment Support Allowance (ESA) 
 From December 2022, this API will provide separate production endpoints for submitting historic data for tax years from 2017-18 to 2021-22. See the API documentation for details.
 
 **From 22 March 2022, this API will be at V2.0. On 14 April 2022, V1.0 was deprecated and cannot be subscribed to any longer. However, V1.0 can still be called if the subscription was made before this status change.**
-
-### Self Assessment API
-
-[This API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api) allows a developer to supply business and personal financial data to HMRC.<br>
-
-**From 30 June 2021 the following endpoints will be deprecated:**
-
-* [List all self employment businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_list-all-selfemployment-businesses_get_accordion)
-* [Get a self employment business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_get-a-selfemployment-business_get_accordion)
-* [Retrieve a self employment business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_retrieve-selfemployment-business-obligations_get_accordion)
-* [Retrieve End of period statement obligations for a Self Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_retrieve-end-of-period-statement-obligations-for-a-selfemployment-business_get_accordion)
-* [Retrieve Final Declaration Obligation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#crystallisation_retrieve-crystallisation-obligations_get_accordion)
-
-**From 30 November 2021 the following endpoints will be deprecated:**
-
-* [Submit self employment end of period statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#selfemployment-business_submit-selfemployment-endofperiod-statement_post_accordion)
-* [Submit UK property end of period statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#uk-property-business_submit-uk-property-endofperiod-statement_post_accordion)
-* [Get a UK property business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#uk-property-business_get-a-uk-property-business_get_accordion)
-* [Retrieve all UK property business obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#uk-property-business_retrieve-all-uk-property-business-obligations_get_accordion)
-* [Retrieve End of Period Statement Obligations for a UK Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#uk-property-business_retrieve-end-of-period-statement-obligations-for-a-uk-property-business_get_accordion)
-* [Intent to submit final declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#crystallisation_intent-to-crystallise_post_accordion)
-* [Final declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-api#crystallisation_crystallisation_post_accordion)
 
 ### Self Assessment Accounts API
 
