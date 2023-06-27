@@ -261,48 +261,6 @@ In addition to the minimum standards set out in the terms of use, and the genera
 
 HMRC would not require free software to link or integrate with an Agent product.
 
-## Retrieving Obligations
-
-Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer provided at sign up and to find out the customer’s update obligation dates.
-The software must make customers aware of their obligations.
-
-### Endpoints
-
-The [List All Businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1list/get) endpoint provides a list of all the customer’s business income sources, along with the business ID which the software will need to send to HMRC.
-
-The [Retrieve Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1%7BbusinessId%7D/get) endpoint will provide the information HMRC holds for a specific self-employment or property business.
-
-The [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get) endpoint provides obligation dates for all self-employment and property businesses, including grace periods and whether obligations have been met or not.
-
-Note: the obligations for property obligations cover both FHL and non-FHL.
-
-## Submit income and expense updates for self-employment and property businesses
-
-Businesses and agents who represent them must provide summary-level information of their business income and expenses (transactional information to be kept digitally) on a quarterly basis or more often as required.
-
-The quarterly obligations are initially created based on the accounting period for the income source. The deadline for meeting a quarterly obligation is one month after the obligation period end date.
-
-The software should present these deadlines clearly to the customer and prompt them to submit information when the update is due.
-
-Submissions of summary-level information should not span an obligation period. If this happens, the software will need to send two updates that fall into different obligations.
-
-The software package will need to convert the transactional information into summary totals for each category, for example, expenses by category.
-
-HMRC has provided APIs to enable the software to be able to send the summary information to HMRC for each income source and allow HMRC to provide a calculation based on all the information we have received to date.
-
-When the update is received, HMRC checks if the customer is signed up to MTD, if the submission is coming from an agent and if that agent is subscribed to agent services and authorised to act on behalf of the client if not, an error is returned.
-
-Note: If you still get the error and the client insists they have met all of the scenarios, check they have used the correct Government Gateway credentials when granting access to the software.
-
-* [List Self-Employment Period Summaries](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/get)
-* [Create a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post)
-* [Retrieve a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/get)
-* [Amend a Self-Employment Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BperiodId%7D/put)
-
-The service will include a number of business validation rules to ensure that all submissions are cross-validated before being accepted.
-
-HMRC cannot apply these rules without knowing that no further submission (APIs calls) will be sent by the customer for the period being validated.
-
 ## Finalise business income End of Period Statement (EOPS)
 
 ### Business or Agent able to submit End of Period Statement through software
@@ -352,18 +310,6 @@ Note: the Tax Calculation can take up to 5 seconds to run, so we recommend the s
 * [Submit UK Property Accounting Adjustments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/3.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post)
 * [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/3.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get)
 * [Submit Foreign Property Accounting Adjustments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/3.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post)
-
-## Multiple businesses
-
-Users with multiple self-employment businesses and those with a foreign property business will be able to sign up to Making Tax Digital.
-
-To enable this we are providing a number of new endpoints:
-
-* [List All Businesses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1list/get) - returns a list of the business income sources
-* [Retrieve Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1%7BbusinessId%7D/get) - returns further information about a single business income source
-* [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/1.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get) - returns the quarterly obligations for each business income source
-* [Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/1.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1end-of-period-statement/get) - returns the End of Period Statement obligations for a user’s business income sources
-* [Amend Loss Claims Order](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/3.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1%7Bnino%7D~1loss-claims~1order~1%7BtaxYearClaimedFor%7D/put) - permits a change in the order in which loss claims are consumed
 
 ## Final declaration
 
