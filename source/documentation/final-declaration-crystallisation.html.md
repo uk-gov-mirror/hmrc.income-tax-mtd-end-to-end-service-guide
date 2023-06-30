@@ -17,6 +17,12 @@ Customers will also be able to tell us at this point (subject to the existing li
 
 Customers can submit a final declaration from 6 April Year 1. The deadline for submitting a final declaration is 31 January Year 2. The software should remind customers to help them to meet this deadline.
 
+Before starting the final declaration journey, the software package will need to ensure that for the relevant tax year, the customer:
+
+* has finalised EOPS for all their businesses (self-employment, uk-property and foreign-property)
+* has already provided their entire income e.g. interest, dividends, other SA schedules
+* does not have any additional information to provide
+
 ## Providing information about how to treat a loss
 
 ### Losses and claims

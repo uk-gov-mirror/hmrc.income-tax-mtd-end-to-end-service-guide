@@ -26,40 +26,6 @@ Businesses and landlords must provide the following information through the soft
 * allowances and adjustments for each self-employment and property business at least once a year, at the end of the accounting period
 * finalisation of business income sources with an End of Period Statement (EOPS)
 
-## Tax Terminology
-
-### Obligations
-
-Obligations are a set of date periods for which a customer must provide summary income and expense data.
-
-Each obligation has a start date and an end date which together define the obligation period. For MTD, each business has multiple obligations which are based on its accounting period.
-
-Please note – it may take up to an hour for a change to an obligation to be updated within HMRC systems.
-
-### Update period
-A period of time within an obligation, for which the customer can submit summarised income and expense data.
-
-An update period might be a single day or the duration of the whole obligation period. Data may be provided as a single update covering the whole period, or as multiple, smaller updates.
-
-### Annual summary
-An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category.
-
-### End of period statement
-End of period statement (EOPS) is the process that allows the customer to finalise their business income.
-
-A customer must complete an EOPS for each source of business income (the equivalent of the current SA103, SA105 and SA106 forms). For example, if a customer has a self-employment business and a property business then they will have to complete two EOPS, one for each source of income.
-
-The EOPS is linked to the accounting period for each source of income and cannot be completed until the end of the accounting period. However the customer does not need to complete it until 31st January Year 2.
-
-### Final declaration
-This is the process that allows the customer to finalise their end of year position. This includes any business and personal data they need to provide to HMRC to reach their final tax liability for a specific year.
-
-Before starting the final declaration journey the software package will need to ensure that, for the relevant tax year the customer:
-
-* has finalised EOPS for all their businesses (self-employment, uk-property and foreign-property)
-* has already provided their entire income e.g. interest, dividends, other SA schedules
-* does not have any additional information to provide
-
 ## Making Tax Digital APIs
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
 
