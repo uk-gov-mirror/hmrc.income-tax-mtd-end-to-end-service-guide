@@ -12,6 +12,16 @@ The steps in this section (up to the End of Period Statement) will be the elemen
 
 ## Retrieving obligations
 
+Obligations are a set of date periods for which a customer must provide summary income and expense data.
+
+Each obligation has a start date and an end date which together define the obligation period. For MTD, each business has multiple obligations which are based on its accounting period.
+
+**Note:** It may take up to an hour for a change to an obligation to be updated within HMRC systems.
+
+Each obligation has an update period, which is a period of time during which the customer can submit summarised income and expense data.
+
+An update period might be a single day or the duration of the whole obligation period. Data may be provided as a single update covering the whole period, or as multiple, smaller updates.
+
 Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer provided at sign up and to find out the customer’s update obligation dates. The software must make customers aware of their obligations.
 
 Actions to take are as follows:
@@ -98,6 +108,8 @@ Update 3 – 28 May to 6 June is rejected because it overlaps with previous upda
 
 ## Submit allowance and adjustment updates for SE and property businesses
 
+An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category.
+
 Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose.
 
 * amend a [Self-Employment Annual Submission](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/2.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation
@@ -160,7 +172,7 @@ Note: where a business resubmits an annual summary update, previous figures that
 
 ### Business or Agent able to submit End of Period Statement through software
 
-This is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the SA103, SA105 and SA106 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+End of period statement (EOPS) is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the SA103, SA105 and SA106 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
 
 EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. Customers can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31 January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However, the deadline to complete is 31 January, Year 2.
 
