@@ -72,7 +72,7 @@ You must supply fraud prevention header information for all our APIs before appr
 
 HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
 
-The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the Test Fraud Header API. [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
+The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
 
 ### Minimum functionality standards
 
