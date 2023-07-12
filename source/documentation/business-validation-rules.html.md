@@ -7,7 +7,8 @@ weight: 12
 
 <!--- Section owner: MTD Programme --->
 
-Business validation rules (BVRs) are data integrity or data quality checks applied to business information content submitted by third-party applications via the MTD Software APIs.
+Business validation rules (BVRs) are data integrity or data quality checks applied to business information content submitted by third-party applications using the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax).
+
 These are rules that contain a formula or expression that evaluates the data in one or more predetermined business fields and returns a value of ‘true’ or ‘false’.
 They are distinct from technical validation rules which check syntax, structure and data types to prevent corrupt, incomplete or badly formed data entering HMRC systems.
 BVRs ensure that customer-supplied information is self-consistent, meaningful, within expected bounds and as complete as it needs to be.

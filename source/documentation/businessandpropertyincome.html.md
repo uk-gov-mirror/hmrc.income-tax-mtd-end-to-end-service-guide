@@ -211,7 +211,7 @@ Calculation can take up to 5 seconds to run, so we recommend the software waits 
 
 17. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point.
 18. The customer is ready to finalise their business income source.
-19. The software calls the [Retrieve a Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0/oas/page#/paths/~1individuals~1self-assessment~1income-summary~1%7Bnino%7D~1%7BtypeOfBusiness%7D~1%7BtaxYear%7D~1%7BbusinessId%7D/get) endpoint. Note: there is one BISS for each property type and it will show either FHL or non-FHL information in it. Calling the BISS API is optional, the software may choose to create a BISS themselves, but the information must be shown to the customer before they confirm the declaration.
+19. The software calls the [Retrieve a Business Income Source Summary (BISS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0/oas/page#/paths/~1individuals~1self-assessment~1income-summary~1%7Bnino%7D~1%7BtypeOfBusiness%7D~1%7BtaxYear%7D~1%7BbusinessId%7D/get) endpoint. Note: there is one BISS for each property type and it will show either FHL or non-FHL information in it. Calling the [BISS API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api) is optional, the software may choose to create a BISS themselves, but the information must be shown to the customer before they confirm the declaration.
 20. The software displays BISS (Business Income Source Summary) information to the customer (listed below).</br>
 >This can be totalled up by software, or through the APIs from HMRC systems as well as BISS for self-employment or property:
 >
@@ -227,7 +227,7 @@ Calculation can take up to 5 seconds to run, so we recommend the software waits 
 >
 >This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration.</br>
 >
->You could use the BISS API or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
+>You could use the [BISS API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api) or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
 
 21. Customer reviews and confirms the information.
 22. The software uses Submit End of Period Statement for a Business endpoint depending on the income source you are finalising.
@@ -301,7 +301,7 @@ Once submitted, if a further amendment is required, use the [Retrieve a Self-Emp
 
 ## Business Income Source Summary
 
-The Self Assessment BISS (Business Income Source Summary) API allows a developer to retrieve a summary of income and expenditure that has been submitted for a specified self-employment or property business (UK or foreign) for a given tax year. The data returned is the equivalent of the existing SA103, SA105 and SA106 schedule.
+The [Self Assessment BISS (Business Income Source Summary) API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/) allows a developer to retrieve a summary of income and expenditure that has been submitted for a specified self-employment or property business (UK or foreign) for a given tax year. The data returned is the equivalent of the existing SA103, SA105 and SA106 schedule.
 
 <a href="figures/biss.svg" target="blank"><img src="figures/biss.svg" alt="BISS (Business Income Source Summary) diagram" style="width:720px;" /></a>
 
@@ -311,7 +311,7 @@ The Self Assessment BISS (Business Income Source Summary) API allows a developer
 
 ## Business Source Adjustable Summary
 
-The Self Assessment BSAS (Business Source Adjustable Summary) API allows a developer to retrieve an adjustable summary calculation for a specified self-employment or property business, for a given accounting period.
+The [Self Assessment BSAS (Business Source Adjustable Summary) API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/) allows a developer to retrieve an adjustable summary calculation for a specified self-employment or property business, for a given accounting period.
 
 This API should be used to submit any Annual Accounting Adjustments. The adjustments should be submitted as positive or negative amounts, for example, if advertising costs in the BSAS is £250 but the figure should be £200, then the adjustment required would be -50.
 

@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 # Payments and Liabilities
 
-The Self Assessment Account API allows a developer to retrieve accounting information to be shown back to the customer. This includes listing payments the customer has made, how these payments have been allocated and details of any upcoming or outstanding liabilities.
+The [Self Assessment Accounts API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/) allows a developer to retrieve accounting information to be shown back to the customer. This includes listing payments the customer has made, how these payments have been allocated and details of any upcoming or outstanding liabilities.
 The data returned only relates to payments and liabilities arising for tax years since the customer joined the new service. There may also be outstanding liabilities and payment information a customer needs to view for the years prior to signing up to Making Tax Digital for Income Tax Self Assessment that can be viewed using their existing Personal Tax Account.
 
 With these endpoints a developer can:
