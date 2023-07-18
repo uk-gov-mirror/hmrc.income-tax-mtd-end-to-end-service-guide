@@ -9,25 +9,27 @@ description: Software developers, designers, product owners or business analysts
 # Final Declaration (Crystallisation)
 **Note: The term 'final declaration' is now used instead of the term 'crystallisation'. Endpoints with 'crystallisation' or 'crystallise' in their names will continue to be used until further notice.**
 
-Final declaration brings together all the data that a customer needs to provide to HMRC to reach their final tax liability for a specific year. Using this process allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise.
+Final declaration is the process that allows customers to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 
-It is also the process by which most formal claims for reliefs and allowances and any deductions will be made, where these were previously included within a Self Assessment tax return.
+It is also the process by which most formal claims for reliefs and allowances and any deductions are made, where these were previously included within a Self Assessment tax return.
 
 Customers are able to tell us at this point (subject to the existing limits) how they wish any losses available to them to be treated.
 
 Customers can make a final declaration from 6 April Year 1. The deadline for final declaration is 31 January Year 2. The software should remind customers to help them to meet this deadline.
 
-Before starting the final declaration journey, the software package will need to ensure that for the relevant tax year, the customer:
+Before starting the final declaration journey, the software package must ensure that for the relevant tax year, the customer:
 
 * has finalised EOPS for all their businesses (self-employment, uk-property and foreign-property)
 * has already provided their entire income; for example, interest, dividends, other SA schedules
 * does not have any additional information to provide
 
-We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.
+We suggest that you first check there are no validation errors by retrieving the self-assessment metadata using the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint. 
 
-If there are errors the calculation will not have been generated. To view the error messages, call the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint.
+To trigger a self assessment tax calculation for the given tax year, you use the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with the finalDeclaration query parameter set to true. 
 
-The customer must go back and amend the digital records. The software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again.
+If there are errors, the calculation is not generated. To view the error messages, call the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint.
+
+To prevent the errors from being generated, the customer must go back and amend the digital records. The software should resubmit the revised summary totals for the relevant periods, then call the [Trigger A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint again.
 
 ## Providing information about how to treat a loss
 
