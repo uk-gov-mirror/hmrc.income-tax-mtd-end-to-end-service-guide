@@ -366,7 +366,7 @@ In the case where the query is made with a validly formed but incorrect National
 <a href="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" target="blank"><img src="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" alt="multiple businesses diagram" style="width:720px;" /></a>
 <a href="figures/multiple-businesses-retrieve-income-tax-crystallisation-obligations.svg" target="blank">Open the retrieve Income Tax (Self Assessment) final declaration obligations diagram in a new tab.</a>
 
-The List Loss Claims endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
+The [List Loss Claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1%7Bnino%7D~1loss-claims~1tax-year~1%7BtaxYearClaimedFor%7D/get) endpoint has been extended to include a sequence number that shows the order in which loss claims will be used.
 
 A user with multiple businesses may choose to list their businesses so that they can obtain the Business IDs of their active businesses. A developer can then return information about a specific business or retrieve obligations quoting a ```businessID```, so the user knows when they need to submit information.
 
