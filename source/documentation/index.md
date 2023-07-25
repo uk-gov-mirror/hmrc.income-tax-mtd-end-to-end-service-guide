@@ -277,23 +277,6 @@ Note: the Tax Calculation can take up to 5 seconds to run, so we recommend the s
 * [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/3.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get)
 * [Submit Foreign Property Accounting Adjustments](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/3.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post)
 
-## Final declaration
-
-Final declaration brings together all the data that a customer needs to provide to HMRC to reach their final tax liability for a specific year. Using this process allows the customer to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise.
-
-It is also the process by which most formal claims for reliefs and allowances and any deductions will be made, where these were previously included within a Self Assessment tax return.
-
-Customers are able to tell us at this point (subject to the existing limits) how they wish any losses available to them to be treated.
-
-Customers can make a final declaration from 6 April Year 1. The deadline for final declaration is 31 January Year 2. The software should remind customers to help them to meet this deadline.
-
-We suggest that you retrieve the self-assessment metadata first to check there are no validation errors.
-
-If there are errors the calculation will not have been generated. To view the error messages, call the retrieve self assessment tax calculation endpoint.
-
-The customer must go back and amend the digital records. The software should resubmit the revised summary totals for the relevant periods, then call the intent to crystallise endpoint again.
-
-
 ## End-to-end user journey
 
 These journeys show examples of use:
