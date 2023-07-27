@@ -32,13 +32,13 @@ This service guide explains how you can integrate your software with the [Income
 
 ## Software provider overview
 
-HMRC expects software providers to offer customers the ability to finalise their overall tax position using the software. This process is sometimes called final declaration.
+HMRC expects software providers to offer customers a streamlined end-to-end journey, and as far as possible, to support all the things the customers need to do to comply with their MTD for ITSA obligations. This will include the ability to finalise the overall tax position using software.
 
-In the future, partnerships will be required to provide the information mentioned above for the partnership. Individual partners will not be mandated to report their partner income quarterly.
+In the future, this expectation will be extended to partnerships. Individual partners will not be mandated to report their partner income quarterly.
 
 HMRC will provide the APIs for the software to support all of the personal data items that need to be submitted under Self Assessment. Although these elements will not be mandated through the software, there will be market demand for software that enables any user to finalise the entirety of their tax affairs.
 
-By developing a product now, you will support mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
+By developing a product now, you will support the mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
 
 ### Developer journey to production credentials
 
