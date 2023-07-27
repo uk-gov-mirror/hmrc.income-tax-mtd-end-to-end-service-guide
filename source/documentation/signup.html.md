@@ -10,7 +10,7 @@ description: Software developers, designers, product owners or business analysts
 
 To use Making Tax Digital for Income Tax, individuals need to sign up first.
 
-To sign up, a user must satisfy one or more of the following conditions:
+To sign up, a user must satisfy at least one of the following conditions:
 
 - Be a sole trader (self-employed)
 - Have income from property, either in the UK or abroad
