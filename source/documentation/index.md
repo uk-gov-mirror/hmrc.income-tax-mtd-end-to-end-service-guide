@@ -11,20 +11,9 @@ This service guide describes HMRC’s Making Tax Digital (MTD) for Income Tax an
 
 ## Overview
 
-MTD for Income Tax is a service that enables businesses and landlords to keep their records digitally and submit information about their business income to HMRC using MTD-compatible software.
+This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations once they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
 
-Instead of sending an annual tax return, businesses and landlords will be required to send HMRC quarterly summary updates of their business income and expenditure and complete a process to finalise their overall tax position at the end of the year.
-
-Based on the information provided, they will receive a view of their emerging tax position, helping them to better budget for their tax throughout the year.
-
-There are no changes to payment dates.
-
-
-Businesses and landlords must provide the following information through the software:
-
-* income and expenses for each self-employment and property businesses at least every 3 months
-* allowances and adjustments for each self-employment and property business at least once a year, at the end of the accounting period
-* finalisation of business income sources with an End of Period Statement (EOPS)
+For more information about eligibility and how to use Making Tax Digital for Income Tax, please refer to the [Making Tax Digital step by step guidance](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
 
 ## Making Tax Digital APIs
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
