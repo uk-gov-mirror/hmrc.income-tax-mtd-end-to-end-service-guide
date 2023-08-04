@@ -8,20 +8,22 @@ description: Software developers, designers, product owners or business analysts
 
 ## Signing up to Making Tax Digital for Income Tax
 
+Sign up via API has been ruled out for security reasons.
+
+Taxpayers can sign up for Making Tax Digital for Income Tax without having software in place. However, they must get and authorise [software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/index.html#software-choices) before they start using Making Tax Digital for Income Tax.
+
 To use Making Tax Digital for Income Tax, individuals need to sign up first.
 
-To sign up, a user must satisfy at least one of the following conditions:
+To sign up, a user must:
 
-- Be a sole trader (self-employed)
+- Be a sole trader (self-employed) and/or
 - Have income from property, either in the UK or abroad
+
+See [Sign up as an individual for Making Tax Digital for Income Tax](https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax) for more information.
 
 A user can also get their appointed tax agent (for instance, an accountant or bookkeeper) to sign up on their behalf, with their permission.
 
-There are no plans to allow sign-up by using an API. This has been ruled out for security reasons.
-
-Taxpayers can sign up for Making Tax Digital for Income Tax without having software in place. However, they need to get and authorise software before they start using Making Tax Digital for Income Tax.
-
-We advise customers to speak to their agent (if they have one) before choosing software.
+We advise customers to speak to their agent (if they have one) before choosing software to ensure that it is compatible.
 
 ## Agent sign-up
 
