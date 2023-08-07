@@ -21,6 +21,13 @@ To sign up, a user must:
 
 See [Sign up as an individual for Making Tax Digital for Income Tax](https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax) for more information.
 
+If an individual is a self employed partner in a partnership, they do not need to sign up to MTD ITSA unless they have other MTD qualifying income such as:
+
+- They are also a self employed sole trader
+- They receive UK or foreign property income
+
+If this is the case, the individual must not include either their partner or partnership business details in the sign up service. Instead, this income will continue to be submitted as part of their self assessment tax return.  There is no requirement at this time to submit partner or partnership income quarterly to HMRC.
+
 A user can also get their appointed tax agent (for instance, an accountant or bookkeeper) to sign up on their behalf, with their permission.
 
 We advise customers to speak to their agent (if they have one) before choosing software to ensure that it is compatible.
