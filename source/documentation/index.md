@@ -4,7 +4,6 @@
 
 **Note:** This guide is currently under review to ensure it meets the needs of software providers. See the service guide [changelog](#changelog) for latest updates.
 
-This service guide describes HMRC’s Making Tax Digital (MTD) for Income Tax and explains how developers can connect their software to the MTD APIs.
 
 
 
