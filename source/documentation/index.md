@@ -31,23 +31,6 @@ HMRC will provide the APIs for the software to support all of the personal data 
 
 By developing a product now, you will support the mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
 
-### Developer journey to production credentials
-
-It is important that quality software products are available for customers to submit their self-assessment returns through Making Tax Digital. HMRC is committed to providing help and support for software providers and developers throughout the software development process.
-
-Here, we describe the steps developers go through from initially registering an application to gaining production credentials to submitting live data and also the support available at each stage and the interactions developers will have with HMRC.
-
-1.	Sign in to the [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
-2.	Review the API documentation and Income Tax end-to-end service guide.
-3.	Test ITSA endpoints and develop your software application, any queries during this phase should be sent to <SDSTeam@hmrc.gov.uk>.
-4.	Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
-5.	Testing document is sent to the developer by email.
-6.	Provide testing logs and credentials used for testing to HMRC.
-7.	Developer testing is reviewed by HMRC (including fraud header validity).  If testing is satisfactory an email questionnaire and request for product demonstration are sent. Otherwise, further testing and development will be required for review.
-8.	The software vendor demonstrates its software to HMRC over online screen sharing.
-9.	Production credentials are issued if all requirements are met or further development is required and a new demonstration needs to be organised.
-10.	Software is listed on GOV.UK after going through the HMRC recognition process.
-
 ## Production approvals process for Making Tax Digital for Income Tax Self Assessment
 
 Our key objectives for MTD for Income Tax are to:
