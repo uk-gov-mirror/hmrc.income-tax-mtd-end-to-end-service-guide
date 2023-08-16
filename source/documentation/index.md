@@ -86,6 +86,107 @@ Some customers may wish to integrate their existing software solution for digita
 
 Software products who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
 
+This section of the guide explains the features your product must include before production credentials are sought, together with features you should consider building into your products.
+
+### Overview of developer journey to production credentials
+
+1. Sign in to the [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
+2. [Create a test user which is an individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
+3. Review the [API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
+4. Test ITSA endpoints and develop your software application. Any queries during this phase should be sent to SDSTeam@hmrc.gov.uk.
+5. Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
+6. Provide testing logs and credentials used for testing to HMRC.
+7. Developer testing is reviewed by HMRC (including fraud header validity). 
+    - If satisfactory, you will be invited to demonstrate your product. 
+    - If not satisfactory, further testing and development will be required for review.
+8. The software vendor demonstrates its software to HMRC via online screen sharing.
+9. Production credentials are issued if all requirements are met. If not, further development is required and a new demonstration will be arranged.
+
+### Product build
+
+Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you will be required to demonstrate your product after each stage of the build. There are three stages, although many developers choose to develop stages 2 and 3 together. 
+
+The three stages are:
+
+1. In year functionality (submitting periodic updates).
+2. End of Period (EOPs).
+3. Final declaration.
+
+The [API catalogue](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/#apis-required-for-each-stage-of-development-of-a-minimum-functionality-standard-mfs-product) shows which APIs are required at each stage of the build.
+
+### Testing requirements
+
+HMRC requires the software to test all the APIs that they require access to. The following points relate to access to both new API subscriptions and version updates of existing API subscriptions:
+
+- For APIs included in the [minimum functionality standards](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards), you are required to test all endpoints shown within the documentation.
+- For APIs not included in the minimum functionality standards, you are only required to test the endpoints relating to the data sources that your software supports. Where your software doesn’t support all data items, please notify SDSTeam@hmrc.gov.uk separately to confirm which data items you do support, so we can take this into account when checking the testing logs.
+
+[Fraud prevention headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) must be included in sandbox calls. A specialist team will check these and they must be confirmed as compliant before we can proceed.
+
+Once testing is complete, please send details of the dummy NINO used to call the above endpoints in sandbox to SDSTeam@hmrc.gov.uk. You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs. SDST will advise you of the outcome of our checks within 10 working days.   
+
+Once we are satisfied that the relevant APIs and endpoints have been tested satisfactorily and that calls include compliant fraud prevention headers, you will be invited to demonstrate your product. Please note, demonstration is not generally required for access to updated APIs (that is, new versions), but satisfactory testing will be required.
+
+### Product demonstration
+
+This is the final part of the process after all preceding steps have been completed.   
+
+During your product demonstration, HMRC expects to see a consumer-ready product for each income source your software supports; for example, Self-employment, UK property, and so on. If, in addition to the MFS APIs, you have also requested access to any non-MFS APIs, you should be ready to include these in your demonstration if requested to do so by SDST.
+
+The journey we expect to see for an MFS build will depend on whether you are building iteratively and if so, which stage you have built to:
+
+**Stage 1: In year build**
+
+1. Authorisation – ITSA scopes only.
+2. Retrieve Business Details.
+3. Retrieve Obligations.
+4. Digitally import data into the appropriate periodic update and submit.
+5. Automatically trigger and display a tax calculation.
+6. Submit an amended periodic update – automatically trigger and display the calculation.
+7. Demonstrate how your software returns and displays error messages to the customer.
+
+**Stage 2: EOPS**
+
+1. Submit details within the Annual Summary.
+2. Automatically trigger and display a tax calculation.
+3. Trigger a Business Source Adjustable Summary (BSAS).
+4. Retrieve a BSAS.
+5. Create and submit a Business Source Adjustable Summary for an accounting adjustment.
+6. Automatically trigger and display a tax calculation.
+7. **Either:** 
+    - Retrieve a Business Income Source Summary (BISS) and display it to the customer. 
+**Or:** 
+    - The software may choose to create a BISS themselves by totalling the relevant information held in software and displaying it to the customer.
+8. Show EOPS Declaration Statement - this must match the statement shown in the ITSA End to end service guide.
+9. Submit EOPS.
+10. Demonstrate how your software returns and displays error messages to the end user.
+
+**Note:** The end user must confirm they have read and agreed the declaration statement before the option to submit EOPS is made available.
+
+**Stage 3: Final Declaration**
+
+1. Create and submit a loss.
+2. Create/Amend and submit disclosures (Class 2 NICs).
+3. Trigger a tax calculation with the ```finalDeclaration``` parameter set to “True”.
+4. Retrieve and display this tax calculation for the customer to review.
+5. Show the Final Declaration Statement – this must match the statement shown on the ITSA End to End Service Guide.
+6. Submit a Final Declaration.
+7. Demonstrate how your software returns and displays error messages to the end user.
+
+**Note:** The end user must confirm they have read and agreed the declaration statement before the option to submit the Final Declaration is made available.
+
+#### Important Considerations
+
+- Build functionality to allow business customers to report income from non-business sources that meets your customer model.
+- Consider the one-hour delay as part of the software workflow to update the status of obligations.
+- Consider a 5-second delay before retrieving the calculation.
+- Consider developing guidelines within the software for relevant users, including a reference to HMRC user interface journeys for customers and agents.
+- Use APIs as efficiently as possible to avoid exceeding the rate limit.
+- Build relevant error responses for your software to deal with exceptions.
+- Correct MTD gateway credentials or agent services credentials need to be used when logging into the system when authorising your software.
+- Consider providing notifications to customers when periodic submissions are due.
+- Consider building functionality that allows the customer to request a tax calculation at any time.
+
 ## Terms of use
 
 You must comply with our [terms of use](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use). You must accept the terms of use before we can issue you with production credentials.
