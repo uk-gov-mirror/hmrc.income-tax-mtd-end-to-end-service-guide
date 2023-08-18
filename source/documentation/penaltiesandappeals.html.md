@@ -18,7 +18,7 @@ For tax years prior to the changes, the existing late payment and late filing pe
 
 ## Other penalties
 
-Other penalties that apply to ITSA customers are unchanged by the Penalty Reform and will continue to be charged where appropriate. These include:
+Other penalties that apply to ITSA customers are unchanged by Penalty Reform and will continue to be charged where appropriate. These include:
 
 - [Inaccuracy penalties - Factsheet CC/FS7a](https://www.gov.uk/government/publications/compliance-checks-penalties-for-inaccuracies-in-returns-or-documents-ccfs7a)
 - [Penalties for not telling HMRC about an under-assessment - Factsheet CC/FS7b](https://www.gov.uk/government/publications/compliance-checks-penalties-for-not-telling-hmrc-about-an-under-assessment-ccfs7b)
