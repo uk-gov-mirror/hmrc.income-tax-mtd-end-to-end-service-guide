@@ -80,7 +80,9 @@ The minimum required functionality is as follows:
 
 ### Bridging software
 
-Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates and the End of Period Statement, view tax liabilities, make a self assessment and final declaration and so on. We generally refer to these products as bridging products. It is unclear at this time if developers plan to offer such a product. If they do, then in order to be granted production credentials it must be digitally linked to software which allows customers to maintain business records required by law.
+Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products. 
+
+In order to be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
 
 ### Non-MTD products
 
