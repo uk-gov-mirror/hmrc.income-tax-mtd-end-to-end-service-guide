@@ -193,11 +193,13 @@ You must comply with our [terms of use](https://developer.service.hmrc.gov.uk/ap
 
 ## Software choices
 
-HMRC publishes a [list of compatible software](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) for Making Tax Digital for Income Tax. Software providers will be added to this list when they have completed the necessary steps in the ‘Software provider overview’ section.  
+Software Choices is a service designed to help users [find compatible software for Making Tax Digital for Income Tax](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) that meets their needs.
 
-From our experience with MTD VAT, businesses, agents and software providers will use this as the definitive list of MTD compatible software. All software listed on the GOV.UK page must allow the user to submit a summary of business or property information up to and including the End of Period Statement, and also offer users the ability to finalise their tax affairs using the software. The current GOV.UK page will be developed over time to meet user needs, including filters that help users to find software.
+An updated version is being developed with filters to help users find products that fit their specific requirements. For instance, a user may wish to find bridging software instead of a standalone product, or a product that suits their accessibility needs. It will also include a filter to find software that is also compatible with Making Tax Digital for VAT. 
 
-HMRC expects demand for products that serve all of the requirements of MTD, including keeping the required digital records for business or property income and the ability to submit all relevant non-business information to HMRC.
+Software vendors will be added to Software Choices once they have satisfied production credentials.
+
+We advise users to speak to their appointed tax agent, if they have one, before making a decision on software.
 
 ### Free-to-use software
 
