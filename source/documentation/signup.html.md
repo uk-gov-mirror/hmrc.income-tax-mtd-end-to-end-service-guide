@@ -37,7 +37,7 @@ We advise customers to speak to their agent (if they have one) before choosing s
 Before agents can sign up clients to Making Tax Digital, they must:
 
 * [Create an agent services account](https://www.gov.uk/guidance/get-an-hmrc-agent-services-account)
-* Have authorisation in place from their clients. Existing relationships can be copied from Self Assessment, or agents can ask for relationships for new clients. Both of these tasks can be done using their [agent services account](https://www.gov.uk/guidance/sign-in-to-your-agent-services-account).
+* Have authorisation in place from their clients. Existing authorisations can be copied from Self Assessment, or agents can request authorisation for new clients. Both of these tasks can be done using their [agent services account](https://www.gov.uk/guidance/sign-in-to-your-agent-services-account).
 
 For more information, visit:
 
@@ -45,7 +45,7 @@ For more information, visit:
 
 ## Individual sign-up
 
-Individuals who are self employed and/or have property income can sign themselves up to Making Tax Digital for Income Tax.
+Individuals who are self employed and/or have property income can sign themselves up for Making Tax Digital for Income Tax.
 
 For more information, visit:
 
