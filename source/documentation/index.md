@@ -31,64 +31,9 @@ HMRC will provide the APIs for the software to support all of the personal data 
 
 By developing a product now, you will support the mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
 
-## Production approvals process for Making Tax Digital for Income Tax Self Assessment
-
-Our key objectives for MTD for Income Tax are to:
-
-* ensure customers have a streamlined end-to-end journey and software that supports everything a business customer needs to do to meet their Income Tax obligations
-* safeguard customer data and protect HMRC systems against fraud and criminal attack
-
-This section of the guide explains the features your product must include before production credentials are sought, together with features you should consider building into your products.
-
-### Fraud Prevention Headers
-
-You must supply fraud prevention header information for all our APIs before approval can be granted and production credentials issued.
-
-HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
-
-The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
-
-### Minimum functionality standards
-
-Previously, the production approvals process included an assessment of whether a product includes certain minimum functionality.
-
-In response to developer feedback, we are content for software developers to build MTD Income Tax products iteratively and be granted production credentials for specific elements of the minimum required functionality. However, an MTD Income Tax product will only be listed on the software choices viewer when it satisfies all the requirements listed below.
-
-The minimum required functionality is as follows:  
-
-* A software product must submit the fraud prevention header data required by law.
-* A Making Tax Digital for Income Tax product must allow the customer to;
-* Create and maintain all business records a customer is required by law to keep in digital form (but see below regarding bridging software)
-* Submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
-* Have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
-* Submit an End of Period Statement for each business income source (with declaration of completeness)
-* Call for and view an estimate of their Income Tax liability for each tax year at any time
-* Make a self-assessment of the tax and Class 4 National Insurance contributions due on their total taxable income and a final declaration of completeness and correctness no later than 31 January following the end of tax year in which that income is taxable
-* Carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
-* Have visibility of all their Class 2 National Insurance contributions (so that they can make additional voluntary contributions if they wish)
-* The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
-    * [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/)
-    * [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
-    * [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/)
-    * [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/)
-    * [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api)
-    * [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
-    * [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
-    * [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
-   
-   
-
-### Bridging software
-
-Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products. 
-
-In order to be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
-
 ### Non-MTD products
 
 Software products who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
-
-This section of the guide explains the features your product must include before production credentials are sought, together with features you should consider building into your products.
 
 ### Overview of developer journey to production credentials
 
@@ -103,6 +48,64 @@ This section of the guide explains the features your product must include before
     - If not satisfactory, further testing and development will be required for review.
 8. The software vendor demonstrates its software to HMRC via online screen sharing.
 9. Production credentials are issued if all requirements are met. If not, further development is required and a new demonstration will be arranged.
+
+
+
+## Production approvals process for Making Tax Digital for Income Tax Self Assessment
+
+Our key objectives for MTD for Income Tax are to:
+
+* ensure customers have a streamlined end-to-end journey and software that supports everything a business customer needs to do to meet their Income Tax obligations
+* safeguard customer data and protect HMRC systems against fraud and criminal attack
+
+This section of the guide explains the features your product must include before production credentials are sought, together with features you should consider building into your products.
+
+### Minimum functionality standards
+
+Previously, the production approvals process included an assessment of whether a product includes certain minimum functionality.
+
+In response to developer feedback, we are content for software developers to build MTD Income Tax products iteratively and be granted production credentials for specific elements of the minimum required functionality. However, an MTD Income Tax product will only be listed on the software choices viewer when it satisfies all the requirements listed below.
+
+The minimum required functionality is as follows:  
+
+* A software product must submit the fraud prevention header data required by law.
+* A Making Tax Digital for Income Tax product must allow the customer to:
+    * Create and maintain all business records a customer is required by law to keep in digital form (but see below regarding bridging software)
+    * Submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
+    * Have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
+    * Submit an End of Period Statement for each business income source (with declaration of completeness)
+    * Call for and view an estimate of their Income Tax liability for each tax year at any time
+    * Make a self-assessment of the tax and Class 4 National Insurance contributions due on their total taxable income and a final declaration of completeness and correctness no later than 31 January following the end of tax year in which that income is taxable
+    * Carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
+    * Have visibility of all their Class 2 National Insurance contributions (so that they can make additional voluntary contributions if they wish)
+
+The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
+
+* [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/)
+* [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
+* [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/)
+* [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/)
+* [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api)
+* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
+* [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
+* [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
+   
+   
+### Fraud Prevention Headers
+
+You must supply fraud prevention header information for all our APIs before approval can be granted and production credentials issued.
+
+HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
+
+The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
+
+
+
+### Bridging software
+
+Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products. 
+
+In order to be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
 
 ### Product build
 
