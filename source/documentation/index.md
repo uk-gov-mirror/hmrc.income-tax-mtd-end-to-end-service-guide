@@ -209,9 +209,10 @@ The government has committed to the availability of free software for small busi
 
 By ‘small businesses’ we mean that eligibility for free software will apply where the business meets all of these conditions:
 
-* it is unincorporated (for example self-employed persons or landlords)
-* it has turnover within the scope of Income Tax below £85,000
+* it is an individual (self-employed or a landlord) or a simple partnership
+* it is not VAT registered
 * it has no employees
+* it has a turnover (gross annual income from all business sources) of less than £85,000
 * it uses cash basis accounting
 
 For the avoidance of any doubt, there is no expectation that a free product will include VAT, Corporation Tax or PAYE functionality.
