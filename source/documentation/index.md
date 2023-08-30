@@ -31,6 +31,12 @@ HMRC will provide the APIs for the software to support all of the personal data 
 
 By developing a product now, you will support the mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
 
+### Bridging software
+
+Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products. 
+
+In order to be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
+
 ### Non-MTD products
 
 Software products who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
@@ -70,7 +76,7 @@ The minimum required functionality is as follows:
 
 * A software product must submit the fraud prevention header data required by law.
 * A Making Tax Digital for Income Tax product must allow the customer to:
-    * Create and maintain all business records a customer is required by law to keep in digital form (but see below regarding bridging software)
+    * Create and maintain all business records a customer is required by law to keep in digital form (but see [Bridging Software](#bridging-software))
     * Submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
     * Have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
     * Submit an End of Period Statement for each business income source (with declaration of completeness)
@@ -101,21 +107,14 @@ The developer must test their fraud prevention headers and provide SDST with scr
 
 
 
-### Bridging software
-
-Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products. 
-
-In order to be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
-
 ### Product build
 
 Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you will be required to demonstrate your product after each stage of the build. There are three stages, although many developers choose to develop stages 2 and 3 together. 
 
-The three stages are:
-
-1. In year functionality (submitting periodic updates).
-2. End of Period (EOPs).
-3. Final declaration.
+* The three stages are:
+    1. In year functionality (submitting periodic updates).
+    2. End of Period (EOPs).
+    3. Final declaration.
 
 The [API catalogue](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/#apis-required-for-each-stage-of-development-of-a-minimum-functionality-standard-mfs-product) shows which APIs are required at each stage of the build.
 
