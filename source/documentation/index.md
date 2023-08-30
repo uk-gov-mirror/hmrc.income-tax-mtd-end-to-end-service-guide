@@ -161,7 +161,7 @@ The journey we expect to see for an MFS build will depend on whether you are bui
     - Retrieve a Business Income Source Summary (BISS) and display it to the customer. 
 **Or:** 
     - The software may choose to create a BISS themselves by totalling the relevant information held in software and displaying it to the customer.
-8. Show EOPS Declaration Statement - this must match the statement shown in the ITSA End to end service guide.
+8. Show EOPS Declaration Statement - this must match the statement shown in the ITSA End to End Service Guide.
 9. Submit EOPS.
 10. Demonstrate how your software returns and displays error messages to the end user.
 
