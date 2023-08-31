@@ -41,22 +41,6 @@ In order to be granted production credentials for a bridging product, it must be
 
 Software products who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at HMRC discretion.
 
-### Overview of developer journey to production credentials
-
-1. Sign in to the [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
-2. [Create a test user which is an individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
-3. Review the [API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
-4. Test ITSA endpoints and develop your software application. Any queries during this phase should be sent to SDSTeam@hmrc.gov.uk.
-5. Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
-6. Provide testing logs and credentials used for testing to HMRC.
-7. Developer testing is reviewed by HMRC (including fraud header validity). 
-    - If satisfactory, you will be invited to demonstrate your product. 
-    - If not satisfactory, further testing and development will be required for review.
-8. The software vendor demonstrates its software to HMRC via online screen sharing.
-9. Production credentials are issued if all requirements are met. If not, further development is required and a new demonstration will be arranged.
-
-
-
 ## Production approvals process for Making Tax Digital for Income Tax Self Assessment
 
 Our key objectives for MTD for Income Tax are to:
@@ -105,16 +89,29 @@ HMRC must see evidence of fraud prevention headers being sent and be satisfied a
 
 The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
 
+### Overview of developer journey to production credentials
 
+1. Sign in to the [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
+2. [Create a test user which is an individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
+3. Review the [API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
+4. Test ITSA endpoints and develop your software application. Any queries during this phase should be sent to SDSTeam@hmrc.gov.uk.
+5. Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
+6. Provide testing logs and credentials used for testing to HMRC.
+7. Developer testing is reviewed by HMRC (including fraud header validity). 
+    - If satisfactory, you will be invited to demonstrate your product. 
+    - If not satisfactory, further testing and development will be required for review.
+8. The software vendor demonstrates its software to HMRC via online screen sharing.
+9. Production credentials are issued if all requirements are met. If not, further development is required and a new demonstration will be arranged.
 
 ### Product build
 
 Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you will be required to demonstrate your product after each stage of the build. There are three stages, although many developers choose to develop stages 2 and 3 together. 
 
-* The three stages are:
-    1. In year functionality (submitting periodic updates).
-    2. End of Period (EOPs).
-    3. Final declaration.
+The three stages are:
+
+1. In year functionality (submitting periodic updates).
+2. End of Period (EOPs).
+3. Final declaration.
 
 The [API catalogue](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/#apis-required-for-each-stage-of-development-of-a-minimum-functionality-standard-mfs-product) shows which APIs are required at each stage of the build.
 
