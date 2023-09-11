@@ -89,10 +89,10 @@ Information currently provided through the existing self-assessment process: if 
 
 The software will have to let HMRC know that the customer is ready to submit a final declaration. To do this, you must call the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with the ```finalDeclaration``` parameter set to true. This has the following consequences: 
 
-* It starts the final declaration process in HMRC. 
-* It triggers the business validation rules (which, if violated, produce errors rather than warnings). 
-* It generates a final liability calculation.
-* The software must then quote the ```calculationId```when retrieving the calculation output using the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint.
+* it starts the final declaration process in HMRC 
+* it triggers the business validation rules (which, if violated, produce errors rather than warnings) 
+* it generates a final liability calculation
+* the software must then quote the ```calculationId```when retrieving the calculation output using the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint
 
 ### Calculations that produce errors
 
