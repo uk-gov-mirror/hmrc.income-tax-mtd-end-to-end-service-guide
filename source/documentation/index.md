@@ -302,9 +302,13 @@ Below is a summary of significant updates to this service guide:
 
 #### Version 3.1
 
+27 June 2023
+
 * Added 'API lifecycle & deprecation' section, removed some duplicated content
 
 #### Version 3.0
+
+14 June 2023
 
 * Updated API and endpoint links.
 
