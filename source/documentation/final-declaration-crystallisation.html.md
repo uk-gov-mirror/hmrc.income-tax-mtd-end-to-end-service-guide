@@ -20,7 +20,7 @@ Customers can make a final declaration from 6 April Year 1. The deadline for fin
 Before starting the final declaration journey, the software package must ensure that for the relevant tax year, the customer:
 
 * has submitted quarterly update information for each business income source (self-employment and property income)
-* has finalised EOPS for all their businesses (self-employment, uk-property and foreign-property)
+* has finalised EOPS for all their businesses (self-employment and property income)
 * has already provided their entire income (for example, interest, dividends, other SA schedules)
 * does not have any additional information to provide (for example, information about how to treat a loss)
 
@@ -87,11 +87,11 @@ Information currently provided through the existing self-assessment process: if 
 
 ## Making a final declaration
 
-The software will have to let HMRC know that the customer is ready to submit a final declaration. To do this, you must call the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with the ```finalDeclaration``` parameter set to true. This has the following consequences: 
+The software will have to let HMRC know that the customer is ready to submit a final declaration. To do this, you must call the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint under the [Individual Calculations (MTD) API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api) with the ```finalDeclaration``` parameter set to true. This has the following consequences: 
 
 * it starts the final declaration process in HMRC 
 * it triggers the business validation rules (which, if violated, produce errors rather than warnings) 
-* it generates a final liability calculation
+* it generates a final liability calculation and a ```calculationId```
 * the software must then quote the ```calculationId```when retrieving the calculation output using the [Retrieve A Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint
 
 ### Calculations that produce errors
@@ -112,7 +112,7 @@ If a customer thinks the calculation is incorrect based on the data they have su
 
 If a customer does not agree with the calculation based on rules HMRC have used, then they will need to contact HMRC before submitting their final declaration. If a software vendor identifies what they feel could be a technical issue with the [Individual Calculations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api), they will need to contact the SDS Team immediately.
 
-If a customer thinks the calculation is correct, then they can go ahead and submit their final declaration using the [Submit a Self Assessment Final Declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint. It is important to note that once a customer has submitted their final declaration, they will not be able to amend their submission using their software.
+If a customer thinks the calculation is correct, then they can go ahead and submit their final declaration through the [Submit a Self Assessment Final Declaration](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint. It is important to note that once a customer has submitted their final declaration, they will not be able to amend their submission using their software.
 
 ### Agreeing to the declaration
 
@@ -130,7 +130,7 @@ Once a customer is confident that they have submitted all the required income ta
 
  > "I confirm that my client has received a copy of all the information being filed and approved the information as being correct and complete to the best of their knowledge and belief. My client understands that they may have to pay financial penalties and face prosecution if they give false information."
 
-The software must send the ```calculationId``` that matches the calculation the customer is declaring against with the declaration.
+The software must send the ```calculationId``` that matches the specific calculation that the customer is agreeing to in the declaration.
 
 ### Final declaration user journey
 
@@ -138,7 +138,7 @@ The software must send the ```calculationId``` that matches the calculation the 
 
 <a href="figures/crystallisation-diagram.svg" target="blank">Open the final declaration process diagram in a new tab</a>.
 
-1.	The customer is ready to complete their final tax declaration.
+1.	The customer is ready to complete their final declaration.
 2.	The software calls the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with ```finalDeclaration``` as true.
 3.	HMRC receives the request, starts the tax calculation, and returns a Calculation ID.
 4.	The software receives the ```calculationId```.
@@ -171,7 +171,7 @@ Vendors should, in their messaging, ask customers to visit that link so the cust
 
 The contents of this GOV.UK page will be updated and subject to change.
 
-For a business to view the previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their Business Tax Account at:
+For a business to view the previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their HMRC Online Services account at:
 
 [https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
 
