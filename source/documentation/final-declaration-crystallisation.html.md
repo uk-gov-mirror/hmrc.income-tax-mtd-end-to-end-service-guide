@@ -73,7 +73,7 @@ Once a customer is confident that they have submitted all the required income ta
 
 The software must send the ```calculationId``` that matches the specific calculation that the customer is agreeing to in the declaration.
 
-### Final declaration user journey
+## Final declaration user journey
 
 <a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:720px;" /></a>
 
