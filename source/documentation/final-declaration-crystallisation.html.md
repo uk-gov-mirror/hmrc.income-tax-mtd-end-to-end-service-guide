@@ -26,65 +26,6 @@ Before starting the final declaration journey, the software package must ensure 
 
 If your software will not allow customers to report their entire income and reliefs, customers should be informed to report them using HMRC Online Services.
 
-## Providing information about how to treat a loss
-
-### Losses and claims
-
-A self-employed business can have a loss when the trade expenses are more than the trade income.
-If the business has a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
-
-<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:720px;" /></a>
-
-<a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
-
-Vendors can use the [create a brought forward loss](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1%7Bnino%7D~1brought-forward-losses/post) endpoint to enable customers to submit the brought forward loss to HMRC.
-
-When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
-
-* utilise the loss against an income source for a specific year, or
-* claim to carry the loss forward so that it is available to use in later years
-
-The [Loss claims](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims) endpoint allows the user to do the following:
-
-* provide a list of Loss claims
-* create a Loss claim against an income source for a specific tax year
-* show the detail of an existing Loss claim
-* delete a previously entered Loss claim
-* update a previously entered Loss claim
-
-### Brought Forward Losses
-
-These resources allow software packages to provide a customer's financial data for their brought forward losses. Here the developer can:
-
-* provide a list of brought forward losses
-* create a new brought forward loss to submit against self-employment, self-employment class 4, UK FHL property, other UK (non-FHL) property, foreign property FHL in the European Economic Area (EEA) or other foreign property
-* show a single brought forward loss
-* delete an existing brought forward loss
-* update an existing brought forward loss
-
-To carry-back a loss, the customer should contact HMRC who will be able to apply this manually.
-
-## Submit information about personal income
-### Self-assessment return
-
-The software should prompt customers to make sure they have considered the following potential additional income sources (there are links to the APIs where the functionality is available, we will continue to release additional functionality and update this page).
-
-* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account) (supported in live)
-* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income) (supported in live)  
-*	any [gift aid contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings) they have made (supported in live)  
-*	any pension contributions
-*	any pension income
-*	capital gains
-*	income from employment
-*	additional information (currently provided on the SA101)
-*	any income from partnerships
-*	any income from trusts
-*	any foreign income
-
-**Note:**
-
-Information currently provided through the existing self-assessment process: if a customer needs to report information to HMRC that is not yet supported under MTD or your software, they will need to complete a Self Assessment tax return.  Any information they have provided through MTD will not be considered and they will have to submit everything through the existing HMRC Self Assessment service.
-
 ## Making a final declaration
 
 The software will have to let HMRC know that the customer is ready to submit a final declaration. To do this, you must call the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/4.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint under the [Individual Calculations (MTD) API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api) with the ```finalDeclaration``` parameter set to true. This has the following consequences: 
