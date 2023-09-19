@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.1** issued June 2023
+**Version 3.2** issued September 2023
 
 
 
@@ -299,6 +299,17 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 ### Documentation changelog
 
 Below is a summary of significant updates to this service guide:
+
+#### Version 3.2
+
+18 September 2023
+
+* Updated content for [Penalties and Appeals](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/penaltiesandappeals.html) section
+* Updated content for [Final Declaration (Crystallisation)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
+* Updated content for [Production approvals process](#production-approvals-process-for-making-tax-digital-for-income-tax-self-assessment) section
+* Updated content for [Software choices](#software-choices) section
+* Updated content for [Bridging software](#bridging-software) section
+* Removed Business Validation Rules section
 
 #### Version 3.1
 
