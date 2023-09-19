@@ -302,7 +302,7 @@ Below is a summary of significant updates to this service guide:
 
 #### Version 3.2
 
-18 September 2023
+20 September 2023
 
 * Updated content for [Penalties and Appeals](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/penaltiesandappeals.html) section
 * Updated content for [Final Declaration (Crystallisation)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
