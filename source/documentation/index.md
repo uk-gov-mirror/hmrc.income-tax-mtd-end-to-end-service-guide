@@ -2,6 +2,7 @@
 
 **Version 3.2** issued September 2023
 
+This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
 
 
 
@@ -17,10 +18,6 @@
 This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations once they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
 
 For more information about eligibility and how to use Making Tax Digital for Income Tax, please refer to the [Making Tax Digital step by step guidance](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
-
-## Making Tax Digital APIs
-This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
-
 
 ## Software provider overview
 
