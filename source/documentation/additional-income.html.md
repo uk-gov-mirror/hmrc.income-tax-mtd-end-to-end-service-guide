@@ -11,8 +11,8 @@ description: Software developers, designers, product owners or business analysts
 
 The software should prompt customers to make sure they have considered the following potential additional income sources (there are links to the APIs where the functionality is available, we will continue to release additional functionality and update this page).
 
-* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/UK-Savings-Account) (supported in live)
-* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/1.0/oas/page#tag/Dividends-Income) (supported in live)  
+* any income from [bank or building society interest](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Savings-Account) (supported in live)
+* any income from [dividends](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income) (supported in live)  
 *	any [gift aid contributions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings) they have made (supported in live)  
 *	any pension contributions
 *	any pension income
@@ -62,13 +62,13 @@ These endpoints can be broken into three categories:
 
 [Delete Employment Financial Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/delete)
 
-[Create and Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/put)
+[Create and Amend Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/put)
 
-[Retrieve Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
+[Retrieve Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
 
-[Delete Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+[Delete Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-[Ignore Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1ignore/post)
+[Ignore Employment Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1ignore/post)
 HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to final declaration.
 
 **Note:**
@@ -305,9 +305,9 @@ These endpoints allow the user to manage their data related to expenses income f
 
 The user can submit details of their expenses income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
 
-* [Retrieve Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/1.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+* [Retrieve Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Other Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 <a href="figures/expenses-other.svg" target="blank">
 <img src="figures/expenses-other.svg" alt=" " style="width:720px;" />
