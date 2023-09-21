@@ -7,8 +7,6 @@ description: Software developers, designers, product owners or business analysts
 # HMRC Assist
 <!--- Section owner: Transactional Risking --->
 
-## Overview
-
 As part of Making Tax Digital, HMRC Assist is a set of APIs that will create a better customer experience by prompting customers with help via software when they request their end of year tax calculation before finalising their return.
 
 HMRC Assist is a new digital service for customers who are signed up for Making Tax Digital ITSA. It will provide targeted and tailored messaging to support individual customers with their tax affairs. Agents acting on behalf of clients will receive the same service when they request a tax calculation.
@@ -19,13 +17,13 @@ The service will take the calculation data of the customer, analyse the submissi
 
 HMRC Assist will be integrated into HMRC’s ITSA Submission Service so that customers completing their final declaration or return amendment using HMRC online services will receive tailored assistance.
 
-### High-level HMRC Assist customer journey
+## High-level HMRC Assist customer journey
 
 <a href="figures/customer-journey-transactional-risking-high-level.svg" target="blank"><img src="figures/customer-journey-transactional-risking-high-level.svg" alt="High level diagram" style="width:720px;" /></a>
 
 <a href="figures/customer-journey-transactional-risking-high-level.svg" target="blank">Open the high-level diagram in a new tab.</a>
 
-### HMRC Assist endpoints
+## HMRC Assist endpoints
 
 There are two endpoints:
 
