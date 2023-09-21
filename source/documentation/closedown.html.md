@@ -8,7 +8,7 @@ weight: 11
 
 # Opting out of MTD
 
-Customers who are in MTD on a voluntary basis can leave (opt out) at any time. When this happens the customer’s filing obligations will change from MTD (quarterly) to a single annual obligation due on 31 January following the end of the tax year - this is their final declaration.
+Customers who are in MTD on a voluntary basis can leave (opt out) at any time. When this happens the customer’s filing obligations will change from MTD (quarterly) to a single annual obligation due on 31 January following the end of the tax year - this is their final declaration. It is important to note that even if a customer opts out of MTD, they can continue using the software as long as it supports submission for annual self-employment and property income.
 
 Eligibility to opt out is determined on a tax year basis. For example, a customer can be mandated for the current year and voluntary for the next year, meaning the customer could opt out next year. A customer can opt out for the previous tax year if they signed up to MTD as a voluntary customer, then subsequently decided not to submit quarterly - opting out would allow the customer to file on an annual basis for that year.
 
