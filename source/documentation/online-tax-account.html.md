@@ -2,18 +2,18 @@
 title: HMRC online services
 weight: 9
 description: Sign in to HMRC online services to manage your income tax.
----
+---HMRC
 
 <!--- Section owner: MTD Programme --->
 
 # HMRC online services
 Self-assessment customers who have signed up for Making Tax Digital for Income Tax can [sign into HMRC online services](https://www.gov.uk/log-in-register-hmrc-online-services) to access relevant services. Customers can reach their Making Tax Digital service by clicking the **Making Tax Digital for Income Tax** link.
 
-Software providers need to design a customer journey between software and HMRC Online Services. Whenever the journey takes the customer to HMRC Online Services, the service should open in a new browser window. This will allow customers to complete additional tasks not available in the software.
+Software providers need to design a customer journey between software and HMRC online services. Whenever the journey takes the customer to HMRC online services, the service should open in a new browser window. This will allow customers to complete additional tasks not available in the software.
 
 The following table lists the tasks customers will be able to complete through HMRC online services and/or third-party software:
 
-| Task                                                                                                                                                             | Status             | HMRC Online Services | Software |
+| Task                                                                                                                                                             | Status             | HMRC online services | Software |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | -------------------- | -------- |
 | [Change contact preference between paper and digital secure messages](#changing-contact-preference-between-paper-and-digital-secure-messages)                                                                                        | Live               | Yes                  | No       |
 | Change business details                                                                                                                                    | Future development | Yes                  | No       |
@@ -42,7 +42,7 @@ Agents will be able to access Making Tax Digital for Income Tax services through
 
 ## Changing contact preference between paper and digital secure messages
 
-To make MTD communication accessible to all customers, HMRC has provided them with a contact preference for paper or digital methods.  If customers have selected a digital preference, they will be able to view communications sent to them by HMRC through a Secure mailbox accessible through HMRC Online Services.  HMRC encourages customers to sign up for digital messages as they will get reminders for when to make different updates and payments, which is not available through paper messages. 
+To make MTD communication accessible to all customers, HMRC has provided them with a contact preference for paper or digital methods.  If customers have selected a digital preference, they will be able to view communications sent to them by HMRC through a Secure mailbox accessible through HMRC online services.  HMRC encourages customers to sign up for digital messages as they will get reminders for when to make different updates and payments, which is not available through paper messages. 
 
 ## Adding new business details for a self-employment sole trader or property business
 
@@ -79,7 +79,7 @@ In the future, it will be possible to reopen a closed business or change an inco
 
 Customers can make a payment towards their liability through HMRC Online services or there is an alternative route which is detailed on [Pay your Self Assessment tax bill: Overview - GOV.UK (www.gov.uk)](https://www.gov.uk/pay-self-assessment-tax-bill?_ga=2.87410077.442895640.1693813671-569616403.1678098699&_gl=1*xnov4c*_ga*NTY5NjE2NDAzLjE2NzgwOTg2OTk.*_ga_Y4LWMWY6WS*MTY5NDAxMTU5Ny43LjEuMTY5NDAxMTYwOS4wLjAuMA..). 
 
-When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds don’t fully cover that MTD liability, this still must  be paid by 31st January.  In this instance, the [Self Assessment Accounts API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding; however, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC Online Services.   
+When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds don’t fully cover that MTD liability, this still must  be paid by 31st January.  In this instance, the [Self Assessment Accounts API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding; however, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC online services.   
 
 ## Claiming a refund
 
