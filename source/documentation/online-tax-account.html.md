@@ -67,7 +67,7 @@ Customers need to provide the following information to add a new business source
 
 ## Closing (ceasing) a self-employment sole trader or property business
 
-Self employment and property businesses can be ceased by entering the date the business ended using HMRC online services. However, when ceasing a property business, the customer needs to do this only when they no longer receive any type of rental income from all of their properties. Customers within MTD will be required to submit quarterly updates for the periods up to the date the business ended and any future quarterly obligations will be removed.
+Self employment and property businesses can be ceased by entering the date the business ended using HMRC online services. However, when ceasing a property business, the customer needs to do this only when they no longer receive any type of rental income from all of their properties. Customers within MTD will be required to submit quarterly updates for the periods up to the date the business ended and any future quarterly obligations will be removed. After a business ceases, customers will not report post-cessation receipts or expenses through subsequent quarterly updates. Additional guidance on their reporting will be provided in due course.
 
 Customers must update HMRC online services with the cease date as soon as possible to avoid late penalties that could be raised against future quarterly obligations. 
 
