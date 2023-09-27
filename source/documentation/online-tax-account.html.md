@@ -22,8 +22,8 @@ The following table lists the tasks customers will be able to complete through H
 | [Add new business details for a self-employment sole trader or property business](#adding-new-business-details-for-a-self-employment-sole-trader-or-property-business)                                                                                                                             | Under development  | Yes                  | No       |
 | [Close (cease) a self-employment sole trader or property business](#closing-ceasing-a-self-employment-sole-trader-or-property-business)                                                                                               | Under development  | Yes                  | No       |
 | Elect for calendar quarterly periods                                                                                                               | Future development | No                   | Yes      |
-| Submit non-MTD income and allowance types required to complete a self assessment tax return                                                                                                                                | Live               | Yes                  | No       |
-| View in-year, forecast, self assessment tax calculations                                                                                                         | Live               | Yes                  | Yes      |
+| Submit non-MTD income and allowance types required to complete a self assessment tax return                                                                                                                                | Live               | Yes                  | Yes       |
+| View Self Assessment tax calculations for in-year, forecast, and final declaration                                                                                                         | Live               | Yes                  | Yes      |
 | Print a Self Assessment SA302 tax calculation | Future development | Yes                  | Yes      |
 | Check how much is owed through MTD                                                                                                                              | Live               | Yes                  | Yes      |
 | Request a budget payment plan                                                                                                                                    | Future development | Yes                  | No       |
@@ -34,6 +34,7 @@ The following table lists the tasks customers will be able to complete through H
 | Check refund details and status                                                                                                                               | Under development  | Yes                  | No       |
 | Provide bank details for future refunds                                                                                                                                  | Future development | Yes                  | No       |
 | Leave MTD as a voluntary customer                                                                                                                                | Future development | Yes                  | No       |
+| Re-sign up to MTD as a voluntary customer                                                                                                                                | Future development | Yes                  | No       |
 
 Agents will be able to access Making Tax Digital for Income Tax services through their agent services account. They will be able to access all current and future services on behalf of their clients including the services listed in the above table, except for:
 
@@ -96,6 +97,7 @@ The following tasks are scheduled for future development and we will provide mor
 - Request a time to pay
 - Check refund details and status
 - Provide bank details for future repayments
-- Leave MTD as a voluntary customer  - customers will also be able to sign up again from their account
+- Leave MTD as a voluntary customer
+- Re-sign up to MTD as a voluntary customer
 
 
