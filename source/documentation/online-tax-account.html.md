@@ -34,7 +34,7 @@ The following table lists the tasks customers will be able to complete through H
 | Check refund details and status                                                                                                                               | Under development  | Yes                  | No       |
 | Provide bank details for future refunds                                                                                                                                  | Future development | Yes                  | No       |
 | Leave MTD as a voluntary customer                                                                                                                                | Future development | Yes                  | No       |
-| Re-sign up to MTD as a voluntary customer                                                                                                                                | Future development | Yes                  | No       |
+| Sign up to MTD as a voluntary customer for those who have previously opted out of MTD                                                                                                                                | Future development | Yes                  | No       |
 
 Agents will be able to access Making Tax Digital for Income Tax services through their agent services account. They will be able to access all current and future services on behalf of their clients including the services listed in the above table, except for:
 
@@ -98,6 +98,6 @@ The following tasks are scheduled for future development and we will provide mor
 - Check refund details and status
 - Provide bank details for future repayments
 - Leave MTD as a voluntary customer
-- Re-sign up to MTD as a voluntary customer
+- Sign up to MTD as a voluntary customer for those who have previously opted out of MTD
 
 
