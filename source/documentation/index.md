@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.2** issued September 2023
+**Version 3.3** issued October 2023
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
 
@@ -287,7 +287,7 @@ These journeys show examples of use:
 * [making a final declaration](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#final-declaration)
 * [ITSA (MTD) close down activities](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
 
-## Changelog
+## Changelogs
 
 ### API changelog
 
@@ -296,6 +296,14 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 ### Documentation changelog
 
 Below is a summary of significant updates to this service guide:
+
+#### Version 3.3
+
+04 October 2023
+
+* Updated content for [HMRC online services](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html)
+* Updated content for [HMRC Assist](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/hmrc-assist.html)
+* Updated content for [Opting out of MTD](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
 
 #### Version 3.2
 
@@ -312,7 +320,7 @@ Below is a summary of significant updates to this service guide:
 
 27 June 2023
 
-* Added 'API lifecycle & deprecation' section, removed some duplicated content
+* Added [API lifecycle & deprecation](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/api-deprecation-guidance.html) section, removed some duplicated content
 
 #### Version 3.0
 
