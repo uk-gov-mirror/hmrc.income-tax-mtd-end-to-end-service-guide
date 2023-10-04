@@ -301,9 +301,9 @@ Below is a summary of significant updates to this service guide:
 
 04 October 2023
 
-* Updated content for [HMRC online services](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html)
-* Updated content for [HMRC Assist](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/hmrc-assist.html)
-* Updated content for [Opting out of MTD](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
+* Updated content for [HMRC online services](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) section
+* Updated content for [Opting out of MTD](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html) section
+* Updated content for [HMRC Assist](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/hmrc-assist.html) section
 
 #### Version 3.2
 
