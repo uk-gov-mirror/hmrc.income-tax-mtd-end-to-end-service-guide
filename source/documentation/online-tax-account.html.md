@@ -40,6 +40,7 @@ Agents will be able to access Making Tax Digital for Income Tax services through
 
 - changing their client’s repayment bank details 
 - changing their client’s contact preference
+- setting up a time to pay arrangement or budget payment plan
 
 ## Changing contact preference between paper and digital secure messages
 
