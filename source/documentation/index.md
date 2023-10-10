@@ -194,15 +194,15 @@ Software Choices is a service designed to help users [find compatible software f
 
 An updated version is being developed with filters to help users find products that fit their specific requirements. For instance, a user may wish to find bridging software instead of a standalone product, or a product that suits their accessibility needs. It will also include a filter to find software that is also compatible with Making Tax Digital for VAT. 
 
-Software vendors have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [Software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) once Production credentials have been approved. To be listed as [Software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), vendors must demonstrate: 
+Software vendors have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) once production credentials have been approved. To be listed as [software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), vendors must demonstrate: 
  
-- they have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [Minimum functionality standards](#minimum-functionality-standards) section
+- they have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [minimum functionality standards](#minimum-functionality-standards) section
 - they can complete the successful onboarding for a customer - sign up, authorise software, and retrieve obligations
 - they can submit a periodic update for a customer for each business income source
 
-HMRC staff will monitor this activity in real time if they feel it is necessary. HMRC will then perform final checks before allowing a software product to be listed on the GOV.UK [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) page as [Software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now). 
+HMRC staff will monitor this activity in real time if they feel it is necessary. HMRC will then perform final checks before allowing a software product to be listed on [GOV.UK](https://www.gov.uk/). 
 
-We advise users to speak to their appointed tax agent, if they have one, before making a decision on software.
+We advise users to speak to their appointed tax agent (if they have one) before making a decision on software.
 
 ### Free-to-use software
 
