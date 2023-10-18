@@ -1,6 +1,6 @@
 ---
 title: Payments and Liabilities | Income Tax (MTD) End-to-End Service Guide
-weight: 5
+weight: 7
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
