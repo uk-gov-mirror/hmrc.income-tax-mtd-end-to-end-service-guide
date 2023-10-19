@@ -68,13 +68,15 @@ The minimum required functionality is as follows:
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
 
 * [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/)
-* [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
 * [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/)
+* [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
 * [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/)
 * [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api)
-* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
 * [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
-* [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
+* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
+* [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
+* [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/)
+* [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/)
    
    
 ### Fraud Prevention Headers
