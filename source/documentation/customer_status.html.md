@@ -21,7 +21,7 @@ MTD mandated customers have qualifying income above the MTD threshold. This stat
 
 ## MTD voluntary
 
-MTD Voluntary customers have qualifying income below or equal to the MTD threshold. These customers will have the same obligations as MTD mandated customers but only the final declaration is penalty-bearing. 
+MTD voluntary customers have qualifying income below or equal to the MTD threshold. These customers will have the same obligations as MTD mandated customers but only the final declaration is penalty-bearing. 
 
 ## Annual
 
