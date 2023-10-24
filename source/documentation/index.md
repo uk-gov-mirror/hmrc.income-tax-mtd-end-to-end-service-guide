@@ -75,8 +75,8 @@ The Making Tax Digital for Income Tax APIs that include the endpoints for the fu
 * [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
 * [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
 * [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
-* [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/)
-* [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/)
+* [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/) (only for property full product)
+* [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
    
    
 ### Fraud Prevention Headers
