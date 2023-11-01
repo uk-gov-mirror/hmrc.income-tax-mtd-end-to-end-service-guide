@@ -260,7 +260,7 @@ Below is a summary of significant updates to this service guide:
 01 November 2023
 
 * Added new [Customer status](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer_status.html) section describing business purpose of the new Self Assessment Individual Details API
-* Updated [Construction Industry Scheme](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
+* Updated [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
 * Updated [Software choices](#software-choices) section to clarify acceptance criteria for vendor software being added to "Software available now" list
 * Updated APIs in [Minimum functionality standards](#minimum-functionality-standards) section
 * Removed duplicate "Finalise business income End of Period Statement (EOPS)" section
