@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.3** issued October 2023
+**Version 3.4** issued November 2023
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
 
@@ -254,6 +254,16 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 ### Documentation changelog
 
 Below is a summary of significant updates to this service guide:
+
+#### Version 3.4
+
+01 November 2023
+
+* Added new [Customer status](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer_status.html) section describing business purpose of the new Self Assessment Individual Details API
+* Updated [Construction Industry Scheme](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
+* Updated [Software choices](#software-choices) section to clarify acceptance criteria for vendor software being added to "Software available now" list
+* Updated APIs in [Minimum functionality standards](#minimum-functionality-standards) section
+* Removed duplicate "Finalise business income End of Period Statement (EOPS)" section
 
 #### Version 3.3
 
