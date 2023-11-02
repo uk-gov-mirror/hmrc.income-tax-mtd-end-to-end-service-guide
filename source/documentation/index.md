@@ -253,21 +253,21 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 
 ### Documentation changelog
 
-Below is a summary of significant updates to this service guide:
+Below is a summary of updates to this service guide:
 
 #### Version 3.4
 
-01 November 2023
+2 November 2023
 
 * Added new [Customer status](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer_status.html) section describing business purpose of the new Self Assessment Individual Details API
 * Updated [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
-* Updated [Software choices](#software-choices) section to clarify acceptance criteria for vendor software being added to "Software available now" list
+* Updated [Software choices](#software-choices) section
 * Updated APIs in [Minimum functionality standards](#minimum-functionality-standards) section
 * Removed duplicate "Finalise business income End of Period Statement (EOPS)" section
 
 #### Version 3.3
 
-04 October 2023
+4 October 2023
 
 * Updated content for [HMRC online services](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) section
 * Updated content for [Opting out of MTD](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html) section
