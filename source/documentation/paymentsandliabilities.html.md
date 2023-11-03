@@ -34,6 +34,4 @@ A customer, at any time, can view the history of changes made to an individual c
 
 <a href="figures/payments-and-liabilities-rsach.svg" target="blank">Open the Retrieve a Self Assessment Charge's History diagram in a new tab</a>.
 
-## Retrieve Self Assessment Balance and Transactions
 
-This endpoint enables you to retrieve the history of changes to an individual charge. A National Insurance number and transaction ID must be provided. The value of transaction ID can be retrieved from the documentId field in the documentDetails array of the Retrieve Self Assessment Balance and Transactions endpoint.
