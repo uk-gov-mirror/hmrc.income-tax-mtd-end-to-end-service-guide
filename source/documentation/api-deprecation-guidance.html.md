@@ -77,7 +77,7 @@ In releases from June 2023 onwards, deprecation status will also be indicated wi
 
 | Name        | Example value                                                                                                                                             |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Deprecation | This endpoint is deprecated. See the API documentation: https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api |
+| Deprecation | This endpoint is deprecated. See the API documentation: /api-documentation/docs/api/service/self-assessment-bsas-api |
 
 
 

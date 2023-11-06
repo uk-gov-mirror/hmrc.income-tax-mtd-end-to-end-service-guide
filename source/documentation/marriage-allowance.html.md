@@ -14,5 +14,5 @@ This reduces the recipient’s tax by up to £252 in the tax year (6 April to 5 
 
 To create a Marriage Allowance claim the recipients name, date of birth and NINO must be provided.
 
-Use the [Create Marriage Allowance](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1%7Bnino%7D/post) endpoint in the [Individuals Disclosures API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/).
+Use the [Create Marriage Allowance](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1%7Bnino%7D/post) endpoint in the [Individuals Disclosures API](/api-documentation/docs/api/service/individuals-disclosures-api/).
 
