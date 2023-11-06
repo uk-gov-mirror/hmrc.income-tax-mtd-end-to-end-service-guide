@@ -2,7 +2,7 @@
 
 **Version 3.4** issued November 2023
 
-This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax). 
+This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax). 
 
 
 
@@ -67,16 +67,16 @@ The minimum required functionality is as follows:
 
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
 
-* [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/)
-* [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/)
-* [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api)
-* [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/)
-* [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api)
-* [Individuals Disclosures (Class 2 NIC’s)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api)
-* [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api)
-* [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)
-* [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/) (only for property full product)
-* [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
+* [Business Details](/api-documentation/docs/api/service/business-details-api/)
+* [Business Income Source Summary](/api-documentation/docs/api/service/self-assessment-biss-api/)
+* [Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api)
+* [Individuals Business End of Period Statement](/api-documentation/docs/api/service/individuals-business-eops-api/)
+* [Individual Calculations](/api-documentation/docs/api/service/individual-calculations-api)
+* [Individuals Disclosures (Class 2 NIC’s)](/api-documentation/docs/api/service/individuals-disclosures-api)
+* [Individual Losses](/api-documentation/docs/api/service/individual-losses-api)
+* [Obligations](/api-documentation/docs/api/service/obligations-api/)
+* [Property Business](/api-documentation/docs/api/service/property-business-api/) (only for property full product)
+* [Self-Employment Business](/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
    
    
 ### Fraud Prevention Headers
@@ -85,13 +85,13 @@ You must supply fraud prevention header information for all our APIs before appr
 
 HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
 
-The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
+The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
 
 ### Overview of developer journey to production credentials
 
-1. Sign in to the [developer hub](https://developer.service.hmrc.gov.uk/api-documentation) and register your application for sandbox testing.
-2. [Create a test user which is an individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
-3. Review the [API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
+1. Sign in to the [developer hub](/api-documentation) and register your application for sandbox testing.
+2. [Create a test user which is an individual](/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
+3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
 4. Test ITSA endpoints and develop your software application. Any queries during this phase should be sent to SDSTeam@hmrc.gov.uk.
 5. Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
 6. Provide testing logs and credentials used for testing to HMRC.
@@ -188,7 +188,7 @@ The journey we expect to see for an MFS build will depend on whether you are bui
 
 ## Terms of use
 
-You must comply with our [terms of use](https://developer.service.hmrc.gov.uk/api-documentation/docs/terms-of-use). You must accept the terms of use before we can issue you with production credentials.
+You must comply with our [terms of use](/api-documentation/docs/terms-of-use). You must accept the terms of use before we can issue you with production credentials.
 
 ## Software choices
 

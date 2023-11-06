@@ -31,8 +31,8 @@ HMRC Assist will be integrated into HMRC’s ITSA Submission Service so that cus
 
 There are two endpoints:
 
-* [Produce a HMRC Self Assessment Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Generate-Report/paths/~1individuals~1self-assessment~1assist~1reports~1%7Bnino%7D~1%7BtaxYear%7D~1%7BcalculationId%7D/post) - this endpoint enables you to generate and return a HMRC Self Assessment Assist report for a tax calculation for a given customer.
-* [Acknowledge a HMRC Self Assessment Assist Report](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Acknowledge-Report/paths/~1individuals~1self-assessment~1assist~1reports~1acknowledge~1%7Bnino%7D~1%7BreportId%7D~1%7BcorrelationId%7D/post) - this endpoint enables you to acknowledge that the customer or agent has read the report.
+* [Produce a HMRC Self Assessment Assist Report](/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Generate-Report/paths/~1individuals~1self-assessment~1assist~1reports~1%7Bnino%7D~1%7BtaxYear%7D~1%7BcalculationId%7D/post) - this endpoint enables you to generate and return a HMRC Self Assessment Assist report for a tax calculation for a given customer.
+* [Acknowledge a HMRC Self Assessment Assist Report](/api-documentation/docs/api/service/self-assessment-assist/1.0/oas/page#tag/Acknowledge-Report/paths/~1individuals~1self-assessment~1assist~1reports~1acknowledge~1%7Bnino%7D~1%7BreportId%7D~1%7BcorrelationId%7D/post) - this endpoint enables you to acknowledge that the customer or agent has read the report.
 
 ### Produce a HMRC Self Assessment Assist Report
 

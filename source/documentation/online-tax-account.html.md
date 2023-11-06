@@ -50,7 +50,7 @@ To make MTD communication accessible to all customers, HMRC has provided them wi
 
 New self-employment and property businesses can be added using HMRC online services as soon as the business has started. Customers will have a grace period of up to 2 years before the business is included in MTD if the total qualifying income from all business income is over the MTD threshold.  If a customer adds the new business within the 2-year grace period, they can choose to bring it into MTD immediately and commence voluntary quarterly updates or can decide to keep it outside of MTD and submit the income annually after the year end as normal on their SA return.
 
-After a new business is added, it can be seen almost immediately in software when the next API call is made to the [Business Details API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/). Customers can submit updates or an annual return for this new business on the same day.
+After a new business is added, it can be seen almost immediately in software when the next API call is made to the [Business Details API](/api-documentation/docs/api/service/business-details-api/). Customers can submit updates or an annual return for this new business on the same day.
 
 Customers need to provide the following information to add a new business source:
 
@@ -73,7 +73,7 @@ Self employment and property businesses can be ceased by entering the date the b
 
 Customers must update HMRC online services with the cease date as soon as possible to avoid late penalties that could be raised against future quarterly obligations. 
 
-After a business has been updated as ceased, it can be seen almost immediately in software when the next API call is made to the [Business Details API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/). Customers can submit updates or an annual return for this new business on the same day.
+After a business has been updated as ceased, it can be seen almost immediately in software when the next API call is made to the [Business Details API](/api-documentation/docs/api/service/business-details-api/). Customers can submit updates or an annual return for this new business on the same day.
 
 In the future, it will be possible to reopen a closed business or change an incorrectly entered end date.
 
@@ -81,7 +81,7 @@ In the future, it will be possible to reopen a closed business or change an inco
 
 Customers can make a payment towards their liability through HMRC online services or there is an alternative route which is detailed on [Pay your Self Assessment tax bill: Overview - GOV.UK (www.gov.uk)](https://www.gov.uk/pay-self-assessment-tax-bill?_ga=2.87410077.442895640.1693813671-569616403.1678098699&_gl=1*xnov4c*_ga*NTY5NjE2NDAzLjE2NzgwOTg2OTk.*_ga_Y4LWMWY6WS*MTY5NDAxMTU5Ny43LjEuMTY5NDAxMTYwOS4wLjAuMA..). 
 
-When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds don’t fully cover that MTD liability, this still must  be paid by 31st January.  In this instance, the [Self Assessment Accounts API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding. However, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC online services.   
+When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds don’t fully cover that MTD liability, this still must  be paid by 31st January.  In this instance, the [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding. However, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC online services.   
 
 ## Claiming a refund
 
