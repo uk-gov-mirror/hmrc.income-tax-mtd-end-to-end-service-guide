@@ -10,7 +10,7 @@ description: Software developers, designers, product owners or business analysts
 
 Sign up via API has been ruled out for security reasons.
 
-Taxpayers can sign up for Making Tax Digital for Income Tax without having software in place. However, they must get and authorise [software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/index.html#software-choices) before they start using Making Tax Digital for Income Tax.
+Taxpayers can sign up for Making Tax Digital for Income Tax without having software in place. However, they must get and authorise [software](/guides/income-tax-mtd-end-to-end-service-guide/index.html#software-choices) before they start using Making Tax Digital for Income Tax.
 
 To use Making Tax Digital for Income Tax, individuals need to sign up first.
 
@@ -57,7 +57,7 @@ Businesses and agents using your software to connect to the [Income Tax (Making 
  
 <a href="figures/link-software-to-hmrc.svg" target="blank"><img src="figures/link-software-to-hmrc.svg" alt="Link software to HMRC" style="width:720px;" /></a>
 
-[Open the link software to HMRC process diagram in a new tab.](https://developer.service.hmrc.gov.uk/guides/vat-mtd-end-to-end-service-guide/documentation/figures/link-software-to-hmrc.svg)
+[Open the link software to HMRC process diagram in a new tab.](/guides/vat-mtd-end-to-end-service-guide/documentation/figures/link-software-to-hmrc.svg)
 
 1.	Business or agent requests to link your software to HMRC.
 2.	Your software launches the grant authority user journey.

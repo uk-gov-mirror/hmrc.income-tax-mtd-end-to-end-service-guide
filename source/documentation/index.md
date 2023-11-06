@@ -85,7 +85,7 @@ You must supply fraud prevention header information for all our APIs before appr
 
 HMRC must see evidence of fraud prevention headers being sent and be satisfied as to their level of accuracy.
 
-The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) is available.
+The developer must test their fraud prevention headers and provide SDST with screenshot evidence that the correct response is received from the [Test Fraud Prevention Headers API](/api-documentation/docs/api/service/txm-fph-validator-api/). [Guidance on Fraud Prevention Headers](/guides/fraud-prevention/) is available.
 
 ### Overview of developer journey to production credentials
 
@@ -103,7 +103,7 @@ The developer must test their fraud prevention headers and provide SDST with scr
 
 ### Product build
 
-Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you will be required to demonstrate your product after each stage of the build. There are three stages, although many developers choose to develop stages 2 and 3 together. 
+Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you will be required to demonstrate your product after each stage of the build. There are three stages, although many developers choose to develop stages 2 and 3 together. 
 
 The three stages are:
 
@@ -111,16 +111,16 @@ The three stages are:
 2. End of Period (EOPs).
 3. Final declaration.
 
-The [API catalogue](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/#apis-required-for-each-stage-of-development-of-a-minimum-functionality-standard-mfs-product) shows which APIs are required at each stage of the build.
+The [API catalogue](/roadmaps/mtd-itsa-vendors-roadmap/#apis-required-for-each-stage-of-development-of-a-minimum-functionality-standard-mfs-product) shows which APIs are required at each stage of the build.
 
 ### Testing requirements
 
 HMRC requires the software to test all the APIs that they require access to. The following points relate to access to both new API subscriptions and version updates of existing API subscriptions:
 
-- For APIs included in the [minimum functionality standards](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards), you are required to test all endpoints shown within the documentation.
+- For APIs included in the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards), you are required to test all endpoints shown within the documentation.
 - For APIs not included in the minimum functionality standards, you are only required to test the endpoints relating to the data sources that your software supports. Where your software doesn’t support all data items, please notify SDSTeam@hmrc.gov.uk separately to confirm which data items you do support, so we can take this into account when checking the testing logs.
 
-[Fraud prevention headers](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) must be included in sandbox calls. A specialist team will check these and they must be confirmed as compliant before we can proceed.
+[Fraud prevention headers](/guides/fraud-prevention/) must be included in sandbox calls. A specialist team will check these and they must be confirmed as compliant before we can proceed.
 
 Once testing is complete, please send details of the dummy NINO used to call the above endpoints in sandbox to SDSTeam@hmrc.gov.uk. You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs. SDST will advise you of the outcome of our checks within 10 working days.   
 
@@ -234,16 +234,16 @@ HMRC would not require free software to link or integrate with an Agent product.
 
 These journeys show examples of use:
 
-* [Income Tax Self Assessment (ITSA) set up activities](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/signup.html)
-* [retrieving obligations](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieving-obligations)
-* [submitting periodic updates for Self Employment and property businesses](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-income-and-expense-updates-for-self-employment-and-property-businesses)
-* [submitting annual updates for Self Employment and property businesses](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-allowance-and-adjustment-updates-for-se-and-property-businesses)
-* [retrieving a tax calculation](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
-* [making changes to previously submitted data](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data)
-* [finalising business income End of Period Statement (EOPS)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
-* [providing information about how to treat a loss](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#providing-information-about-how-to-treat-a-loss)
-* [making a final declaration](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#final-declaration)
-* [ITSA (MTD) close down activities](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
+* [Income Tax Self Assessment (ITSA) set up activities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/signup.html)
+* [retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieving-obligations)
+* [submitting periodic updates for Self Employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-income-and-expense-updates-for-self-employment-and-property-businesses)
+* [submitting annual updates for Self Employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-allowance-and-adjustment-updates-for-se-and-property-businesses)
+* [retrieving a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
+* [making changes to previously submitted data](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data)
+* [finalising business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
+* [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#providing-information-about-how-to-treat-a-loss)
+* [making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#final-declaration)
+* [ITSA (MTD) close down activities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
 
 ## Changelogs
 
@@ -269,16 +269,16 @@ Below is a summary of updates to this service guide:
 
 4 October 2023
 
-* Updated content for [HMRC online services](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) section
-* Updated content for [Opting out of MTD](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html) section
-* Updated content for [HMRC Assist](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/hmrc-assist.html) section
+* Updated content for [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) section
+* Updated content for [Opting out of MTD](/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html) section
+* Updated content for [HMRC Assist](/guides/income-tax-mtd-end-to-end-service-guide/documentation/hmrc-assist.html) section
 
 #### Version 3.2
 
 20 September 2023
 
-* Updated content for [Penalties and Appeals](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/penaltiesandappeals.html) section
-* Updated content for [Final Declaration (Crystallisation)](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
+* Updated content for [Penalties and Appeals](/guides/income-tax-mtd-end-to-end-service-guide/documentation/penaltiesandappeals.html) section
+* Updated content for [Final Declaration (Crystallisation)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
 * Updated content for [Production approvals process](#production-approvals-process-for-making-tax-digital-for-income-tax-self-assessment) section
 * Updated content for [Software choices](#software-choices) section
 * Updated content for [Bridging software](#bridging-software) section
@@ -288,7 +288,7 @@ Below is a summary of updates to this service guide:
 
 27 June 2023
 
-* Added [API lifecycle & deprecation](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/api-deprecation-guidance.html) section, removed some duplicated content
+* Added [API lifecycle & deprecation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/api-deprecation-guidance.html) section, removed some duplicated content
 
 #### Version 3.0
 
