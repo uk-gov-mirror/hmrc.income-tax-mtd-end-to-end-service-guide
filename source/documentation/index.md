@@ -56,7 +56,7 @@ The minimum required functionality is as follows:
 
 * A software product must submit the fraud prevention header data required by law.
 * A Making Tax Digital for Income Tax product must allow the customer to:
-    * Create and maintain all business records a customer is required by law to keep in digital form (but see [Bridging software](#bridging-software))
+    * Create and maintain all business records a customer is required by law to keep in digital form (but see [bridging software](#bridging-software))
     * Submit quarterly update information for each business income source (self-employment, multiple self-employments, UK property income)
     * Have the option to provide accounting and other adjustments and an estimate of allowances to be claimed for any business income source
     * Submit an End of Period Statement for each business income source (with declaration of completeness)
