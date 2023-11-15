@@ -7,7 +7,7 @@ description: Software developers, designers, product owners or business analysts
 <!--- Section owner: MTD Programme --->
 
 # Final Declaration (Crystallisation)
-**Note: The term 'final declaration' is now used instead of the term 'crystallisation'. Endpoints with 'crystallisation' or 'crystallise' in their names will continue to be used until further notice.**
+**Note:** The term 'final declaration' is now used instead of the term 'crystallisation'.
 
 Final declaration is the process that allows customers to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 
