@@ -12,7 +12,7 @@ When a Self Assessment customer receives PAYE income in addition to business inc
 
 Tax codes can change under different circumstances. For example, if the customer starts to receive the benefit of a company car, this will take priority and it may no longer be possible to collect the tax owed for the previous year’s final declaration for Self Assessment. Also, if a customer ceases their PAYE employment, it may no longer be possible to collect any tax owed through their tax code. For more restrictions on coding out, see [Pay your Self Assessment tax bill: Through your tax code](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code).
 
-The coding out underpayments and debts endpoints in the Self Assessment Accounts API allow the customer to complete the following tasks: 
+The coding out underpayments and debts endpoints in the [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) allow the customer to complete the following tasks: 
 
 - view coding out underpayment and debt amounts
 - create or amend coding out underpayment and debt amounts
