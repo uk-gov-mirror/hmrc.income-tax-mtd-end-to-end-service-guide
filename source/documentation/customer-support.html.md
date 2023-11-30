@@ -7,8 +7,9 @@ description: Software developers, designers, product owners or business analysts
 # Customer Support Model
 <!--- Section owner: MTD Programme --->
 
-The customer support model guides HMRC customers to the most appropriate support. This may be provided by HMRC or the software vendor depending on the issue.
+The customer support model guides HMRC customers to the most appropriate support. Check [GOV.UK](http://gov.uk/) and the software vendor’s guidance first.
 
-The support offering for Income Tax Self Assessment (ITSA) customers includes guidance on [GOV.UK](https://www.gov.uk/contact/hm-revenue-customs/income-tax-enquiries-for-individuals-pensioners-and-employees), webchat, support links on all HMRC online pages, and support over the phone.
+Customers who have signed up to the MTD pilot can get support by contacting the dedicated Customer Support Team on 0300 322 9619 from 8am to 6pm Monday to Friday. 
 
-We will provide additional support material here as we continue to develop the service.
+The team aims to respond to queries that are not resolved at the point of contact within 2 days, and to provide further updates, if required, within 10 days.
+
