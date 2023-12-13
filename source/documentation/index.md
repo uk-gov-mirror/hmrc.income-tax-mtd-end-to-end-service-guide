@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.5** issued November 2023
+**Version 3.6** issued December 2023
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
@@ -254,6 +254,16 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 ### Documentation changelog
 
 Below is a summary of updates to this service guide:
+
+#### Version 3.6
+
+13 December 2023
+
+* Updated [Additional Income / Employment](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#employments) section with off-payroll working details
+* Updated [Customer support model](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-support.html) section
+* Updated [Coding Out](/guides/income-tax-mtd-end-to-end-service-guide/documentation/coding-out-underpayments-and-debts.html) section
+* Updated UR contact email address
+
 
 #### Version 3.5
 
