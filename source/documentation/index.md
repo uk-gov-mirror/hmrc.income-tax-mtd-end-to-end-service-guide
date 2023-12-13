@@ -259,8 +259,8 @@ Below is a summary of updates to this service guide:
 
 13 December 2023
 
-* Updated [Additional Income / Employment](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#employments) section with off-payroll working details
-* Updated [Customer support model](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-support.html) section
+* Updated [Additional Income / Employments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#employments) section with off-payroll working details
+* Updated [Customer Support Model](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-support.html) section
 * Updated [Coding Out](/guides/income-tax-mtd-end-to-end-service-guide/documentation/coding-out-underpayments-and-debts.html) section
 * Updated UR contact email address
 
