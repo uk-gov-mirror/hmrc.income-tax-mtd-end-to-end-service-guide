@@ -239,76 +239,39 @@ Note: where a business resubmits an annual summary update, previous figures that
 
 ## Finalise business income End of Period Statement (EOPS)
 
-### Business or Agent able to submit End of Period Statement through software
+**Note:** From December 2024, the EOPS obligation will be removed for MTD customers. However, until that time, this guidance aims to support you with taking any customers who wish to complete their final declaration through the EOPS process.
 
-End of period statement (EOPS) is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the SA103, SA105 and SA106 schedules) so, for example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+End of period statement (EOPS) is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the UK property, foreign property and self employment or sole trader business). For example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
 
-EOPS relates to the accounting period or basis period for each source of business income and cannot be completed before the end of that period. Customers can complete their EOPS at any point after the end of the accounting period and do not have to wait until the 31 January deadline. We would like to encourage this behaviour where possible as it helps customers manage their business income in line with the business accounts. However, the deadline to complete is 31 January, Year 2.
+EOPS can be completed anytime after the end of the tax year but before the 31 January deadline. HMRC would like to encourage this behaviour where possible as it helps customers meet their obligations on time. However, the deadline to complete is 31 January, Year 2.
 
-The process will take into account all the periodic and annual data already provided by the customer throughout the year.
+As part of the EOPS process, customers must ensure that they have provided all the periodic updates and any additional information associated with their self-employed sole trader and/or property business income. They must make sure they are confident with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
 
-Customers must make sure they are confident with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
+### End-of-Period Statement User Journey
 
 <a href="figures/eops.svg" target="blank"><img src="figures/eops.svg" alt="end of period statement diagram" style="width:720px;" /></a>
 <a href="figures/eops.svg" target="blank">Open the EOPS diagram in a new tab</a>.
 
-1. The customer inputs information about allowances and adjustments for the business
-income source. They can provide this information throughout the year, but must do it
-before they complete the EOPS.
-2. The software calls the [Retrieve a Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/get), [Retrieve a Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/get)
-or [Retrieve a Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/get), depending on the business income type you need to submit. This step is optional, but we recommend it to ensure you are getting the most up-to-date information.
-3. The customer views the allowances and adjustment information and updates relevant information.
-4. The software submits information using the [Create and Amend Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put),
-[Create and Amend a Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put) or [Create and Amend a Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put). Depending on the business income type you need to update.
-5. HMRC receives and stores information
-6. The software calls the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint to get the calculation
-7. HMRC receives the request and returns a Calculation ID (calculationId) software must
-use this when calling the Self Assessment Tax Calculation endpoints.
-8. The software receives the calculationId. Note: you could display the calculation to customers at
-this point if you choose, if you do follow steps 20 and 21 in the periodic update section.
-9. The customer wants to make some accounting adjustments following the business accounts
-being finalised.
-10. The software calls the [BSAS API](/api-documentation/docs/api/service/self-assessment-bsas-api).
-11. HMRC returns summary totals of all the information for that business income source.
-12. The software displays information to the customer.
-13. The customer makes adjustments, confirms and submits.
-14. The software sends information to HMRC using the [BSAS API](/api-documentation/docs/api/service/self-assessment-bsas-api).
-15. HMRC confirms receipt and stores the information.
-16. The software calls the [Retrieve a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint to retrieve the calculation. Note: the Tax
-Calculation can take up to 5 seconds to run, so we recommend the software waits 5 seconds – this is optional, the software does not have to retrieve the tax calculation information at this point.
+1. The customer needs to submit any annual allowances and/or adjustments if they have them. In software, this submission is made by calling the relevant annual submission endpoints in the [Self-Employment Business (MTD)](/api-documentation/docs/api/service/self-employment-business-api/) API or [Property Business (MTD)](/api-documentation/docs/api/service/property-business-api/) API, depending on the customer’s income source.
+2. The customer can review the data they have submitted. In software, this retrieval is made by calling the [Business Source Adjustable Summary (MTD)](/api-documentation/docs/api/service/self-assessment-bsas-api/) API.
+3. The customer can make any accounting adjustments to their periodic submissions. In software, this amendment is made by calling the [Business Source Adjustable Summary (MTD)](/api-documentation/docs/api/service/self-assessment-bsas-api/) API.
+4. The customer is encouraged to review the Business Income Source Summary (BISS) information before submitting their EOPS. In software, this information can be retrieved in one of two ways. The software can either choose to create a BISS from data stored locally or the software can use the [Business Income Source Summary (BISS)](/api-documentation/docs/api/service/self-assessment-biss-api) API to retrieve the BISS information from HMRC.
+5. The software is encouraged to display the following information to the customer. This allows the customer to confirm it is complete and correct for that source of business income before they send the declaration.
+    * Total Business Income
+    * Total Expenses
+    * Business Net Profit
+    * Business Net Loss
+    * Total Additions to net profit or deductions to a net loss
+    * Total Deductions to net profit or additions to a net loss
+    * Accounting Adjustments
+    * Taxable Profit
+    * Taxable Loss
 
-17. The software displays the calculation to the user – this is optional software does not have to show the calculation to the customer at this point.
-18. The customer is ready to finalise their business income source.
-19. The software calls the [Retrieve a Business Income Source Summary (BISS)](/api-documentation/docs/api/service/self-assessment-biss-api/2.0/oas/page#/paths/~1individuals~1self-assessment~1income-summary~1%7Bnino%7D~1%7BtypeOfBusiness%7D~1%7BtaxYear%7D~1%7BbusinessId%7D/get) endpoint. Note: there is one BISS for each property type and it will show either FHL or non-FHL information in it. Calling the [BISS API](/api-documentation/docs/api/service/self-assessment-biss-api) is optional, the software may choose to create a BISS themselves, but the information must be shown to the customer before they confirm the declaration.
-20. The software displays BISS (Business Income Source Summary) information to the customer (listed below).</br>
->This can be totalled up by software, or through the APIs from HMRC systems as well as BISS for self-employment or property:
->
->Total Business Income<br/>
->Total Expenses<br/>
->Business Net Profit<br/>
->Business Net Loss<br/>
->Total Additions to net profit or deductions to a net loss<br/>
->Total Deductions to net profit or additions to a net loss<br/>
->Accounting Adjustments<br/>
->Taxable Profit<br/>
->Taxable Loss<br/>
->
->This information must be shown to the customer for them to confirm it is complete and correct for that source of business income before they send the declaration.</br>
->
->You could use the [BISS API](/api-documentation/docs/api/service/self-assessment-biss-api) or opt to create this information within your package. HMRC will need the declaration to confirm the customer has seen it.
+6. The customer can then go ahead and submit their end-of-period statement for the business income source. In software, this submission is done by calling the [Submit End of Period Statement for a Business](/api-documentation/docs/api/service/individuals-business-eops-api/3.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post) endpoint.
+7. After a successful submission, HMRC receives the declaration and provides a success response.
+8. The software must communicate to the customer that the update has been received and stored by HMRC. In order to confirm this submission, the software can call the [Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1end-of-period-statement/get) endpoint.
 
-21. Customer reviews and confirms the information.
-22. The software uses Submit End of Period Statement for a Business endpoint depending on the income source you are finalising.
-23. HMRC receives the declaration and marks the obligation as met and provides a success response.
-24. The software receives the success response.
-25. The software confirms with the customer that the update has been received and stored by
-HMRC.
-
-Note:	data received must cover the whole accounting period.
-
-The declaration is the only mandatory requirement for this process, the exact text that HMRC requires you to present is below.
-
-Developers must replace '[insert tax year]' with the correct tax year.
+The exact text that HMRC requires the software to present during EOPS declaration is shown below. Developers must replace ‘[insert tax year]’ with the correct tax year.
 
 ### Declaration for Agents
 
@@ -331,15 +294,8 @@ Developers must replace '[insert tax year]' with the correct tax year.
 
 > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of my knowledge. I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
-Making changes to previously submitted data during and after an EOPS declaration:
 
-* if the information the customer has previously provided relating to that source of business income is not correct or complete (for example the previous information provided fails further validation, or a periodic update is missing), then the EOPS declaration is rejected, and error messages are returned. The changes must be made to any relevant periodic or annual summaries and then follow the existing process of submitting updates and triggering the calculation before attempting the declaration again.
-
-* if there are no error failures, it is recommended that customers review any warning messages they have at this point or earlier as warnings will cause a failure at final declaration.
-
-* if after the customer has completed their EOPS declaration, they need to revise any of the data relating to that source of business income then they must make the change to the relevant periodic or annual summaries and follow the existing process of submitting updates and triggering the calculation.
-
-Note: making changes to data for previously submitted periods is covered in the "[making changes to previously submitted data"](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data) section.
+**Note:** Making changes to data for previously submitted periods is covered in the "[making changes to previously submitted data"](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data) section.
 
 ## View previously submitted updates
 
