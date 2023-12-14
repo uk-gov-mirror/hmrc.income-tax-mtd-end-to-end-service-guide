@@ -12,28 +12,30 @@ The steps in this section (up to the End of Period Statement) will be the elemen
 
 ## Retrieving obligations
 
-Obligations are a set of date periods for which a customer must provide summary income and expense data.
+An MTD mandated or voluntary customer will have a set of obligations for each tax year. These are:
 
-Each obligation has a start date and an end date which together define the obligation period. For MTD, each business has multiple obligations which are based on its accounting period.
+* four quarterly updates
+* final declaration 
 
-**Note:** It may take up to an hour for a change to an obligation to be updated within HMRC systems.
+At any time of the year, customers can check their obligations. To provide this information, the software needs details about their business income sources. It gets this information by using the [List All Businesses](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1list/get) endpoint, which provides the business ID. This ID is required to call multiple self-employment and property endpoints. To save time, the software should store this ID instead of making extra calls.
 
-Each obligation has an update period, which is a period of time during which the customer can submit summarised income and expense data.
+Quarterly obligations are created for sole trader and property income sources. In software, the retrieval of customer’s obligations is done by calling any of the following endpoints depending on the customer’s type of income source:
 
-An update period might be a single day or the duration of the whole obligation period. Data may be provided as a single update covering the whole period, or as multiple, smaller updates.
+* [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get)
+* [Retrieve Income Tax (Self Assessment) End of Period Statement Obligations](/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1end-of-period-statement/get)
+* [Retrieve Income Tax (Self Assessment) Final Declaration Obligations](/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1crystallisation/get)
 
-Once a business or agent has completed authentication and granted access to the software, the software can then use our APIs to request the information the customer provided at sign up and to find out the customer’s update obligation dates. The software must make customers aware of their obligations.
+These endpoints provide obligation dates for all self-employment and property businesses, and inform whether or not obligations have been met. The deadline for meeting a quarterly obligation is one month after the obligation period end date. The software should communicate these deadlines clearly to the customer and prompt them to submit the information when the update is due. 
 
-Actions to take are as follows:
+A customer should always be able to view their latest obligations. To do this, the software should be aware that the customer’s obligation will be created or updated for the following reasons:
 
-* the [List All Businesses](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1list/get) endpoint provides a list of all the customer’s business income sources, along with the business ID which the software will need to send to HMRC
-* the [Retrieve Business Details](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1%7Bnino%7D~1%7BbusinessId%7D/get) endpoint will provide the information HMRC holds for a specific self-employment or property business
+* start of financial year
+* when a customer submits updates
+* when a customer adds a new sole trader business in HMRC online services
+* when a customer ceases an existing business in HMRC online services
 
-You can retrieve a customer's obligations through the following endpoint:
 
-* [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations](/api-documentation/docs/api/service/obligations-api/2.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get) - provides obligation dates for all self-employment and property businesses, including grace periods and whether or not obligations have been met
 
-Note: the obligations for property obligations cover both FHL and non-FHL.
 
 ## Submit income and expense updates for self-employment and property businesses
 
