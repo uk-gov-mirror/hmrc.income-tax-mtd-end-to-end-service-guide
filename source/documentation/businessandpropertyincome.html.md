@@ -8,7 +8,29 @@ description: Software developers, designers, product owners or business analysts
 
 # Business and Property Income
 
-The steps in this section (up to the End of Period Statement) will be the element that will be mandated for digital record keeping and submission through software under MTD (Making Tax Digital).
+A customer’s MTD mandated income consists of the following:
+
+* self-employed sole trader income
+* property income
+
+This is the ‘qualifying’ income HMRC uses to establish if the customer meets the criteria for MTD.  MTD Customers can have one, or multiple, businesses with these types of income. For more information on qualifying income, refer to [Check what is included in your qualifying income](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax#check-what-is-included-in-your-qualifying-income).
+
+### Self-employed sole trader income
+
+If the customer is working for themselves, they are a sole trader. For more information on identifying self-employed sole traders, refer to [Working for yourself](https://www.gov.uk/working-for-yourself?step-by-step-nav=01ff8dbd-886a-4dbb-872c-d2092b31b2cf). Currently, self-employment income refers to sole trader self-employment income and not income earned through partnerships. This exclusion also applies to directors of limited companies.
+
+### Property income
+
+A customer’s property income includes the following:
+
+* rental income and other receipts from UK land or property
+* rental income and other receipts from foreign land or property
+* income from letting furnished rooms in customer’s own home
+* income from furnished holiday lettings (FHL) and non-furnished holiday lettings (non-FHL) in the UK
+* premiums from leasing UK land
+* inducements to take an interest in letting a property (a reverse premium)
+
+For more information on property income, refer to [Work out your rental income when you let property](https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income).
 
 ## Retrieving obligations
 
