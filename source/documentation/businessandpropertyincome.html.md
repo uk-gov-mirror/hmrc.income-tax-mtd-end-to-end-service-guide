@@ -203,16 +203,13 @@ Use the same endpoints and process for submitting annual information as mentione
 
 **Note:** From December 2024, the EOPS obligation will be removed for MTD customers. However, until that time, this guidance aims to support you with taking any customers who wish to complete their final declaration through the EOPS process.
 
-End of period statement (EOPS) is the process that allows the customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the UK property, foreign property and self employment or sole trader business). For example, if a customer has one self-employment business and one property business they will have to complete two EOPS.
+End of period statement (EOPS) is the process that allows a customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the UK property, foreign property and self employment or sole trader business). For example, if a customer has one self-employment business and one property business, they will have to complete 2 EOPS.
 
-EOPS can be completed anytime after the end of the tax year but before the 31 January deadline. HMRC would like to encourage this behaviour where possible as it helps customers meet their obligations on time. However, the deadline to complete is 31 January, Year 2.
+An EOPS can be completed any time after the end of the tax year but before the 31 January deadline. HMRC would like to encourage this behaviour where possible because it helps customers meet their obligations on time. However, the deadline to complete is 31 January, Year 2.
 
 As part of the EOPS process, customers must ensure that they have provided all the periodic updates and any additional information associated with their self-employed sole trader and/or property business income. They must make sure they are confident with the information they have provided and add any additional information they have. This is likely to include tax and accounting adjustments, allowances or reliefs.
 
 ### End-of-Period Statement User Journey
-
-<a href="figures/eops.svg" target="blank"><img src="figures/eops.svg" alt="end of period statement diagram" style="width:720px;" /></a>
-<a href="figures/eops.svg" target="blank">Open the EOPS diagram in a new tab</a>.
 
 1. The customer needs to submit any annual allowances and/or adjustments if they have them. In software, this submission is made by calling the relevant annual submission endpoints in the [Self-Employment Business (MTD)](/api-documentation/docs/api/service/self-employment-business-api/) API or [Property Business (MTD)](/api-documentation/docs/api/service/property-business-api/) API, depending on the customer’s income source.
 2. The customer can review the data they have submitted. In software, this retrieval is made by calling the [Business Source Adjustable Summary (MTD)](/api-documentation/docs/api/service/self-assessment-bsas-api/) API.
