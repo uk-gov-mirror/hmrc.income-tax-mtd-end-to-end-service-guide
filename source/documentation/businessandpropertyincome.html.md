@@ -59,7 +59,7 @@ A customer should always be able to view their latest obligations. To do this, t
 
 ## Submit income and expense updates for self-employment and property businesses
 
-MTD mandated and voluntary customers must maintain digital records of their self employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly. They should not cannot submit summaries that span multiple obligation periods. If they do, the software will need to send two updates, one for each obligation period. For example:
+MTD mandated and voluntary customers must maintain digital records of their self employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly. They cannot submit summaries that span multiple obligation periods. If they do, the software will need to send two updates, one for each obligation period. For example:
 
 - **Update 1.** 6 April to 1 May is accepted.
 - **Update 2.** 2 May to 31 May is accepted.
@@ -67,7 +67,7 @@ MTD mandated and voluntary customers must maintain digital records of their self
 
 The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software will send this summary information to HMRC for each mandated income source. HMRC can then use this information to calculate taxes based on the most recent data.
 
-When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. It can take up to 1 hour for the obligation to be confirmed as met. Customers can also check the status of their obligations through HMRC online services.
+When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. Customers can also check the status of their obligations through HMRC online services.
 
 <a href="figures/submit-periodics.svg" target="blank"><img src="figures/submit-periodics.svg" alt="submit periodics diagram" style="width:720px;" /></a>
 
