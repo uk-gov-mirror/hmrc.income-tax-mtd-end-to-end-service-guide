@@ -13,28 +13,28 @@ Software providers need to design a customer journey between software and HMRC o
 
 The following table lists the tasks customers will be able to complete through HMRC online services and/or third-party software:
 
-| Task                                                                                                                                                             | Status             | HMRC online services | Software |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | -------------------- | -------- |
-| [Change contact preference between paper and digital secure messages](#changing-contact-preference-between-paper-and-digital-secure-messages)                                                                                        | Live               | Yes                  | No       |
-| Change business details                                                                                                                                    | Future development | Yes                  | No       |
-| Change the amount of a payment on account                                                                                                                        | Future development | Yes                  | No       |
-| Check when updates and payments are due                                                                                                                    | Live               | Yes                  | Yes      |
-| [Add new business details for a self-employment sole trader or property business](#adding-new-business-details-for-a-self-employment-sole-trader-or-property-business)                                                                                                                             | Under development  | Yes                  | No       |
-| [Close (cease) a self-employment sole trader or property business](#closing-ceasing-a-self-employment-sole-trader-or-property-business)                                                                                               | Under development  | Yes                  | No       |
-| Elect for calendar quarterly periods                                                                                                               | Future development | No                   | Yes      |
-| Submit non-MTD income and allowance types required to complete a self assessment tax return                                                                                                                                | Live               | Yes                  | Yes       |
-| View Self Assessment tax calculations for in-year, forecast, and final declaration                                                                                                         | Live               | Yes                  | Yes      |
-| Print a Self Assessment SA302 tax calculation | Future development | Yes                  | Yes      |
-| Check how much is owed through MTD                                                                                                                              | Live               | Yes                  | Yes      |
-| Request a budget payment plan                                                                                                                                    | Future development | Yes                  | No       |
-| Request a time to pay                                                                                                                                            | Future development | Yes                  | No       |
-| [Make a payment](#making-a-payment)                                                                                                                                                   | Live               | Yes                  | No       |
-| Check money in the account                                                                                                                                     | Live               | Yes                  | Yes      |
-| [Claim a refund](#claiming-a-refund)                                                                                                                                                | Under development  | Yes                  | No       |
-| Check refund details and status                                                                                                                               | Under development  | Yes                  | No       |
-| Provide bank details for future refunds                                                                                                                                  | Future development | Yes                  | No       |
-| Leave MTD as a voluntary customer                                                                                                                                | Future development | Yes                  | No       |
-| Sign up to MTD as a voluntary customer for those who have previously opted out of MTD                                                                                                                                | Future development | Yes                  | No       |
+| Task | Status | HMRC online services | Software |
+| ---- | ------ | -------------------- | -------- |
+| [Change contact preference between paper and digital secure messages](#changing-contact-preference-between-paper-and-digital-secure-messages) | Live | Yes | No |
+| Change business details | Future development | Yes | No |
+| Change the amount of a payment on account | Future development | Yes | No |
+| Check when updates and payments are due | Live | Yes | Yes |
+| [Add new business details for a self-employment sole trader or property business](#adding-new-business-details-for-a-self-employment-sole-trader-or-property-business) | Under development  | Yes | No |
+| [Close (cease) a self-employment sole trader or property business](#closing-ceasing-a-self-employment-sole-trader-or-property-business) | Under development  | Yes | No |
+| Elect for calendar quarterly periods | Future development | No | Yes |
+| Submit non-MTD income and allowance types required to complete a self assessment tax return | Live | Yes | Yes |
+| View Self Assessment tax calculations for in-year, forecast, and final declaration | Live | Yes | Yes |
+| Print a Self Assessment SA302 tax calculation | Future development | Yes | Yes |
+| Check how much is owed through MTD | Live | Yes | Yes |
+| Request a budget payment plan | Future development | Yes | No |
+| Request a time to pay | Future development | Yes | No |
+| [Make a payment](#making-a-payment) | Live | Yes | No |
+| Check money in the account | Live | Yes | Yes |
+| [Claim a refund](#claiming-a-refund) | Under development  | Yes | No |
+| Check refund details and status | Under development  | Yes | No |
+| Provide bank details for future refunds | Future development | Yes | No |
+| [Leave MTD as a voluntary customer](#opting-out-of-mtd) | Future development | Yes | No |
+| Sign up to MTD as a voluntary customer for those who have previously opted out of MTD | Future development | Yes | No |
 
 Agents will be able to access Making Tax Digital for Income Tax services through their agent services account. They will be able to access all current and future services on behalf of their clients including the services listed in the above table, except for:
 
@@ -85,7 +85,22 @@ When a payment is made, the current payment service will first check to see if t
 
 ## Claiming a refund
 
-For current MTD customers, a refund must be claimed by contacting HMRC. Claiming a refund through HMRC online services is scheduled for future development and we will provide further information here when available. 
+For current MTD customers, a refund must be claimed by contacting HMRC. Claiming a refund through HMRC online services is scheduled for future development and we will provide further information here when available.
+
+## Opting out of MTD
+
+Customers who are in MTD on a voluntary basis can leave (opt out) at any time. When this happens the customer’s filing obligations will change from MTD (quarterly) to a single annual obligation due on 31 January following the end of the tax year - this is their final declaration. It is important to note that even if a customer opts out of MTD, they can continue using the software as long as it supports submission for annual self-employment and property income.
+
+Eligibility to opt out is determined on a tax year basis. For example, a customer can be mandated for the current year and voluntary for the next year, meaning the customer could opt out next year. A customer can opt out for the previous tax year if they signed up to MTD as a voluntary customer, then subsequently decided not to submit quarterly - opting out would allow the customer to file on an annual basis for that year.
+
+The opt out service will not be available through an API.
+
+* Customers can access the opt out service and see their changed obligations immediately from their HMRC online services account.
+* Agents will use their Agent Services Account to access their client’s account. Changed obligations will also be viewable immediately in their software.
+
+If the customer has submitted updates of business income and expenses (self-employment and/or property) through their software for the tax year they opt out of MTD, these updates will be deleted. The customer or their agent will receive a warning message to inform them that this is going to happen. The total business income and expenses (for the tax year) must then be submitted as part of the customer’s tax return before completing their final declaration.
+
+If a customer is mandated to be in MTD, they will not be eligible to opt out. The opt out service will only be available in HMRC online services for eligible customers.
 
 ## Future development
 The following tasks are scheduled for future development and we will provide more information on them when available:
@@ -100,5 +115,4 @@ The following tasks are scheduled for future development and we will provide mor
 - Provide bank details for future repayments
 - Leave MTD as a voluntary customer
 - Sign up to MTD as a voluntary customer for those who have previously opted out of MTD
-
 
