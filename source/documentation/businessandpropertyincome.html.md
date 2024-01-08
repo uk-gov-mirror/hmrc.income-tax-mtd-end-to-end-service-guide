@@ -203,7 +203,7 @@ Use the same endpoints and process for submitting annual information as mentione
 
 **Note:** From December 2024, the EOPS obligation will be removed for MTD customers. However, until that time, this guidance aims to support you with taking any customers who wish to complete their final declaration through the EOPS process.
 
-End of period statement (EOPS) is the process that allows a customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the taxpayer has (just as the current Income Tax process for the UK property, foreign property and self employment or sole trader business). For example, if a customer has one self-employment business and one property business, they will have to complete 2 EOPS.
+End of period statement (EOPS) is the process that allows a customer to finalise the profit or loss for any one source of business income. An EOPS must be completed for each source of business income the customer has (just as the current Income Tax process for the UK property, foreign property and self employment or sole trader business). For example, if a customer has one self-employment business and one property business, they will have to complete 2 EOPS.
 
 An EOPS can be completed any time after the end of the tax year but before the 31 January deadline. HMRC would like to encourage this behaviour where possible because it helps customers meet their obligations on time. However, the deadline to complete is 31 January, Year 2.
 
