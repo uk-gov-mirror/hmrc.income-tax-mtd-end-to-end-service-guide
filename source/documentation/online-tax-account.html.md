@@ -19,8 +19,8 @@ The following table lists the tasks customers will be able to complete through H
 | Change business details | Future development | Yes | No |
 | Change the amount of a payment on account | Future development | Yes | No |
 | Check when updates and payments are due | Live | Yes | Yes |
-| [Add new business details for a self-employment sole trader or property business](#adding-new-business-details-for-a-self-employment-sole-trader-or-property-business) | Under development  | Yes | No |
-| [Close (cease) a self-employment sole trader or property business](#closing-ceasing-a-self-employment-sole-trader-or-property-business) | Under development  | Yes | No |
+| [Add new business details for a self-employment sole trader or property business](#adding-new-business-details-for-a-self-employment-sole-trader-or-property-business) | Live | Yes | No |
+| [Close (cease) a self-employment sole trader or property business](#closing-ceasing-a-self-employment-sole-trader-or-property-business) | Live | Yes | No |
 | Elect for calendar quarterly periods | Future development | No | Yes |
 | Submit non-MTD income and allowance types required to complete a self assessment tax return | Live | Yes | Yes |
 | View Self Assessment tax calculations for in-year, forecast, and final declaration | Live | Yes | Yes |
