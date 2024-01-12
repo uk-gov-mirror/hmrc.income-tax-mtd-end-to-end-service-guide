@@ -55,23 +55,29 @@ A customer should always be able to view their latest obligations. To do this, t
 * when a customer adds a new sole trader business in HMRC online services
 * when a customer ceases an existing business in HMRC online services
 
-## Submit income and expense updates for self-employment and property businesses
+## Submit quarterly updates for self-employment and property businesses
 
-MTD mandated and voluntary customers must maintain digital records of their self employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly. They cannot submit summaries that span multiple obligation periods. If they do, the software will need to send two updates, one for each obligation period. For example:
+MTD mandated and voluntary customers must maintain digital records of their self employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly.
+
+Customers should submit at least one update for each quarter. If they submit summaries spanning multiple obligation periods, they may get a penalty. For example:
 
 - **Update 1.** 6 April to 1 May is accepted.
 - **Update 2.** 2 May to 31 May is accepted.
-- **Update 3.** 28 May to 6 June is rejected because it overlaps with previous updates.
+- **Update 3.** 28 May to 6 June is accepted with a possible penalty.
 
-The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software will send this summary information to HMRC for each mandated income source. HMRC can then use this information to calculate taxes based on the most recent data.
+### Submit quarterly update
 
-When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. Customers can also check the status of their obligations through HMRC online services.
+The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software should send this summary information to HMRC for each self employment and property income source. HMRC can then use this information to calculate taxes based on the most recent data.
+
+When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. If the calculation fails, the obligation will not be marked as complete. Customers can also check the status of their [obligations](#retrieving-obligations) through HMRC online services.
 
 <a href="figures/submit-periodics.svg" target="blank"><img src="figures/submit-periodics.svg" alt="submit periodics diagram" style="width:720px;" /></a>
 
 <a href="figures/submit-periodics.svg" target="blank">Open the submit periodics diagram in a new tab</a>.
 
-1. The software prompts the customer when they are due to submit an update. This prompt will not be sent from any API.
+#### User journey
+
+1. The software prompts the customer when they need to submit an update. This prompt will not be sent from any API.
 2. The customer receives the prompt in the software and begins their submission process.
 3. Software prepares the summary information and displays it to the customer.
 4. The customer checks the information and submits it.
@@ -83,11 +89,40 @@ When the tax calculation is triggered, it means that the quarterly obligation ha
    - [Create a Historic Non-FHL UK Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}/post)
 6. HMRC receives and stores information and provides a success response.
 7. The software receives the success response and confirms with the customer that the update has been received and stored by HMRC.
-8. Customer views the confirmation.
+8. The customer views the confirmation.
 9. The software calls the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to ensure the obligation is marked as met, once the update completes an obligation period. 
-10. HMRC receives the request and returns a Calculation ID (`calculationId`). 
+10. HMRC receives the request and returns a Calculation ID. 
 11. The software receives the Calculation ID and stores it for future use.
 12. The software can also use this Calculation ID to call the [Retrieve a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint and display the calculation to the customer. However, this step is optional and the software does not have to retrieve the tax calculation information at this point.
+
+### View quarterly update
+
+When a quarterly update has been made, the customer can view a summary of a specific period. To retrieve this summary, the software should call any of the following endpoints, depending on the business income type:
+
+- [Retrieve a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1period~1{periodId}/get)
+- [Retrieve a UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1period~1{taxYear}~1{submissionId}/get)
+- [Retrieve a Foreign Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1period~1{taxYear}~1{submissionId}/get)
+- [Retrieve a Historic FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1furnished-holiday-lettings~1{nino}~1{periodId}/get)
+- [Retrieve a Historic Non-FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}~1{periodId}/get)
+
+### Amend quarterly update
+
+If a customer wants to make a change to a previously submitted periodic update, the software should call the following endpoints, depending on the business income type:
+
+- [List Self-Employment Period Summaries](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1period/get)
+- [List Property Income and Expenses Period Summaries](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-or-Foreign-Property-Income-and-Expenses-Period-Summaries-List/paths/~1individuals~1business~1property~1{nino}~1{businessId}~1period~1{taxYear}/get) 
+- [List Historic FHL UK property Income & Expenses Period Summaries](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1furnished-holiday-lettings~1{nino}/get) 
+- [List Historic Non-FHL UK Property Income & Expenses Period Summaries](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}/get)
+
+Calling these endpoints enables the software to get the Period ID or Submission ID and check the update period date range. This allows the software to make changes to the correct date range. The update period the customer is trying to change must match the original update period exactly, or it will be rejected.
+
+The software should recreate the update period, including the new summary totals, and resubmit the specific update period using the following endpoints, depending on the business income type:
+
+- [Amend a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1period~1{periodId}/put)
+- [Amend a UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1period~1{taxYear}~1{submissionId}/put)
+- [Amend a Foreign Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1period~1{taxYear}~1{submissionId}/put) 
+- [Amend a Historic FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1furnished-holiday-lettings~1{nino}~1{periodId}/put) 
+- [Amend a Historic Non-FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}~1{periodId}/put)
 
 ## Construction Industry Scheme
 
