@@ -169,42 +169,60 @@ If the customer has submitted a CIS deduction amount after the end of the year b
 <a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
 <a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>
 
-## Submit accounting adjustments
+## Submit annual updates for self employment and property businesses
 
-When the customer has submitted all quarterly updates, they may need to make an accounting adjustment to their income or expenses. They should first make changes to their digital records, then use the software to submit them to HMRC. The [Self Assessment BSAS (Business Source Adjustable Summary) API](/api-documentation/docs/api/service/self-assessment-bsas-api/) allows a developer to submit or retrieve an adjustable summary calculation for a specified self-employment or property business, for a given accounting period.
+An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category. For more information about allowances and adjustments, see [How to calculate your taxable profits - GOV.UK](https://www.gov.uk/government/publications/how-to-calculate-your-taxable-profits-hs222-self-assessment-helpsheet/hs222-how-to-calculate-your-taxable-profits-2023#records).
 
-The adjustments should be submitted as a positive or negative amount. For example, if a customer has already submitted advertising costs of £250 but the figure should be £200, then the adjustment required would be -50. Adjustments are always made against the total of the original quarterly updates. Each new adjustment will overwrite the previous adjustment as shown in the table below.
+### Submit allowance and adjustments
 
-| | Original (total of all 4 quarters) | 1<sup>st</sup> adjustment | Revised total | 2<sup>nd</sup> adjustment | Revised total |
-| --- | --- | --- | --- | --- | --- |
-| premisesRunningCosts | 500 | 25 | 525 | 23 | 523 |
-| travelCosts | 600 | -17 | 583 | -20 | 580 |
+Some customers must submit an annual summary update before they complete their final declaration. All customers can provide updates more frequently if they wish to do so. The following endpoints enable customers to submit their annual allowances or adjustments: 
 
-<a href="figures/bsas.svg" target="blank"><img src="figures/bsas.svg" alt="BSAS (Business Source Adjustable Summary) diagram" style="width:720px;" /></a>
+- [Create and Amend Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1annual~1{taxYear}/put)
+- [Create and Amend a UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1annual~1{taxYear}/put)
+- [Create and Amend a Foreign Property Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1annual~1{taxYear}/put)
+- [Create and Amend Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1{nino}~1{taxYear}/put)
+- [Create and Amend Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1{nino}~1{taxYear}/put)
 
-<a href="figures/bsas.svg" target="blank">Open the BSAS diagram in a new tab</a>.
+### View allowance and adjustments
 
-To make an accounting adjustment, the software needs to call the [Trigger a Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1trigger/post) endpoint to receive the Calculation ID. The software will need to provide this Calculation ID when submitting any adjustments to HMRC using the following endpoints:
+Updates can be viewed any time throughout the year, even after submission. The following endpoints enable customers to view their submitted annual allowances or adjustments: 
 
-- [Submit Self-Employment Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1self-employment~1{calculationId}~1adjust/post)
-- [Submit UK Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1uk-property~1{calculationId}~1adjust/post)
-- [Submit Foreign Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1foreign-property~1{calculationId}~1adjust/post)
+- [Retrieve a Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1annual~1{taxYear}/get)
+- [Retrieve a UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1annual~1{taxYear}/get)
+- [Retrieve a Foreign Property Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1annual~1{taxYear}/get)
+- [Retrieve a Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1{nino}~1{taxYear}/get)
+- [Retrieve a Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1{nino}~1{taxYear}/get)
 
-When an adjustment has been made, the customer can view a summary. To retrieve this, the software should call any of the following endpoints, using the same Calculation ID:
+### Amend allowance and adjustments
 
-- [Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1self-employment~1{calculationId}/get)[ ](https://developer.qa.tax.service.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1self-employment~1{calculationId}~1adjust/post)
-- [Retrieve a UK Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1uk-property~1{calculationId}/get)
-- [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1{nino}~1foreign-property~1{calculationId}/get)
+The software should use the same endpoints and process for submitting annual information as [Submit allowance and adjustment updates for SE and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-allowance-and-adjustment-updates-for-se-and-property-businesses).
 
-## Submit allowance and adjustment updates for SE and property businesses
+When a customer submits an annual summary update again, it is necessary to provide all previously submitted figures once more, in addition to any new information. If a previously submitted field is left empty, a zero will overwrite it.
 
-An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category.
+The customer can also delete their previously submitted annual allowance and adjustment updates. In software, this deletion is done by calling any of the following endpoints, depending on the business income type:
 
-Annual updates are mandatory annually but we have provided the functionality for customers to provide information more frequently if they choose:
+- [Delete a Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1annual~1{taxYear}/delete)
+- [Delete a Property Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-or-Foreign-Property-Annual-Submission-Deletion/paths/~1individuals~1business~1property~1{nino}~1{businessId}~1annual~1{taxYear}/delete)
+- [Delete a Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1{nino}~1{taxYear}/delete)
+- [Delete a Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1{nino}~1{taxYear}/delete)
 
-* amend a [Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to get a more accurate calculation
-* amend a [Historic Non-FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1non-furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to obtain a more accurate calculation
-* amend a [Historic FHL UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1annual~1furnished-holiday-lettings~1%7Bnino%7D~1%7BtaxYear%7D/put) - this enables the customer to provide any information about allowances and adjustments they might want to provide during the year to obtain a more accurate calculation
+## Retrieve a tax calculation
+
+The software will need to use that Calculation ID when calling each endpoint within the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/).
+
+A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
+
+The [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/) allows the software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer:
+
+* [List Self Assessment Tax Calculations](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment/get) for a given National Insurance number (NINO) and tax year
+* [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) for a given tax year. The software must use the trigger a self-assessment tax calculation endpoint to inform HMRC that the user has finished submitting their information. As a response, HMRC will provide a Calculation ID (calculationId).
+* The triggering of the tax calculation will mark the obligation as fulfilled, if HMRC has data covering the whole period.
+* [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) for a given CalculationID
+
+**Notes:**
+
+* It can take around 5 seconds for the tax calculation response to be ready to retrieve. To avoid getting an error, wait at least 5 seconds before retrieving the calculation. 
+* It is possible to return both in-year and final declaration calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0) endpoint
 
 ## Finalise business income End of Period Statement (EOPS)
 
@@ -249,6 +267,7 @@ The exact text that HMRC requires the software to present during EOPS declaratio
 
 > "I confirm that my client has reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of their knowledge. They understand that they may have to pay financial penalties or face prosecution if they give false information."
 
+
 ### Declaration for Individuals
 
  > **Declaration for Self Employment EOPS**
@@ -261,24 +280,30 @@ The exact text that HMRC requires the software to present during EOPS declaratio
 
 **Note:** Making changes to data for previously submitted periods is covered in the "[making changes to previously submitted data"](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data) section.
 
-## Retrieve a tax calculation
+## Business Source Adjustable Summary
 
-The software will need to use that Calculation ID when calling each endpoint within the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/).
+The [Self Assessment BSAS (Business Source Adjustable Summary) API](/api-documentation/docs/api/service/self-assessment-bsas-api/) allows a developer to retrieve an adjustable summary calculation for a specified self-employment or property business, for a given accounting period.
 
-A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
+This API should be used to submit any Annual Accounting Adjustments. The adjustments should be submitted as positive or negative amounts, for example, if advertising costs in the BSAS is £250 but the figure should be £200, then the adjustment required would be -50.
 
-The [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/) allows the software to choose which elements of the tax calculation it wants to retrieve and play back to the customer:
+**Note: Adjustments are always made against the total of the original quarterly updates. Each new adjustment will overwrite the previous adjustment.**
 
-* [List Self Assessment Tax Calculations](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment/get) for a given National Insurance number (NINO) and tax year
-* [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) for a given tax year:
+|                      | Original (total of all 4 quarters) | 1<sup>st</sup> adjustment | Revised total | 2<sup>nd</sup> adjustment | Revised total |
+|----------------------|------------------------------------|---------------------------|---------------|---------------------------|---------------|
+| premisesRunningCosts | 500                                | 25                        | 525           | 23                        | 523           |
+| travelCosts          | 600                                | -17                       | 583           | -17                       | 583           |
 
-  * the software must use the trigger a self-assessment tax calculation endpoint to inform HMRC that the user has finished submitting their information
-  * as a response, HMRC will provide a Calculation ID
-  * the triggering of the tax calculation will mark the obligation as fulfilled, if HMRC has data covering the whole period
+<a href="figures/bsas.svg" target="blank"><img src="figures/bsas.svg" alt="BSAS (Business Source Adjustable Summary) diagram" style="width:720px;" /></a>
 
-* [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) for a given Calculation ID
+<a href="figures/bsas.svg" target="blank">Open the BSAS diagram in a new tab</a>.
 
-**Notes:**
+* [List Business Source Adjustable Summaries](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get)
+* [Trigger a Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post)
 
-* It can take around 5 seconds for the tax calculation response to be ready to retrieve. To avoid getting an error, wait at least 5 seconds before retrieving the calculation. 
-* It is possible to return both in-year and final declaration calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0) endpoint.
+* [Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D/get)
+
+* [Submit Self-Employment Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D~1adjust/post)
+* [Retrieve a UK Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D/get)
+* [Submit UK Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post)
+* [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get)
+* [Submit Foreign Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/4.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post)
