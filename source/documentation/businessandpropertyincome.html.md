@@ -57,7 +57,7 @@ A customer should always be able to view their latest obligations. To do this, t
 
 ## Submit quarterly updates for self-employment and property businesses
 
-MTD mandated and voluntary customers must maintain digital records of their self employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly.
+MTD mandated and voluntary customers must maintain and submit digital records of their self-employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly.
 
 Customers should submit at least one update for each quarter. If they submit summaries spanning multiple obligation periods, they may get a penalty. For example:
 
@@ -67,7 +67,7 @@ Customers should submit at least one update for each quarter. If they submit sum
 
 ### Submit quarterly update
 
-The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software should send this summary information to HMRC for each self employment and property income source. HMRC can then use this information to calculate taxes based on the most recent data.
+The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate taxes based on the most recent data.
 
 When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. If the calculation fails, the obligation will not be marked as complete. Customers can also check the status of their [obligations](#retrieving-obligations) through HMRC online services.
 
@@ -169,7 +169,7 @@ If the customer has submitted a CIS deduction amount after the end of the year b
 <a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
 <a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>
 
-## Submit annual updates for self employment and property businesses
+## Submit annual updates for self-employment and property businesses
 
 An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category. For more information about allowances and adjustments, see [How to calculate your taxable profits - GOV.UK](https://www.gov.uk/government/publications/how-to-calculate-your-taxable-profits-hs222-self-assessment-helpsheet/hs222-how-to-calculate-your-taxable-profits-2023#records).
 
