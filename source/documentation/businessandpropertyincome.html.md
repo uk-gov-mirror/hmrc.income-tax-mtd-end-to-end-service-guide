@@ -171,14 +171,14 @@ If the customer has submitted a CIS deduction amount after the end of the year b
 
 ## Submit accounting adjustments
 
-When the customer has submitted all quarterly updates, they may need to make an accounting adjustment to their income or expenses. They should first make changes to their digital records and then use the software to submit them to HMRC. The [Self Assessment BSAS (Business Source Adjustable Summary) API](/api-documentation/docs/api/service/self-assessment-bsas-api/) enables a developer to submit or retrieve an adjustable summary calculation for a specified self-employment or property business, for a given accounting period.
+When the customer has submitted all quarterly updates, they may need to make an accounting adjustment to their income or expenses. They should first make changes to their digital records and then use the software to submit them to HMRC. The [Self Assessment BSAS (Business Source Adjustable Summary) API](/api-documentation/docs/api/service/self-assessment-bsas-api/) enables a customer to submit or retrieve an adjustable summary calculation for a specified self-employment or property business.
 
 The adjustments should be submitted as a positive or negative amount. For example, if a customer has already submitted advertising costs of £250 but the figure should be £200, the adjustment required would be -50. Adjustments are always made against the total of the original quarterly updates. Each new adjustment will overwrite the previous adjustment as shown in the table below.
 
 | | Original (total of all 4 quarters) | 1<sup>st</sup> adjustment | Revised total | 2<sup>nd</sup> adjustment | Revised total |
 | --- | --- | --- | --- | --- | --- |
 | premisesRunningCosts | 500 | 25 | 525 | 23 | 523 |
-| travelCosts | 600 | -17 | 583 | -17 | 583 |
+| travelCosts | 600 | -17 | 583 | -20 | 580 |
 
 <a href="figures/bsas.svg" target="blank"><img src="figures/bsas.svg" alt="BSAS (Business Source Adjustable Summary) diagram" style="width:720px;" /></a>
 
