@@ -451,3 +451,9 @@ Customers can delete different types of CGT only after the end of the tax year a
 * [Delete ‘Report and Pay Capital Gains Tax on Residential Property’ Overrides](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Capital-Gains-on-Residential-Property-Disposals/paths/~1individuals~1income-received~1disposals~1residential-property~1%7Bnino%7D~1%7BtaxYear%7D~1ppd/delete)
 * [Delete CGT Residential Property Disposals](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Capital-Gains-on-Residential-Property-Disposals/paths/~1individuals~1income-received~1disposals~1residential-property~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 * [Delete Other Capital Gains and Disposals](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Capital-Gains-and-Disposals/paths/~1individuals~1income-received~1disposals~1other-gains~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+
+## Marriage Allowance
+
+Marriage Allowance allows the customer to transfer some of their Personal Allowance to their husband, wife or civil partner. This reduces the customer’s tax in the tax year (6 April to 5 April the next year). For more information about marriage allowance, refer to [Marriage Allowance: How it works - GOV.UK](https://www.gov.uk/marriage-allowance).
+
+Customers can create a Marriage Allowance claim using their name, date of birth and NINO. To do this action, the software must call the [Create Marriage Allowance](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1{nino}/post) endpoint in the [Individuals Disclosures API](/api-documentation/docs/api/service/individuals-disclosures-api/). Once the claim has been accepted by HMRC, they can view their Marriage Allowance in their tax calculations.
