@@ -59,17 +59,17 @@ A customer should always be able to view their latest obligations. To do this, t
 
 MTD mandated and voluntary customers must maintain and submit digital records of their self-employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly.
 
-Customers should submit at least one update for each quarter. If they submit summaries spanning multiple obligation periods, they may get a penalty. For example:
+Customers must submit at least one update for each quarter. For example:
 
-- **Update 1.** 6 April to 1 May is accepted.
-- **Update 2.** 2 May to 31 May is accepted.
-- **Update 3.** 28 May to 6 June is accepted with a possible penalty.
+- **Update 1.** 6 April to 5 July is accepted.
+- **Update 2.** 6 July to 5 October is accepted.
+- **Update 3.** 6 October to 5 April is accepted with a possible penalty.
 
 ### Submit quarterly update
 
-The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. The software should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate taxes based on the most recent data.
+The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. It should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate business profits based on the most recent data.
 
-When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled if the data covers the entire period. If the calculation fails, the obligation will not be marked as complete. Customers can also check the status of their [obligations](#retrieving-obligations) through HMRC online services.
+When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled, if the data covers the entire period. If the calculation fails, the obligation will not be marked as fulfilled. Customers can also check the status of their [obligations](#retrieving-obligations) through HMRC online services.
 
 <a href="figures/submit-periodics.svg" target="blank"><img src="figures/submit-periodics.svg" alt="submit periodics diagram" style="width:720px;" /></a>
 
@@ -82,15 +82,17 @@ When the tax calculation is triggered, it means that the quarterly obligation ha
 3. Software prepares the summary information and displays it to the customer.
 4. The customer checks the information and submits it.
 5. The software initiates the data submission process by calling one of the following endpoints, depending on the income source type being submitted:
+
    - [Create a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1period/post)
    - [Create a UK Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1period~1{taxYear}/post)
    - [Create a Foreign Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1period~1{taxYear}/post)
    - [Create a Historic FHL UK Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1furnished-holiday-lettings~1{nino}/post)
    - [Create a Historic Non-FHL UK Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}/post)
+
 6. HMRC receives and stores information and provides a success response.
 7. The software receives the success response and confirms with the customer that the update has been received and stored by HMRC.
 8. The customer views the confirmation.
-9. The software calls the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to ensure the obligation is marked as met, once the update completes an obligation period. 
+9. The software calls the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to ensure the obligation is marked as fulfilled, once the update completes an obligation period. 
 10. HMRC receives the request and returns a Calculation ID. 
 11. The software receives the Calculation ID and stores it for future use.
 12. The software can also use this Calculation ID to call the [Retrieve a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint and display the calculation to the customer. However, this step is optional and the software does not have to retrieve the tax calculation information at this point.
@@ -123,6 +125,8 @@ The software should recreate the update period, including the new summary totals
 - [Amend a Foreign Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1period~1{taxYear}~1{submissionId}/put) 
 - [Amend a Historic FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1furnished-holiday-lettings~1{nino}~1{periodId}/put) 
 - [Amend a Historic Non-FHL UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}~1{periodId}/put)
+
+After an amendment has been made, the software should follow the same process used when submitting a quarterly update. This involves calling the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to ensure the obligation is marked as fulfilled.
 
 ### Construction Industry Scheme
 
