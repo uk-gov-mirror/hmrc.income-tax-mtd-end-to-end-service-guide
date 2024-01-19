@@ -137,18 +137,15 @@ These endpoints allow a user to create, retrieve, amend and delete dividends inc
 
 ## Foreign Income
 
-These endpoints give a user the ability to manage their data related to foreign earnings and unremittable foreign income.
+Foreign income is any income earned outside England, Wales, Scotland and Northern Ireland. The Channel Islands and the Isle of Man are classed as foreign. 
 
-The user can submit details of their foreign earnings and foreign income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted.
+Customers might need to pay UK income tax on their foreign income. This includes wages if they work abroad, foreign investment income and income from pensions held overseas. For more information about foreign income tax, refer to [Tax on foreign income (GOV.UK)](https://www.gov.uk/tax-foreign-income).
 
-* [Retrieve Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+Customers can use their software to submit information about foreign earnings and unremittable foreign income. The software can use the following endpoints to enable customers to:
 
-<a href="figures/foreign-income.svg" target="blank">
-<img src="figures/foreign-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/foreign-income.svg" target="blank">Open diagram in a new tab.</a>
+- [Create and Amend Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1{nino}~1{taxYear}/put)
+- [Retrieve Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1{nino}~1{taxYear}/get)
+- [Delete Foreign Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Foreign-Income/paths/~1individuals~1income-received~1foreign~1{nino}~1{taxYear}/delete)
 
 ## Insurance Policies Income
 
