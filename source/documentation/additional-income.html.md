@@ -149,16 +149,15 @@ Customers can use their software to submit information about foreign earnings an
 
 ## Insurance Policies Income
 
-These endpoints allow a user to create, retrieve, amend and delete insurance policies and income for less common types of income: Life Insurance Policies, Life Annuity Contracts, Capital Redemption Policies, Voided ISAs, and Foreign Policies.
+Income from insurance policies is any chargeable gains from UK life insurance policies. This includes cash or other benefits received on a full or part surrender of a policy, a policy matured or brought to an end by the death of the life insured, the sale or assignment of a UK policy, or part of a policy. For more information about insurance policies income tax, refer to [Insurance Policyholder Taxation Manual (GOV.UK)](https://www.gov.uk/hmrc-internal-manuals/insurance-policyholder-taxation-manual).
 
-* [Retrieve Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+Customers can use their software to submit different types of insurance policies income. This includes information about life insurance policies, capital redemption policies, life annuities, voided ISAs, and foreign policies.
 
-<a href="figures/insurance-policies-income.svg" target="blank">
-<img src="figures/insurance-policies-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/insurance-policies-income.svg" target="blank">Open diagram in a new tab.</a>
+The software can use the following endpoints to enable customers to:
+
+- [Create and Amend Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1{nino}~1{taxYear}/put)
+- [Retrieve Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1{nino}~1{taxYear}/get)
+- [Delete Insurance Policies Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Insurance-Policies-Income/paths/~1individuals~1income-received~1insurance-policies~1{nino}~1{taxYear}/delete)
 
 ## Pensions Income
 
