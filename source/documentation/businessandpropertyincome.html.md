@@ -78,11 +78,14 @@ When the tax calculation is triggered, it means that the quarterly obligation ha
 #### User journey
 
 1. The software prompts the customer when they need to submit an update. This prompt will not be sent from any API.
-2. The customer receives the prompt in the software and begins their submission process.
-3. Software prepares the summary information and displays it to the customer.
-4. The customer checks the information and submits it.
-5. The software initiates the data submission process by calling one of the following endpoints, depending on the income source type being submitted:
 
+2. The customer receives the prompt in the software and begins their submission process.
+
+3. Software prepares the summary information and displays it to the customer.
+
+4. The customer checks the information and submits it.
+
+5. The software initiates the data submission process by calling one of the following endpoints, depending on the income source type being submitted:
    - [Create a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1{nino}~1{businessId}~1period/post)
    - [Create a UK Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1{nino}~1{businessId}~1period~1{taxYear}/post)
    - [Create a Foreign Property Income and Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/3.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1{nino}~1{businessId}~1period~1{taxYear}/post)
