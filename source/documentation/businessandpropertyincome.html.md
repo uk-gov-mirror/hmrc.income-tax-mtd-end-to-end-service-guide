@@ -61,9 +61,9 @@ MTD mandated and voluntary customers must maintain and submit digital records of
 
 Customers must submit at least one update for each quarter. For example:
 
-- **Update 1.** 6 April to 5 July is accepted.
-- **Update 2.** 6 July to 5 October is accepted.
-- **Update 3.** 6 October to 5 April is accepted with a possible penalty.
+- **Update 1 (Q1).** 6 April to 5 July is accepted.
+- **Update 2 (Q2).** 6 July to 5 October is accepted.
+- **Update 3 (Q3 and Q4).** 6 October to 5 April is accepted with a possible penalty.
 
 ### Submit quarterly update
 
