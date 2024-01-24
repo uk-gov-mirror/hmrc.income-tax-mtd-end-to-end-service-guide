@@ -30,7 +30,7 @@ A customer’s property income includes the following:
 * premiums from leasing UK land
 * inducements to take an interest in letting a property (a reverse premium)
 
-For more information on property income, refer to [Work out your rental income when you let property](https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income).
+For more information on property income, refer to [Work out your rental income when you let property (GOV.UK)](https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income).
 
 ## Retrieving obligations
 
@@ -299,7 +299,7 @@ The exact text that HMRC requires the software to present during EOPS declaratio
 
 > “I confirm that I have reviewed the information provided to establish taxable profits for the relevant period ending in [insert tax year] together with the designatory data for that period and that it is correct and complete to the best of my knowledge. I understand that I may have to pay financial penalties or face prosecution if I give false information.”
 
-**Note:** Making changes to data for previously submitted periods is covered in the "[making changes to previously submitted data"](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data) section.
+**Note:** Making changes to data for previously submitted periods is covered in the [Submit quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-quarterly-update) section.
 
 ## Retrieve a tax calculation
 
