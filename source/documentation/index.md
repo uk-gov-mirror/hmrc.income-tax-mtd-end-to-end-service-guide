@@ -4,14 +4,9 @@
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
-
-
-
 >|Help us improve this guide |
 |---|  
 |This guide is currently being revised and overhauled to ensure it meets the needs of software providers. See the service guide [changelog](#documentation-changelog) for latest updates.<br/><br/>If there is a way that this guide could be improved or expanded to meet your needs, <b>now is the time to let us know.</b><br/><br/>If you use this guide regularly, we&#39;d like to invite you to share your thoughts and feedback via an online video call, which will involve a 60-minute one-to-one interview.<br/><br/>We’d like to explore:<ul><li>Your current use of and experience with the service guide</li><li>Any challenges you face</li><li>How helpful you find the service guide</li><li>Your thoughts on the current service guide, how it fits your needs and how it can be improved</li></ul><br/>If you would like to help us improve this guide, please contact our User Researcher <a href="mailto:chris.samms@digital.hmrc.gov.uk">chris.samms@digital.hmrc.gov.uk</a> to arrange an interview.|
-
-
 
 ## Overview
 
@@ -77,7 +72,7 @@ The Making Tax Digital for Income Tax APIs that include the endpoints for the fu
 * [Obligations](/api-documentation/docs/api/service/obligations-api/)
 * [Property Business](/api-documentation/docs/api/service/property-business-api/) (only for property full product)
 * [Self-Employment Business](/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
-   
+  
    
 ### Fraud Prevention Headers
 
@@ -154,7 +149,7 @@ The journey we expect to see for an MFS build will depend on whether you are bui
 6. Automatically trigger and display a tax calculation.
 7. **Either:** 
     - Retrieve a Business Income Source Summary (BISS) and display it to the customer. 
-**Or:** 
+    **Or:** 
     - The software may choose to create a BISS themselves by totalling the relevant information held in software and displaying it to the customer.
 8. Show EOPS Declaration Statement - this must match the statement shown in the ITSA End to End Service Guide.
 9. Submit EOPS.
@@ -197,7 +192,7 @@ Software Choices is a service designed to help users [find compatible software f
 An updated version is being developed with filters to help users find products that fit their specific requirements. For instance, a user may wish to find bridging software instead of a standalone product, or a product that suits their accessibility needs. It will also include a filter to find software that is also compatible with Making Tax Digital for VAT. 
 
 Software vendors have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) once production credentials have been approved. To be listed as [software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), vendors must demonstrate: 
- 
+
 - they have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [minimum functionality standards](#minimum-functionality-standards) section
 - they can complete the successful onboarding for a customer - sign up, authorise software, and retrieve obligations
 - they can submit a periodic update for a customer for each business income source
@@ -235,13 +230,12 @@ HMRC would not require free software to link or integrate with an Agent product.
 These journeys show examples of use:
 
 * [Income Tax Self Assessment (ITSA) set up activities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/signup.html)
-* [retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieving-obligations)
-* [submitting periodic updates for Self Employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-income-and-expense-updates-for-self-employment-and-property-businesses)
-* [submitting annual updates for Self Employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-allowance-and-adjustment-updates-for-se-and-property-businesses)
-* [retrieving a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
-* [making changes to previously submitted data](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#making-changes-to-previously-submitted-data)
-* [finalising business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
-* [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#providing-information-about-how-to-treat-a-loss)
+* [retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieving-obligations)
+* [submitting quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-quarterly-updates-for-self-employment-and-property-businesses)
+* [submitting annual updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-annual-updates-for-self-employment-and-property-businesses)
+* [retrieving a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieve-a-tax-calculation)
+* [finalising business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#finalise-business-income-end-of-period-statement-eops)
+* [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#providing-information-about-how-to-treat-a-loss)
 * [making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#final-declaration)
 * [ITSA (MTD) close down activities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/closedown.html)
 
@@ -264,20 +258,19 @@ Below is a summary of updates to this service guide:
 * Updated [Coding Out](/guides/income-tax-mtd-end-to-end-service-guide/documentation/coding-out-underpayments-and-debts.html) section
 * Updated UR contact email address
 
-
 #### Version 3.5
 
 15 November 2023
 
-* Updated content and diagram in [Payments and liabilities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/paymentsandliabilities.html) section
+* Updated content and diagram in [Payments and liabilities](/guides/income-tax-mtd-end-to-end-service-guide/documentation/payments-and-liabilities.html) section
 * Removed crystallisation endpoint content from [Final Declaration (Crystallisation)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
 
 #### Version 3.4
 
 2 November 2023
 
-* Added new [Customer status](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer_status.html) section describing business purpose of the new Self Assessment Individual Details API
-* Updated [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
+* Added new [Customer status](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-status.html) section describing business purpose of the new Self Assessment Individual Details API
+* Updated [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#construction-industry-scheme) section and moved it into "Business and Property Income" section
 * Updated [Software choices](#software-choices) section
 * Updated APIs in [Minimum functionality standards](#minimum-functionality-standards) section
 * Removed duplicate "Finalise business income End of Period Statement (EOPS)" section
@@ -294,7 +287,7 @@ Below is a summary of updates to this service guide:
 
 20 September 2023
 
-* Updated content for [Penalties and Appeals](/guides/income-tax-mtd-end-to-end-service-guide/documentation/penaltiesandappeals.html) section
+* Updated content for [Penalties and Appeals](/guides/income-tax-mtd-end-to-end-service-guide/documentation/penalties-and-appeals.html) section
 * Updated content for [Final Declaration (Crystallisation)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html) section
 * Updated content for [Production approvals process](#production-approvals-process-for-making-tax-digital-for-income-tax-self-assessment) section
 * Updated content for [Software choices](#software-choices) section
