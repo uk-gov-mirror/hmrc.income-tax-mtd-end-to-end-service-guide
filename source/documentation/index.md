@@ -252,15 +252,15 @@ Below is a summary of updates to this service guide:
 
 24 January 2024
 
-- Updated the following sections of [Business and Property Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html) section:
+- Updated the following sections of [Business and Property Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html) section:
 
-  - [Retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieving-obligations)
-  - [Submit quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-quarterly-updates-for-self-employment-and-property-businesses)
-  - [Submit annual updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-annual-updates-for-self-employment-and-property-businesses)
-  - [Submit accounting adjustments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-accounting-adjustments)
-  - [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme)
-  - [Finalise business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
-  - [Retrieve a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
+  - [Retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieving-obligations)
+  - [Submit quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-quarterly-updates-for-self-employment-and-property-businesses)
+  - [Submit annual updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-annual-updates-for-self-employment-and-property-businesses)
+  - [Submit accounting adjustments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-accounting-adjustments)
+  - [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#construction-industry-scheme)
+  - [Finalise business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#finalise-business-income-end-of-period-statement-eops)
+  - [Retrieve a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieve-a-tax-calculation)
 
 - Moved the content of the following sections to other sections in Business and Property Income section:
 
