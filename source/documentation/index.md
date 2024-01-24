@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.6** issued December 2023
+**Version 3.7** issued January 2024
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
@@ -247,6 +247,39 @@ The full changelog for Income Tax MTD APIs is now at [https://github.com/hmrc/in
 ### Documentation changelog
 
 Below is a summary of updates to this service guide:
+
+#### Version 3.7
+
+24 January 2024
+
+- Updated the following sections of [Business and Property Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html) section:
+
+  - [Retrieving obligations](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieving-obligations)
+  - [Submit quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-quarterly-updates-for-self-employment-and-property-businesses)
+  - [Submit annual updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-annual-updates-for-self-employment-and-property-businesses)
+  - [Submit accounting adjustments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#submit-accounting-adjustments)
+  - [Construction Industry Scheme](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#construction-industry-scheme)
+  - [Finalise business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#finalise-business-income-end-of-period-statement-eops)
+  - [Retrieve a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/businessandpropertyincome.html#retrieve-a-tax-calculation)
+
+- Moved the content of the following sections to other sections in Business and Property Income section:
+
+  -  Business Income Source Summary
+  -  View previously submitted updates
+  -  Making changes to previously submitted data
+  -  Multiple businesses
+
+- Updated the [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) section as follows:
+
+  - updated status of 2 tasks
+  - moved [Opting out of MTD](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#opting-out-of-mtd) section into HMRC online services section
+
+- Updated the following sections of [Additional Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html) section:
+
+  - [Foreign Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#foreign-income)
+  - [Insurance Policies Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#insurance-policies-income)
+  - [Capital Gains Tax](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#capital-gains-tax)
+  - [Marriage Allowance](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#marriage-allowance)
 
 #### Version 3.6
 
