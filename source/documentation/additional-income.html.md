@@ -106,8 +106,6 @@ User-generated content:
 
 Custom employments will only apply to the tax year and will not be carried over in subsequent years.  The expenses values are summed values from all PAYE employments, they are not available by employment.
 
-
-
 ## Other Employment Income
 
 These endpoints allow a user to create, amend, retrieve and delete other employment income: Share options, Shares awarded or received, Lump sums, Disability and Foreign service.
@@ -187,16 +185,13 @@ These endpoints allow a user to create, retrieve, amend and delete other income:
 
 ## Savings Income
 
-These endpoints allow a user to create, retrieve, amend and delete savings income for securities or foreign interest.
+Savings income can include interest for certain securities and income from overseas savings. For more information, refer to [How to complete your tax return for Self Assessment (GOV.UK)](https://www.gov.uk/government/publications/self-assessment-tax-return-sa100#supplementary-pages).
+
+Customers can use their software to submit information about savings income. The software can use the following endpoints to enable customers to:
 
 * [Retrieve Savings Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Savings Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Savings Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Savings-Income/paths/~1individuals~1income-received~1savings~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/savings-income.svg" target="blank">
-<img src="figures/savings-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/savings-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Savings Accounts
 
