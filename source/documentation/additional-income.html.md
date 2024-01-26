@@ -284,28 +284,26 @@ Customers can use their software to submit information about seafarers. The soft
 * [Create and Amend Deductions](/api-documentation/docs/api/service/other-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Deductions](/api-documentation/docs/api/service/other-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-## Individual Expenses
+## Individual Expenses Other
 
-Customers can claim tax relief on their employment expenses. For more information, refer to [Claim tax relief for your job expenses (GOV.UK).](https://www.gov.uk/tax-relief-for-employees) 
+These endpoints allow the user to manage their data related to expenses income for trade union and patent royalties.
 
-The software can use the following endpoints to enable customers to:
-
-- [Create and Amend Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1{nino}~1{taxYear}/put)
-- [Retrieve Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1{nino}~1{taxYear}/get)
-- [Delete Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1{nino}~1{taxYear}/delete)
-- [Ignore Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1{nino}~1{taxYear}~1ignore/post)
-
-Customers can also claim tax relief on other expenses. They can use their software to submit information about payments to trade unions for trade benefits and patent royalties payments.
-
-The software can use the following endpoints to enable customers to:
+The user can submit details of their expenses income for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
 
 * [Retrieve Other Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Other Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Other Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Other-Expenses/paths/~1individuals~1expenses~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
+<a href="figures/expenses-other.svg" target="blank">
+<img src="figures/expenses-other.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/expenses-other.svg" target="blank">Open diagram in a new tab.</a>
+
 ## Non-PAYE Income
 
-Use the [Non-PAYE Income resources of the Individuals Income Received API](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income) to create, amend, retrieve and delete data relating to non PAYE income and tips:
+Customers might need to pay taxes on any tips they have received. For more information about paying taxes on tips, refer to [Tips at work (GOV.UK)](https://www.gov.uk/tips-at-work).
+
+Customers can use their software to submit information about tips they have received through their employment. The software can use the following endpoints to enable customers to:
 
 * [Create and Amend Non-PAYE Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Retrieve Non-PAYE Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Non-PAYE-Employment-Income/paths/~1individuals~1income-received~1employments~1non-paye~1%7Bnino%7D~1%7BtaxYear%7D/get)
