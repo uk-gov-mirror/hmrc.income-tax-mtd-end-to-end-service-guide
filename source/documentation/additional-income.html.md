@@ -206,21 +206,17 @@ The user would normally call this when they have all the information necessary f
 </a>
 <a href="figures/disclosures.svg" target="blank">Open diagram in a new tab.</a>
 
-## Pension Charges
+## Individual Charges
 
-These endpoints allow a user to manage data related to pension contributions and charges. The user can submit details of pension contributions and charges for a specific tax year, as well as amend submissions already made. The user also has the option to delete previous submissions, and to retrieve the information they have previously submitted.
+This currently applies only to a customer’s pension charges. For more information, refer to [Pension savings - tax charges (GOV.UK)](https://www.gov.uk/government/publications/pensions-tax-charges-on-any-excess-over-the-lifetime-allowance-annual-allowance-special-annual-allowance-and-on-unauthorised-payments-hs345-self).
+
+Customers can use their software to submit different types of pension charges. This includes UK and overseas pension contributions, tax on unauthorised payments, transfer of overseas pension to another pension scheme and tax paid for exceeding their lifetime allowance.
+
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Pension Charges](/api-documentation/docs/api/service/individuals-charges-api/2.0/oas/page#/paths/~1individuals~1charges~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Pension Charges](/api-documentation/docs/api/service/individuals-charges-api/2.0/oas/page#/paths/~1individuals~1charges~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Pension Charges](/api-documentation/docs/api/service/individuals-charges-api/2.0/oas/page#/paths/~1individuals~1charges~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/pension-charges.svg" target="blank">
-<img src="figures/pension-charges.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/pension-charges.svg" target="blank">Open diagram in a new tab.</a>
-
-
-
 
 ## Individual Reliefs
 
