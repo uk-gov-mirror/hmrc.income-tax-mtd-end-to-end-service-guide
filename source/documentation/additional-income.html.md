@@ -158,16 +158,15 @@ These endpoints allow a user to create, retrieve, amend and delete previously po
 
 ## Other Income
 
-These endpoints allow a user to create, retrieve, amend and delete other income: business receipts, all other income received whilst abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
+Customers should tell HMRC about their other taxable income. This includes miscellaneous income like casual earnings, commission or freelance income.
+
+Customers can use their software to submit different types of other income. This includes information about business receipts, all other income received while abroad, overseas income and gains, chargeable foreign benefits and gifts and omitted foreign income.
+
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Other Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Other Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Other Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Income/paths/~1individuals~1income-received~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/other-income.svg" target="blank">
-<img src="figures/other-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/other-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Savings Income
 
