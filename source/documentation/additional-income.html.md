@@ -274,23 +274,15 @@ These endpoints allow a user to create, retrieve, amend, and delete foreign reli
 </a>
 <a href="figures/foreign-reliefs.svg" target="blank">Open diagram in a new tab.</a>
 
-
 ## Other Deductions
 
-At present this only relates to seafarers, but other deductions will be added in future.
+This currently applies only to people working at sea outside of the UK. For more information, refer to [Seafarers Earnings Deduction: tax relief if you work on a ship (GOV.UK)](https://www.gov.uk/guidance/seafarers-earnings-deduction-tax-relief-if-you-work-on-a-ship).
 
-These endpoints allow a user to manage their data related to deductions from their tax bill.
-
-The user can submit details of their deductions for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
+Customers can use their software to submit information about seafarers. The software can use the following endpoints to enable customers to:
 
 * [Retrieve Deductions](/api-documentation/docs/api/service/other-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Deductions](/api-documentation/docs/api/service/other-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Deductions](/api-documentation/docs/api/service/other-deductions-api/1.0/oas/page#/paths/~1individuals~1deductions~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/other-deductions.svg" target="blank">
-<img src="figures/other-deductions.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/other-deductions.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Individual Expenses Other
 
