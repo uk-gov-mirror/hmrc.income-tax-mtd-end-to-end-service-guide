@@ -311,14 +311,9 @@ Customers can use their software to submit information about tips they have rece
 
 ## State Benefits
 
-These endpoints give a user the ability to manage data related to state benefits.  The user can add details about state benefits for a specific tax year, as well as update submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
+State benefits are sums of money paid by the government to people in certain circumstances to help meet their day-to-day living needs. They exist to make sure no one falls below a minimum standard of living. State benefits are sometimes called allowances, pensions, tax credits or entitlements. For more information about state benefits, refer to [Tax-free and taxable state benefits (GOV.UK)](https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits).
 
-**Note**
-
-* only pre-populated HMRC benefits can be ignored (end-of-year) or unignored
-* attempting to delete a pre-populated state benefit will fail with a 'forbidden' response.
-* a customer can only update amounts in-year for Job Seeker Allowance and Employment Support Allowance
-
+Customers can use their software to submit information about incapacity benefits, state pension lump sums and other state benefits. The software can use the following endpoints to enable customers to:
 
 * [List State Benefits](/api-documentation/docs/api/service/individuals-state-benefits-api/1.0/oas/page#/paths/~1individuals~1state-benefits~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create State Benefit](/api-documentation/docs/api/service/individuals-state-benefits-api/1.0/oas/page#/paths/~1individuals~1state-benefits~1%7Bnino%7D~1%7BtaxYear%7D/post)
@@ -328,11 +323,6 @@ These endpoints give a user the ability to manage data related to state benefits
 * [Delete State Benefit Amounts](/api-documentation/docs/api/service/individuals-state-benefits-api/1.0/oas/page#/paths/~1individuals~1state-benefits~1%7Bnino%7D~1%7BtaxYear%7D~1%7BbenefitId%7D~1amounts/delete)
 * [Ignore State Benefit](/api-documentation/docs/api/service/individuals-state-benefits-api/1.0/oas/page#/paths/~1individuals~1state-benefits~1%7Bnino%7D~1%7BtaxYear%7D~1%7BbenefitId%7D~1ignore/post)
 * [Unignore State Benefit](/api-documentation/docs/api/service/individuals-state-benefits-api/1.0/oas/page#/paths/~1individuals~1state-benefits~1%7Bnino%7D~1%7BtaxYear%7D~1%7BbenefitId%7D~1unignore/post)
-
-<a href="figures/state-benefits.svg" target="blank">
-<img src="figures/state-benefits.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/state-benefits.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Providing information about how to treat a loss
 
