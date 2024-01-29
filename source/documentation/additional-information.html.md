@@ -106,16 +106,18 @@ These endpoints allow a user to create, amend, retrieve and delete other employm
 
 ## Dividends Income
 
-These endpoints allow a user to create, retrieve, amend and delete dividends income: foreign dividend, dividend income received whilst abroad, stock dividend, redeemable shares, bonus issues of securities and close company loans written off.
+Customers might get a dividend if they own shares in a company. They must pay tax on dividend income if it is above their personal allowance. For more information, refer to [Tax on dividends (GOV.UK)](https://www.gov.uk/tax-on-dividends).
 
-* [Retrieve Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+Customers can use their software to submit different types of dividend income. This includes UK dividend income, other UK dividend income, foreign dividend income, stock dividend income, redeemable shares income, bonus securities, dividend income received while abroad and close company loans written off.
 
-<a href="figures/dividends-income.svg" target="blank">
-<img src="figures/dividends-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/dividends-income.svg" target="blank">Open diagram in a new tab.</a>
+The software can use the following endpoints to enable customers to:
+
+- [Create and Amend Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1{nino}~1{taxYear}/put)
+- [Create and Amend a UK Dividends Income Annual Summary](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Dividends-Income/paths/~1individuals~1income-received~1uk-dividends~1{nino}~1{taxYear}/put)
+- [Retrieve Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1{nino}~1{taxYear}/get) 
+- [Retrieve a UK Dividends Income Annual Summary](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Dividends-Income/paths/~1individuals~1income-received~1uk-dividends~1{nino}~1{taxYear}/get)
+- [Delete Dividends Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Dividends-Income/paths/~1individuals~1income-received~1dividends~1{nino}~1{taxYear}/delete)
+- [Delete a UK Dividends Income Annual Summary](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/UK-Dividends-Income/paths/~1individuals~1income-received~1uk-dividends~1{nino}~1{taxYear}/delete)
 
 ## Foreign Income
 
