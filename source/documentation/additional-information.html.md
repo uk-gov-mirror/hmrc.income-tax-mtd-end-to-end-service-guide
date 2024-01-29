@@ -218,59 +218,60 @@ The software can use the following endpoints to enable customers to:
 
 ## Individual Reliefs
 
-### Pensions Reliefs
+‘Tax relief’ means that you either:
 
-These endpoints give the user the ability to manage data related to reliefs on pensions.  The user can submit details of reliefs on pensions for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions, and to retrieve the information they have previously submitted.
+- pay less tax to take account of money you have spent on specific things, such as business expenses if you’re self-employed
+- get tax back or get it repaid in another way, such as personal pension payments
+
+For more information about individual tax reliefs, refer to [Tax reliefs (GOV.UK)](https://www.gov.uk/government/publications/self-assessment-tax-return-sa100/how-to-fill-in-your-tax-return-2021#tax-reliefs). The following sections cover the different types of tax reliefs and the endpoints needed to submit in the  software.
+
+### Pensions relief
+
+Customers can use their software to submit different types of pension relief. This includes regular pension contributions, one-off pension contributions, retirement annuity payments, payments to employer’s scheme, and overseas pensions contributions.
+
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Pensions Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Pensions-Reliefs/paths/~1individuals~1reliefs~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Pensions Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Pensions-Reliefs/paths/~1individuals~1reliefs~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Pensions Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Pensions-Reliefs/paths/~1individuals~1reliefs~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-<a href="figures/pension-reliefs.svg" target="blank">
-<img src="figures/pension-reliefs.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/pension-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+### Relief investments
 
-### Relief Investments
+Customers can use their software to submit different types of relief investments. This includes venture capital subscriptions, Enterprise Investment Scheme (EIS), community investments, seed enterprise investments, and social enterprise investments.
 
-These endpoints allow a user to create, amend, delete and retrieve relief investments from VCT subscriptions, EIS subscriptions, Community Investments, Seed Enterprise Investments and Social Enterprise Investments.
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Relief Investments](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Relief-Investments/paths/~1individuals~1reliefs~1investment~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Relief Investments](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Relief-Investments/paths/~1individuals~1reliefs~1investment~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Relief Investments](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Relief-Investments/paths/~1individuals~1reliefs~1investment~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-<a href="figures/relief-investments.svg" target="blank">
-<img src="figures/relief-investments.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/relief-investments.svg" target="blank">Open diagram in a new tab.</a>
+### Other reliefs
 
+Customers can use their software to submit other types of tax relief. This includes non-deductible loan interests, payroll giving, redemption of shares and securities, maintenance payments, post-cessation trade relief, annual payments made, and qualifying loan interest payments.
 
-### Other Reliefs
-
-These endpoints allow a user to create, amend, retrieve and delete reliefs other than investments that have previously been submitted.  This includes loan interest, payroll giving, shares and securities redemptions, maintenance payments, post-cessation reliefs, annual payments and qualifying loan interest payments.
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Delete Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-<a href="figures/other-reliefs.svg" target="blank">
-<img src="figures/other-reliefs.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/other-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+### Foreign reliefs
 
+Customers can use their software to submit different types of foreign relief. This includes foreign tax credit, foreign income tax credit, and foreign tax not claimed.
 
-### Foreign Reliefs
-
-These endpoints allow a user to create, retrieve, amend, and delete foreign reliefs that have been previously submitted.
+The software can use the following endpoints to enable customers to:
 
 * [Retrieve Foreign Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Foreign-Reliefs/paths/~1individuals~1reliefs~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Foreign Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Foreign-Reliefs/paths/~1individuals~1reliefs~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Foreign Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Foreign-Reliefs/paths/~1individuals~1reliefs~1foreign~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
-<a href="figures/foreign-reliefs.svg" target="blank">
-<img src="figures/foreign-reliefs.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/foreign-reliefs.svg" target="blank">Open diagram in a new tab.</a>
+### Charitable giving
+
+Customers can use their software to submit information about gifts and gift aid payments to non-UK charities. The software can use the following endpoints to enable customers to:
+
+- [Retrieve Charitable Giving Tax Relief](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings/paths/~1individuals~1reliefs~1charitable-giving~1{nino}~1{taxYear}/get)
+- [Create and Amend Charitable Giving Tax Relief](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings/paths/~1individuals~1reliefs~1charitable-giving~1{nino}~1{taxYear}/put)
+- [Delete Charitable Giving Tax Relief](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Charitable-Givings/paths/~1individuals~1reliefs~1charitable-giving~1{nino}~1{taxYear}/delete)
 
 ## Other Deductions
 
