@@ -72,8 +72,7 @@ The Making Tax Digital for Income Tax APIs that include the endpoints for the fu
 * [Obligations](/api-documentation/docs/api/service/obligations-api/)
 * [Property Business](/api-documentation/docs/api/service/property-business-api/) (only for property full product)
 * [Self-Employment Business](/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
-  
-   
+
 ### Fraud Prevention Headers
 
 You must supply fraud prevention header information for all our APIs before approval can be granted and production credentials issued.
@@ -235,7 +234,7 @@ These journeys show examples of use:
 * [submitting annual updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-annual-updates-for-self-employment-and-property-businesses)
 * [retrieving a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieve-a-tax-calculation)
 * [finalising business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#finalise-business-income-end-of-period-statement-eops)
-* [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#providing-information-about-how-to-treat-a-loss)
+* [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#providing-information-about-how-to-treat-a-loss)
 * [making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#making-a-final-declaration)
 
 ## Changelogs
@@ -278,18 +277,18 @@ Below is a summary of updates to this service guide:
   - updated status of 2 tasks
   - moved [Opting out of MTD](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#opting-out-of-mtd) section into HMRC online services section
 
-- Updated the following sections of [Additional Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html) section:
+- Updated the following sections of [Additional Information](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html) section:
 
-  - [Foreign Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#foreign-income)
-  - [Insurance Policies Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#insurance-policies-income)
-  - [Capital Gains Tax](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#capital-gains-tax)
-  - [Marriage Allowance](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#marriage-allowance)
+  - [Foreign Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#foreign-income)
+  - [Insurance Policies Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#insurance-policies-income)
+  - [Capital Gains Tax](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#capital-gains-tax)
+  - [Marriage Allowance](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#marriage-allowance)
 
 #### Version 3.6
 
 13 December 2023
 
-* Updated [Additional Income / Employments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-income.html#employments) section with off-payroll working details
+* Updated [Additional Information / Employments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#employments) section with off-payroll working details
 * Updated [Customer Support Model](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-support.html) section
 * Updated [Coding Out](/guides/income-tax-mtd-end-to-end-service-guide/documentation/coding-out-underpayments-and-debts.html) section
 * Updated UR contact email address
@@ -424,7 +423,7 @@ Below is a summary of updates to this service guide:
 #### Version 1.3
 
 * Losses updated.
-* Additional income section added.
+* Additional Information section added.
 
 #### Version 1.2
 
