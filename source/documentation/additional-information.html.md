@@ -312,7 +312,7 @@ Customers can use their software to submit information about tips they have rece
 
 ## State Benefits
 
-State benefits are sums of money paid by the government to people in certain circumstances to help meet their day-to-day living needs. They exist to make sure no one falls below a minimum standard of living. State benefits are sometimes called allowances, pensions, tax credits or entitlements. For more information about state benefits, refer to [Tax-free and taxable state benefits (GOV.UK)](https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits).
+State benefits are sums of money paid by the government to people in certain circumstances to help meet their day-to-day living needs. They exist to make sure no one falls below a minimum standard of living. State benefits are sometimes called allowances, pensions, tax credits or entitlements. For more information, refer to [Tax-free and taxable state benefits (GOV.UK)](https://www.gov.uk/income-tax/taxfree-and-taxable-state-benefits).
 
 Customers can use their software to submit information about incapacity benefits, state pension lump sums and other state benefits. The software can use the following endpoints to enable customers to:
 
