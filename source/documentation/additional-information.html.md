@@ -14,35 +14,32 @@ Customers who need to submit their additional income must do it before submittin
 
 ## Employments
 
-This suite of endpoints display the PAYE information returned to HMRC by a user’s employers.
+A customer will have employment income if they work for an employer who deducts tax from their pay through Pay As You Earn (PAYE). A customer's earnings and tax deducted are sent to HMRC by their employer. This allows HMRC to hold an employment history for each customer. HMRC uses this information to calculate whether the correct PAYE tax has been paid at the end of the tax year. For more information about declaring employment income, refer to [Self Assessment: Employment (GOV.UK).](https://www.gov.uk/government/publications/self-assessment-employment-sa102)
 
-The user will be able to add to or supply different employment data after the tax year has ended.  This can include details of missing employments, or financial data.  In addition, the user can choose to ignore the data HMRC holds, for the purpose of their self-assessment calculation.
+Currently, under Self Assessment, a customer will see their PAYE earnings, tax deducted and other financial details pre-populated in their online tax return. They can overwrite any information that might be incorrect. 
 
-These endpoints can be broken into three categories:
+Customers can continue to do this under Making Tax Digital (MTD). They can:
 
-* [details of the employment](#employment-details)  
-* [financial data and benefits from a specific employment](#financial-data-and-benefits)
-* [employment expenses from all of the user’s employments](#employment-expenses)
+- view employment details (financial and non-financial) held by HMRC throughout the year
+- create and amend employment details submitted by them after the end of the tax year
+- delete employment details submitted by them after the end of the tax year
 
-### Employment details
+### View employment details
 
-Use these endpoints to maintain details of an employment:
+The following endpoints enables the customer to view different types of employment details:
 
-* [Add a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/post)
-* [Amend a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/put)
-* [Retrieve an Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/get)
-* [List Employments](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Delete a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D/delete)
-* [Ignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1ignore/post)
-* [Unignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1unignore/post)
+- [List Employments](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/get)
+- [Retrieve an Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/get)
+- [Retrieve Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/get)
+- [Retrieve an employment and its financial details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/get)
 
-### Financial data and benefits
+A customer, at any time, can view a list of their employers for a specific tax year. The [List Employments](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/get) endpoint provides the software with the Employment IDs for each customer employment. This Employment ID is necessary to call other employment income endpoints.
 
-Use these endpoints to maintain financial data and benefits from a specific employment:
+The software can use the [Retrieve an Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/get) endpoint to enable the customer to view non-financial details about a specific employment for a given tax year. This includes the start date of the employment and employer name.
 
-* [Create and Amend Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/put)
-* [Retrieve an Employment and its Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get)
-* [Delete Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/delete)
+The software can use the [Retrieve Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/get) endpoint to enable the customer to view other employment income details for a given year. This includes share options, shares awarded or received, disability, lump sums and foreign service income.
+
+Employers will also submit financial details that form the customers earnings and deductions. In software, this information can be viewed using the [Retrieve an Employment and its Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/get) endpoint. The endpoint contains details on taxable pay to date, [benefits in kind](https://www.gov.uk/tax-company-benefits), student loan deductions and the customer's off payroll working status for a specific employment.
 
 #### Off-payroll working (OPW) rules
 
@@ -62,47 +59,31 @@ The following  warning message must be displayed to the customer:
 
 As stated in the warning message, this action may be reviewed by HMRC.
 
+### Create and Amend employment details
 
-### Employment expenses 
+The following endpoints enable the customer to create and amend different types of employment details:
 
-Use these endpoints to maintain employment expenses from all of the user’s employments:
+- [Add a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/post)
+- [Amend a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/put)
+- [Create and Amend Employment Financial Details ](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/put)
+- [Create and Amend Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/put)
 
-* [Create and Amend Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Retrieve Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Delete Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-* [Ignore Employment Expenses](/api-documentation/docs/api/service/individuals-expenses-api/2.0/oas/page#tag/Employment-Expenses/paths/~1individuals~1expenses~1employments~1%7Bnino%7D~1%7BtaxYear%7D~1ignore/post)
+At the end of the tax year, if the customer thinks an employment is missing in data held by HMRC, they can add it. In software, this is done by calling the [Add a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}/post) endpoint. After adding an custom employment, the customer needs to add the appropriate financial details for that employment. In software, this is done by calling the [Create and Amend Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/put) endpoint. 
 
-### Pre-populated data
+If a customer thinks that the financial details are incorrect for an employer in data held by HMRC, they can update it using the same endpoint. If the customer also thinks their non-financial details or other employment details are inaccurate, they can amend it. In software, this is done by calling the [Amend a Custom Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}/put) or [Create and Amend Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/put) endpoint respectively.
 
-HMRC will pre-populate the employment information provided by employers. The user should check and correct the information, as necessary, prior to final declaration.
+### Delete employment details
 
-**Note:**
+The following endpoints allow the customer to delete different types of employment details:
 
-Pre-populated data can only be stopped (ignored) from being used in any tax calculation.
+- [Delete Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/delete)[ ](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/put)
+- [Delete Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/delete)
+- [Ignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1ignore/post)
+- [Unignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1unignore/post)
 
-User-generated content:
+If a customer has incorrect employment details, they can delete them. This can be done only at the end of the tax year. In the software, this is done by calling the [Delete Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/delete) or [Delete Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/delete) endpoint, depending on the detail type.
 
-* can be deleted
-* will only be applied in the tax calculation
-* will not overwrite pre-populated data
-
-### Custom employments
-
-Custom employments will only apply to the tax year and will not be carried over in subsequent years.  The expenses values are summed values from all PAYE employments, they are not available by employment.
-
-## Other Employment Income
-
-These endpoints allow a user to create, amend, retrieve and delete other employment income: Share options, Shares awarded or received, Lump sums, Disability and Foreign service.
-
-* [Retrieve Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
-* [Delete Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-
-<a href="figures/other-employment-income.svg" target="blank">
-<img src="figures/other-employment-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/other-employment-income.svg" target="blank">Open diagram in a new tab.</a>
+For some incorrect employment details held by HMRC, the customer can ask HMRC to ignore this information. In software, this is done by calling the [Ignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1ignore/post) endpoint. This action can be reversed by using the [Unignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1unignore/post) endpoint.
 
 ## Dividends Income
 
