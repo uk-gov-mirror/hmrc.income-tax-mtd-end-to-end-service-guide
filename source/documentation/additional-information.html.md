@@ -108,7 +108,7 @@ These endpoints allow a user to create, amend, retrieve and delete other employm
 
 Customers might get a dividend if they own shares in a company. They must pay tax on dividend income if it is above their personal allowance. For more information, refer to [Tax on dividends (GOV.UK)](https://www.gov.uk/tax-on-dividends).
 
-Customers can use their software to submit different types of dividend income. This includes UK dividend income, other UK dividend income, foreign dividend income, stock dividend income, redeemable shares income, bonus securities, dividend income received while abroad and close company loans written off.
+Customers can use their software to submit different types of dividend income. This includes UK dividend income, foreign dividend income, stock dividend income, redeemable shares income, bonus securities, dividend income received while abroad and close company loans written off.
 
 The software can use the following endpoints to enable customers to:
 
