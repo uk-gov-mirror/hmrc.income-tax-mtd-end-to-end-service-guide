@@ -108,7 +108,7 @@ These endpoints allow a user to create, amend, retrieve and delete other employm
 
 Customers might get a dividend if they own shares in a company. They must pay tax on dividend income if it is above their personal allowance. For more information, refer to [Tax on dividends (GOV.UK)](https://www.gov.uk/tax-on-dividends).
 
-Customers can use their software to submit different types of dividend income. This includes UK dividend income, other UK dividend income, foreign dividend income, stock dividend income, redeemable shares income, bonus securities, dividend income received while abroad and close company loans written off.
+Customers can use their software to submit different types of dividend income. This includes UK dividend income, foreign dividend income, stock dividend income, redeemable shares income, bonus securities, dividend income received while abroad and close company loans written off.
 
 The software can use the following endpoints to enable customers to:
 
@@ -191,15 +191,20 @@ Customers can use their software to submit information about each account and re
 
 ## Disclosures
 
-Customers should tell HMRC if they think they have not paid the correct amount of tax. In serious cases of undisclosed tax or income, HMRC may consider starting a criminal investigation. 
+These endpoints allow the user to manage their data related to the disclosure of tax avoidance schemes and undeclared income, for a given tax year.
 
-Customers are encouraged to voluntarily tell HMRC about any failures or errors rather than wait for HMRC to contact them. This might reduce any potential penalties on outstanding tax. For more information about making disclosures, refer to [How to make a voluntary disclosure to HMRC (GOV.UK)](https://www.gov.uk/government/publications/hmrc-your-guide-to-making-a-disclosure/your-guide-to-making-a-disclosure).
+The user can submit details of any disclosures for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted.
 
-Customers can use their software to submit disclosures about tax avoidance. The software can use the following endpoints to enable customers to:
+The user would normally call this when they have all the information necessary for disclosures for the tax year.
 
-- [Create and Amend Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1{nino}~1{taxYear}/put)
-- [Retrieve Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1{nino}~1{taxYear}/get)
-- [Delete Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1{nino}~1{taxYear}/delete)
+* [Retrieve Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Delete Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/delete)
+
+<a href="figures/disclosures.svg" target="blank">
+<img src="figures/disclosures.svg" alt=" " style="width:720px;" />
+</a>
+<a href="figures/disclosures.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Individual Charges
 
@@ -322,41 +327,30 @@ Customers can use their software to submit information about incapacity benefits
 
 ## Providing information about how to treat a loss
 
-### Losses and claims
+A self-employed business can have a loss when trade expenses are more than trade income. If the business has a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details about the loss to be brought forward. For more information, refer to [HS227 Losses (GOV.UK).](https://www.gov.uk/government/publications/losses-hs227-self-assessment-helpsheet/hs227-losses-2023#using-losses-types-of-claim)
 
-A self-employed business can have a loss when the trade expenses are more than the trade income.
-If the business has a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details of the loss to be brought forward.
+Customers can submit different types of losses through their software. This includes brought forward losses and capital gains losses. Brought forward losses can be calculated for the customer’s self-employment, UK property, and foreign property business income types. The software can use the following endpoints to enable customers to:
 
-<a href="figures/losses-api-diagram.svg" target="blank"><img src="figures/losses-api-diagram.svg" alt="Losses API calls" style="width:720px;" /></a>
+- [Create a brought forward loss](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1{nino}~1brought-forward-losses/post)
+- [List brought forward losses](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1{nino}~1brought-forward-losses~1tax-year~1{taxYearBroughtForwardFrom}/get)
+- [Amend a brought forward loss](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1{nino}~1brought-forward-losses~1{lossId}~1change-loss-amount/post)
+- [Retrieve a brought forward loss](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1{nino}~1brought-forward-losses~1{lossId}/get)
+- [Delete a brought forward loss](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1{nino}~1brought-forward-losses~1{lossId}/delete)
 
-<a href="figures/losses-api-diagram.svg" target="blank">Open the Losses diagram in a new tab</a>.
+For capital gains losses, the software can use the following endpoints to enable customers to:
 
-Vendors can use the [create a brought forward loss](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Brought-Forward-Losses/paths/~1individuals~1losses~1%7Bnino%7D~1brought-forward-losses/post) endpoint to enable customers to submit the brought forward loss to HMRC.
+- [Create and Amend Other Capital Gains and Disposals](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Capital-Gains-and-Disposals/paths/~1individuals~1income-received~1disposals~1other-gains~1{nino}~1{taxYear}/put)
+- [Retrieve Other Capital Gains and Disposals](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Capital-Gains-and-Disposals/paths/~1individuals~1income-received~1disposals~1other-gains~1{nino}~1{taxYear}/get)
+- [Delete Other Capital Gains and Disposals](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Capital-Gains-and-Disposals/paths/~1individuals~1income-received~1disposals~1other-gains~1{nino}~1{taxYear}/delete)
 
-When the loss detail has been submitted, or if a loss arises for a tax year following sign up to Making Tax Digital, a claim will need to be made to either:
+After submitting the above losses, customers can view their loss position. If they do not agree with that, they can submit an independent loss claim. The software can use the following endpoints to enable a customer to:
 
-* utilise the loss against an income source for a specific year, or
-* claim to carry the loss forward so that it is available to use in later years
-
-The [Loss claims](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims) endpoint allows the user to do the following:
-
-* provide a list of Loss claims
-* create a Loss claim against an income source for a specific tax year
-* show the detail of an existing Loss claim
-* delete a previously entered Loss claim
-* update a previously entered Loss claim
-
-### Brought Forward Losses
-
-These resources allow software packages to provide a customer's financial data for their brought forward losses. Here the developer can:
-
-* provide a list of brought forward losses
-* create a new brought forward loss to submit against self-employment, self-employment class 4, UK FHL property, other UK (non-FHL) property, foreign property FHL in the European Economic Area (EEA) or other foreign property
-* show a single brought forward loss
-* delete an existing brought forward loss
-* update an existing brought forward loss
-
-To carry-back a loss, the customer should contact HMRC who will be able to apply this manually.
+- [Create a Loss Claim](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims/post)
+- [List Loss Claims](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims~1tax-year~1{taxYearClaimedFor}/get)
+- [Retrieve a Loss Claim](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims~1{claimId}/get)
+- [Delete a Loss Claim](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims~1{claimId}/delete)
+- [Amend a Loss Claim Type](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims~1{claimId}~1change-type-of-claim/post)
+- [Amend Loss Claims Order](/api-documentation/docs/api/service/individual-losses-api/4.0/oas/page#tag/Loss-Claims/paths/~1individuals~1losses~1{nino}~1loss-claims~1order~1{taxYearClaimedFor}/put)
 
 ## Capital Gains Tax
 
