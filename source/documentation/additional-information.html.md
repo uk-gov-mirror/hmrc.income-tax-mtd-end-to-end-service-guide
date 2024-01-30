@@ -145,16 +145,13 @@ The software can use the following endpoints to enable customers to:
 
 ## Pensions Income
 
-These endpoints allow a user to create, retrieve, amend and delete previously populated foreign pensions and overseas pension contributions.
+Customers in receipt of foreign pensions must continue to report this income to HMRC. For more information about these income types, refer to [Self Assessment: Foreign (SA106) (GOV.UK)](https://www.gov.uk/government/publications/self-assessment-foreign-sa106). Customers should also tell HMRC about their overseas pension. For more information, refer to [Self Assessment: additional information SA101 (GOV.UK)](https://www.gov.uk/government/publications/self-assessment-additional-information-sa101).
+
+Customers can use their software to submit the information above. The software can use the following endpoints to enable customers to:
 
 * [Retrieve Pensions Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Pensions Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Pensions Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Pensions-Income/paths/~1individuals~1income-received~1pensions~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/pensions-income.svg" target="blank">
-<img src="figures/pensions-income.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/pensions-income.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Other Income
 
@@ -327,7 +324,7 @@ Customers can use their software to submit information about incapacity benefits
 
 ## Providing information about how to treat a loss
 
-A self-employed business can have a loss when trade expenses are more than trade income. If the business has a loss for a year prior to signing up to Making Tax Digital, the customer or agent will need to submit details about the loss to be brought forward. For more information, refer to [HS227 Losses (GOV.UK).](https://www.gov.uk/government/publications/losses-hs227-self-assessment-helpsheet/hs227-losses-2023#using-losses-types-of-claim)
+A self-employed business can have a loss when trade expenses are more than trade income. If the business has a loss for a year before signing up to Making Tax Digital, the customer or agent will need to submit details about the loss to be brought forward. For more information, refer to [HS227 Losses (GOV.UK).](https://www.gov.uk/government/publications/losses-hs227-self-assessment-helpsheet/hs227-losses-2023#using-losses-types-of-claim)
 
 Customers can submit different types of losses through their software. This includes brought forward losses and capital gains losses. Brought forward losses can be calculated for the customer’s self-employment, UK property, and foreign property business income types. The software can use the following endpoints to enable customers to:
 
