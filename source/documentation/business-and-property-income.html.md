@@ -301,24 +301,39 @@ The exact text that HMRC requires the software to present during EOPS declaratio
 
 **Note:** Making changes to data for previously submitted periods is covered in the [Submit quarterly updates for self-employment and property businesses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-quarterly-update) section.
 
-## Retrieve a tax calculation
+## Tax calculation
 
-The software will need to use that Calculation ID when calling each endpoint within the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/).
+As part of MTD, software vendors can retrieve tax calculations directly from HMRC. HMRC calculates in-year estimates, annual forecasts and end-of-year tax calculations (final declaration). The calculation retrieved by the software is the same as the one used by HMRC. 
 
-A calculation result once created (excluding metadata) is an immutable calculation that provides a calculation result at a particular point in time. Any further income updates will require a new calculation to be triggered.
+The customer can check their tax calculation at any time during the year. All the Self Assessment tax calculation endpoints are available in the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/). There are several messages built into the API that provide guidance and explanations to customers, for example: 
 
-The [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/) allows the software to, choose which elements of the tax calculation it wants to retrieve and play back to the customer:
+- ‘Your Basic Rate limit has been increased by £8,012.11 to £375,000.00 for Pension Contribution’
+- ‘One or more of your annual adjustments have not been applied because you have submitted additional income or expenses’
 
-* [List Self Assessment Tax Calculations](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment/get) for a given National Insurance number (NINO) and tax year
-* [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) for a given tax year:
+### Retrieving a tax calculation
 
-  * the software must use the trigger a self-assessment tax calculation endpoint to inform HMRC that the user has finished submitting their information
-  * as a response, HMRC will provide a Calculation ID
-  * the triggering of the tax calculation will mark the obligation as fulfilled, if HMRC has data covering the whole period
+When a customer wants to view a new tax calculation, the software should use the Calculation ID to retrieve it by calling the [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint. If the software does not yet have this ID, it should call the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to trigger it. After a successful API call, HMRC will provide a Calculation ID that can be used to retrieve the calculation output.
 
-* [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) for a given Calculation ID
+The retrieval can take around 5 seconds, so to avoid getting an error the software should wait at least 5 seconds before attempting to retrieve the calculation. The software then uses the ID to retrieve the calculation by calling the [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint. 
 
-**Notes:**
+When a customer requests to view an existing calculation, the software should call the [List Self Assessment Tax Calculations](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment/get) endpoint to list all the tax calculations for a given year. This endpoint lists the software-triggered calculations and HMRC-triggered calculations, including any that have failed. From the list, the customer can choose the specific calculation for which they need more details. The software then uses the Calculation ID to retrieve the complete calculation output by calling the [Retrieve Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint. 
 
-* It can take around 5 seconds for the tax calculation response to be ready to retrieve. To avoid getting an error, wait at least 5 seconds before retrieving the calculation. 
-* It is possible to return both in-year and final declaration calculations using these endpoints. An in-year calculation is worked out if the calculation was triggered by the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0) endpoint
+If the software retrieves a calculation, it will cover only the period up to their last submission date, not the calculation retrieval date. For example, if a customer submitted their update to 1 July 2023 and they requested a calculation on 30 July 2023, they will receive a calculation only up to 1 July 2023.
+
+### Calculations that produce errors
+
+HMRC validates the information submitted by the software by checking the data quality and data integrity. These checks include both technical (schema) specifications and business-related factors to ensure that the data is complete and meaningful. Any validation errors will be returned by using the [Retrieve a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint. The software should make sure that the validation errors are presented to the customer.
+
+If there are validation errors, no calculation results are generated. For example, it is possible that errors in previously submitted data can prevent a calculation being performed.
+
+To prevent the validation errors from being generated, the customer must amend their digital records. The software should resubmit the revised summary totals for the relevant periods and then call the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint.
+
+### Calculations that are free from errors
+
+If there are no errors, the results of the calculation are available.
+
+The calculation output provides a summary of each income source (for example, self-employment, UK property, foreign property, and UK bank and building society interest) and a breakdown of allowances and reliefs applied. It also includes a breakdown of the Income Tax and NIC payable. This calculation output also includes additional income submitted by the customer through their software or HMRC online services and information held by HMRC.
+
+If the customer retrieves a tax calculation during the year, it is an estimated forecast and they do not need to pay any tax at this time. They will pay tax after submitting their final declaration.
+
+If a software vendor identifies what they think could be a problem with the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api), they will need to contact [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
