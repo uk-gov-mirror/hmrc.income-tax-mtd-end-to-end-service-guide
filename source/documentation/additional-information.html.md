@@ -76,7 +76,7 @@ If a customer thinks that the financial details are incorrect for an employer in
 
 The following endpoints allow the customer to delete different types of employment details:
 
-- [Delete Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/delete)[ ](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/put)
+- [Delete Employment Financial Details](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1financial-details/delete)
 - [Delete Other Employment Income](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Other-Employment-Income/paths/~1individuals~1income-received~1employments~1other~1{nino}~1{taxYear}/delete)
 - [Ignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1ignore/post)
 - [Unignore Employment](/api-documentation/docs/api/service/individuals-income-received-api/2.0/oas/page#tag/Employments/paths/~1individuals~1income-received~1employments~1{nino}~1{taxYear}~1{employmentId}~1unignore/post)
@@ -169,20 +169,15 @@ Customers can use their software to submit information about each account and re
 
 ## Disclosures
 
-These endpoints allow the user to manage their data related to the disclosure of tax avoidance schemes and undeclared income, for a given tax year.
+Customers should tell HMRC if they think they have not paid the correct amount of tax. In serious cases of undisclosed tax or income, HMRC may consider starting a criminal investigation. 
 
-The user can submit details of any disclosures for a specific tax year, as well as amend submissions already made.  They also have the option to delete previous submissions and to retrieve the information they have previously submitted.
+Customers are encouraged to voluntarily tell HMRC about any failures or errors rather than wait for HMRC to contact them. This might reduce any potential penalties on outstanding tax. For more information about making disclosures, refer to [How to make a voluntary disclosure to HMRC (GOV.UK)](https://www.gov.uk/government/publications/hmrc-your-guide-to-making-a-disclosure/your-guide-to-making-a-disclosure).
 
-The user would normally call this when they have all the information necessary for disclosures for the tax year.
+Customers can use their software to submit disclosures about tax avoidance. The software can use the following endpoints to enable customers to:
 
-* [Retrieve Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Create and Amend Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/put)
+* [Retrieve Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Delete Disclosures](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Disclosures/paths/~1individuals~1disclosures~1%7Bnino%7D~1%7BtaxYear%7D/delete)
-
-<a href="figures/disclosures.svg" target="blank">
-<img src="figures/disclosures.svg" alt=" " style="width:720px;" />
-</a>
-<a href="figures/disclosures.svg" target="blank">Open diagram in a new tab.</a>
 
 ## Individual Charges
 
@@ -232,7 +227,7 @@ Customers can use their software to submit other types of tax relief. This inclu
 The software can use the following endpoints to enable customers to:
 
 * [Retrieve Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
-* [Create and Amend Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/get)
+* [Create and Amend Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/put)
 * [Delete Other Reliefs](/api-documentation/docs/api/service/individuals-reliefs-api/1.0/oas/page#tag/Other-Reliefs/paths/~1individuals~1reliefs~1other~1%7Bnino%7D~1%7BtaxYear%7D/delete)
 
 ### Foreign reliefs
