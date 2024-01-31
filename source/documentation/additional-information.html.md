@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 If MTD customers are earning any type of income in addition to their self-employment and property income, they must report that to HMRC just as they would in their Self Assessment return. 
 
-The software should prompt customers to provide details about any additional income sources. If the software does not support submission of any applicable additional income, customers must use [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#hmrc-online-services) to make their submission. For more information about which type of income to tell HMRC, refer to [Check if you need to tell HMRC about additional income (GOV.UK)](https://www.gov.uk/check-additional-information-tax). 
+The software should prompt customers to provide details about any additional income sources. If the software does not support submission of any applicable additional income, customers must use [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#hmrc-online-services) to make their submission. For more information about which type of income to tell HMRC, refer to [Check if you need to tell HMRC about additional income (GOV.UK)](https://www.gov.uk/check-additional-income-tax). 
 
 Customers who need to submit their additional income must do it before submitting their final declaration. The following sections cover the different types of additional income and the endpoints needed to submit them in the software. 
 
