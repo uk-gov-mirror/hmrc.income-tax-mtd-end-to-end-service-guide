@@ -1,6 +1,6 @@
 # Income Tax (Making Tax Digital) end-to-end service guide
 
-**Version 3.7** issued January 2024
+**Version 3.8** issued January 2024
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
@@ -249,7 +249,30 @@ Below is a summary of updates to this service guide:
 
 #### Version 3.8
 
-- Updated the [Deprecating APIs](/guides/income-tax-mtd-end-to-end-service-guide/documentation/api-deprecation-guidance.html#deprecating-apis) section with details of new deprecation headers
+31 January 2024
+
+- Updated [Deprecating APIs](/guides/income-tax-mtd-end-to-end-service-guide/documentation/api-deprecation-guidance.html#deprecating-apis) section with details about new deprecation headers
+- Updated the following section of [Business and Property Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html) section:
+
+  - [Tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#tax-calculation) (formerly 'Retrieve a tax calculation')
+
+- Updated the following sections of [Additional Information](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html) section (formerly 'Additional Income'):
+
+  - New section introduction for Additional Information (removed ‘Submit information about personal income’)
+  - [Employments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#employments) (moved some content to new section ‘Employment Expenses’)
+  - [Dividends Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#dividends-income)
+  - [Pensions Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#pensions-income)
+  - [Other Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#other-income)
+  - [Savings Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#savings-income)
+  - [Savings Accounts](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#savings-accounts)
+  - [Disclosures](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#disclosures)
+  - [Individual Charges](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#individual-charges) (formerly 'Pension Charges')
+  - [Individual Reliefs](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#individual-reliefs)
+  - [Other Deductions](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#other-deductions)
+  - [Employment Expenses](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#employment-expenses) (formerly ‘Individual Expenses Other’)
+  - [Non-PAYE Income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#non-paye-income)
+  - [State Benefits](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#state-benefits)
+  - [Providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#providing-information-about-how-to-treat-a-loss)
 
 #### Version 3.7
 
