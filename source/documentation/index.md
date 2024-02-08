@@ -10,7 +10,7 @@ This service guide explains how you can integrate your software with the [Income
 
 ## Overview
 
-This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations once they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
+This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations after they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
 
 For more information about eligibility and how to use Making Tax Digital for Income Tax, please refer to the [Making Tax Digital step by step guidance](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
 
@@ -116,9 +116,9 @@ HMRC requires the software to test all the APIs that they require access to. The
 
 [Fraud prevention headers](/guides/fraud-prevention/) must be included in sandbox calls. A specialist team will check these and they must be confirmed as compliant before we can proceed.
 
-Once testing is complete, please send details of the dummy NINO used to call the above endpoints in sandbox to SDSTeam@hmrc.gov.uk. You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs. SDST will advise you of the outcome of our checks within 10 working days.   
+After testing is complete, please send details of the dummy NINO used to call the above endpoints in sandbox to SDSTeam@hmrc.gov.uk. You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs. SDST will advise you of the outcome of our checks within 10 working days.   
 
-Once we are satisfied that the relevant APIs and endpoints have been tested satisfactorily and that calls include compliant fraud prevention headers, you will be invited to demonstrate your product. Please note, demonstration is not generally required for access to updated APIs (that is, new versions), but satisfactory testing will be required.
+After we are satisfied that the relevant APIs and endpoints have been tested satisfactorily and that calls include compliant fraud prevention headers, you will be invited to demonstrate your product. Please note, demonstration is not generally required for access to updated APIs (that is, new versions), but satisfactory testing will be required.
 
 ### Product demonstration
 
@@ -160,7 +160,7 @@ The journey we expect to see for an MFS build will depend on whether you are bui
 
 1. Create and submit a loss.
 2. Create/Amend and submit disclosures (Class 2 NICs).
-3. Trigger a tax calculation with the ```finalDeclaration``` parameter set to “True”.
+3. Trigger a tax calculation with the Final Declaration parameter set to 'true'.
 4. Retrieve and display this tax calculation for the customer to review.
 5. Show the Final Declaration Statement – this must match the statement shown on the ITSA End to End Service Guide.
 6. Submit a Final Declaration.
@@ -190,7 +190,7 @@ Software Choices is a service designed to help users [find compatible software f
 
 An updated version is being developed with filters to help users find products that fit their specific requirements. For instance, a user may wish to find bridging software instead of a standalone product, or a product that suits their accessibility needs. It will also include a filter to find software that is also compatible with Making Tax Digital for VAT. 
 
-Software vendors have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) once production credentials have been approved. To be listed as [software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), vendors must demonstrate: 
+Software vendors have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) after production credentials have been approved. To be listed as [software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), vendors must demonstrate: 
 
 - they have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [minimum functionality standards](#minimum-functionality-standards) section
 - they can complete the successful onboarding for a customer - sign up, authorise software, and retrieve obligations
