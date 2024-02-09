@@ -38,20 +38,17 @@ The following table  lists changes that we consider breaking.
 
 When we make changes to errors, we will not usually change the JSON structure returned. In the rare case when this is necessary, this will be considered a breaking change. The values of the error fields may change. 
 
-#### Breaking changes for errors
+The following table outlines which types of changes to errors are treated as breaking changes and which are not.
 
-* Changing the HTTP Status code to a different value
-* Renaming an error code
-* Adding a new error code (but see below)
+| Breaking changes for errors | Non-breaking changes for errors |
+| --------------------------- | ------------------------------- |
+| Changing the HTTP status code to a different value | Removing an error code |
+| Renaming an error code | Changing the message of an error |
+| Adding a new error code (but see below) |  |
 
 If we add a new error code to an endpoint as part of a new field/object, which is not itself a breaking change, the new error is not counted as a breaking change.
 
 For example, if we add a new optional string field to the request body and the field must satisfy a specific condition (otherwise, it fails with a new error), this error is not considered a breaking change because existing software will keep functioning as the error can be returned only if the new field is used.
-
-#### Non-breaking changes for errors
-
-* Removing an error code
-* Changing the message of an error
 
 ## Deprecating APIs
 
