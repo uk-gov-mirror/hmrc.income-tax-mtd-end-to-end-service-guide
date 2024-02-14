@@ -1,14 +1,12 @@
 ---
-title: Final Declaration (Crystallisation)
+title: Final Declaration
 weight: 6
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
 <!--- Section owner: MTD Programme --->
 
-# Final Declaration (Crystallisation)
-**Note:** The term 'final declaration' is now used instead of the term 'crystallisation'.
-
+# Final Declaration
 Final declaration is the process that allows customers to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 
 It is also the process by which most formal claims for reliefs and allowances and any deductions are made, where these were previously included within a Self Assessment tax return.
@@ -43,11 +41,11 @@ If a customer does not agree with the calculation based on rules HMRC has used, 
 
 If a customer thinks the calculation is correct, they can use the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint to submit their final declaration. 
 
-**Note:** After a customer has submitted their final declaration, they will not be able to amend their submission using their software.
+**Note:** After a customer has submitted their final declaration, they will not currently be able to amend their submission using their software.
 
 ### Agreeing to the declaration
 
-After a customer is confident that they have submitted all the required income tax information through software and HMRC online services, they will have to agree to a declaration and send it to HMRC. When using the software, this is done through the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint.
+After a customer is confident that they have submitted all the required income tax information through software and HMRC online services, they will have to agree to a declaration and send it to HMRC. When using the software, this is done by using the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint.
 
  > **The Declaration**
 
@@ -65,9 +63,9 @@ The software must send the Calculation ID that matches the specific calculation 
 
 ## Final declaration user journey
 
-<a href="figures/crystallisation-diagram.svg" target="blank"><img src="figures/crystallisation-diagram.svg" alt="crystallisation process API diagram" style="width:720px;" /></a>
+<a href="figures/final-declaration-diagram.svg" target="blank"><img src="figures/final-declaration-diagram.svg" alt="final declaration process API diagram" style="width:720px;" /></a>
 
-<a href="figures/crystallisation-diagram.svg" target="blank">Open the final declaration process diagram in a new tab</a>.
+<a href="figures/final-declaration-diagram.svg" target="blank">Open the final declaration process diagram in a new tab</a>.
 
 1.	The customer is ready to complete their final declaration.
 2.	The software calls the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint with the Final Declaration parameter set to 'true'.
@@ -86,9 +84,9 @@ The software must send the Calculation ID that matches the specific calculation 
 
 ## Making an amendment after final declaration
 
-If a customer wants to make any changes following a final declaration, they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year). They can make these changes by following the existing [Self Assessment tax returns amendment process](https://www.gov.uk/self-assessment-tax-returns/corrections). These amendments cannot be made using software.
+If a customer wants to make any changes following a final declaration, they have 12 months from the statutory filing date to do this (the statutory filing date is 31 January following the end of the tax year). They can make these changes by following the existing [Self Assessment tax returns amendment process](https://www.gov.uk/self-assessment-tax-returns/corrections). These amendments cannot currently be made using software.
 
-**Note:** Any changes made following final declaration will be a formal amendment under section 9ZA TMA 1970.
+**Note:** Any changes made after final declaration will be a formal amendment under section 9ZA TMA 1970.
 
 ## Pay or get a repayment
 
