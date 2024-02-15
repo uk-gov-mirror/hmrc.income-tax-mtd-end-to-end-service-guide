@@ -233,7 +233,7 @@ These journeys show examples of use:
 - [retrieving a tax calculation](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#retrieve-a-tax-calculation)
 - [finalising business income End of Period Statement (EOPS)](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#finalise-business-income-end-of-period-statement-eops)
 - [providing information about how to treat a loss](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#providing-information-about-how-to-treat-a-loss)
-- [making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration-crystallisation.html#making-a-final-declaration)
+- [making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/final-declaration.html#making-a-final-declaration)
 
 ## Changelogs
 
