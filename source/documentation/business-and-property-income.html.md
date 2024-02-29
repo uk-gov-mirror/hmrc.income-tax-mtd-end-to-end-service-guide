@@ -178,6 +178,47 @@ If the customer has submitted a CIS deduction amount after the end of the year b
 <a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
 <a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>
 
+## Change to calendar quarters
+
+From the tax year 2024 to 2025, all self-employed customers will move to a tax year basis that will be aligned to the tax year. This means that tax liability for the self-employed will be based on profits arising in the tax year, irrespective of their accounting period, as is already the case for landlords. For more information, refer to [Basis period reform (GOV.UK)](https://www.gov.uk/government/publications/basis-period-reform/basis-period-reform).
+
+Customers with an accounting period that starts 1 April (rather than 6 April) will have the opportunity to change their quarterly updates to also start at the beginning of the month. All MTD for Income Tax customers, or their agents, will be able to make this change through their software regardless of their accounting period. However it will only benefit those customers with accounting periods starting on the 1 April. So the software should recommend other customers not to make this change.
+
+The following table shows an example.
+
+| Quarterly update | Calendar quarterly period |
+| ---------------- | ------------------------- |
+| 1                | 1 April to 30 June        |
+| 2                | 1 July to 30 September    |
+| 3                | 1 October to 31 December  |
+| 4                | 1 January to 31 March     |
+
+A customer’s quarterly updates will automatically be defaulted to standard quarters. If they wish to change to calendar quarterly updates, they must do this through their software. This cannot be done through HMRC online services. The software must make this option available to customers before they submit their first update. Because, once it is submitted, a customer cannot change the quarter for that tax year. 
+
+However, if the customer is signing up to MTD late in the tax year they can still make this change as long as it is before their first update. This change will have no effect on the update deadlines.
+
+To allow a customer to change their periods to calendar quarters, the software should use the [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint. The software should use the Obligations API to access the new calendar quarterly periods. 
+
+In the first year of a calendar quarter, the first quarterly period starts on 6 April, and ends on 30 June. As a result, customers with a 1 April to 31 March accounting period will need to ensure income and expenses for the period from 1 April to 5 April are also submitted so their liability can be assessed accurately for the full tax year equivalent period. 
+
+Consider the following example:
+
+- the customer makes the change to calendar quarters before their first update through their software using [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint.
+- the software then calls the Obligations API, which shows the customer’s new calendar quarterly updates as follows.
+
+| Quarterly update | Calendar quarterly period |
+| ---------------- | ------------------------- |
+| 1                | 6 April to 30 June        |
+| 2                | 1 July to 30 September    |
+| 3                | 1 October to 31 December  |
+| 4                | 1 January to 31 March     |
+
+- the first period for the first year the election affects, starts from the 6 April because that is the first day of the tax year - the first period for subsequent years starts on 1 April 
+- the customer submits their calendar quarterly updates through their software using the steps described in [Submit quarterly updates for self-employment and property businesses](#submit-quarterly-updates-for-self-employment-and-property-businesses)
+- when all calendar quarterly updates have been made, the customer needs to account for the income and expense information for the period to 5 April - they can do this through their software using the [Business Source Adjustable Summary API](/api-documentation/docs/api/service/self-assessment-bsas-api/)
+
+After the calendar quarterly election change has been made, it will continue year on year until the customer requests a change back to standard quarterly updates. The software can use the [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint to allow a customer to change their periods back to standard quarterly updates. 
+
 ## Submit accounting adjustments
 
 When the customer has submitted all quarterly updates, they may need to make an accounting adjustment to their income or expenses. They should first make changes to their digital records and then use the software to submit them to HMRC. The [Self Assessment BSAS (Business Source Adjustable Summary) API](/api-documentation/docs/api/service/self-assessment-bsas-api/) enables a customer to submit or retrieve an adjustable summary calculation for a specified self-employment or property business.
