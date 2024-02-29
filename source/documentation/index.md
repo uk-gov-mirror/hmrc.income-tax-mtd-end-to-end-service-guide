@@ -311,7 +311,7 @@ Below is a summary of updates to this service guide:
 
 * Updated [Additional Information / Employments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html#employments) section with off-payroll working details
 * Updated [Customer Support Model](/guides/income-tax-mtd-end-to-end-service-guide/documentation/customer-support.html) section
-* Updated [Coding Out](/guides/income-tax-mtd-end-to-end-service-guide/documentation/coding-out-underpayments-and-debts.html) section
+* Updated [Using Tax Codes to Collect Tax Due](/guides/income-tax-mtd-end-to-end-service-guide/documentation/using-tax-codes-to-collect-taxes-due.html) section (formerly 'Coding Out')
 * Updated UR contact email address
 
 #### Version 3.5
