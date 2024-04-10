@@ -8,14 +8,15 @@ description: Software developers, designers, product owners or business analysts
 
 If Making Tax Digital (MTD) customers are earning any type of income in addition to their self-employment and property income, they must report that to HMRC just as they would in their Self Assessment return. 
 
->Currently, the endpoints for reporting additional income through software are included in the Individuals Income Received API. As of June 2024, the Individuals Income Received API will be split into the following APIs:<ul><li>Individuals Employments Income API</li> 
+><p>Currently, the endpoints for reporting additional income through software are included in the Individuals Income Received API. As of June 2024, the Individuals Income Received API will be deprecated and replaced with the following new APIs:</p><ul><li>Individuals Employments Income API</li> 
 <li>Individuals Dividends Income API</li>
 <li>Individuals Foreign Income API</li>
 <li>Individuals Insurance Policies Income API</li>
 <li>Individuals Pensions Income API</li>
 <li>Individuals Other Income API</li>
 <li>Individuals Savings Income API</li>
-<li>Individuals Capital Gains Income API</li>
+<li>Individuals Capital Gains Income API</li></ul>
+<p>These new APIs are now available for testing in Sandbox.</p>
 
 Your software should prompt customers to provide details about any additional income sources. If the software does not support submission of any applicable additional income, customers must use [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#hmrc-online-services) to make their submission. For more information about which type of income to tell HMRC, refer to [Check if you need to tell HMRC about additional income (GOV.UK)](https://www.gov.uk/check-additional-income-tax). 
 
