@@ -8,14 +8,15 @@ description: Software developers, designers, product owners or business analysts
 
 If Making Tax Digital (MTD) customers are earning any type of income in addition to their self-employment and property income, they must report that to HMRC just as they would in their Self Assessment return. 
 
-><p>Currently, the endpoints for reporting additional income through software are included in the Individuals Income Received API. As of June 2024, the Individuals Income Received API will be deprecated and replaced with the following new APIs:</p><ul><li>Individuals Employments Income API</li> 
-<li>Individuals Dividends Income API</li>
-<li>Individuals Foreign Income API</li>
-<li>Individuals Insurance Policies Income API</li>
-<li>Individuals Pensions Income API</li>
-<li>Individuals Other Income API</li>
-<li>Individuals Savings Income API</li>
-<li>Individuals Capital Gains Income API</li></ul>
+><p>Currently, the endpoints for reporting additional income through software are included in the Individuals Income Received API. As of June 2024, the Individuals Income Received API will be deprecated and replaced with the following new APIs:</p><ul> 
+	<li><a href="/api-documentation/docs/api/service/individuals-employments-income-api/">Individuals Employments Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-dividends-income-api/">Individuals Dividends Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-foreign-income-api/">Individuals Foreign Income API</a></li> 
+	<li><a href="/api-documentation/docs/api/service/individuals-insurance-policies-income-api/">Individuals Insurance Policies Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-pensions-income-api/">Individuals Pensions Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-other-income-api/">Individuals Other Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-savings-income-api/">Individuals Savings Income API</a></li>
+	<li><a href="/api-documentation/docs/api/service/individuals-capital-gains-income-api/">Individuals Capital Gains Income API</a></li></ul>
 <p>These new APIs are now available for testing in Sandbox.</p>
 
 Your software should prompt customers to provide details about any additional income sources. If the software does not support submission of any applicable additional income, customers must use [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html#hmrc-online-services) to make their submission. For more information about which type of income to tell HMRC, refer to [Check if you need to tell HMRC about additional income (GOV.UK)](https://www.gov.uk/check-additional-income-tax). 
@@ -55,7 +56,7 @@ Employers will also submit financial details that form the customers earnings an
 
 Off-payroll working rules (IR35) govern how a worker (sometimes called a contractor) who is providing their services through an intermediary such as a personal service company, is treated in terms of their Income Tax and National Insurance. More information on off-payroll working rules can be found on the [GOV.UK](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35) website.
 
-The off-payroll worker status can be seen in-year as part of the employment pre-population into the customer’s self-assessment tax calculations. In software, the off-payroll working status is retrieved using the [Retrieve an Employment and its Financial Details](/api-documentation/docs/api/service/individuals-employments-income-api/1.0/oas/page#tag/Employments/paths/~1individuals~1employments-income~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get) endpoint. The status is also available in the [Retrieve A Self Assessment Tax Calculation](/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint. If the status is set to false, indicating the worker is not regarded as being subject to OPW rules, the software should not display it to the customer. This status is view-only: the customer does not need to take any action unless they think it has been set in error, in which case they must contact their employer.
+The off-payroll worker status can be seen in-year as part of the employment pre-population into the customer’s self-assessment tax calculations. In software, the off-payroll working status is retrieved using the [Retrieve an Employment and its Financial Details](/api-documentation/docs/api/service/individuals-employments-income-api/1.0/oas/page#tag/Employments/paths/~1individuals~1employments-income~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get) endpoint. The status is also available in the [Retrieve A Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint. If the status is set to false, indicating the worker is not regarded as being subject to OPW rules, the software should not display it to the customer. This status is view-only: the customer does not need to take any action unless they think it has been set in error, in which case they must contact their employer.
 
 After the end of the tax year, the off-payroll working status will be displayed to the customer along with the employment data fields. As part of their self assessment, if a customer agrees with their off-payroll working status, there is no further action required from them. However, if a customer disagrees with their off-payroll working status, they can change it after the end of tax year before completing their final declaration. This change can be made in software or through their HMRC online services account. The software must call the [Create and Amend Employment Financial Details](/api-documentation/docs/api/service/individuals-employments-income-api/1.0/oas/page#tag/Employments/paths/~1individuals~1employments-income~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/put) endpoint to change the off-payroll working status. 
 
