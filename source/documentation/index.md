@@ -173,9 +173,9 @@ following steps:
   6. List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the [List Business Source Adjustable Summaries](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get) endpoint. 
 
 
-<a href="/documentation/figures/stateful-bsas-journey.svg" target="blank"><img src="/documentation/figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
+<a href="figures/stateful-bsas-journey.svg" target="blank"><img src="figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
 
-<a href="/documentation/figures/customer-journey-transactional-risking-produce-report.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
+<a href="figures/stateful-bsas-journey.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
 
 
 ### Product demonstration
