@@ -124,9 +124,9 @@ After we are satisfied that the relevant APIs and endpoints have been tested sat
 ###  Stateful and dynamic testing
 
 Some APIs in the Sandbox environment allow the software to test different
-scenarios by including ‘Gov-Test-Scenario’ headers in their  request  .
+scenarios by including ‘Gov-Test-Scenario’ headers in their request.
 Income Tax (Making Tax Digital) API endpoints documentation provides more
-information about how to use these test scenarios
+information about how to use these test scenarios.
 
 ####  Dynamic scenarios
 
