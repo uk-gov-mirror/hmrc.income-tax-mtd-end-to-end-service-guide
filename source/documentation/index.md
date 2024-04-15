@@ -175,7 +175,7 @@ following steps:
 
 <a href="figures/stateful-bsas-journey.svg" target="blank"><img src="figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
 
-<a href="figures/customer-journey-transactional-risking-produce-report.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
+<a href="figures/stateful-bsas-journey.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
 
 
 ### Product demonstration
