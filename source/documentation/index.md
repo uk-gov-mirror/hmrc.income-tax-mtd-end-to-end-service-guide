@@ -123,21 +123,21 @@ After we are satisfied that the relevant APIs and endpoints have been tested sat
 
 ###  Stateful and dynamic testing
 
-Some APIs in the Sandbox environment allow the software to test different
-scenarios by including ‘Gov-Test-Scenario’ headers in their request.
-Income Tax (Making Tax Digital) API endpoints documentation provides more
+Some APIs in the Sandbox environment allow software to test different
+scenarios by including ‘Gov-Test-Scenario’ headers in requests. The
+[Income Tax (Making Tax Digital) API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax-mtd) provides more
 information about how to use these test scenarios.
 
 ####  Dynamic scenarios
 
 Dynamic scenarios return a response that changes depending on the parameters
-submitted by the software, for example, National Insurance number or tax year.
+submitted by software, for example, National Insurance number or tax year.
 However, the submitted data is not stored for future requests and does not
 affect the behaviour of other endpoints.
 
 ####  Stateful scenarios
 
-Stateful scenarios work with a group of endpoints and APIs that submits
+Stateful scenarios work with groups of endpoints and APIs that submit
 different types of information. For each type, you could POST (or PUT) to
 submit or amend data, GET to retrieve or list data and DELETE to delete data.
 
