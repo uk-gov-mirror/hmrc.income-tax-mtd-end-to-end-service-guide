@@ -153,29 +153,24 @@ To test the journey for Self-Employment or Property Business submission and
 to request a Business Source Adjustable Summary (BSAS), complete the
 following steps:
 
-  1. Submit 4 stateful Self-Employment/Property Business Period Summaries (one for each quarter of the same tax year) for the desired National Insurance number, tax year and Business ID by calling one of the following endpoints: 
-
+1. Submit 4 stateful Self-Employment/Property Business Period Summaries (one for each quarter of the same tax year) for the desired National Insurance number, tax year and Business ID by calling one of the following endpoints: 
     * [Create a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post) 
     * [Create a UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post) 
     * [Create a Foreign Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post)
-  2. Submit one stateful Self-Employment/Property Business Annual Submission for the same National Insurance number, tax year and Business ID by calling one of the following endpoints: 
-
+2. Submit one stateful Self-Employment/Property Business Annual Submission for the same National Insurance number, tax year and Business ID by calling one of the following endpoints: 
     * [Create and Amend Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) 
     * [Create and Amend a UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) 
     * [Create and Amend a Foreign Property Annual Submission](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put)
-  3. Trigger a stateful Business Source Adjustable Summary for Self-Employment/Property business for the same National Insurance number and Business ID by calling the [Trigger a Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post) endpoint. 
-  4. Retrieve a stateful Business Source Adjustable Summary for the Self-Employment/Property Business by using the Calculation ID generated in the previous step and calling one of the following endpoints: 
-
+3. Trigger a stateful Business Source Adjustable Summary for Self-Employment/Property business for the same National Insurance number and Business ID by calling the [Trigger a Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post) endpoint. 
+4. Retrieve a stateful Business Source Adjustable Summary for the Self-Employment/Property Business by using the Calculation ID generated in the previous step and calling one of the following endpoints: 
     * [Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D/get) 
     * [Retrieve a UK Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D/get)
     * [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get)
-  5. Submit a stateful accounting adjustment for Self-Employment/Property Business by using the same Business ID and  Calculation ID and calling one of the following endpoints: 
-
+5. Submit a stateful accounting adjustment for Self-Employment/Property Business by using the same Business ID and  Calculation ID and calling one of the following endpoints: 
     * [Submit Self-Employment Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D~1adjust/post)
     * [Submit UK Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post)
     * [Submit Foreign Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post)
-  6. List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the [List Business Source Adjustable Summaries](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get) endpoint. 
-
+6. List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the [List Business Source Adjustable Summaries](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get) endpoint. 
 
 <a href="documentation/figures/stateful-bsas-journey.svg" target="blank"><img src="documentation/figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
 
@@ -327,13 +322,13 @@ Below is a summary of updates to this service guide.
 
 16 April 2024
 
-- Add section [Stateful and dynamic testing](/guides/income-tax-mtd-end-to-end-service-guide/#testing-requirements), which includes an example user journey to:
+- Add section [Stateful and dynamic testing](/guides/income-tax-mtd-end-to-end-service-guide/#stateful-and-dynamic-testing), which includes an example user journey to:
   - make a Self-Employment or Property Business submission
   - request a Business Source Adjustable Summary
 - Add section [Mapping APIs to Self Assessment tax return forms](/guides/income-tax-mtd-end-to-end-service-guide/#mapping-apis-to-self-assessment-tax-return-forms)
-- Update [Business and property income](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html) section:
-  - remove flow chart from section Submit accounting adjustments
-  - remove sentence from section Submit quarterly update about error if £85,000 limit is exceeded
+- Update Business and property income section:
+  - remove sentence from section [Submit quarterly update](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-quarterly-update) about error if £85,000 limit is exceeded
+  - remove flow chart from section [Submit accounting adjustments](/guides/income-tax-mtd-end-to-end-service-guide/documentation/business-and-property-income.html#submit-accounting-adjustments)
 - Update [Additional information](/guides/income-tax-mtd-end-to-end-service-guide/documentation/additional-information.html) section:
   - update section introduction with new content about breakup of Individuals Income Received API
   - update API endpoint links to point to new APIs that replace Individuals Income Received API
