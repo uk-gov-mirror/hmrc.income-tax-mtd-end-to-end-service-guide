@@ -45,7 +45,7 @@ Under Making Tax Digital for ITSA, a customer can view what has been submitted b
 
 A customer, at any time, can view a breakdown of all the CIS deductions that have been reported to HMRC by their contractors. In software, this is done by calling the [Retrieve CIS Deductions for Subcontractor](/api-documentation/docs/api/service/cis-deductions-api/2.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1current-position~1%7BtaxYear%7D~1%7Bsource%7D/get) endpoint.
 
-<a href="figures/cis-retrieve-cis.svg" target="blank"><img src="/Users/fmcgrath/Documents/GitHub/poc-demo/income-tax-mtd-end-to-end-service-guide/source/documentation/figures/cis-retrieve-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
+<a href="figures/cis-retrieve-cis.svg" target="blank"><img src="figures/cis-retrieve-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
 <a href="figures/cis-retrieve-cis.svg" target="blank">Open the CIS retrieve deduction diagram in a new tab</a>.
 
 When the customer submits quarterly updates to HMRC through their software, they will not be required to provide a CIS deduction amount. When a quarterly update has been made, the software will trigger the tax calculation using the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint and display the calculation result to the customer using the [Retrieve A Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint. This calculation result will include the CIS deductions received by the contractor for that quarter.
@@ -56,21 +56,21 @@ If the customer does not agree with the amount the contractor has submitted to H
 
 At the end of the year, if the customer still does not agree with the CIS deductions amount the contractor has submitted to HMRC, they can submit what they believe to be the correct amount. This needs to be completed following the fourth quarterly update and before the end-of-period statement is submitted. In software, this is done by calling the [Create CIS Deductions for Subcontractor](/api-documentation/docs/api/service/cis-deductions-api/2.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments/post) endpoint. After successfully creating CIS deductions for the customer, the API returns a submission ID in the success response. This ID must be used to amend or delete CIS deductions in the future. A customer might also submit their CIS deductions amount if they find that no data from the contractor is included in the tax calculation.
 
-<a href="figures/cis-create-cis.svg" target="blank"><img src="/Users/fmcgrath/Documents/GitHub/poc-demo/income-tax-mtd-end-to-end-service-guide/source/documentation/figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
+<a href="figures/cis-create-cis.svg" target="blank"><img src="figures/cis-create-cis.svg" alt="CIS create diagram" style="width:720px;" /></a>
 <a href="figures/cis-create-cis.svg" target="blank">Open the CIS create deduction diagram in a new tab</a>
 
 #### Amend CIS deductions
 
 If the customer has submitted a CIS deduction amount after the end of the year but later realises what they submitted was incorrect, they can provide the correct CIS deduction amount. This amendment can be made even after the end-of-period statement is submitted. However, it needs to be done before the final declaration is submitted. In software, amending CIS deductions is done by calling the [Amend CIS Deductions for Subcontractor](/api-documentation/docs/api/service/cis-deductions-api/2.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments~1%7BsubmissionId%7D/put) endpoint.
 
-<a href="figures/cis-amend-cis.svg" target="blank"><img src="/Users/fmcgrath/Documents/GitHub/poc-demo/income-tax-mtd-end-to-end-service-guide/source/documentation/figures/cis-amend-cis.svg" alt="CIS amend diagram" style="width:720px;" /></a>
+<a href="figures/cis-amend-cis.svg" target="blank"><img src="figures/cis-amend-cis.svg" alt="CIS amend diagram" style="width:720px;" /></a>
 <a href="figures/cis-amend-cis.svg" target="blank">Open the CIS amend deduction diagram in a new tab</a>
 
 #### Delete CIS deductions
 
 If the customer has submitted a CIS deduction amount after the end of the year but later realises they did not pay any CIS deductions and what they submitted was incorrect, they can delete the amount. This deletion can be made even after the end-of-period statement is submitted. However, it needs to be done before the final declaration is submitted. In software, deleting CIS deductions is done by calling the [Delete CIS Deductions for Subcontractor](/api-documentation/docs/api/service/cis-deductions-api/2.0/oas/page#/paths/~1individuals~1deductions~1cis~1%7Bnino%7D~1amendments~1%7BsubmissionId%7D/delete) endpoint.
 
-<a href="figures/cis-delete-cis.svg" target="blank"><img src="/Users/fmcgrath/Documents/GitHub/poc-demo/income-tax-mtd-end-to-end-service-guide/source/documentation/figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
+<a href="figures/cis-delete-cis.svg" target="blank"><img src="figures/cis-delete-cis.svg" alt="CIS delete diagram" style="width:720px;" /></a>
 <a href="figures/cis-delete-cis.svg" target="blank">Open the CIS delete deduction diagram in a new tab</a>
 
 ### Employment income
@@ -420,37 +420,6 @@ Marriage Allowance allows the customer to transfer some of their Personal Allowa
 
 Customers can create a Marriage Allowance claim using their name, date of birth and National Insurance number. To do this action, the software must call the [Create Marriage Allowance](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1{nino}/post) endpoint in the [Individuals Disclosures API](/api-documentation/docs/api/service/individuals-disclosures-api/). After the claim has been accepted by HMRC, the customer can view their Marriage Allowance in their tax calculations.
 
-## Penalties and appeals
-
-(Content needed)
-
-### Penalties for late payment and late submission
-
-The way that HMRC penalises ITSA late payments and late submissions will be changing. The changes, referred to as 'Penalty Reform for ITSA', will apply to ITSA customers from the tax year in which they become mandated to join MTD. More information will follow as it is made available.
-
-For tax years prior to the changes, the existing late payment and late filing penalties continue to apply. You can find more information about these penalties on gov.uk:
-
-- [Penalties for late filing of Self Assessment tax returns](https://www.gov.uk/self-assessment-tax-returns/penalties)
-- [Self Assessment: how to appeal against penalties for late filing and late payment](https://www.gov.uk/government/publications/self-assessment-appeal-against-penalties-for-late-filing-and-late-payment-sa370/self-assessment-how-to-appeal-against-penalties-for-late-filing-and-late-payment)
-
-### Other penalties
-
-Other penalties that apply to ITSA customers are unchanged by Penalty Reform and will continue to be charged where appropriate. These include:
-
-- [Inaccuracy penalties - Factsheet CC/FS7a](https://www.gov.uk/government/publications/compliance-checks-penalties-for-inaccuracies-in-returns-or-documents-ccfs7a)
-- [Penalties for not telling HMRC about an under-assessment - Factsheet CC/FS7b](https://www.gov.uk/government/publications/compliance-checks-penalties-for-not-telling-hmrc-about-an-under-assessment-ccfs7b)
-- [Penalties for failure to notify HMRC of a liability to tax - Factsheet CC/FS11](https://www.gov.uk/government/publications/compliance-checks-penalties-for-failure-to-notify-ccfs11)
-
-### Paying penalties and interest
-
-Penalties must be paid within 30 days of the date on the penalty notice. Late payment interest will be charged on penalties that are not paid on time.
-
-### Appeals
-
-The [existing process for appeals](https://www.gov.uk/tax-appeals/penalty) will remain in place, although a provision will be made as part of Penalty Reform to allow the user to appeal their late submission and late payment penalties through the digital tax account.
-
-A customer or agent may contact HMRC if they have a query about a tax decision. If they don’t understand the decision they can also get advice from HMRC or professional help.
-
 ## Submit allowance and adjustments
 
 Some customers must submit an annual summary update. An annual summary is defined as a set of summary data for a tax year, containing allowances and adjustments broken down by category. They can provide updates more frequently if they wish, though they must make this submission before submitting their final declaration. The following endpoints enable customers to submit their annual allowances or adjustments: 
@@ -592,7 +561,7 @@ The software must send the Calculation ID that matches the specific calculation 
 
 ### Final declaration user journey
 
-<a href="figures/final-declaration-diagram.svg" target="blank"><img src="/Users/fmcgrath/Documents/GitHub/poc-demo/income-tax-mtd-end-to-end-service-guide/source/documentation/figures/final-declaration-diagram.svg" alt="final declaration process API diagram" style="width:720px;" /></a>
+<a href="figures/final-declaration-diagram.svg" target="blank"><img src="/figures/final-declaration-diagram.svg" alt="final declaration process API diagram" style="width:720px;" /></a>
 
 <a href="figures/final-declaration-diagram.svg" target="blank">Open the final declaration process diagram in a new tab</a>.
 
@@ -642,3 +611,34 @@ The software can use the following endpoints to enable customers to:
 - [Opt Out of Coding Out](/api-documentation/docs/api/service/self-assessment-accounts-api/3.0/oas/page#tag/Coding-Out-Status/paths/~1accounts~1self-assessment~1{nino}~1{taxYear}~1collection~1tax-code~1coding-out~1opt-out/post) 
 - [Retrieve Coding Out Status](/api-documentation/docs/api/service/self-assessment-accounts-api/3.0/oas/page#tag/Coding-Out-Status/paths/~1accounts~1self-assessment~1{nino}~1{taxYear}~1collection~1tax-code~1coding-out~1status/get)
 - [Opt in to Coding Out](/api-documentation/docs/api/service/self-assessment-accounts-api/3.0/oas/page#tag/Coding-Out-Status/paths/~1accounts~1self-assessment~1{nino}~1{taxYear}~1collection~1tax-code~1coding-out~1opt-in/post)
+
+## Penalties and appeals
+
+(Content needed)
+
+### Penalties for late payment and late submission
+
+The way that HMRC penalises ITSA late payments and late submissions will be changing. The changes, referred to as 'Penalty Reform for ITSA', will apply to ITSA customers from the tax year in which they become mandated to join MTD. More information will follow as it is made available.
+
+For tax years prior to the changes, the existing late payment and late filing penalties continue to apply. You can find more information about these penalties on gov.uk:
+
+- [Penalties for late filing of Self Assessment tax returns](https://www.gov.uk/self-assessment-tax-returns/penalties)
+- [Self Assessment: how to appeal against penalties for late filing and late payment](https://www.gov.uk/government/publications/self-assessment-appeal-against-penalties-for-late-filing-and-late-payment-sa370/self-assessment-how-to-appeal-against-penalties-for-late-filing-and-late-payment)
+
+### Other penalties
+
+Other penalties that apply to ITSA customers are unchanged by Penalty Reform and will continue to be charged where appropriate. These include:
+
+- [Inaccuracy penalties - Factsheet CC/FS7a](https://www.gov.uk/government/publications/compliance-checks-penalties-for-inaccuracies-in-returns-or-documents-ccfs7a)
+- [Penalties for not telling HMRC about an under-assessment - Factsheet CC/FS7b](https://www.gov.uk/government/publications/compliance-checks-penalties-for-not-telling-hmrc-about-an-under-assessment-ccfs7b)
+- [Penalties for failure to notify HMRC of a liability to tax - Factsheet CC/FS11](https://www.gov.uk/government/publications/compliance-checks-penalties-for-failure-to-notify-ccfs11)
+
+### Paying penalties and interest
+
+Penalties must be paid within 30 days of the date on the penalty notice. Late payment interest will be charged on penalties that are not paid on time.
+
+### Appeals
+
+The [existing process for appeals](https://www.gov.uk/tax-appeals/penalty) will remain in place, although a provision will be made as part of Penalty Reform to allow the user to appeal their late submission and late payment penalties through the digital tax account.
+
+A customer or agent may contact HMRC if they have a query about a tax decision. If they don’t understand the decision they can also get advice from HMRC or professional help.

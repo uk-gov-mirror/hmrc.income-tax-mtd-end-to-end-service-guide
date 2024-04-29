@@ -10,6 +10,15 @@ description: Software developers, designers, product owners or business analysts
 
 (Content needed)
 
+## MTD mandated income
+
+A customer’s MTD mandated income consists of the following:
+
+- self-employed sole trader income
+- property income
+
+This is the ‘qualifying’ income HMRC uses to establish if the customer meets the criteria for MTD. MTD Customers can have one, or multiple, businesses with these types of income. For more information about qualifying income, refer to [Check what is included in your qualifying income (GOV.UK)](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax#check-what-is-included-in-your-qualifying-income).
+
 ### Self-employed sole trader income
 
 If the customer is working for themselves, they are a sole trader. For more information about identifying self-employed sole traders, refer to [Working for yourself (GOV.UK)](https://www.gov.uk/working-for-yourself?step-by-step-nav=01ff8dbd-886a-4dbb-872c-d2092b31b2cf). Currently, self-employment income refers to sole trader self-employment income and not income earned through partnerships. This exclusion also applies to directors of limited companies.
@@ -139,50 +148,6 @@ When the tax calculation is triggered, it means that the quarterly obligation ha
 10. HMRC receives the request and returns a Calculation ID. 
 11. The software receives the Calculation ID and stores it for future use.
 12. The software can also use this Calculation ID to call the [Retrieve a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}~1{calculationId}/get) endpoint and display the calculation to the customer. However, this step is optional and the software does not have to retrieve the tax calculation information at this point.
-
-### Change to calendar quarters
-
-From the tax year 2024 to 2025, accounting periods that run from 1 April to 31 March will be treated as equivalent to 6 April to 5 April. This removes the need for customers to make small adjustments of a few days to determine their profit or loss for the tax year.
-
-As a result, customers with an accounting period that starts on 1 April (rather than 6 April) and ends on 31 March will have the opportunity to change their quarterly updates to also start at the beginning of the month. Although all MTD customers or their agents will be able to make this change through their software regardless of their accounting period, only customers with accounting periods starting on 1 April will benefit. Consequently, the software must avoid allowing customers with accounting periods other than 1 April to 31 March to make this change.
-
-The following table shows an example.
-
-| Quarterly update | Calendar quarterly period |
-| ---------------- | ------------------------- |
-| 1                | 1 April to 30 June        |
-| 2                | 1 July to 30 September    |
-| 3                | 1 October to 31 December  |
-| 4                | 1 January to 31 March     |
-
-By default, a customer’s quarterly updates will be set automatically to standard quarters. If they wish to change to calendar quarterly updates, they must do this through their software. This cannot be done through [HMRC online services]( /guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html#hmrc-online-services). The software must make this option available to customers before they submit their first quarterly update. This is because after submitting the first quarterly update for a tax year, the customer cannot change the quarters for that tax year.
-
-However, if the customer is signing up to MTD late in the tax year, they can still make this change as long as it is before their first quarterly update. This change will have no effect on the update deadlines.
-
-To allow a customer to change their periods to calendar quarters, the software should use the [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint. The software should use the [Obligations API](/api-documentation/docs/api/service/obligations-api/) to access the new calendar quarterly periods. 
-
-In the first year of a calendar quarter, the first quarterly period starts on 6 April and ends on 30 June. As a result, customers with a 1 April to 31 March accounting period will need to ensure that income and expenses for the period from 1 April to 5 April are also submitted so that their liability can be assessed accurately for the full tax year equivalent period. 
-
-Consider the following example:
-
-- the customer uses their software to make the change to calendar quarters before their first quarterly update - in software, this is done by using the [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint
-
-- the software then calls the [Obligations API](/api-documentation/docs/api/service/obligations-api/) , which shows the customer’s new calendar quarterly updates as follows
-
-  | Quarterly update | Calendar quarterly period |
-  | ---------------- | ------------------------- |
-  | 1                | 6 April to 30 June        |
-  | 2                | 1 July to 30 September    |
-  | 3                | 1 October to 31 December  |
-  | 4                | 1 January to 31 March     |
-
-- the change affects the first period of the first year and starts from 6 April because that is the first day of the tax year - the first period for subsequent tax years starts on 1 April 
-
-- the customer uses the steps described in [Submit quarterly updates for self-employment and property businesses](#submit-quarterly-updates-for-self-employment-and-property-businesses) to submit their calendar quarterly updates through their software
-
-- when all calendar quarterly updates have been made, the customer needs to account for the income and expense information for the period to 5 April - they can do this through their software by using the [Business Source Adjustable Summary API](/api-documentation/docs/api/service/self-assessment-bsas-api/)
-
-After the calendar quarterly election change has been made, it will continue year on year until the customer requests a change back to standard quarterly updates. The software can use the [Create and Amend Quarterly Period Type for a Business](/api-documentation/docs/api/service/business-details-api/1.0/oas/page#/paths/~1individuals~1business~1details~1{nino}~1{businessId}~1{taxYear}/put) endpoint to allow a customer to change their periods back to standard quarters. Each year the customer makes these changes, the first period start date will be affected and will reflect the previous quarterly update type.
 
 ### View quarterly update
 

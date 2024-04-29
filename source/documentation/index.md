@@ -12,7 +12,7 @@ This service guide explains how you can integrate your software with the [Income
 
 This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations after they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
 
-For more information about eligibility and how to use Making Tax Digital for Income Tax, refer to [Making Tax Digital step by step guidance](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
+For more information about eligibility and how to use Making Tax Digital for Income Tax, refer to [Making Tax Digital step by step guidance (GOV.UK)](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
 
 ## Software provider overview
 
@@ -64,7 +64,7 @@ Below is a summary of updates to this service guide.
 
 #### Version 4.2
 
-7 May  2024
+1 May 2024
 
 - Implement revised document structure
 

@@ -8,7 +8,7 @@ description: Software developers, designers, product owners or business analysts
 
 (Content needed)
 
-### Minimum functionality standards
+## Minimum functionality standards
 
 Previously, the production approvals process included an assessment of whether a product includes certain minimum functionality.
 
@@ -59,7 +59,7 @@ This section of the guide explains the features your product must include before
 
 1. Sign in to the [developer hub](/api-documentation) and register your application for sandbox testing.
 2. [Create a test user which is an individual](/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
-3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax) and Income Tax end-to-end service guide.
+3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax-mtd) and Income Tax end-to-end service guide.
 4. Test ITSA endpoints and develop your software application. Any queries during this phase should be sent to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
 5. Register your application for production credentials by creating a production application within your developer hub account and completing the requested sections.
 6. Provide testing logs and credentials used for testing to HMRC.
@@ -147,13 +147,13 @@ The journey we expect to see for an MFS build will depend on whether you are bui
 
 ## Software choices
 
-Software Choices is a service designed to help users [find compatible software for Making Tax Digital for Income Tax](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) that meets their needs.
+Software Choices is a service designed to help users [find compatible software for Making Tax Digital for Income Tax (GOV.UK)](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) that meets their needs.
 
 An updated version is being developed with filters to help users find products that fit their specific requirements. For instance, a user may wish to find bridging software instead of a standalone product, or a product that suits their accessibility needs. It will also include a filter to find software that is also compatible with Making Tax Digital for VAT.
 
 Software providers have the option for their software to be listed on [software choices](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) as [software in development](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-in-development) after production credentials have been approved. To be listed as [software available now](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax#software-available-now), providers must demonstrate that they: 
 
-- have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/#minimum-functionality-standards) section
+- have developed to minimum functionality standards, by being granted access to the full set of APIs listed in the [minimum functionality standards](#minimum-functionality-standards) section
 - can complete the successful onboarding for a customer - sign up, authorise software, and retrieve obligations
 - can submit a periodic update for a customer for each business income source
 
