@@ -20,7 +20,7 @@ The following table lists the tasks customers will be able to complete through H
 
 | Task | Status | HMRC online services | Software | Reason for service choice |
 | ---- | ------ | -------------------- | -------- | -------- |
-| [Change contact preference between paper and digital secure messages](#changing-contact-preference-between-paper-and-digital-secure-messages) | Live | Yes | No | For security reasons, this functionality is available only in HMRC online services. |
+| [Change contact preference between paper and digital secure messages](#changing-contact-preference) | Live | Yes | No | For security reasons, this functionality is available only in HMRC online services. |
 | Change business details | Future development | Yes | No | All business customers will need access to this functionality. |
 | Change the amount of a payment on account | Future development | Yes | No | For security reasons, this functionality will be available only in HMRC online services. |
 | Check when updates and payments are due | Live | Yes | Yes | Filing obligations and payment dates must be fully visible to all customers. |
