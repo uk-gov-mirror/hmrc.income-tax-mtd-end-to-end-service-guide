@@ -94,6 +94,63 @@ After we are satisfied that the relevant APIs and endpoints have been tested sat
 
 **Note:** Demonstration is not generally required for access to updated APIs (that is, new versions), but satisfactory testing will be required.
 
+###  Stateful and dynamic testing
+
+Some APIs in the Sandbox environment allow software to test different
+scenarios by including ‘Gov-Test-Scenario’ headers in requests. The
+[Income Tax (Making Tax Digital) API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax-mtd) provides more
+information about how to use these test scenarios.
+
+####  Dynamic scenarios
+
+Dynamic scenarios return a response that changes depending on the parameters
+submitted by software, for example National Insurance number or tax year.
+However, the submitted data is not stored for future requests and does not
+affect the behaviour of other endpoints.
+
+####  Stateful scenarios
+
+Stateful scenarios work across groups of endpoints.
+
+With a stateful test scenario, you can submit custom data and then retrieve or
+list it from a different endpoint. For example, you can submit test data
+through the [Self Employment Business API](/api-documentation/docs/api/service/self-employment-business-api/), and then request a summary using the [Business Source Adjustable Summary API](/api-documentation/docs/api/service/self-assessment-bsas-api/) for the same business. 
+
+The Sandbox environment retains test data you submit for 7 days after submission, after which
+it is deleted automatically.
+
+#### Stateful Sandbox user journey
+
+To test the journey for making a Self-Employment or Property Business submission and
+requesting a Business Source Adjustable Summary (BSAS), complete the
+following steps:
+
+  1. Submit 4 stateful Self-Employment/Property Business Period Summaries (one for each quarter of the same tax year) for the desired National Insurance number, tax year and Business ID by calling one of the following endpoints: 
+    * [Create a Self-Employment Period Summary](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post) 
+    * [Create a UK Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post) 
+    * [Create a Foreign Property Income & Expenses Period Summary](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post)
+  2. Submit one stateful Self-Employment/Property Business Annual Submission for the same National Insurance number, tax year and Business ID by calling one of the following endpoints: 
+    * [Create and Amend Self-Employment Annual Submission](/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) 
+    * [Create and Amend a UK Property Business Annual Submission](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put) 
+    * [Create and Amend a Foreign Property Annual Submission](/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put)
+  3. Trigger a stateful Business Source Adjustable Summary for Self-Employment/Property business for the same National Insurance number and Business ID by calling the [Trigger a Business Source Adjustable Summary](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post) endpoint. 
+  4. Retrieve a stateful Business Source Adjustable Summary for the Self-Employment/Property Business by using the Calculation ID generated in the previous step and calling one of the following endpoints: 
+    * [Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D/get) 
+    * [Retrieve a UK Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D/get)
+    * [Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get)
+  5. Submit a stateful accounting adjustment for Self-Employment/Property Business by using the same Business ID and  Calculation ID and calling one of the following endpoints: 
+    * [Submit Self-Employment Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D~1adjust/post)
+    * [Submit UK Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post)
+    * [Submit Foreign Property Accounting Adjustments](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post)
+  6. List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the [List Business Source Adjustable Summaries](/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get) endpoint. 
+
+
+<a href="figures/stateful-bsas-journey.svg" target="blank"><img src="figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
+
+<a href="figures/stateful-bsas-journey.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
+
+
+
 ### Terms of use
 
 You must comply with our [terms of use](/api-documentation/docs/terms-of-use). You must accept the terms of use before we can issue you with production credentials.
