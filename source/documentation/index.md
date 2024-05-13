@@ -84,7 +84,7 @@ Below is a summary of updates to this service guide.
   - add new content to section Submit quarterly update
 - Update Final declaration section:
   - remove all references to ‘crystallisation’
-  - remove sections Calculations that produce errors and Calculations that are free from errors, which are now in section Tax calculation
+  - remove sections Calculations that produce errors and Calculations that are free from errors, which are now in section Tax calculations
   - change ’calcuationId' to 'Calculation ID' and 'finalDeclaraton' to 'Final Declaration'
   - update tax account links in section Pay or get a repayment
 - Update HMRC online services section:
@@ -102,7 +102,7 @@ Below is a summary of updates to this service guide.
 - Update Deprecating APIs section with details about new deprecation headers
 - Update the following section of Business and property income section:
 
-  - Tax calculation (formerly Retrieve a tax calculation)
+  - Tax calculations (formerly Retrieve a tax calculation)
 
 - Update the following sections of Additional information section (formerly Additional Income):
 
@@ -134,7 +134,7 @@ Below is a summary of updates to this service guide.
   - Submit accounting adjustments
   - Construction Industry Scheme
   - Finalise business income End of Period Statement (EOPS)
-  - Tax calculation (formerly 'Retrieve a tax calculation')
+  - Tax calculations (formerly 'Retrieve a tax calculation')
 
 - Move the content of the following sections to other sections in Business and Property Income section:
 
