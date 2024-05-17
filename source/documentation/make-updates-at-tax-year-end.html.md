@@ -618,10 +618,7 @@ The way that HMRC penalises late payments and late submissions is changing. From
 
 Customers will need to choose to become subject to the new penalty regime and HMRC will confirm in writing when this has taken place. Customers cannot make this choice through software. For more information about how customers will agree to these penalties, refer to [Penalties for Income Tax Self Assessment volunteers (GOV.UK)](https://www.gov.uk/guidance/penalties-for-income-tax-self-assessment-volunteers).
 
-For tax years before 2024-25, the existing late payment and late filing penalties continue to apply. You can find more information about these penalties on GOV.UK:
-
-- [Self Assessment tax returns: Penalties (GOV.UK)](https://www.gov.uk/self-assessment-tax-returns/penalties) 
-- [Appeal a Self Assessment penalty for late filing or late payment (GOV.UK)](https://www.gov.uk/guidance/check-when-to-appeal-a-self-assessment-penalty-for-late-filing-or-late-payment)
+For tax years before 2024-25, the existing late payment and late filing penalties continue to apply. For more information, refer to [Self Assessment tax returns: Penalties (GOV.UK)](https://www.gov.uk/self-assessment-tax-returns/penalties).
 
 ### Other penalties
 
@@ -637,6 +634,6 @@ Penalties must be paid within 30 days of the date on the penalty notice. Late pa
 
 ### Appeals
 
-The existing process for appeals, as described in [Disagree with a tax decision (GOV.UK)](https://www.gov.uk/tax-appeals/penalty), will remain in place, but a provision will be made as part of 'Penalty Reform for ITSA' to allow a customer to appeal their late submission and late payment penalties through their digital tax account.
+The existing process for appeals, as described in [Appeal a Self Assessment penalty for late filing or late payment (GOV.UK)](https://www.gov.uk/guidance/check-when-to-appeal-a-self-assessment-penalty-for-late-filing-or-late-payment), will remain in place, but a provision will be made as part of 'Penalty Reform for ITSA' to allow a customer to appeal their late submission and late payment penalties through their digital tax account.
 
 A customer or agent may contact HMRC if they have a query about a tax decision. If they do not understand the decision, they can also get advice from HMRC or professional help.
