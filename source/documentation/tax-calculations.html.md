@@ -47,19 +47,11 @@ If a software provider identifies what they think could be a problem with the [I
 
 <!--- Section owner: Transactional Risking --->
 
-As part of Making Tax Digital, HMRC Assist is a set of APIs that will create a better customer experience by prompting customers with help through their software when they make the following tax calculations: 
+HMRC Assist is a new digital service to support customers using Making Tax Digital (MTD) Income Tax Self-Assessment (ITSA) software. The goal of HMRC Assist is to ensure that customers get their tax returns right the first time. It will analyse information provided through quarterly updates and other data that HMRC holds, such as PAYE information from Real Time Information (RTI) submissions. Based on this data, HMRC Assist provides tailored feedback to customers to help them with their tax returns.
 
-- in-year to date
-- in-year forecast
-- end-of-year
+This service will be accessible to customers and agents through compatible third-party software and [HMRC online services]( /guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html#hmrc-online-services). As a software provider, you will be able to integrate HMRC Assist into your MTD ITSA-compatible product using the [Self Assessment Assist API](/api-documentation/docs/api/service/self-assessment-assist/). Once integrated, customers or their agents submitting information using software can request feedback messages. HMRC Assist will then review the data and provide feedback and suggested actions to ensure accurate tax reporting. Additionally, the service may include links to helpful guidance on [GOV.UK](https://www.gov.uk/government/organisations/hm-revenue-customs)
 
-HMRC Assist is a new digital service for customers who have signed up for Making Tax Digital ITSA. It will provide targeted and tailored messaging to support individual customers with their tax affairs. Agents acting on behalf of clients will receive the same service when they request a tax calculation.
-
-The service will encourage customers to submit accurate information using personalised real-time guidance, increasing correct first-time submissions and compliance.
-
-The service will take the calculation data of the customer, analyse the submission and generate a series of guidance materials, links and suggested actions for the customer to review. 
-
-HMRC Assist will be integrated into the ITSA Submission Service of HMRC so that customers completing their final declaration or return amendment using [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html#hmrc-online-services) will receive tailored assistance.
+For example, if HMRC data suggests that rental income should be declared but has not been, a feedback message may prompt the customer to declare it. Similarly, the service will highlight any tax reliefs or allowances to which the customer may be entitled. While this feature is optional for MTD software, it is expected to meet market demand due to its benefits, including improving the customer experience and increasing accuracy in tax filings.
 
 ### Produce an HMRC Self Assessment assist report
 
