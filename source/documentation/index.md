@@ -36,17 +36,21 @@ Software providers who wish to selectively use Making Tax Digital for Income Tax
 
 ## Mapping APIs to Self Assessment tax return forms
 
-Parameters in some Income Tax (Making Tax Digital) APIs map to box numbers in [Self Assessment tax return forms (GOV.UK)](https://www.gov.uk/self-assessment-tax-return-forms). You can download this mapping information as CSV files from the [income-tax-mtd-changelog/mapping](https://github.com/hmrc/income-tax-mtd-changelog/blob/main/mapping/mapping-csv-files.md) (GitHub).
+Parameters in some Income Tax (Making Tax Digital) APIs map to box numbers in [Self Assessment tax return forms (GOV.UK)](https://www.gov.uk/self-assessment-tax-return-forms). You can download this mapping information as CSV files from [income-tax-mtd-changelog/mapping](https://github.com/hmrc/income-tax-mtd-changelog/blob/main/mapping/mapping-csv-files.md) (GitHub).
 
 ## Changelogs
 
 ### API changelog
 
-The [income-tax-mtd-changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) provides detailed and comprehensive information about API changes.
+The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) provides detailed and comprehensive information about API changes.
 
 ### Document changelog
 
 Below is a summary of updates to this service guide.
+
+#### Version 4.3
+
+- Update API endpoint links within the guide to point to latest available versions
 
 #### Version 4.2
 
