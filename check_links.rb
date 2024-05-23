@@ -1,6 +1,10 @@
 require 'nokogiri'
 require 'pp'
 
+puts "Warning: this script may generate false positive warnings when an endpoint name exists in multiple APIs."
+puts "Always manually validate before updating the version number in a link."
+puts ""
+
 def extract_version(url)
   url.match(/\/(\d+\.\d+)\//) { |m| m[1] }
 end
@@ -35,6 +39,7 @@ end
 def check_markdown_links(api_list, file_path)
   markdown = File.read(file_path)
   warnings = []
+  url_stem = 'https://developer.service.hmrc.gov.uk'
 
   markdown.scan(/\[.*?\]\(.*?\)/).each do |link|
     link_text = link.match(/\[(.*?)\]/)[1].gsub(/[^\w\s]/, '').squeeze(' ').downcase
@@ -45,19 +50,20 @@ def check_markdown_links(api_list, file_path)
       api_endpoints = versions[:endpoints]
       api_endpoints&.each do |endpoint|
         sanitized_endpoint = endpoint.gsub(/[^\w\s]/, '').squeeze(' ').downcase
+        url = url_stem + href
         if link_text == sanitized_endpoint
           if link_version.nil?
             next
           elsif versions[:production] == 'N/A'
-            warnings << [href, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'no prod version']
+            warnings << [url, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'no prod version']
           elsif link_version < versions[:production]
-            warnings << [href, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'stale (newer prod version available)']
+            warnings << [url, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'stale (newer prod version available)']
           elsif link_version == versions[:sandbox] && link_version > versions[:production]
-            warnings << [href, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'links to sandbox version when prod is lower']
+            warnings << [url, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'links to sandbox version when prod is lower']
           elsif link_version > versions[:sandbox]
-            warnings << [href, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'links to version that is not public (broken?)']
+            warnings << [url, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'links to version that is not public (broken?)']
           elsif link_version != versions[:production]
-            warnings << [href, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'other']
+            warnings << [url, api_name, endpoint, link_version, versions[:sandbox], versions[:production], 'other']
           end
         end
       end
