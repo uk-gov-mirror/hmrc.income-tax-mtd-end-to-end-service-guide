@@ -38,6 +38,17 @@ Software providers who wish to selectively use Making Tax Digital for Income Tax
 
 Parameters in some Income Tax (Making Tax Digital) APIs map to box numbers in [Self Assessment tax return forms (GOV.UK)](https://www.gov.uk/self-assessment-tax-return-forms). You can download this mapping information as CSV files from [income-tax-mtd-changelog/mapping](https://github.com/hmrc/income-tax-mtd-changelog/blob/main/mapping/mapping-csv-files.md) (GitHub).
 
+## Navigating Income Tax (Making Tax Digital) API documentation
+
+The following table lists the documents for Income Tax (Making Tax Digital) APIs and outlines the content and intended readers of each document.
+
+| Document | Content type | Summary | Intended readers |
+| -------- | ------------ | ------- | ---------------- |
+| [Income Tax (Making Tax Digital) roadmap](/roadmaps/mtd-itsa-vendors-roadmap/#making-tax-digital-itsa-roadmap) | Functional | Learn about upcoming functional changes to Income Tax (Making Tax Digital) APIs and their scheduled release timelines. | Product managers<br /><br />Business analysts |
+| Income Tax (Making Tax Digital) end-to-end service guide (this document) | Functional | Learn how you can integrate your application software with Income Tax (Making Tax Digital) APIs. | Product managers<br /><br />Business analysts<br /><br />Software developers |
+| [Income Tax (Making Tax Digital) API landing pages](/api-documentation/docs/api?filter=income-tax-mtd) <br /><br />Example: [Business Details API](/api-documentation/docs/api/service/business-details-api/) | Functional       | Learn about the high-level functionality of each API. | Product managers<br /><br />Business analysts<br /><br />Software developers |
+| Income Tax (Making Tax Digital) API reference pages (accessible from API landing pages)<br /><br />Example: [Business Details API v1.0](/api-documentation/docs/api/service/business-details-api/1.0/oas/page) | Technical | Learn in detail about the request and response schemas, test data and error handling of each API. | Business analysts<br /><br />Software developers |
+
 ## Changelogs
 
 ### API changelog
