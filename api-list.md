@@ -2,7 +2,8 @@
   <summary>
 API: Business Details
  </summary>
-API: [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0)
+(Sandbox: 1.0, Production: 1.0)
 
 - Endpoint: List All Businesses
 - Endpoint: Retrieve Business Details
@@ -13,7 +14,8 @@ API: [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/
   <summary>
 API: Business Income Source Summary
  </summary>
-API: [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: Retrieve a Business Income Source Summary (BISS)
 </details>
@@ -22,7 +24,8 @@ API: [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-
   <summary>
 API: Business Source Adjustable Summary
  </summary>
-API: [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0) (Sandbox: 5.0, Production: 4.0)
+API: [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0)
+(Sandbox: 5.0, Production: 4.0)
 
 - Endpoint: List Business Source Adjustable Summaries [test only]
 - Endpoint: Trigger a Business Source Adjustable Summary [test only]
@@ -38,7 +41,8 @@ API: [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/
   <summary>
 API: CIS Deductions
  </summary>
-API: [CIS Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [CIS Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: Retrieve CIS Deductions for Subcontractor
 - Endpoint: Create CIS Deductions for Subcontractor
@@ -50,7 +54,8 @@ API: [CIS Deductions](https://developer.service.hmrc.gov.uk/api-documentation/do
   <summary>
 API: Individual Calculations
  </summary>
-API: [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/5.0) (Sandbox: 5.0, Production: 5.0)
+API: [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/5.0)
+(Sandbox: 5.0, Production: 5.0)
 
 - Endpoint: List Self Assessment Tax Calculations
 - Endpoint: Trigger a Self Assessment Tax Calculation
@@ -62,7 +67,8 @@ API: [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documen
   <summary>
 API: Individual Losses
  </summary>
-API: [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0) (Sandbox: 4.0, Production: 4.0)
+API: [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0)
+(Sandbox: 4.0, Production: 4.0)
 
 - Endpoint: Create a Brought Forward Loss
 - Endpoint: Amend a Brought Forward Loss Amount
@@ -81,7 +87,8 @@ API: [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation
   <summary>
 API: Individuals Business End of Period Statement
  </summary>
-API: [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/3.0)
+(Sandbox: 3.0, Production: 3.0)
 
 - Endpoint: Submit End of Period Statement for a Business
 </details>
@@ -90,7 +97,8 @@ API: [Individuals Business End of Period Statement](https://developer.service.hm
   <summary>
 API: Individuals Capital Gains Income
  </summary>
-API: [Individuals Capital Gains Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Capital Gains Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve All CGT Residential Property Disposals and Overrides [Test only]
 - Endpoint: Create and Amend CGT Residential Property Disposals (non-PPD) [Test only]
@@ -106,7 +114,8 @@ API: [Individuals Capital Gains Income](https://developer.service.hmrc.gov.uk/ap
   <summary>
 API: Individuals Charges
  </summary>
-API: [Individuals Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: Retrieve Pension Charges
 - Endpoint: Create and Amend Pension Charges
@@ -117,7 +126,8 @@ API: [Individuals Charges](https://developer.service.hmrc.gov.uk/api-documentati
   <summary>
 API: Individuals Disclosures
  </summary>
-API: [Individuals Disclosures](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals Disclosures](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0)
+(Sandbox: 1.0, Production: 1.0)
 
 - Endpoint: Create Marriage Allowance
 - Endpoint: Retrieve Disclosures
@@ -129,7 +139,8 @@ API: [Individuals Disclosures](https://developer.service.hmrc.gov.uk/api-documen
   <summary>
 API: Individuals Dividends Income
  </summary>
-API: [Individuals Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-dividends-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-dividends-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve Dividends Income [Test only]
 - Endpoint: Create and Amend Dividends Income [Test only]
@@ -143,7 +154,8 @@ API: [Individuals Dividends Income](https://developer.service.hmrc.gov.uk/api-do
   <summary>
 API: Individuals Employments Income
  </summary>
-API: [Individuals Employments Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-employments-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Employments Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-employments-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: List Employments [Test only]
 - Endpoint: Add a Custom Employment [Test only]
@@ -167,7 +179,8 @@ API: [Individuals Employments Income](https://developer.service.hmrc.gov.uk/api-
   <summary>
 API: Individuals Expenses
  </summary>
-API: [Individuals Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: Retrieve Employment Expenses
 - Endpoint: Create and Amend Employment Expenses
@@ -182,7 +195,8 @@ API: [Individuals Expenses](https://developer.service.hmrc.gov.uk/api-documentat
   <summary>
 API: Individuals Foreign Income
  </summary>
-API: [Individuals Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-foreign-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-foreign-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve Foreign Income
 - Endpoint: Create and Amend Foreign Income
@@ -193,7 +207,8 @@ API: [Individuals Foreign Income](https://developer.service.hmrc.gov.uk/api-docu
   <summary>
 API: Individuals Income Received
  </summary>
-API: [Individuals Income Received](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Income Received](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: List Employments
 - Endpoint: Add a Custom Employment
@@ -250,7 +265,8 @@ API: [Individuals Income Received](https://developer.service.hmrc.gov.uk/api-doc
   <summary>
 API: Individuals Insurance Policies Income
  </summary>
-API: [Individuals Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-insurance-policies-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-insurance-policies-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve Insurance Policies Income [Test only]
 - Endpoint: Create and Amend Insurance Policies Income [Test only]
@@ -261,7 +277,8 @@ API: [Individuals Insurance Policies Income](https://developer.service.hmrc.gov.
   <summary>
 API: Individuals Other Income
  </summary>
-API: [Individuals Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-other-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-other-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve Other Income [Test only]
 - Endpoint: Create and Amend Other Income [Test only]
@@ -272,7 +289,8 @@ API: [Individuals Other Income](https://developer.service.hmrc.gov.uk/api-docume
   <summary>
 API: Individuals Pensions Income
  </summary>
-API: [Individuals Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-pensions-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-pensions-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Retrieve Pensions Income
 - Endpoint: Create and Amend Pensions Income
@@ -283,7 +301,8 @@ API: [Individuals Pensions Income](https://developer.service.hmrc.gov.uk/api-doc
   <summary>
 API: Individuals Reliefs
  </summary>
-API: [Individuals Reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals Reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0)
+(Sandbox: 1.0, Production: 1.0)
 
 - Endpoint: Retrieve Relief Investments
 - Endpoint: Create and Amend Relief Investments
@@ -306,7 +325,8 @@ API: [Individuals Reliefs](https://developer.service.hmrc.gov.uk/api-documentati
   <summary>
 API: Individuals Savings Income
  </summary>
-API: [Individuals Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-savings-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-savings-income-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: List All UK Savings Accounts [Test only]
 - Endpoint: Add a UK Savings Account [Test only]
@@ -321,7 +341,8 @@ API: [Individuals Savings Income](https://developer.service.hmrc.gov.uk/api-docu
   <summary>
 API: Individuals State Benefits
  </summary>
-API: [Individuals State Benefits](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals State Benefits](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0)
+(Sandbox: 1.0, Production: 1.0)
 
 - Endpoint: List State Benefits
 - Endpoint: Create State Benefit
@@ -337,7 +358,8 @@ API: [Individuals State Benefits](https://developer.service.hmrc.gov.uk/api-docu
   <summary>
 API: Obligations
  </summary>
-API: [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0)
+(Sandbox: 2.0, Production: 2.0)
 
 - Endpoint: Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations
 - Endpoint: Retrieve Income Tax (Self Assessment) Final Declaration Obligations
@@ -348,7 +370,8 @@ API: [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/
   <summary>
 API: Other Deductions
  </summary>
-API: [Other Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Other Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0)
+(Sandbox: 1.0, Production: 1.0)
 
 - Endpoint: Retrieve deductions
 - Endpoint: Create and Amend deductions
@@ -359,7 +382,8 @@ API: [Other Deductions](https://developer.service.hmrc.gov.uk/api-documentation/
   <summary>
 API: Property Business
  </summary>
-API: [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0) (Sandbox: 4.0, Production: 3.0)
+API: [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0)
+(Sandbox: 4.0, Production: 3.0)
 
 - Endpoint: Retrieve a UK Property Business Annual Submission
 - Endpoint: Create and Amend a UK Property Business Annual Submission
@@ -393,7 +417,8 @@ API: [Property Business](https://developer.service.hmrc.gov.uk/api-documentation
   <summary>
 API: Self Assessment Accounts
  </summary>
-API: [Self Assessment Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Self Assessment Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/3.0)
+(Sandbox: 3.0, Production: 3.0)
 
 - Endpoint: Retrieve History of a Self Assessment Charge
 - Endpoint: Retrieve Self Assessment Balance and Transactions
@@ -410,7 +435,8 @@ API: [Self Assessment Accounts](https://developer.service.hmrc.gov.uk/api-docume
   <summary>
 API: Self Assessment Assist
  </summary>
-API: [Self Assessment Assist](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Self Assessment Assist](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Produce a HMRC Self Assessment Assist Report
 - Endpoint: Acknowledge a HMRC Self Assessment Assist Report
@@ -420,7 +446,8 @@ API: [Self Assessment Assist](https://developer.service.hmrc.gov.uk/api-document
   <summary>
 API: Self Assessment Individual Details
  </summary>
-API: [Self Assessment Individual Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-individual-details-api/2.0) (Sandbox: 2.0, Production: 1.0)
+API: [Self Assessment Individual Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-individual-details-api/2.0)
+(Sandbox: 2.0, Production: 1.0)
 
 - Endpoint: Retrieve ITSA Status
 </details>
@@ -429,7 +456,8 @@ API: [Self Assessment Individual Details](https://developer.service.hmrc.gov.uk/
   <summary>
 API: Self-Employment Business
  </summary>
-API: [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0)
+(Sandbox: 3.0, Production: 3.0)
 
 - Endpoint: Retrieve a Self-Employment Annual Submission
 - Endpoint: Create and Amend Self-Employment Annual Submission
@@ -444,7 +472,8 @@ API: [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-docume
   <summary>
 API: Self-Assessment Test Support
  </summary>
-API: [Self-Assessment Test Support](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/mtd-sa-test-support-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Self-Assessment Test Support](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/mtd-sa-test-support-api/1.0)
+(Sandbox: 1.0, Production: N/A)
 
 - Endpoint: Delete Stateful Test Data
 - Endpoint: List checkpoints

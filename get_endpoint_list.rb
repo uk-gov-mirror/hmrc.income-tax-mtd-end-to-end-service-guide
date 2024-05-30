@@ -61,7 +61,7 @@ File.open('api-list.md', 'w') do |file|
         yaml_content = URI.open(resolved_url).read
         yaml_data = YAML.safe_load(yaml_content, permitted_classes: [Date, Time])
         clean_api_name = link.text.strip.gsub(/\s*\(MTD\)\z/, '')
-        api_details = "API: [#{clean_api_name}](#{link_url}) (Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
+        api_details = "API: [#{clean_api_name}](#{link_url})" + "\n" + "(Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
         # Extract and write the "summary" elements to the output file
         file.puts "<details>"
         file.puts "  <summary>"
