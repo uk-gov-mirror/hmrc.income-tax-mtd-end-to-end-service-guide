@@ -74,7 +74,7 @@ File.open('api-list.md', 'w') do |file|
             file.puts "- Endpoint: #{details['summary']}"
           end
         end
-
+        file.puts "</details>"
         file.puts ""
       rescue OpenURI::HTTPError => e
         puts "Error fetching YAML content for #{resolved_url}: #{e.message}"

@@ -6,6 +6,7 @@ API: [Business Details (MTD)](https://developer.service.hmrc.gov.uk/api-document
 - Endpoint: List All Businesses
 - Endpoint: Retrieve Business Details
 - Endpoint: Create and Amend Quarterly Period Type for a Business
+</details>
 
 <details>
   <summary>
@@ -13,6 +14,7 @@ API: Business Income Source Summary (MTD)
  </summary>
 API: [Business Income Source Summary (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0) (Sandbox: 2.0, Production: 2.0)
 - Endpoint: Retrieve a Business Income Source Summary (BISS)
+</details>
 
 <details>
   <summary>
@@ -27,6 +29,7 @@ API: [Business Source Adjustable Summary (MTD)](https://developer.service.hmrc.g
 - Endpoint: Submit UK Property Accounting Adjustments [test only]
 - Endpoint: Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)
 - Endpoint: Submit Foreign Property Accounting Adjustments [test only]
+</details>
 
 <details>
   <summary>
@@ -37,6 +40,7 @@ API: [CIS Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-documentat
 - Endpoint: Create CIS Deductions for Subcontractor
 - Endpoint: Amend CIS Deductions for Subcontractor
 - Endpoint: Delete CIS Deductions for Subcontractor
+</details>
 
 <details>
   <summary>
@@ -47,6 +51,7 @@ API: [Individual Calculations (MTD)](https://developer.service.hmrc.gov.uk/api-d
 - Endpoint: Trigger a Self Assessment Tax Calculation
 - Endpoint: Retrieve a Self Assessment Tax Calculation
 - Endpoint: Submit a Self Assessment Final Declaration
+</details>
 
 <details>
   <summary>
@@ -64,6 +69,7 @@ API: [Individual Losses (MTD)](https://developer.service.hmrc.gov.uk/api-documen
 - Endpoint: Delete a Loss Claim
 - Endpoint: Amend a Loss Claim Type
 - Endpoint: Amend Loss Claims Order
+</details>
 
 <details>
   <summary>
@@ -71,6 +77,7 @@ API: Individuals Business End of Period Statement (MTD)
  </summary>
 API: [Individuals Business End of Period Statement (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/3.0) (Sandbox: 3.0, Production: 3.0)
 - Endpoint: Submit End of Period Statement for a Business
+</details>
 
 <details>
   <summary>
@@ -85,6 +92,7 @@ API: [Individuals Capital Gains Income (MTD)](https://developer.service.hmrc.gov
 - Endpoint: Retrieve Other Capital Gains and Disposals [Test only]
 - Endpoint: Create and Amend Other Capital Gains and Disposals [Test only]
 - Endpoint: Delete Other Capital Gains and Disposals [Test only]
+</details>
 
 <details>
   <summary>
@@ -94,6 +102,7 @@ API: [Individuals Charges (MTD)](https://developer.service.hmrc.gov.uk/api-docum
 - Endpoint: Retrieve Pension Charges
 - Endpoint: Create and Amend Pension Charges
 - Endpoint: Delete Pension Charges
+</details>
 
 <details>
   <summary>
@@ -104,6 +113,7 @@ API: [Individuals Disclosures (MTD)](https://developer.service.hmrc.gov.uk/api-d
 - Endpoint: Retrieve Disclosures
 - Endpoint: Create and Amend Disclosures
 - Endpoint: Delete Disclosures
+</details>
 
 <details>
   <summary>
@@ -116,6 +126,7 @@ API: [Individuals Dividends Income (MTD)](https://developer.service.hmrc.gov.uk/
 - Endpoint: Retrieve a UK Dividends Income Annual Summary [Test only]
 - Endpoint: Create and Amend a UK Dividends Income Annual Summary [Test only]
 - Endpoint: Delete a UK Dividends Income Annual Summary [Test only]
+</details>
 
 <details>
   <summary>
@@ -138,6 +149,7 @@ API: [Individuals Employments Income (MTD)](https://developer.service.hmrc.gov.u
 - Endpoint: Retrieve Other Employment Income [Test only]
 - Endpoint: Create and Amend Other Employment Income [Test only]
 - Endpoint: Delete Other Employment Income [Test only]
+</details>
 
 <details>
   <summary>
@@ -151,6 +163,7 @@ API: [Individuals Expenses (MTD)](https://developer.service.hmrc.gov.uk/api-docu
 - Endpoint: Retrieve Other Expenses
 - Endpoint: Create and Amend Other Expenses
 - Endpoint: Delete Other Expenses
+</details>
 
 <details>
   <summary>
@@ -160,6 +173,7 @@ API: [Individuals Foreign Income (MTD)](https://developer.service.hmrc.gov.uk/ap
 - Endpoint: Retrieve Foreign Income
 - Endpoint: Create and Amend Foreign Income
 - Endpoint: Delete Foreign Income
+</details>
 
 <details>
   <summary>
@@ -215,6 +229,7 @@ API: [Individuals Income Received (MTD)](https://developer.service.hmrc.gov.uk/a
 - Endpoint: Retrieve Other Capital Gains and Disposals
 - Endpoint: Create and Amend Other Capital Gains and Disposals
 - Endpoint: Delete Other Capital Gains and Disposals
+</details>
 
 <details>
   <summary>
@@ -224,6 +239,7 @@ API: [Individuals Insurance Policies Income (MTD)](https://developer.service.hmr
 - Endpoint: Retrieve Insurance Policies Income [Test only]
 - Endpoint: Create and Amend Insurance Policies Income [Test only]
 - Endpoint: Delete Insurance Policies Income [Test only]
+</details>
 
 <details>
   <summary>
@@ -233,6 +249,7 @@ API: [Individuals Other Income (MTD)](https://developer.service.hmrc.gov.uk/api-
 - Endpoint: Retrieve Other Income [Test only]
 - Endpoint: Create and Amend Other Income [Test only]
 - Endpoint: Delete Other Income [Test only]
+</details>
 
 <details>
   <summary>
@@ -242,6 +259,7 @@ API: [Individuals Pensions Income (MTD)](https://developer.service.hmrc.gov.uk/a
 - Endpoint: Retrieve Pensions Income
 - Endpoint: Create and Amend Pensions Income
 - Endpoint: Delete Pensions Income
+</details>
 
 <details>
   <summary>
@@ -263,6 +281,7 @@ API: [Individuals Reliefs (MTD)](https://developer.service.hmrc.gov.uk/api-docum
 - Endpoint: Retrieve Charitable Giving Tax Relief
 - Endpoint: Create and Amend Charitable Giving Tax Relief
 - Endpoint: Delete Charitable Giving Tax Relief
+</details>
 
 <details>
   <summary>
@@ -276,6 +295,7 @@ API: [Individuals Savings Income (MTD)](https://developer.service.hmrc.gov.uk/ap
 - Endpoint: Retrieve Savings Income [Test only]
 - Endpoint: Create and Amend Savings Income [Test only]
 - Endpoint: Delete Savings Income [Test only]
+</details>
 
 <details>
   <summary>
@@ -290,6 +310,7 @@ API: [Individuals State Benefits (MTD)](https://developer.service.hmrc.gov.uk/ap
 - Endpoint: Delete State Benefit Amounts
 - Endpoint: Ignore State Benefit
 - Endpoint: Unignore State Benefit
+</details>
 
 <details>
   <summary>
@@ -299,6 +320,7 @@ API: [Obligations (MTD)](https://developer.service.hmrc.gov.uk/api-documentation
 - Endpoint: Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations
 - Endpoint: Retrieve Income Tax (Self Assessment) Final Declaration Obligations
 - Endpoint: Retrieve Income Tax (Self Assessment) End of Period Statement Obligations
+</details>
 
 <details>
   <summary>
@@ -308,6 +330,7 @@ API: [Other Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-document
 - Endpoint: Retrieve deductions
 - Endpoint: Create and Amend deductions
 - Endpoint: Delete deductions
+</details>
 
 <details>
   <summary>
@@ -340,6 +363,7 @@ API: [Property Business (MTD)](https://developer.service.hmrc.gov.uk/api-documen
 - Endpoint: Create and Amend a Foreign Property Annual Submission
 - Endpoint: Delete a Property Annual Submission
 - Endpoint: List Property Income and Expenses Period Summaries
+</details>
 
 <details>
   <summary>
@@ -355,6 +379,7 @@ API: [Self Assessment Accounts (MTD)](https://developer.service.hmrc.gov.uk/api-
 - Endpoint: Opt Out of Coding Out
 - Endpoint: Retrieve Coding Out Status
 - Endpoint: Opt In to Coding Out
+</details>
 
 <details>
   <summary>
@@ -363,6 +388,7 @@ API: Self Assessment Assist (MTD)
 API: [Self Assessment Assist (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0) (Sandbox: 1.0, Production: N/A)
 - Endpoint: Produce a HMRC Self Assessment Assist Report
 - Endpoint: Acknowledge a HMRC Self Assessment Assist Report
+</details>
 
 <details>
   <summary>
@@ -370,6 +396,7 @@ API: Self Assessment Individual Details (MTD)
  </summary>
 API: [Self Assessment Individual Details (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-individual-details-api/2.0) (Sandbox: 2.0, Production: 1.0)
 - Endpoint: Retrieve ITSA Status
+</details>
 
 <details>
   <summary>
@@ -383,6 +410,7 @@ API: [Self-Employment Business (MTD)](https://developer.service.hmrc.gov.uk/api-
 - Endpoint: Create a Self-Employment Period Summary
 - Endpoint: Retrieve a Self-Employment Period Summary
 - Endpoint: Amend a Self-Employment Period Summary
+</details>
 
 <details>
   <summary>
@@ -397,4 +425,5 @@ API: [Self-Assessment Test Support (MTD)](https://developer.service.hmrc.gov.uk/
 - Endpoint: Create a Test Business
 - Endpoint: Delete a Test Business
 - Endpoint: Create and Amend Test ITSA Status
+</details>
 
