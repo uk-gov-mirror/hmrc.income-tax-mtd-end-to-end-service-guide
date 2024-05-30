@@ -1,8 +1,9 @@
 <details>
   <summary>
-API: Business Details (MTD)
+API: Business Details
  </summary>
-API: [Business Details (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/1.0) (Sandbox: 1.0, Production: 1.0)
+
 - Endpoint: List All Businesses
 - Endpoint: Retrieve Business Details
 - Endpoint: Create and Amend Quarterly Period Type for a Business
@@ -10,17 +11,19 @@ API: [Business Details (MTD)](https://developer.service.hmrc.gov.uk/api-document
 
 <details>
   <summary>
-API: Business Income Source Summary (MTD)
+API: Business Income Source Summary
  </summary>
-API: [Business Income Source Summary (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Business Income Source Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-biss-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: Retrieve a Business Income Source Summary (BISS)
 </details>
 
 <details>
   <summary>
-API: Business Source Adjustable Summary (MTD)
+API: Business Source Adjustable Summary
  </summary>
-API: [Business Source Adjustable Summary (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0) (Sandbox: 5.0, Production: 4.0)
+API: [Business Source Adjustable Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0) (Sandbox: 5.0, Production: 4.0)
+
 - Endpoint: List Business Source Adjustable Summaries [test only]
 - Endpoint: Trigger a Business Source Adjustable Summary [test only]
 - Endpoint: Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)
@@ -33,9 +36,10 @@ API: [Business Source Adjustable Summary (MTD)](https://developer.service.hmrc.g
 
 <details>
   <summary>
-API: CIS Deductions (MTD)
+API: CIS Deductions
  </summary>
-API: [CIS Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [CIS Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/cis-deductions-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: Retrieve CIS Deductions for Subcontractor
 - Endpoint: Create CIS Deductions for Subcontractor
 - Endpoint: Amend CIS Deductions for Subcontractor
@@ -44,9 +48,10 @@ API: [CIS Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-documentat
 
 <details>
   <summary>
-API: Individual Calculations (MTD)
+API: Individual Calculations
  </summary>
-API: [Individual Calculations (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/5.0) (Sandbox: 5.0, Production: 5.0)
+API: [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/5.0) (Sandbox: 5.0, Production: 5.0)
+
 - Endpoint: List Self Assessment Tax Calculations
 - Endpoint: Trigger a Self Assessment Tax Calculation
 - Endpoint: Retrieve a Self Assessment Tax Calculation
@@ -55,9 +60,10 @@ API: [Individual Calculations (MTD)](https://developer.service.hmrc.gov.uk/api-d
 
 <details>
   <summary>
-API: Individual Losses (MTD)
+API: Individual Losses
  </summary>
-API: [Individual Losses (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0) (Sandbox: 4.0, Production: 4.0)
+API: [Individual Losses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-losses-api/4.0) (Sandbox: 4.0, Production: 4.0)
+
 - Endpoint: Create a Brought Forward Loss
 - Endpoint: Amend a Brought Forward Loss Amount
 - Endpoint: List Brought Forward Losses
@@ -73,17 +79,19 @@ API: [Individual Losses (MTD)](https://developer.service.hmrc.gov.uk/api-documen
 
 <details>
   <summary>
-API: Individuals Business End of Period Statement (MTD)
+API: Individuals Business End of Period Statement
  </summary>
-API: [Individuals Business End of Period Statement (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Individuals Business End of Period Statement](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-business-eops-api/3.0) (Sandbox: 3.0, Production: 3.0)
+
 - Endpoint: Submit End of Period Statement for a Business
 </details>
 
 <details>
   <summary>
-API: Individuals Capital Gains Income (MTD)
+API: Individuals Capital Gains Income
  </summary>
-API: [Individuals Capital Gains Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Capital Gains Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve All CGT Residential Property Disposals and Overrides [Test only]
 - Endpoint: Create and Amend CGT Residential Property Disposals (non-PPD) [Test only]
 - Endpoint: Delete CGT Residential Property Disposals (non-PPD) [Test only]
@@ -96,9 +104,10 @@ API: [Individuals Capital Gains Income (MTD)](https://developer.service.hmrc.gov
 
 <details>
   <summary>
-API: Individuals Charges (MTD)
+API: Individuals Charges
  </summary>
-API: [Individuals Charges (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Charges](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-charges-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: Retrieve Pension Charges
 - Endpoint: Create and Amend Pension Charges
 - Endpoint: Delete Pension Charges
@@ -106,9 +115,10 @@ API: [Individuals Charges (MTD)](https://developer.service.hmrc.gov.uk/api-docum
 
 <details>
   <summary>
-API: Individuals Disclosures (MTD)
+API: Individuals Disclosures
  </summary>
-API: [Individuals Disclosures (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals Disclosures](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-disclosures-api/1.0) (Sandbox: 1.0, Production: 1.0)
+
 - Endpoint: Create Marriage Allowance
 - Endpoint: Retrieve Disclosures
 - Endpoint: Create and Amend Disclosures
@@ -117,9 +127,10 @@ API: [Individuals Disclosures (MTD)](https://developer.service.hmrc.gov.uk/api-d
 
 <details>
   <summary>
-API: Individuals Dividends Income (MTD)
+API: Individuals Dividends Income
  </summary>
-API: [Individuals Dividends Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-dividends-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Dividends Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-dividends-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve Dividends Income [Test only]
 - Endpoint: Create and Amend Dividends Income [Test only]
 - Endpoint: Delete Dividends Income [Test only]
@@ -130,9 +141,10 @@ API: [Individuals Dividends Income (MTD)](https://developer.service.hmrc.gov.uk/
 
 <details>
   <summary>
-API: Individuals Employments Income (MTD)
+API: Individuals Employments Income
  </summary>
-API: [Individuals Employments Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-employments-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Employments Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-employments-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: List Employments [Test only]
 - Endpoint: Add a Custom Employment [Test only]
 - Endpoint: Retrieve an Employment [Test only]
@@ -153,9 +165,10 @@ API: [Individuals Employments Income (MTD)](https://developer.service.hmrc.gov.u
 
 <details>
   <summary>
-API: Individuals Expenses (MTD)
+API: Individuals Expenses
  </summary>
-API: [Individuals Expenses (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Expenses](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-expenses-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: Retrieve Employment Expenses
 - Endpoint: Create and Amend Employment Expenses
 - Endpoint: Delete Employment Expenses
@@ -167,9 +180,10 @@ API: [Individuals Expenses (MTD)](https://developer.service.hmrc.gov.uk/api-docu
 
 <details>
   <summary>
-API: Individuals Foreign Income (MTD)
+API: Individuals Foreign Income
  </summary>
-API: [Individuals Foreign Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-foreign-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Foreign Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-foreign-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve Foreign Income
 - Endpoint: Create and Amend Foreign Income
 - Endpoint: Delete Foreign Income
@@ -177,9 +191,10 @@ API: [Individuals Foreign Income (MTD)](https://developer.service.hmrc.gov.uk/ap
 
 <details>
   <summary>
-API: Individuals Income Received (MTD)
+API: Individuals Income Received
  </summary>
-API: [Individuals Income Received (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Individuals Income Received](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-income-received-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: List Employments
 - Endpoint: Add a Custom Employment
 - Endpoint: Retrieve an Employment
@@ -233,9 +248,10 @@ API: [Individuals Income Received (MTD)](https://developer.service.hmrc.gov.uk/a
 
 <details>
   <summary>
-API: Individuals Insurance Policies Income (MTD)
+API: Individuals Insurance Policies Income
  </summary>
-API: [Individuals Insurance Policies Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-insurance-policies-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Insurance Policies Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-insurance-policies-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve Insurance Policies Income [Test only]
 - Endpoint: Create and Amend Insurance Policies Income [Test only]
 - Endpoint: Delete Insurance Policies Income [Test only]
@@ -243,9 +259,10 @@ API: [Individuals Insurance Policies Income (MTD)](https://developer.service.hmr
 
 <details>
   <summary>
-API: Individuals Other Income (MTD)
+API: Individuals Other Income
  </summary>
-API: [Individuals Other Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-other-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Other Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-other-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve Other Income [Test only]
 - Endpoint: Create and Amend Other Income [Test only]
 - Endpoint: Delete Other Income [Test only]
@@ -253,9 +270,10 @@ API: [Individuals Other Income (MTD)](https://developer.service.hmrc.gov.uk/api-
 
 <details>
   <summary>
-API: Individuals Pensions Income (MTD)
+API: Individuals Pensions Income
  </summary>
-API: [Individuals Pensions Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-pensions-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Pensions Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-pensions-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Retrieve Pensions Income
 - Endpoint: Create and Amend Pensions Income
 - Endpoint: Delete Pensions Income
@@ -263,9 +281,10 @@ API: [Individuals Pensions Income (MTD)](https://developer.service.hmrc.gov.uk/a
 
 <details>
   <summary>
-API: Individuals Reliefs (MTD)
+API: Individuals Reliefs
  </summary>
-API: [Individuals Reliefs (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals Reliefs](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-reliefs-api/1.0) (Sandbox: 1.0, Production: 1.0)
+
 - Endpoint: Retrieve Relief Investments
 - Endpoint: Create and Amend Relief Investments
 - Endpoint: Delete Relief Investments
@@ -285,9 +304,10 @@ API: [Individuals Reliefs (MTD)](https://developer.service.hmrc.gov.uk/api-docum
 
 <details>
   <summary>
-API: Individuals Savings Income (MTD)
+API: Individuals Savings Income
  </summary>
-API: [Individuals Savings Income (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-savings-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Individuals Savings Income](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-savings-income-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: List All UK Savings Accounts [Test only]
 - Endpoint: Add a UK Savings Account [Test only]
 - Endpoint: Retrieve UK Savings Account Annual Summary [Test only]
@@ -299,9 +319,10 @@ API: [Individuals Savings Income (MTD)](https://developer.service.hmrc.gov.uk/ap
 
 <details>
   <summary>
-API: Individuals State Benefits (MTD)
+API: Individuals State Benefits
  </summary>
-API: [Individuals State Benefits (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Individuals State Benefits](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individuals-state-benefits-api/1.0) (Sandbox: 1.0, Production: 1.0)
+
 - Endpoint: List State Benefits
 - Endpoint: Create State Benefit
 - Endpoint: Amend State Benefit
@@ -314,9 +335,10 @@ API: [Individuals State Benefits (MTD)](https://developer.service.hmrc.gov.uk/ap
 
 <details>
   <summary>
-API: Obligations (MTD)
+API: Obligations
  </summary>
-API: [Obligations (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0) (Sandbox: 2.0, Production: 2.0)
+API: [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/2.0) (Sandbox: 2.0, Production: 2.0)
+
 - Endpoint: Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations
 - Endpoint: Retrieve Income Tax (Self Assessment) Final Declaration Obligations
 - Endpoint: Retrieve Income Tax (Self Assessment) End of Period Statement Obligations
@@ -324,9 +346,10 @@ API: [Obligations (MTD)](https://developer.service.hmrc.gov.uk/api-documentation
 
 <details>
   <summary>
-API: Other Deductions (MTD)
+API: Other Deductions
  </summary>
-API: [Other Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0) (Sandbox: 1.0, Production: 1.0)
+API: [Other Deductions](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/other-deductions-api/1.0) (Sandbox: 1.0, Production: 1.0)
+
 - Endpoint: Retrieve deductions
 - Endpoint: Create and Amend deductions
 - Endpoint: Delete deductions
@@ -334,9 +357,10 @@ API: [Other Deductions (MTD)](https://developer.service.hmrc.gov.uk/api-document
 
 <details>
   <summary>
-API: Property Business (MTD)
+API: Property Business
  </summary>
-API: [Property Business (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0) (Sandbox: 4.0, Production: 3.0)
+API: [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0) (Sandbox: 4.0, Production: 3.0)
+
 - Endpoint: Retrieve a UK Property Business Annual Submission
 - Endpoint: Create and Amend a UK Property Business Annual Submission
 - Endpoint: Create a UK Property Income & Expenses Period Summary
@@ -367,9 +391,10 @@ API: [Property Business (MTD)](https://developer.service.hmrc.gov.uk/api-documen
 
 <details>
   <summary>
-API: Self Assessment Accounts (MTD)
+API: Self Assessment Accounts
  </summary>
-API: [Self Assessment Accounts (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Self Assessment Accounts](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/3.0) (Sandbox: 3.0, Production: 3.0)
+
 - Endpoint: Retrieve History of a Self Assessment Charge
 - Endpoint: Retrieve Self Assessment Balance and Transactions
 - Endpoint: List Self Assessment Payments & Allocation Details
@@ -383,26 +408,29 @@ API: [Self Assessment Accounts (MTD)](https://developer.service.hmrc.gov.uk/api-
 
 <details>
   <summary>
-API: Self Assessment Assist (MTD)
+API: Self Assessment Assist
  </summary>
-API: [Self Assessment Assist (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Self Assessment Assist](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-assist/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Produce a HMRC Self Assessment Assist Report
 - Endpoint: Acknowledge a HMRC Self Assessment Assist Report
 </details>
 
 <details>
   <summary>
-API: Self Assessment Individual Details (MTD)
+API: Self Assessment Individual Details
  </summary>
-API: [Self Assessment Individual Details (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-individual-details-api/2.0) (Sandbox: 2.0, Production: 1.0)
+API: [Self Assessment Individual Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-individual-details-api/2.0) (Sandbox: 2.0, Production: 1.0)
+
 - Endpoint: Retrieve ITSA Status
 </details>
 
 <details>
   <summary>
-API: Self-Employment Business (MTD)
+API: Self-Employment Business
  </summary>
-API: [Self-Employment Business (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) (Sandbox: 3.0, Production: 3.0)
+API: [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) (Sandbox: 3.0, Production: 3.0)
+
 - Endpoint: Retrieve a Self-Employment Annual Submission
 - Endpoint: Create and Amend Self-Employment Annual Submission
 - Endpoint: Delete a Self-Employment Annual Submission
@@ -414,9 +442,10 @@ API: [Self-Employment Business (MTD)](https://developer.service.hmrc.gov.uk/api-
 
 <details>
   <summary>
-API: Self-Assessment Test Support (MTD)
+API: Self-Assessment Test Support
  </summary>
-API: [Self-Assessment Test Support (MTD)](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/mtd-sa-test-support-api/1.0) (Sandbox: 1.0, Production: N/A)
+API: [Self-Assessment Test Support](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/mtd-sa-test-support-api/1.0) (Sandbox: 1.0, Production: N/A)
+
 - Endpoint: Delete Stateful Test Data
 - Endpoint: List checkpoints
 - Endpoint: Create a checkpoint
