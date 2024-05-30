@@ -60,16 +60,21 @@ File.open('api-list.md', 'w') do |file|
         # Fetch the YAML content from the resolved URL
         yaml_content = URI.open(resolved_url).read
         yaml_data = YAML.safe_load(yaml_content, permitted_classes: [Date, Time])
-
+        api_details = "API: [#{link.text.strip}](#{link_url}) (Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
         # Extract and write the "summary" elements to the output file
-        puts "- API: [#{link.text.strip}](#{link_url}) (Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
-        file.puts "- API: [#{link.text.strip}](#{link_url}) (Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
+        file.puts "<details>"
+        file.puts "  <summary>"
+        file.puts "API: #{link.text.strip}"
+        file.puts " </summary>"
+        puts api_details
+        file.puts api_details
         yaml_data['paths'].each do |path, methods|
           methods.each do |method, details|
-            puts "  - Endpoint: #{details['summary']}"
-            file.puts "  - Endpoint: #{details['summary']}"
+            puts "- Endpoint: #{details['summary']}"
+            file.puts "- Endpoint: #{details['summary']}"
           end
         end
+
         file.puts ""
       rescue OpenURI::HTTPError => e
         puts "Error fetching YAML content for #{resolved_url}: #{e.message}"
