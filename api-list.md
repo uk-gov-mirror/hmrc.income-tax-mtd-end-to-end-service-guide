@@ -339,4 +339,3 @@ API: [Self-Assessment Test Support](https://developer.service.hmrc.gov.uk/api-do
 - Endpoint: Create a Test Business
 - Endpoint: Delete a Test Business
 - Endpoint: Create and Amend Test ITSA Status
-

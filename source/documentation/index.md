@@ -4,9 +4,8 @@
 
 This service guide explains how you can integrate your software with the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
->|Help us improve this guide |
-|---|
-|This guide is currently being revised and overhauled to ensure it meets the needs of software providers. See the service guide [changelog](#document-changelog) for latest updates.<br/><br/>If there is a way that this guide could be improved or expanded to meet your needs, <b>now is the time to let us know.</b><br/><br/>If you use this guide regularly, we&#39;d like to invite you to share your thoughts and feedback via an online video call, which will involve a 60-minute one-to-one interview.<br/><br/>We’d like to explore:<ul><li>Your current use of and experience with the service guide</li><li>Any challenges you face</li><li>How helpful you find the service guide</li><li>Your thoughts on the current service guide, how it fits your needs and how it can be improved</li></ul><br/>If you would like to help us improve this guide, email [mtdapi-ur-g@digital.hmrc.gov.uk](mailto:mtdapi-ur-g@digital.hmrc.gov.uk) to arrange an interview.|
+> **Help us improve this guide** <br />
+> Do you have any feedback about this guide? You can leave it in this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSe9jb0WCXWO9yt6zLBTKZLSK2oiTQcGPD96CTiwnQF0QxH5Tw/viewform).
 
 ## Overview
 
@@ -38,6 +37,17 @@ Software providers who wish to selectively use Making Tax Digital for Income Tax
 
 Parameters in some Income Tax (Making Tax Digital) APIs map to box numbers in [Self Assessment tax return forms (GOV.UK)](https://www.gov.uk/self-assessment-tax-return-forms). You can download this mapping information as CSV files from [income-tax-mtd-changelog/mapping](https://github.com/hmrc/income-tax-mtd-changelog/blob/main/mapping/mapping-csv-files.md) (GitHub).
 
+## Navigating Income Tax (Making Tax Digital) API documentation
+
+The following table lists the documents for Income Tax (Making Tax Digital) APIs and outlines the content and intended readers of each document.
+
+| Document | Content type | Summary | Intended readers |
+| -------- | ------------ | ------- | ---------------- |
+| [Income Tax (Making Tax Digital) roadmap](/roadmaps/mtd-itsa-vendors-roadmap/#making-tax-digital-itsa-roadmap) | Functional | Learn about upcoming functional changes to Income Tax (Making Tax Digital) APIs and their scheduled release timelines. | Product managers<br /><br />Business analysts |
+| Income Tax (Making Tax Digital) end-to-end service guide (this document) | Functional | Learn how you can integrate your application software with Income Tax (Making Tax Digital) APIs. | Product managers<br /><br />Business analysts<br /><br />Software developers |
+| [Income Tax (Making Tax Digital) API landing pages](/api-documentation/docs/api?filter=income-tax-mtd) <br /><br />Example: [Business Details API](/api-documentation/docs/api/service/business-details-api/) | Functional       | Learn about the high-level functionality of each API. | Product managers<br /><br />Business analysts<br /><br />Software developers |
+| Income Tax (Making Tax Digital) API reference pages (accessible from API landing pages)<br /><br />Example: [Business Details API v1.0](/api-documentation/docs/api/service/business-details-api/1.0/oas/page) | Technical | Learn in detail about the request and response schemas, test data and error handling of each API. | Business analysts<br /><br />Software developers |
+
 ## Changelogs
 
 ### API changelog
@@ -50,7 +60,11 @@ Below is a summary of updates to this service guide.
 
 #### Version 4.3
 
-- Update API endpoint links within the guide to point to latest available versions
+28 May 2024
+
+- Update API endpoint links within this document to point to latest available versions
+- Update Penalties and appeals section with latest information about Penalty Reform for ITSA
+- Update HMRC Assist section introduction
 
 #### Version 4.2
 
