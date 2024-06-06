@@ -63,10 +63,6 @@ File.open('api-list.md', 'w') do |file|
         clean_api_name = link.text.strip.gsub(/\s*\(MTD\)\z/, '')
         api_details = "API: [#{clean_api_name}](#{link_url})" + "\n" + "(Sandbox: #{sandbox_version_number}, Production: #{prod_version_number})"
         # Extract and write the "summary" elements to the output file
-        file.puts "<details>"
-        file.puts "  <summary>"
-        file.puts "API: #{clean_api_name}"
-        file.puts " </summary>"
         puts api_details
         file.puts api_details
         file.puts ""
@@ -76,7 +72,6 @@ File.open('api-list.md', 'w') do |file|
             file.puts "- Endpoint: #{details['summary']}"
           end
         end
-        file.puts "</details>"
         file.puts ""
       rescue OpenURI::HTTPError => e
         puts "Error fetching YAML content for #{resolved_url}: #{e.message}"
