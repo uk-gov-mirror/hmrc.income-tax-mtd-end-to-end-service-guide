@@ -10,29 +10,48 @@ This service guide explains how you can integrate your software with the [Income
 
 ## Overview
 
-This guide explains how you can integrate your software with our APIs, and provides examples of how they fit into various end-to-end user journeys to enable agents and individuals to meet their obligations after they have signed up to Making Tax Digital, a service where quarterly updates and final declarations will replace the need for a Self Assessment return to be submitted.
+This guidance explains how you can integrate your software with our APIs. It provides examples of how they fit into various end-to-end user journeys to enable individuals and their agents, where authorised, to meet their obligations after they have signed up to Making Tax Digital. Under Making Tax Digital, making your final declaration is the last step of reporting your income to HMRC and filing your Self Assessment tax return.
 
-For more information about eligibility and how to use Making Tax Digital for Income Tax, refer to [Making Tax Digital step by step guidance (GOV.UK)](https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step).
+For more information about eligibility, sign-up and how customers will use Making Tax Digital for Income Tax, refer to [Making Tax Digital for Income Tax step by step guidance (GOV.UK)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax).
 
-## Software provider overview
+HMRC's vision for Making Tax Digital (MTD) for Income Tax is to allow individuals to fulfil their income tax obligations and optionally manage their wider obligations entirely through compatible software. Customers will be able to:
 
-HMRC expects software providers to offer customers a streamlined end-to-end journey, and as far as possible, to support all the things the customers need to do to comply with their MTD for ITSA obligations. This will include the ability to finalise the overall tax position using software.
+- maintain a digital record of their tax affairs
+- submit quarterly updates of income and expenditure
+- make any tax allowances and adjustments
+- claim for losses
+- make any accounting adjustments as needed
+- receive nudges and prompts from HMRC
+- submit any other income sources
+- make a final declaration to submit a tax return 
 
-HMRC will provide the APIs for the software to support all of the personal data items that need to be submitted under Self Assessment. Although these elements will not be mandated through the software, there will be market demand for software that enables any user to finalise the entirety of their tax affairs.
+HMRC will provide APIs to support submission of all personal data items under Self Assessment as set out above, that is, all the things individuals need to do to comply with their Income Tax obligations. This will create market demand for third-party software that enables users to finalise the entirety of their tax affairs.
 
-By developing a product now, you will support the mandate of the service, influence its design and ensure you have a product ready for the millions of customers that will need MTD-compatible software.
+## Compatible software
 
-### Bridging software
+Compatible software can mean either a single end-to-end piece of software or a set of compatible software products. To gain Production credentials for, and access to, Making Tax Digital for Income Tax APIs, software needs to meet the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#minimum-functionality-standards).
 
-Some customers may wish to integrate their existing software solution for digital record keeping with another product that can submit quarterly updates, End of Period Statement, view tax liabilities, make a self assessment and final declaration, and so on. We generally refer to these products as bridging products.
+HMRC recognises that an all-in-one product will not be right for everyone, and some customers or agents may wish to use combinations of different pieces of software. For example, combining dedicated record keeping software with dedicated tax filing software. When a customer uses a combination of products, after they have entered a digital record into a compatible software product, they should be able to follow the rules for digital links set out by HMRC in the Software Notice.
 
-To be granted production credentials for a bridging product, it must be digitally linked to software that allows customers to maintain business records required by law.
+## Bridging software
 
-### Non-MTD products
+Some customers may wish to integrate their existing software solution for record keeping with Making Tax Digital for Income Tax APIs by using another product that can submit quarterly updates, make a final declaration and view tax liabilities. We refer to these products as 'bridging products'. 
 
-Software providers who wish to selectively use Making Tax Digital for Income Tax APIs and not build a Making Tax Digital product will have to submit a business case, justifying use of a particular or multiple API’s. Such products may be granted production credentials at the discretion of HMRC.
+Customers who choose to use bridging software must digitally link it to their record-keeping software. This will ensure that customers meet their Making Tax Digital for Income Tax obligations when they use more than one compatible software product, which collectively meet the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#minimum-functionality-standards) set out in this guide.
 
-<!-- ## How to use this guide -->
+For more information about digitally linking to software, refer to[ Use Making Tax Digital for Income Tax (GOV.UK)](https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/keep-digital-records).
+
+## Free-to-use software
+
+The UK government is committed to ensuring the availability of free software products for small businesses with simple tax affairs that are mandated to use Making Tax Digital for Income Tax. HMRC strongly encourages all software providers to produce a free version of their software.
+
+In addition to meeting the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#minimum-functionality-standards) set out in this guide, we expect any free software product you provide to businesses with the simplest tax affairs to:
+
+- have a reasonable level of guidance
+- have help and support to users
+- be free for the business to use to comply with their Making Tax Digital for Income Tax obligations for a full annual accounting period
+
+There is no expectation that a free product will include VAT, Corporation Tax or PAYE functionality. HMRC would not require free software to link or integrate with an agent product. However, free software could be used in conjunction with wider compatible software products, if necessary.
 
 ## Mapping APIs to Self Assessment tax return forms
 
