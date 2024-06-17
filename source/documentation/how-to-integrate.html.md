@@ -6,18 +6,18 @@ description: Software developers, designers, product owners or business analysts
 
 # How to integrate with HMRC APIs
 
-## Minimum Functionality Standards for MTD Software
+## Minimum functionality standards
 
-For the customer to complete the end-to-end journey, we expect MTD for Income Tax compatible software products to facilitate the entire journey either in a single product covering the below requirements or through a number of products collectively meeting the below functionalities:
+For the customer to complete the end-to-end journey, we expect Making Tax Digital for Income Tax- compatible software products to facilitate the entire journey either in a single product covering the below requirements or through a number of products collectively meeting the below functionalities:
 
-- provide HMRC with Transaction Monitoring Fraud Prevention Header data
+- provide HMRC with transaction monitoring fraud prevention header data
 - obtain business ID unique to each of the customer’s businesses
-- create and maintain all digital records (or digitally link to a product that can do so) that a customer is required to keep by law in digital form - as per the [terms of use](/api-documentation/docs/terms-of-use) end users should own and have access to all their records created and be able to export these records if necessary
+- create and maintain all digital records (or digitally link to a product that can do so) that a customer is required to keep by law in digital form - as per the [terms of use](/api-documentation/docs/terms-of-use), end users should own and have access to all their records created and be able to export these records, if necessary
 - submit quarterly update information for each mandated business income source (self-employment, multiple self-employments, UK property income and foreign property income)
 - allow customers to view an estimate of their income tax liability by either signposting them to their HMRC account or by displaying it in software - if the latter, the estimate must be presented with a disclaimer as to its accuracy 
 - make adjustments and finalise business income for the year (unless the product only supports the cash basis)
-- carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
-- submit final declaration or divert a customer into a channel where they can submit it
+- brought forward, carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
+- make a final declaration or divert a customer into a channel where they can make it
 - divert customers into a different service for any non-mandated income sources which are not supported within the software to be declared
 
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
@@ -27,132 +27,128 @@ The Making Tax Digital for Income Tax APIs that include the endpoints for the fu
 - [Individual Calculations](/api-documentation/docs/api/service/individual-calculations-api)
 - [Individual Losses](/api-documentation/docs/api/service/individual-losses-api)
 - [Obligations](/api-documentation/docs/api/service/obligations-api/)
-- [Property Business](/api-documentation/docs/api/service/property-business-api/) (only for property full product)
-- [Self-Employment Business](/api-documentation/docs/api/service/self-employment-business-api/) (only for self-employment full product)
+- [Property Business](/api-documentation/docs/api/service/property-business-api/) 
+- [Self-Employment Business](/api-documentation/docs/api/service/self-employment-business-api/)
 
-### Additional Functionality
+### Additional functionality
 
-HMRC will be providing tailored feedback messaging, via nudges and prompts, that developers can incorporate into their software to support customers with their tax affairs. This is known as HMRC Assist. This service is preparing for a design and testing phase from July 2024. We encourage developers to build meaningful prompts and nudges into their software products to support the customer journey and drive compliant behaviours.
+HMRC will be providing tailored feedback messaging through nudges and prompts that software providers can incorporate into their software to support customers with their tax affairs. This is known as [HMRC Assist](/guides/income-tax-mtd-end-to-end-service-guide/documentation/tax-calculations.html#hmrc-assist). This service is preparing for a design and testing phase from July 2024. We encourage software providers to build meaningful prompts and nudges into their software products to support the customer journey and drive compliant behaviours.
 
-In addition, developers may wish to offer other functionality over and above the minimum standards. This could include automated functionality – for example automated quarterly updates. Where this is the case, customers remain legally responsible for meeting their quarterly obligations, and HMRC would expect appropriate safeguards to be built in.
+In addition, software providers may wish to offer other functionality over and above the minimum standards. This could include features that automate tasks, for example, automating quarterly updates. However, it is important to remember that even with automation, the legal responsibility for meeting quarterly tax obligations remains with the customer. HMRC expects software providers who offer such functionalities to build in appropriate safeguards.
 
-### Free-to-use software
+### Software Choices
 
-The government has committed to the availability of free software products for the smallest businesses with simplest affairs mandated to use MTD for Income Tax. HMRC strongly encourages all developers to produce a free version of their MTD for Income Tax product.
+Software Choices is a service designed to help users [find compatible software for Making Tax Digital for Income Tax](https://www.gov.uk/guidance/find-software-thats-compatible-with-making-tax-digital-for-income-tax) that meets their needs.
 
-In addition to meeting the minimum functionality standards set out in this guide we expect any free software product you provide to businesses with the simplest tax affairs to: 
+An updated Software Choices page will feature filters to help users find appropriate products to support first mandation from April 2026.
 
-- have a reasonable level of guidance
-- have help and support to users
-- be free for the business to use to comply with their MTD for Income Tax obligations for a full annual accounting period 
-
-There is no expectation that a free product will include VAT, Corporation Tax or PAYE functionality.
-
-HMRC would not require free software to link or integrate with an Agent product. However, free software could be used in conjunction with wider compatible software products if necessary.
+Only products that meet the minimum functionality standards, either individually or in conjunction with other pieces of software, will feature on the Software Choices page. We are considering how we can best ensure customers are able to find products which cater for the full end to end journey. Customers will also be able to search for software products compatible with Making Tax Digital for VAT.
 
 ## Process for being granted Production access
 
-### Fraud Prevention Headers
+### Fraud prevention headers
 
-It is a legal requirement for software to supply compliant fraud prevention header information for all ITSA MTD APIs. This requirement must be met before Production access to ITSA MTD APIs can be granted. 
+It is a legal requirement for software to provide compliant fraud prevention header information for all Making Tax Digital for Income Tax APIs. This requirement must be fulfilled before Production access to the APIs can be granted.
 
-HMRC must see evidence of software sending fraud prevention headers and be satisfied as to their level of accuracy.
-
-Before you start developing your MTD product we recommend you check that your technology stack supports the collection of all header data required.
-
-[Guidance on Fraud Prevention Headers (HMRC Developer Hub)](/guides/fraud-prevention/) is available.
+HMRC must see evidence that your software sends fraud prevention headers and must be satisfied with their level of accuracy. Before you start developing your Making Tax Digital for Income Tax-compatible software, we recommend you check whether your technology stack supports the collection of all header data required. For more guidance on fraud prevention headers, refer to [Send fraud prevention data (GOV.UK)](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/).
 
 ### Terms of use
 
-If you are creating a new production application, you must comply with our [terms of use](/api-documentation/docs/terms-of-use). You must accept the terms of use to our satisfaction before we can issue you with production credentials. 
+If you are creating a new Production application, you must comply with our [terms of use](/api-documentation/docs/terms-of-use) before we can issue you with Production credentials. 
 
-### Overview of developer journey to production credentials
+### Overview of developer journey to Production accesss
 
-1. Sign in to the  [developer hub](/api-documentation)  and register your application for sandbox testing.
+1. Sign into the  [Developer Hub](/api-documentation) and register your application for Sandbox testing.
 2. [Create a test user which is an individual](/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
-3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax-mtd) and Income Tax end-to-end service guide (this document).
+3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax-mtd) and this guide.
 4. Develop your software application. Any queries during this phase should be sent to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
-5. Register your application for production credentials by creating a production application within your developer hub account. Or, if you already have an existing production application, you should add the relevant ITSA MTD API subscriptions to it.
-6. Test software in Sandbox and provide credentials used for testing to HMRC.
+5. Register your application for Production credentials by creating a Production application within your HMRC Developer Hub account. Alternatively, if you already have an existing Production application, you should add the relevant API subscriptions to it.
+6. Test the software in the Sandbox and provide credentials used for testing to HMRC.
 7. Complete and return the Production Approvals Checklist issued to you by HMRC. 
-8. HMRC review developer testing (including fraud header validity) and completed Production Approvals Checklist:
-    - if satisfactory, you will be granted production access to the requested APIs
+8. HMRC will review the developer testing (including fraud header validity) and the completed Production Approvals Checklist:
+    - if satisfactory, you will be granted Production access to the requested APIs
     - if not satisfactory, HMRC will contact you to advise what action is required
 
 ### Product build
 
-#### Full End to End MTD Product
+Software providers have the option to either build all elements required to meet [minimum functionality standards](#minimum-functionality-standards) in one go or to build these elements iteratively. If you choose to build iteratively, you are required to test the relevant APIs and complete the Production Approvals checklist for the appropriate stage of the build.
 
-Developers have the option to either build all elements required to meet [minimum functionality standards (MFS)](#minimum-functionality-standards-for-mtd-software) in one go or to build these elements iteratively. If you choose to build iteratively, you are required to test the relevant APIs and complete the Production Approvals checklist for the appropriate stage of the build.
+There are three different types of products to build. They are:
+
+- full end-to-end product
+- in-year product
+- end-of-year product
+
+#### Full end-to-end product
 
 For a full end-to-end product there are two distinct stages and the APIs required for each are:
 
-**1.** In year functionality (submitting periodic updates).
+- In-year functionality (submitting periodic updates):
 
-- Business Details (MTD)
-- Obligations (MTD)
-- Self-Employment Business (MTD) and/or Property Business (MTD) 
--  Individual Calculations (MTD) – if displaying calculation in software and not signposting customers to their HMRC account 
+  - Business Details (MTD)
+  - Obligations (MTD)
+  - Self-Employment Business (MTD) and/or Property Business (MTD) 
+  -  Individual Calculations (MTD) - if displaying calculation in software and not signposting customers to their HMRC account 
 
-**2.** End of year functionality
+- End-of-year functionality:
 
-- Self-Employment Business (MTD) and/or Property Business (MTD) – if including Annual Submission endpoints in end of year build 
-- Business Source Adjustable Summary (MTD) – Not required for cash basis only products.
-- Individual Losses (MTD)
-- Obligations (MTD) – if supporting Final Declaration
-- Individual Calculations (MTD) - if supporting Final Declaration in software and **not** diverting customers into a channel where they can submit it.
+  - Self-Employment Business (MTD) and/or Property Business (MTD) - if including annual submission endpoints in end-of-year build 
+  - Business Source Adjustable Summary (MTD)
+  - Individual Losses (MTD)
+  - Obligations (MTD) - if supporting final declaration
+  - Individual Calculations (MTD) - if supporting final declaration in software and not diverting customers into a channel where they can submit it
 
-#### In-Year MTD Product 
-
-The APIs required are:
-
-- Business Details (MTD)
-- Obligations (MTD)
-- Self-Employment Business (MTD) and/or Property Business (MTD) 
-- Individual Calculations (MTD) – if displaying calculation in software and not signposting customers to their HMRC account 
-
-#### End of Year MTD Product
+#### In-year product 
 
 The APIs required are:
 
 - Business Details (MTD)
-- Self-Employment Business (MTD) and/or Property Business (MTD) – Annual Submission endpoints.
-- Business Source Adjustable Summary (MTD) - Not required for cash basis only products.
+- Obligations (MTD)
+- Self-Employment Business (MTD) and/or Property Business (MTD) 
+- Individual Calculations (MTD) - if displaying calculation in software and not signposting customers to their HMRC account 
+
+#### End-of-year product
+
+The APIs required are:
+
+- Business Details (MTD)
+- Self-Employment Business (MTD) and/or Property Business (MTD) - annual submission endpoints
+- Business Source Adjustable Summary (MTD)
 - Individual Losses (MTD)
-- Obligations (MTD) – if supporting Final Declaration
-- Individual Calculations (MTD) - if supporting Final Declaration in software and **not** diverting customers into a channel where they can submit it.
+- Obligations (MTD) – if supporting final declaration
+- Individual Calculations (MTD) - if supporting final declaration in software and not diverting customers into a channel where they can submit it
 
 ### Testing requirements
 
-HMRC requires the software to test all the APIs that they require access to. The following points relate to access to both new API subscriptions and version updates of existing API subscriptions:
+HMRC requires software providers to test all the API endpoints to which they need access. The following guidelines apply to accessing new API subscriptions and version updates of existing API subscriptions.
 
-- you must test all relevant endpoints documented for APIs included in the minimum functionality standards for your build, aligning with the information in your completed Production Approvals Checklist
-- for APIs not included in the minimum functionality standards, you are only required to test the endpoints relating to the data sources that your software supports - where your software doesn’t support all data items, please notify [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk) separately to confirm which data items you do support, so we can take this into account when checking the testing logs
+For APIs included in the minimum functionality standards:
 
-[Fraud prevention headers](/guides/fraud-prevention/) must be included in sandbox calls. A specialist team will check these.
+- you are required to test all endpoints shown within the documentation 
+- ensure it aligns with the information in your completed Production Approvals Checklist
 
-Once testing is complete, please send details of the dummy NINO used in sandbox to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk). You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs. 
+For APIs not included in the minimum functionality standards:
+
+- you are required to test only the endpoints relating to the data sources that your software supports 
+- if your software does not support all data items, please notify  [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk) separately to confirm which data items you do support, so we can take this into account when checking the testing logs
+
+[Fraud prevention headers](/guides/fraud-prevention/) must be included in Sandbox calls, which will be checked by a specialist team. Once testing is complete, please send details of the dummy National Insurance Number used in the Sandbox to  [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk). You will need to contact us within 14 days of completing your API testing to enable us to view the data within our logs.  
 
 ### Production Approvals Checklist
 
-HMRC will issue a Production Approvals Checklist asking for details of the software. This must be completed and returned to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
+HMRC will issue a Production Approvals Checklist asking for details about your software. This must be completed and returned to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
 
-Production access will be granted once we are satisfied that:
+Production access will be granted after we are satisfied that:
 
 - the relevant APIs and endpoints have been tested satisfactorily
 - calls include compliant fraud prevention headers
 - the checklist is completed satisfactorily and aligns with the testing
 
-Please note, for access to updated APIs (that is, new versions), we don’t generally require a new Production Approvals Checklist but do need to see satisfactory testing.
+For access to updated APIs (that is, new versions), we don’t generally require a new Production Approvals Checklist but do need to see evidence of satisfactory testing.
 
-### Important Considerations
+**Note:** It is important to build relevant error responses in your software to handle exceptions.
 
-- Consider a one-hour delay as part of the software workflow to update the status of obligations.
-- Consider a 5-second delay before retrieving the calculation, if incorporating the calculation in your software. 
-- Use APIs as efficiently as possible to avoid exceeding the rate limit.
-- Build relevant error responses for your software to deal with exceptions.
-
-###  Stateful and dynamic testing
+##  Sandbox testing
 
 Some APIs in the Sandbox environment allow software to test different scenarios by including ‘Gov-Test-Scenario’ headers in requests. The [Income Tax (Making Tax Digital) API documentation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api?filter=income-tax-mtd) provides more information about how to use these test scenarios.
 
@@ -210,51 +206,6 @@ To test the journey for making a Self-Employment or Property Business submission
 <a href="figures/stateful-bsas-journey.svg" target="blank"><img src="figures/stateful-bsas-journey.svg" alt="Stateful journey to request a Business Source Adjustable Summary" style="width:720px;" /></a>
 
 <a href="figures/stateful-bsas-journey.svg" target="blank">Open the stateful journey diagram in a new tab.</a>
-
-### Product demonstration
-
-This is the final part of the process after all preceding steps have been completed.  
-
-During your product demonstration, HMRC expects to see a consumer-ready product for each income source your software supports; for example, Self-employment, UK property, and so on. If, in addition to the MFS APIs, you have also requested access to any non-MFS APIs, you should be ready to include these in your demonstration if requested to do so by SDST.
-
-The journey we expect to see for an MFS build will depend on whether you are building iteratively and if so, which stage you have built to:
-
-**Stage 1: In-year build**
-
-1. Authorisation – ITSA scopes only.
-2. Retrieve Business Details.
-3. Retrieve Obligations.
-4. Digitally import data into the appropriate periodic update and submit.
-5. Automatically trigger and display a tax calculation.
-6. Submit an amended periodic update – automatically trigger and display the calculation.
-7. Demonstrate how your software returns and displays error messages to the customer.
-
-**Stage 2: EOPS**
-
-1. Submit details within the Annual Summary.
-2. Automatically trigger and display a tax calculation.
-3. Trigger a Business Source Adjustable Summary (BSAS).
-4. Retrieve a BSAS.
-5. Create and submit a Business Source Adjustable Summary for an accounting adjustment.
-6. Automatically trigger and display a tax calculation.
-7. Retrieve a Business Income Source Summary (BISS) and display it to the customer. Alternatively, the software may choose to create a BISS themselves by totalling the relevant information held in software and displaying it to the customer.
-8. Show EOPS Declaration Statement.
-9. Submit EOPS.
-10. Demonstrate how your software returns and displays error messages to the end user.
-
-**Note:** The end user must confirm they have read and agreed the declaration statement before the option to submit EOPS is made available.
-
-**Stage 3: Final Declaration**
-
-1. Create and submit a loss.
-2. Create/Amend and submit disclosures (Class 2 NICs).
-3. Trigger a tax calculation with the Final Declaration parameter set to ‘true’.
-4. Retrieve and display this tax calculation for the customer to review.
-5. Show the Final Declaration Statement – this must match the statement shown on the ITSA End to End Service Guide.
-6. Submit a Final Declaration.
-7. Demonstrate how your software returns and displays error messages to the end user.
-
-**Note:** The end user must confirm they have read and agreed the declaration statement before the option to submit the Final Declaration is made available.
 
 ## Supporting customers in MTD
 
