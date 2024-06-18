@@ -15,7 +15,7 @@ For the customer to complete the end-to-end journey, we expect Making Tax Digita
 - create and maintain all digital records (or digitally link to a product that can do so) that a customer is required to keep by law in digital form - as per the [terms of use](/api-documentation/docs/terms-of-use), end users should own and have access to all their records created and be able to export these records, if necessary
 - submit quarterly update information for each mandated business income source (self-employment, multiple self-employments, UK property income and foreign property income)
 - allow customers to view an estimate of their income tax liability by either signposting them to their HMRC account or by displaying it in software - if the latter, the estimate must be presented with a disclaimer as to its accuracy 
-- make adjustments and finalise business income for the year (unless the product only supports the cash basis)
+- make adjustments and finalise business income for the year
 - brought forward, carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
 - make a final declaration or divert a customer into a channel where they can make it
 - divert customers into a different service for any non-mandated income sources which are not supported within the software to be declared
@@ -34,7 +34,7 @@ The Making Tax Digital for Income Tax APIs that include the endpoints for the fu
 
 HMRC will be providing tailored feedback messaging through nudges and prompts that software providers can incorporate into their software to support customers with their tax affairs. This is known as [HMRC Assist](/guides/income-tax-mtd-end-to-end-service-guide/documentation/tax-calculations.html#hmrc-assist). This service is preparing for a design and testing phase from July 2024. We encourage software providers to build meaningful prompts and nudges into their software products to support the customer journey and drive compliant behaviours.
 
-In addition, software providers may wish to offer other functionality over and above the minimum standards. This could include features that automate tasks, for example, automating quarterly updates. However, it is important to remember that even with automation, the legal responsibility for meeting quarterly tax obligations remains with the customer. HMRC expects software providers who offer such functionalities to build in appropriate safeguards.
+In addition, software providers may wish to offer other functionality over and above the minimum standards. This could include automated functionality, for example, automated quarterly updates. Where this is the case, customers remain legally responsible for meeting their quarterly obligations, and HMRC would expect appropriate safeguards to be built in.
 
 ### Software Choices
 
