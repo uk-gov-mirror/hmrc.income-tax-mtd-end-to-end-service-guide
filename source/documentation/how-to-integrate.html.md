@@ -59,7 +59,7 @@ If you are creating a new Production application, you must comply with our [term
 ### Overview of developer journey to Production accesss
 
 1. Sign into the  [Developer Hub](/api-documentation) and register your application for Sandbox testing.
-2. [Create a test user which is an individual](/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
+2. [Create a test user which is an individual](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/api-platform-test-user/1.0/oas/page#tag/create-test-user/operation/Createatestuserwhichisanindividual) to create test data.
 3. Review the [API documentation](/api-documentation/docs/api?filter=income-tax-mtd) and this guide.
 4. Develop your software application. Any queries during this phase should be sent to [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
 5. Register your application for Production credentials by creating a Production application within your HMRC Developer Hub account. Alternatively, if you already have an existing Production application, you should add the relevant API subscriptions to it.
@@ -160,7 +160,7 @@ Dynamic scenarios return a response that changes depending on the parameters sub
 
 Stateful scenarios work across groups of endpoints.
 
-With a stateful test scenario, you can submit custom data and then retrieve or list it from a different endpoint. For example, you can submit test data through the [Self Employment Business API](/api-documentation/docs/api/service/self-employment-business-api/), and then request a summary using the [Business Source Adjustable Summary API](/api-documentation/docs/api/service/self-assessment-bsas-api/) for the same business. 
+With a stateful test scenario, you can submit custom data and then retrieve or list it from a different endpoint. For example, you can submit test data through the [Self-Employment Business API](/api-documentation/docs/api/service/self-employment-business-api/), and then request a summary using the [Business Source Adjustable Summary API](/api-documentation/docs/api/service/self-assessment-bsas-api/) for the same business. 
 
 The Sandbox environment retains test data you submit for 7 days after submission, after which it is deleted automatically.
 
@@ -171,35 +171,35 @@ To test the journey for making a Self-Employment or Property Business submission
 <ol>
 <li><p>Submit 4 stateful Self-Employment/Property Business Period Summaries (one for each quarter of the same tax year) for the desired National Insurance number, tax year and Business ID by calling one of the following endpoints: </p>
 <ul>
-<li><a href="/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post">Create a Self-Employment Period Summary</a> </li>
-<li><a href="/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post">Create a UK Property Income &amp; Expenses Period Summary</a> </li>
-<li><a href="/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post">Create a Foreign Property Income &amp; Expenses Period Summary</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Period-Summaries/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1period/post">Create a Self-Employment Period Summary</a> </li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post">Create a UK Property Income &amp; Expenses Period Summary</a> </li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1period~1%7BtaxYear%7D/post">Create a Foreign Property Income &amp; Expenses Period Summary</a></li>
 </ul>
 </li>
 <li><p>Submit one stateful Self-Employment/Property Business Annual Submission for the same National Insurance number, tax year and Business ID by calling one of the following endpoints:</p>
 <ul>
-<li><a href="/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend Self-Employment Annual Submission</a> </li>
-<li><a href="/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend a UK Property Business Annual Submission</a> </li>
-<li><a href="/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend a Foreign Property Annual Submission</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0/oas/page#tag/Self-Employment-Annual-Submission/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend Self-Employment Annual Submission</a> </li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/UK-Property-Business-Annual-Submission/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend a UK Property Business Annual Submission</a> </li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Foreign-Property-Annual-Submission/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1annual~1%7BtaxYear%7D/put">Create and Amend a Foreign Property Annual Submission</a></li>
 </ul>
 </li>
-<li><p>Trigger a stateful Business Source Adjustable Summary for Self-Employment/Property business for the same National Insurance number and Business ID by calling the <a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post">Trigger a Business Source Adjustable Summary</a> endpoint. </p>
+<li><p>Trigger a stateful Business Source Adjustable Summary for Self-Employment/Property business for the same National Insurance number and Business ID by calling the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1trigger/post">Trigger a Business Source Adjustable Summary</a> endpoint. </p>
 </li>
 <li><p>Retrieve a stateful Business Source Adjustable Summary for the Self-Employment/Property Business by using the Calculation ID generated in the previous step and calling one of the following endpoints:</p>
 <ul>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D/get">Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)</a> </li>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D/get">Retrieve a UK Property Business Source Adjustable Summary (BSAS)</a></li>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get">Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D/get">Retrieve a Self-Employment Business Source Adjustable Summary (BSAS)</a> </li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D/get">Retrieve a UK Property Business Source Adjustable Summary (BSAS)</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D/get">Retrieve a Foreign Property Business Source Adjustable Summary (BSAS)</a></li>
 </ul>
 </li>
 <li><p>Submit a stateful accounting adjustment for Self-Employment/Property Business by using the same Business ID and  Calculation ID and calling one of the following endpoints:</p>
 <ul>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D~1adjust/post">Submit Self-Employment Accounting Adjustments</a></li>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post">Submit UK Property Accounting Adjustments</a></li>
-<li><a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post">Submit Foreign Property Accounting Adjustments</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Self-employment-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1self-employment~1%7BcalculationId%7D~1adjust/post">Submit Self-Employment Accounting Adjustments</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/UK-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1uk-property~1%7BcalculationId%7D~1adjust/post">Submit UK Property Accounting Adjustments</a></li>
+<li><a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#tag/Foreign-property-business/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D~1foreign-property~1%7BcalculationId%7D~1adjust/post">Submit Foreign Property Accounting Adjustments</a></li>
 </ul>
 </li>
-<li><p>List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the <a href="/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get">List Business Source Adjustable Summaries</a> endpoint.</p>
+<li><p>List all stateful Business Source Adjustable Summaries requested for the specific Business ID by calling the <a href="https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-bsas-api/5.0/oas/page#/paths/~1individuals~1self-assessment~1adjustable-summary~1%7Bnino%7D/get">List Business Source Adjustable Summaries</a> endpoint.</p>
 </li>
 </ol>
 
