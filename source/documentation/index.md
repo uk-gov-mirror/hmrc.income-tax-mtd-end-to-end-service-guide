@@ -82,6 +82,7 @@ Below is a summary of updates to this service guide.
 
 - Update service guide to use current MTD terminology where applicable
 - Add details of in-year or end-of-year reporting for [Additional information](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#additional-information) items
+- Revise [Making a payment](/guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html#making-a-payment) and remove 'Pay or get a repayment' section
 
 #### 16 July 2024
 
