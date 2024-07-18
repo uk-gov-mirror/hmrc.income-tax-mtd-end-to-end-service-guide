@@ -90,35 +90,9 @@ The following tasks are scheduled for future development and we will provide mor
 - leave MTD as a voluntary customer
 - sign up to MTD as a voluntary customer for those who have previously opted out of MTD
 
-## Pay or get a repayment
-
-Software providers should present messages to business users at key points in their user journey that gives them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows software providers to make users aware of payment dates but the payment itself cannot be made through software.
-
-There are multiple ways to make a payment for Self Assessment which can be found on GOV.UK at:
-
-[https://www.gov.uk/pay-self-assessment-tax-bill](https://www.gov.uk/pay-self-assessment-tax-bill)
-
-In their messaging, software providers should ask customers to visit that link so the customer can make a payment in the method that suits them.
-
-The contents of this GOV.UK page will be updated and subject to change.
-
-For a business to view the previous payments it has made to HMRC, software providers should present messages at key points in their journey that encourage them to visit their [HMRC online services](#hmrc-online-services) account at:
-
-[https://www.tax.service.gov.uk/business-account](https://www.tax.service.gov.uk/business-account)
-
-In their messaging, software providers should ask customers to visit that link.
-
-Customers can pay their tax bills by direct debit, making it easy and convenient to pay. HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due. These services will be available when a customer first subscribes to HMRC tax services, and at any time after a customer has been subscribed through their digital tax account. The customer’s digital tax account will be used to access the service:
-
-[https://www.tax.service.gov.uk/personal-account](https://www.tax.service.gov.uk/personal-account)
-
-In their messaging, software providers should ask customers to visit that link.  
-
-Customers will be able to view payments made to HMRC in the software. Details will be updated here after they are available.
-
 ## Making a payment
 
-Customers can make a payment towards their liability through [HMRC online services](#hmrc-online-services) or there is an alternative route, which is detailed in [Pay your Self Assessment tax bill (GOV.UK)](https://www.gov.uk/pay-self-assessment-tax-bill). 
+Customers can make payments towards their liability as described in [Pay your Self Assessment tax bill (GOV.UK)](https://www.gov.uk/pay-self-assessment-tax-bill). Payments cannot currently be made through software. However, once a payment has been made, customers can view it both in software (through the [Self Assessment Accounts API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-assessment-accounts-api/)) and using [HMRC online services (GOV.UK)](https://www.gov.uk/log-in-register-hmrc-online-services).
 
 When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds do not fully cover that MTD liability, this still must  be paid by 31 January.  In this instance, the [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding. However, it will not show them the amount that has been apportioned to previous tax year Self Assessment returns.  To view this, a customer will need to access [HMRC online services](#hmrc-online-services).   
 
