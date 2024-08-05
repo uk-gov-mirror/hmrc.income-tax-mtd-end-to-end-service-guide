@@ -1,5 +1,5 @@
 ---
-title: Making updates at the end of a tax year | Income Tax (Making Tax Digital) end-to-end service guide
+title: Making updates at the end of a tax year | Making Tax Digital for Income Tax service guide
 weight: 7
 description: How to enable MTD-compatible software to make updates at the end of a tax year, including making a final declaration.
 ---
@@ -612,6 +612,7 @@ The software can use the following endpoints to enable customers to:
 ## Penalties and appeals
 
 ### Penalties for late payment and late submission 
+
 
 The way that HMRC penalises late payments and late submissions is changing. From tax year 2024-25 onwards, changes will apply to customers who volunteer to test the Making Tax Digital for Income Tax service.
 
