@@ -179,3 +179,38 @@ The software should recreate the update period, including the new summary totals
 - [Amend a Historic Non-FHL UK Property Income & Expenses Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0/oas/page#tag/Historic-non-FHL-UK-Property-Income-and-Expenses-Period-Summary/paths/~1individuals~1business~1property~1uk~1period~1non-furnished-holiday-lettings~1{nino}~1{periodId}/put)
 
 After an amendment has been made, the software should follow the same process used when submitting a quarterly update. This involves calling the [Trigger a Self Assessment Tax Calculation](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1{nino}~1self-assessment~1{taxYear}/post) endpoint to ensure the obligation is marked as fulfilled.
+
+## Cumulative updates
+
+In November 2023, HMRC announced that the current quarterly update design would be replaced to allow data to be sent cumulatively. The new design would allow each submission to report the total income and expenses accumulated from the start of the tax year up to that point for each self-employment and property income source.
+
+This will remove the burden upon customers of having to resubmit a previous update where corrections are required. Changes are being made to the [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/), [Self Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/) and [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/) APIs to add this functionality.
+
+The quarterly updates will be sent cumulatively from [April 2025](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/apis.html#april-2025). The current quarterly updates design can only be used for tax year 2024-25 or earlier.
+
+The following table shows the existing standard and calendar update periods and cumulative standard and calendar update period dates.
+
+| Quarter | Non-cumulative standard quarterly update period | Cumulative standard quarterly update period | Non-cumulative calendar quarterly update period | Cumulative calendar quarterly update period |
+|---------|------------------------------------------------|---------------------------------------------|------------------------------------------------|---------------------------------------------|
+| 1 | 6 April to 5 July | 6 April to 5 July | 1 April to 30 June | 1 April to 30 June |
+| 2 | 6 July to 5 October | 6 April to 5 October | 1 July to 30 September | 1 April to 30 September |
+| 3 | 6 October to 5 January | 6 April to 5 January | 1 October to 31 December | 1 April to 31 December |
+| 4 | 6 January to 5 April | 6 April to 5 April | 1 January to 31 March | 1 April to 31 March |
+Customers are required to submit four quarterly updates by the due date to avoid penalties. If a customer misses the deadline for the first quarterly update, such as by 5th August, they can still submit the second quarterly update by 5th November. The second update will satisfy the obligations for both Q1 and Q2. However, the customer may incur a penalty for not submitting the first quarterly update on time.
+
+If a customer submits updates more frequently, their quarterly obligations are met when they make an update with an end date equal to or greater than the obligation period end date. For example, if a customer submits their standard quarterly updates for the following dates, then the last submission, shown below, would fulfil the Quarter 1 obligation.
+
+- 6 April to 30 April
+- 6 April to 31 May 
+- 6 April to 30 June 
+- 6 April to 31 July: Q1 fulfilled
+
+The following table lists the APIs involved in the cumulative quarterly update design and the changes expected.
+
+| API | Change |
+|-----|--------|
+| [Business Details](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/business-details-api/) | <ul><li>No change</li><li>This API will still be used to retrieve business IDs</li></ul> |
+| [Obligations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/) | <ul><li>After April 2025, this API will still return current quarterly updates periods</li><li>There will be a future change to present the cumulative periods</li></ul> |
+| [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/) | <ul><li>New Create/Amend and Retrieve endpoints introduced for periodic cumulative submissions from tax year 2025-26 onwards</li><li>Validation added to existing periodic submission endpoints to accept requests for tax years 2024-25 and earlier</li><li>List Property Income and Expenses Period Summaries will be discontinued from tax year 2025-26 onwards</li></ul> |
+| [Self Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/) | <ul><li>New Create/Amend and Retrieve endpoints introduced for periodic cumulative submissions from tax year 2025-26 onwards</li><li>Validation added to existing periodic submission endpoints to accept requests for tax years 2024-25 and earlier</li><li>List Self-Employment Period Summaries endpoint will be discontinued from tax year 2025-26 onwards</li></ul> |
+| [Individual Calculations](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/individual-calculations-api/) | <ul><li>Submission periods changed from an array to a single entry that includes the submission ID from tax year 2025-26 onwards</li></ul> |
