@@ -259,7 +259,7 @@ Your software can check what type of agent is logged in with the Agent Authorisa
 
 The customer support model guides HMRC customers to the most appropriate support. Check [GOV.UK](https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees) and the software provider's guidance first.
 
-Customers who have signed up to the MTD pilot can get support by contacting the dedicated Customer Support Team on 0300 322 9619 from 8am to 6pm Monday to Friday. 
+Customers who have signed up to the MTD testing phase will be given contact details for a dedicated Customer Support Team who are available from 8am to 6pm Monday to Friday. 
 
 We aim to respond to queries that are not resolved at the point of contact within 2 days, and to provide further updates, if required, every 2 working days.
 
