@@ -54,6 +54,10 @@ Use this instead of [remaining balance](#remaining-balance).
 
 See [accounting methods](#accounting-methods).
 
+### charge reference number
+
+Lower case.
+
 ### clients
 
 Use 'your client' or 'clients' if you're describing the customers of an agent. For example, "You must talk to your client before you sign them up".
@@ -124,11 +128,17 @@ Do not use 'late filing penalty'. Use [late submission penalty](#late-submission
 
 Lower case.
 
+### main agent
+
+Do not use 'primary agent'.
+
 ### Making Tax Digital for Income Tax
 
-Initial caps, except 'for'.
+The service is called 'Making Tax Digital for Income Tax'. Do not use abbreviations or variations, like 'MTD for Income Tax' or 'Making Tax Digital for Income Tax Self Assessment'.
 
-This is the name of the service. Do not use variations or alternatives, like 'Making Tax Digital for Income Tax Self Assessment'.
+Use the brand name 'Making Tax Digital' sparingly. Where necessary, use it to help people understand the difference between classic Self Assessment and Making Tax Digital for Income Tax in GOV.UK guidance.
+
+Avoid using 'Making Tax Digital' in content once someone has signed up for it (unless you’re telling them HMRC has signed them up automatically, through a process that’s known internally as triggered migration). Focus on the task they’re trying to complete instead.
 
 ### mandation
 
@@ -136,11 +146,19 @@ Do not use 'mandation' or 'mandated'. Say 'you must' and quote the date, if nece
 
 ### MTD, Making Tax Digital
 
-Do not use the acronym 'MTD' in user-facing content. Say 'Making Tax Digital' instead.
+Do not use the acronym 'MTD' in user-facing content. Say [Making Tax Digital for Income Tax](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#making-tax-digital-for-income-tax) instead.
 
-Use the brand name 'Making Tax Digital' sparingly. Where necessary, use it to help people understand the difference between classic Self Assessment and Making Tax Digital for Income Tax in GOV.UK guidance.
+### new penalties
 
-Avoid using 'Making Tax Digital' in content once someone has signed up for it (unless you're telling them HMRC has signed them up automatically, through a process that's known internally as triggered migration). Focus on the task they're trying to complete instead.
+Penalties in Making Tax Digital are not the same as penalties in classic Self Assessment.
+
+When you refer to the new penalties, say 'our new penalties' and include a link to more information. Do not say 'points-based penalties', 'new penalty regime' or 'new penalty system'.
+
+### nil return
+
+Not 'nil-return'.
+
+Avoid using 'nil return' where possible. For example, instead of saying 'You must submit a nil return where applicable', say 'You must send a quarterly update, even if you do not have any income or expenses to report'.
 
 ### opt out of Making Tax Digital
 
@@ -149,13 +167,40 @@ When someone chooses to move from quarterly reporting to annual reporting, they 
 - signed up for Making Tax Digital for Income Tax voluntarily
 - haven't exceeded the income threshold since they joined
 
+### payment on account
+
+Do not say 'payment on account 1' and 'payment on account 2', because people think it means they have 2 accounts. Use 'first payment on account' and 'second payment on account' instead.
+
+Do not assume people know what a payment on account is. Where possible, define it on each page where it’s used.
+
+For example, say 'Payments on account are advance payments towards your next tax bill.'' If you have more space, say:
+	
+	Payments on account are 2 advance payments made towards your next tax bill. They pay for:
+
+	- Income Tax
+	- [Class 4 National Insurance contributions](https://www.gov.uk/self-employed-national-insurance-rates)
+
+	HMRC estimates the total amount based on your previous year’s tax bill. Each payment is half of that amount.
+
 ### payment plan
 
 Lower case.
 
+### points-based penalties
+
+Do not use 'points-based penalties'. Use [new penalties](#new-penalties) instead.
+
 ### post-mandation
 
 Do not use 'post-mandation'. Say 'you must' and quote the date, if necessary, to give context.
+
+### qualifying income
+
+Someone’s qualifying income is their total income from self-employment and property. It's assessed using their gross income (also called 'turnover') before they deduct any expenses.
+
+Do not say 'qualifying income' without defining it or linking to more information.
+
+Avoid mentioning 'qualifying income' if you can avoid it. For example, say 'You'll have to send quarterly updates if you need to use Making Tax Digital for Income Tax' rather than 'You'll have to send quarterly updates if your qualifying income exceeds the threshold'.
 
 ### quarterly update
 
@@ -171,6 +216,12 @@ Tell people to 'send' a quarterly update rather than share or submit one. In gui
 ### refund
 
 Use 'refund', not 'repayment', in the context of Making Tax Digital for Income Tax.
+
+### regime
+
+Avoid saying 'regime'
+
+For example, do not say 'Making Tax Digital for Income Tax is a new tax regime'. Say 'Making Tax Digital for Income Tax is a new way to report income to HMRC' instead.
 
 ### remuneration
 
@@ -209,6 +260,10 @@ See [register](#register).
 ### submission
 
 Where possible, be specific - say [quarterly update](#quarterly-update), [tax return](#tax-return) or [final declaration](#final-declaration). Avoid 'submission', unless you're talking about a submission deadline or a late submission penalty (which could be for a quarterly update or a final declaration).
+
+### supporting agent
+
+Not 'secondary agent'.
 
 ### tax adjustments, allowance adjustments
 
