@@ -102,11 +102,12 @@ After the calendar quarterly election change has been made, it will continue yea
 
 ## How to submit and view in-year updates after tax year 2025
 
-MTD mandated and voluntary customers must maintain and submit digital records of their self-employment and property business income and expenses every quarter. If they wish, they can also submit summary-level information more frequently, for example, monthly.
+MTD mandated and voluntary customers must create and keep digital records of their self-employment and property business income and expenses. They must then submit summary totals of the information in their digital records to HMRC every quarter.  If they wish, they can also submit this summary-level information more frequently, for example, monthly.
 
-In November 2023, HMRC announced that the current quarterly update design would be replaced to allow data to be sent cumulatively. The new design would allow each submission to report the total income and expenses accumulated from the start of the tax year up to that point for each self-employment and property income source.
+In November 2023, HMRC announced that the current quarterly updates design would be replaced to allow data to be sent cumulatively. The new design would allow each submission to report the total income and expenses accumulated from the start of the tax year up to that point for each self-employment and property income source.
 
 The quarterly updates will be sent cumulatively [from April 2025 onwards](https://developer.service.hmrc.gov.uk/roadmaps/mtd-itsa-vendors-roadmap/apis.html#april-2025). The original quarterly updates design can only be used for tax year 2024-25 or earlier.
+
 The following table shows the original standard and calendar update periods, and cumulative standard and calendar update period dates.
 
 | Quarter   | Non-cumulative standard quarterly update period  | Cumulative standard quarterly update period   | Non-cumulative calendar quarterly update period  | Cumulative calendar quarterly update period   |
@@ -116,7 +117,7 @@ The following table shows the original standard and calendar update periods, and
 | 3   | 6 October to 5 January   | 6 April to 5 January  | 1 October to 31 December    | 1 April to 31 December   |
 | 4   | 6 January to 5 April  | 6 April to 5 April    | 1 January to 31 March    | 1 April to 31 March   |
 
-Customers are required to submit 4 quarterly updates by the due date to avoid penalties. If a customer misses the deadline for the first quarterly update, such as by 5th August, they can still submit the second quarterly update by 5th November. The second update will satisfy the obligations for both Q1 and Q2. However, the customer may incur a penalty for not submitting the first quarterly update on time. 
+Customers are required to submit each quarterly update by the relevant quarterly due date to avoid receiving a late submission penalty point. If a customer misses the deadline for the first quarterly update, such as by 5th August, they can still submit the second quarterly update by 5th November. The second update will satisfy the obligations for both Q1 and Q2. However, the customer may incur a penalty point for not submitting the first quarterly update on time. During the testing phase, customers will not receive late submission penalty points for missing quarterly updates.
 
 Customers must submit at least one update for each quarter. The following table shows an example:
 
@@ -128,9 +129,9 @@ Customers must submit at least one update for each quarter. The following table 
 
 ### Submit and amend quarterly update
 
-The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. It should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate business profits based on the most recent data.
+The software should convert transactional information into summary totals. It should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate business profits based on the most recent data.
 
-Customers with an annual turnover (sales) of less than £90,000 can report their total income and expenses in their quarterly updates (no detailed breakdown required). They can do this through the software by using the ‘Consolidated Expenses’ parameter in [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) and [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0) for both self-employment and property income.
+Customers with an annual turnover (sales) of less than £90,000 can report their total income and expenses in their quarterly updates (no further breakdown required). They can do this through the software by using the ‘Consolidated Expenses’ parameter in [Self-Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) and [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/4.0) for both self-employment and property income.
 
 If a customer submits updates more frequently, their quarterly obligations are met when they make an update with an end date equal to or greater than the obligation period end date. For example, if a customer submits their standard quarterly updates for the following dates, then the last submission, shown below, would fulfil the Q1 obligation.
 
