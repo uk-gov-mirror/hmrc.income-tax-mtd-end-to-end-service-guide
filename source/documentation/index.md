@@ -75,7 +75,7 @@ The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) p
 
 Below is a summary of updates to this service guide.
 
-#### 13 December 2024
+#### 16 December 2024
 
 - Add new [How to submit and view in-year updates after tax year 2025](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#how-to-submit-and-view-in-year-updates-after-tax-year-2025) section
 - Remove references to HMRC Online Services section of the roadmap
