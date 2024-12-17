@@ -1,6 +1,6 @@
 # Making Tax Digital for Income Tax end-to-end service guide
 
-Updated 13 December 2024 (see [changelog](#document-changelog))
+Updated 17 December 2024 (see [changelog](#document-changelog))
 
 This service guide explains how you can integrate your software with the [Making Tax Digital for Income Tax APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
@@ -75,7 +75,7 @@ The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) p
 
 Below is a summary of updates to this service guide.
 
-#### 16 December 2024
+#### 17 December 2024
 
 - Add new [How to submit and view in-year updates after tax year 2025](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#how-to-submit-and-view-in-year-updates-after-tax-year-2025) section
 - Remove references to HMRC Online Services section of the roadmap
