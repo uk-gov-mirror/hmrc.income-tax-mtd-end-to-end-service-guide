@@ -22,6 +22,12 @@ This style guide is used alongside the:
 - [Government Digital Service (GDS) style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style)
 - [HMRC content style guide](https://design.tax.service.gov.uk/hmrc-content-style-guide/)
 
+## Suggest a change or addition
+
+If something's missing, unclear, or incorrect, you can suggest an addition, clarification or change to the style guide.
+
+To suggest a change, email us at mtd-api-ur@hmrc.gov.uk. 
+
 ## A-Z
 
 ### abroad
@@ -144,13 +150,17 @@ Avoid using 'Making Tax Digital' in content once someone has signed up for it (u
 
 Do not use 'mandation' or 'mandated'. Say 'you must' and quote the date, if necessary, to give context. For example, say 'If you must use Making Tax Digital for Income Tax' rather than 'If you're a mandated customer'.
 
-### MTD, Making Tax Digital
+### Making Tax Digital
 
-Do not use the acronym 'MTD' in user-facing content. Say [Making Tax Digital for Income Tax](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#making-tax-digital-for-income-tax) instead.
+The service is called 'Making Tax Digital for Income Tax'. Do not use abbreviations or variations, like 'MTD for Income Tax' or 'Making Tax Digital for Income Tax Self Assessment'.
+
+Avoid using 'Making Tax Digital' in content once someone has signed up for it (unless you’re telling them HMRC has signed them up automatically, through a process that’s known internally as triggered migration). Focus on the task they’re trying to complete instead.
+
+### MTD
+
+Do not use the acronym 'MTD' in user-facing content. See [Making Tax Digital for Income Tax](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#making-tax-digital-for-income-tax).
 
 ### new penalties
-
-Penalties in Making Tax Digital are not the same as penalties in classic Self Assessment.
 
 When you refer to the new penalties, say 'our new penalties' and include a link to more information. Do not say 'points-based penalties', 'new penalty regime' or 'new penalty system'.
 
@@ -158,7 +168,7 @@ When you refer to the new penalties, say 'our new penalties' and include a link 
 
 Not 'nil-return'.
 
-Avoid using 'nil return' where possible. For example, instead of saying 'You must submit a nil return where applicable', say 'You must send a quarterly update, even if you do not have any income or expenses to report'.
+Avoid saying 'nil return' where possible. For example, instead of saying 'You must submit a nil return where applicable', say 'You must send a quarterly update, even if you do not have any income or expenses to report'.
 
 ### opt out of Making Tax Digital
 
@@ -171,14 +181,14 @@ When someone chooses to move from quarterly reporting to annual reporting, they 
 
 Do not say 'payment on account 1' and 'payment on account 2', because people think it means they have 2 accounts. Use 'first payment on account' and 'second payment on account' instead.
 
-Do not assume people know what a payment on account is. Where possible, define it on each page where it’s used.
+Do not assume people know what a payment on account is. Where possible, define it on each page where it's used.
 
-For example, say 'Payments on account are advance payments towards your next tax bill.'' If you have more space, say:
-	
+For example, say 'Payments on account are advance payments towards your next tax bill.' If you have more space, say:
+
 	Payments on account are 2 advance payments made towards your next tax bill. They pay for:
 
-	- Income Tax
-	- [Class 4 National Insurance contributions](https://www.gov.uk/self-employed-national-insurance-rates)
+		- Income Tax
+		- [Class 4 National Insurance contributions](https://www.gov.uk/self-employed-national-insurance-rates) (opens in new tab)
 
 	HMRC estimates the total amount based on your previous year’s tax bill. Each payment is half of that amount.
 
@@ -188,7 +198,8 @@ Lower case.
 
 ### points-based penalties
 
-Do not use 'points-based penalties'. Use [new penalties](#new-penalties) instead.
+Do not use. Use [new penalties](#new-penalties) instead.
+
 
 ### post-mandation
 
@@ -196,7 +207,7 @@ Do not use 'post-mandation'. Say 'you must' and quote the date, if necessary, to
 
 ### qualifying income
 
-Someone’s qualifying income is their total income from self-employment and property. It's assessed using their gross income (also called 'turnover') before they deduct any expenses.
+Someone's qualifying income is their total income from self-employment and property. It's assessed using their gross income (also called 'turnover') before they deduct any expenses.
 
 Do not say 'qualifying income' without defining it or linking to more information.
 
@@ -219,7 +230,7 @@ Use 'refund', not 'repayment', in the context of Making Tax Digital for Income T
 
 ### regime
 
-Avoid saying 'regime'
+Avoid saying 'regime'.
 
 For example, do not say 'Making Tax Digital for Income Tax is a new tax regime'. Say 'Making Tax Digital for Income Tax is a new way to report income to HMRC' instead.
 
