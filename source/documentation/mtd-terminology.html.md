@@ -136,7 +136,7 @@ Lower case.
 
 ### main agent
 
-Not 'primary agent'.
+Do not use 'primary agent'.
 
 ### Making Tax Digital for Income Tax
 
@@ -155,8 +155,6 @@ Use the brand name 'Making Tax Digital' sparingly. Where necessary, use it to he
 Avoid using 'Making Tax Digital' in content once someone has signed up for it (unless you’re telling them HMRC has signed them up automatically, through a process that’s known internally as triggered migration). Focus on the task they’re trying to complete instead.
 
 ### new penalties
-
-Penalties in Making Tax Digital are not the same as penalties in classic Self Assessment.
 
 When you refer to the new penalties, say 'our new penalties' and include a link to more information. Do not say 'points-based penalties', 'new penalty regime' or 'new penalty system'.
 
@@ -195,6 +193,7 @@ Lower case.
 ### points-based penalties
 
 Do not use. Use [new penalties](#new-penalties) instead.
+
 
 ### post-mandation
 
@@ -269,7 +268,7 @@ Where possible, be specific - say [quarterly update](#quarterly-update), [tax re
 
 ### supporting agent
 
-Not secondary agent.
+Not 'secondary agent'.
 
 ### tax adjustments, allowance adjustments
 
