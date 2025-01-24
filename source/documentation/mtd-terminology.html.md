@@ -138,25 +138,29 @@ Lower case.
 
 Do not use 'primary agent'.
 
+See also [supporting agent](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#supporting-agent)
+
 ### Making Tax Digital for Income Tax
 
 The service is called 'Making Tax Digital for Income Tax'. Do not use abbreviations or variations, like 'MTD for Income Tax' or 'Making Tax Digital for Income Tax Self Assessment'.
-
-### mandation
-
-Do not use 'mandation' or 'mandated'. Say 'you must' and quote the date, if necessary, to give context. For example, say 'If you must use Making Tax Digital for Income Tax' rather than 'If you're a mandated customer'.
-
-### MTD, Making Tax Digital
-
-Do not use the acronym 'MTD' in user-facing content. See [Making Tax Digital for Income Tax](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#making-tax-digital-for-income-tax).
 
 Use the brand name 'Making Tax Digital' sparingly. Where necessary, use it to help people understand the difference between classic Self Assessment and Making Tax Digital for Income Tax in GOV.UK guidance.
 
 Avoid using 'Making Tax Digital' in content once someone has signed up for it (unless you’re telling them HMRC has signed them up automatically, through a process that’s known internally as triggered migration). Focus on the task they’re trying to complete instead.
 
+### mandation
+
+Do not use 'mandation' or 'mandated'. Say 'you must' and quote the date, if necessary, to give context. For example, say 'If you must use Making Tax Digital for Income Tax' rather than 'If you're a mandated customer'.
+
+### MTD
+
+Do not use the acronym 'MTD' in user-facing content. See [Making Tax Digital for Income Tax](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#making-tax-digital-for-income-tax).
+
 ### new penalties
 
-When you refer to the new penalties, say 'our new penalties' and include a link to more information. Do not say 'points-based penalties', 'new penalty regime' or 'new penalty system'.
+Penalties in Making Tax Digital are not the same as penalties in classic Self Assessment.
+
+When you refer to HMRC's new penalties, say 'our new penalties' or 'HMRC's new penalties' and include a link to more information. Do not say 'points-based penalties', 'new penalty regime' or 'new penalty system'.
 
 ### nil return
 
@@ -173,7 +177,7 @@ When someone chooses to move from quarterly reporting to annual reporting, they 
 
 ### payment on account
 
-Do not say 'payment on account 1' and 'payment on account 2', because people think it means they have 2 accounts. Use 'first payment on account' and 'second payment on account' instead.
+Do not say 'payment on account 1' and 'payment on account 2', because people think it means they have two accounts. Use 'first payment on account' and 'second payment on account' instead.
 
 Do not assume people know what a payment on account is. Where possible, define it on each page where it's used.
 
@@ -187,7 +191,7 @@ For example, say 'Payments on account are advance payments towards your next tax
 > HMRC estimates the total amount based on your previous year’s tax bill. Each payment is half of that amount.
 
 ### payment plan
-two
+
 Lower case.
 
 ### points-based penalties
@@ -269,6 +273,8 @@ Where possible, be specific - say [quarterly update](#quarterly-update), [tax re
 ### supporting agent
 
 Not 'secondary agent'.
+
+See also [main agent](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#main-agent)
 
 ### tax adjustments, allowance adjustments
 
