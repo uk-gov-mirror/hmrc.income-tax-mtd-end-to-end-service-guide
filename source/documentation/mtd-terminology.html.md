@@ -136,7 +136,7 @@ Lower case.
 
 ### main agent
 
-Not 'primary agent'.
+Do not use 'primary agent'.
 
 See also [supporting agent](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#supporting-agent)
 
@@ -197,6 +197,7 @@ Lower case.
 ### points-based penalties
 
 Do not use. Use [new penalties](#new-penalties) instead.
+
 
 ### post-mandation
 
@@ -274,7 +275,6 @@ Where possible, be specific - say [quarterly update](#quarterly-update), [tax re
 Not 'secondary agent'.
 
 See also [main agent](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#main-agent)
-
 
 ### tax adjustments, allowance adjustments
 
