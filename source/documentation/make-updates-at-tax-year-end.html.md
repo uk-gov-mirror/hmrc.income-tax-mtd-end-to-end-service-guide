@@ -591,6 +591,30 @@ You should use the same business and non-business income APIs to allow customers
 
 Before an amendment submission is accepted, the customer must have completed their final declaration for the relevant tax year through software, and the amendment request must be submitted within the designated amendment window. Customers will first need to submit an **Intent to Amend Calculation**, during which additional validation checks will be carried out. If any errors are identified these will be sent to the software, which must display them to the customer or their authorised agent.
 
+<a href="figures/PFA-customer-journey.svg" target="blank"><img src="figures/PFA-customer-journey.svg" alt="Diagram of post-finalisation amendment customer journey" style="width:720px;" /></a>
+<a href="figures/PFA-customer-journey.svg" target="blank">Open the post-finalisation amendment customer journey diagram in a new tab</a>.
+
+1. User starts Post Finalisation Process in Software.
+2. (Optional) Software checks if customer is within the amendment window by calling the List endpoint within the Individual Calculation API.
+3. HMRC receives the request and the Individual Calculations API returns the date of the final declaration.
+4. Software allows user to make amendments (unless outside the amendment window, in which case software needs to inform the user to contact HMRC).
+5. User makes the relevant amendments in the software and submits them.
+6. Software uses the appropriate Income API to send the amended figures to HMRC (all submission APIs allow Post Finalisation Amendments).
+7. HMRC stores the data and returns success response to software (if user is outside the 12-month amendment window, HMRC returns error response).
+8. Software displays success message to user (if error response is received, software should notify the user).
+9. User reviews amendment (if the user wishes to amend more data items then the process returns to step 5).
+10. Software calls the Trigger a Self Assessment Tax Calculation endpoint to perform a new tax calculation with the `calculationType` parameter set to `intend-to-amend`.
+11. HMRC receives the request and returns a calculation ID.
+12. Software receives the calculation ID and uses it to call the Retrieve a Self Assessment Tax Calculation endpoint.
+13. HMRC returns the calculation.
+14. Software receives the calculation and displays it to the user.
+15. User views and confirms tax calculation results (must be able to view equivalent of what is in the SA302 as minimum).
+16. Software receives confirmation and calls the Submit a Self Assessment Final Declaration endpoint with the `calculationType` parameter set to `confirm-amendment` .
+17. HMRC receives the submission and confirms the amendment was successful.
+18. Software displays the confirmation message to the user (HMRC does not do this).
+19. Customer views confirmation that amendment has been submitted successfully to HMRC.
+
+
 ## Using tax codes to collect tax due
 
 When a Self Assessment customer receives PAYE income in addition to business income, HMRC will try to collect any Self Assessment tax owed through their tax code for the following tax year.
