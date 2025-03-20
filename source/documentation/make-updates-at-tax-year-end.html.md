@@ -583,13 +583,13 @@ The software must send the calculation ID that matches the specific calculation 
 
 ## Amendments after making a final declaration
 
-Once a customer has completed their final declaration through software (this can be verified by calling the [Obligations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)), they have 12 months from the statutory filing date to make any changes to the information submitted (the online statutory filing date is the later of 31 January following the end of the tax year or three months from the date the taxpayer receives a Notice to File).
+Once a customer has completed their final declaration through software (this can be verified by calling the [Obligations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)), they have 12 months from the statutory filing date to make any changes to the information submitted (the online statutory filing date is the later of 31 January following the end of the tax year or 3 months from the date the taxpayer receives a Notice to File).
 
 For example, for the 2025 to 2026 tax year customers have until 31 January 2027 to make changes. 
 
 You should use the same business and non-business income APIs to allow customers to notify HMRC of any amendments. 
 
-Before an amendment submission is accepted, the customer must have completed their final declaration for the relevant tax year through software, and the amendment request must be submitted within the designated amendment window. Customers will first need to submit an "Intent to Amend Calculation," during which additional validation checks will be carried out. If any errors are identified these will be sent to the software, which must display them to the customer or their authorised agent.
+Before an amendment submission is accepted, the customer must have completed their final declaration for the relevant tax year through software, and the amendment request must be submitted within the designated amendment window. Customers will first need to submit an **Intent to Amend Calculation**, during which additional validation checks will be carried out. If any errors are identified these will be sent to the software, which must display them to the customer or their authorised agent.
 
 ## Using tax codes to collect tax due
 
