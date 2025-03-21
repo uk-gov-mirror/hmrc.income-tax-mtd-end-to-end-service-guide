@@ -595,7 +595,7 @@ Before an amendment submission is accepted, the customer must have completed the
 <a href="figures/PFA-customer-journey.svg" target="blank">Open the post-finalisation amendment customer journey diagram in a new tab</a>.
 
 1. User starts Post Finalisation Process in Software.
-2. (Optional) Software checks if customer is within the amendment window by calling the List endpoint within the Individual Calculation API.
+2. (Optional) Software checks if customer is within the amendment window by calling the List endpoint within the Individual Calculations API.
 3. HMRC receives the request and the Individual Calculations API returns the date of the final declaration.
 4. Software allows user to make amendments (unless outside the amendment window, in which case software needs to inform the user to contact HMRC).
 5. User makes the relevant amendments in the software and submits them.
@@ -603,7 +603,7 @@ Before an amendment submission is accepted, the customer must have completed the
 7. HMRC stores the data and returns success response to software (if user is outside the 12-month amendment window, HMRC returns error response).
 8. Software displays success message to user (if error response is received, software should notify the user).
 9. User reviews amendment (if the user wishes to amend more data items then the process returns to step 5).
-10. Software calls the Trigger a Self Assessment Tax Calculation endpoint to perform a new tax calculation with the `calculationType` parameter set to `intend-to-amend`.
+10. Software calls the Trigger a Self Assessment Tax Calculation endpoint to perform a new tax calculation with the `calculationType` parameter set to `intent-to-amend`.
 11. HMRC receives the request and returns a calculation ID.
 12. Software receives the calculation ID and uses it to call the Retrieve a Self Assessment Tax Calculation endpoint.
 13. HMRC returns the calculation.
