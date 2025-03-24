@@ -77,7 +77,7 @@ Below is a summary of updates to this service guide.
 
 #### 24 March 2025
 
-Update [Amendments after making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#amendments-after-making-a-final-declaration)
+Update [Amendments after making a final declaration](guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#amendments-after-making-a-final-declaration)
 
 #### 17 December 2024
 
