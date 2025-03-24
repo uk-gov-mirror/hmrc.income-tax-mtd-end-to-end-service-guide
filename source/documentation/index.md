@@ -75,6 +75,10 @@ The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) p
 
 Below is a summary of updates to this service guide.
 
+#### 24 March 2025
+
+Update [Amendments after making a final declaration](guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#amendments-after-making-a-final-declaration)
+
 #### 17 December 2024
 
 - Add new [How to submit and view in-year updates after tax year 2025](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#how-to-submit-and-view-in-year-updates-after-tax-year-2025) section
