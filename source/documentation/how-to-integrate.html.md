@@ -17,8 +17,8 @@ For the customer to complete the end-to-end journey, we expect Making Tax Digita
 - allow customers to view an estimate of their income tax liability by either signposting them to their HMRC account or by displaying it in software - if the latter, the estimate must be presented with a disclaimer as to its accuracy 
 - make required adjustments and finalise business income for the year
 - brought forward, carry forward or set sideways (when permitted) business losses occurring in any one year as well as to apply losses incurred in earlier years against current year profits
-- make a final declaration or divert a customer into a channel where they can make it
-- divert customers into a different service for any non-mandated income sources which are not supported within the software to be declared
+- submit non-mandated income sources or divert customers to software where any unsupported non-mandated income sources can be included
+- make a final declaration or divert a customer to software where they can make it
 
 The Making Tax Digital for Income Tax APIs that include the endpoints for the functionality described above are:
 
