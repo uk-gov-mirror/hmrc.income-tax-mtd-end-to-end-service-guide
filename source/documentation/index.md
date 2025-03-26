@@ -75,6 +75,10 @@ The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) p
 
 Below is a summary of updates to this service guide.
 
+#### 26 March 2025
+
+Update [Minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#minimum-functionality-standards)
+
 #### 24 March 2025
 
 Update [Amendments after making a final declaration](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#amendments-after-making-a-final-declaration)
