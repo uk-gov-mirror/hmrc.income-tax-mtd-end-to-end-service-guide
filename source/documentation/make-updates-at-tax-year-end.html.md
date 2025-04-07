@@ -585,7 +585,7 @@ The software must send the calculation ID that matches the specific calculation 
 
 Once a customer has completed their final declaration through software (this can be verified by calling the [Obligations API](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/)), they have 12 months from the statutory filing date to make any changes to the information submitted (the online statutory filing date is the later of 31 January following the end of the tax year or 3 months from the date the taxpayer receives a Notice to File).
 
-For example, for the 2025 to 2026 tax year customers have until 31 January 2027 to make changes. 
+For example, for the 2025 to 2026 tax year customers have until 31 January 2028 to make changes. 
 
 You should use the same business and non-business income APIs to allow customers to notify HMRC of any amendments. 
 
