@@ -1,6 +1,6 @@
 # Making Tax Digital for Income Tax end-to-end service guide
 
-Updated 7th August 2026 (see [changelog](#document-changelog))
+Updated 7 August 2026 (see [changelog](#document-changelog))
 
 This service guide explains how you can integrate your software with the [Making Tax Digital for Income Tax APIs](/api-documentation/docs/api?filter=income-tax-mtd). 
 
@@ -86,11 +86,11 @@ Below is a summary of updates to this service guide.
 Make minor text updates to the following sections:
 
 - [How users authorise your software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#how-users-authorise-your-software)
-- [Who can sign up and how](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#who-can-sign-up-and-how )
+- [Who can sign up and how](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#who-can-sign-up-and-how)
 - [Additional information](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#additional-information)
 - [Compatible software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#compatible-software )
-- [Multiple agents](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#main-and-supporting-agent-access )
-- [Self-employed sole trader income](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#self-employed-sole-trader-income )
+- [Multiple agents](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#multiple-agents)
+- [Self-employed sole trader income](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#self-employed-sole-trader-income)
 - [Tasks outside MTD software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html) 
 
 Re-write references to 'final declaration' throughout, in line with [updated terminology guidance](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#final-declaration) 
