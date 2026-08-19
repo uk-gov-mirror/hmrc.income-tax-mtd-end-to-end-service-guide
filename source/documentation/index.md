@@ -1,6 +1,6 @@
 # Making Tax Digital for Income Tax end-to-end service guide
 
-Updated 15 June 2026 (see [changelog](#document-changelog))
+Updated 7 August 2026 (see [changelog](#document-changelog))
 
 <div class="govuk-warning-text warning-icon-fix">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -36,7 +36,7 @@ HMRC will provide APIs to support submission of all personal data items under Se
 
 Compatible software can mean either a single end-to-end piece of software or a set of compatible software products. To gain Production access to our APIs, software needs to meet the [minimum functionality standards](/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#minimum-functionality-standards).
 
-HMRC recognises that an all-in-one product will not be right for everyone, and some customers or agents may wish to use combinations of different pieces of software. For example, combining dedicated record keeping software with dedicated tax filing software. When a customer uses a combination of products, after they have entered a digital record into a compatible software product, they must be able to follow the rules for digital links set out by HMRC in the Software Notice.
+HMRC recognises that an all-in-one product will not be right for everyone, and some customers or agents may wish to use combinations of different pieces of software. For example, combining dedicated record keeping software with dedicated tax filing software. When a customer uses a combination of products, after they have entered a digital record into a compatible software product, they must follow the digital links requirements set out by HMRC in the Making Tax Digital for Income Tax regulations and guidance. For more information refer to [The Income Tax (Digital Obligations) Regulations 2026](https://www.legislation.gov.uk/uksi/2026/336/made).
 
 Software Choices is a service designed to help users find compatible software for Making Tax Digital for Income Tax which meets their needs. For further information, refer to the [Software choices section](/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#software-choices).
 
@@ -88,6 +88,20 @@ The [API changelog](https://github.com/hmrc/income-tax-mtd-changelog) (GitHub) p
 ### Document changelog
 
 Below is a summary of updates to this service guide.
+
+#### 7 August 2026
+
+Make minor text updates to the following sections:
+
+- [How users authorise your software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#how-users-authorise-your-software)
+- [Who can sign up and how](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/prepare-for-mtd.html#who-can-sign-up-and-how)
+- [Additional information](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html#additional-information)
+- [Compatible software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/#compatible-software )
+- [Multiple agents](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/how-to-integrate.html#multiple-agents)
+- [Self-employed sole trader income](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-during-tax-year.html#self-employed-sole-trader-income)
+- [Tasks outside MTD software](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/tasks-outside-mtd-software.html) 
+
+Re-write references to 'final declaration' throughout, in line with [updated terminology guidance](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/mtd-terminology.html#final-declaration) 
 
 #### 15 June 2026
 
