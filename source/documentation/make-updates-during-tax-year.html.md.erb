@@ -73,8 +73,7 @@ Software can retrieve a customer’s latency status for each of their businesses
    
 Using the Obligations API to call the [Retrieve Income Tax (Self Assessment) Income and Expenditure Obligations endpoint](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/obligations-api/3.0/oas/page#/paths/~1obligations~1details~1%7Bnino%7D~1income-and-expenditure/get) for customers with a combination of businesses that are latent and non-latent, the businesses with latency active will not be shown in the response. Additionally, if you call this endpoint for customers who only have businesses with latency applied then the 404 response "NO_OBLIGATIONS_FOUND" will be returned.  
 
-For guidance on reporting self-employment and property income on an annual business, refer to the [Making updates at the end of a tax year
-](https://developer.service.hmrc.gov.uk/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html) section. 
+For guidance on reporting self-employment and property income on an annual basis, refer to the [Making updates at the end of a tax year](/guides/income-tax-mtd-end-to-end-service-guide/documentation/make-updates-at-tax-year-end.html) section. 
 
 ### Self-employment and property income
 
@@ -82,9 +81,9 @@ Mandated customers will have reported their income and expenses for self-employm
 
 Where a business was started after signing up to Making Tax Digital for Income Tax, users may have opted to report that on an annual basis. To do that, software must use the following endpoints to send the users' income and expenditure:
 
-- [Create or Amend Self-employment Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/5.0/oas/page#tag/Self-Employment-Cumulative-Period-Summary/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
-- [Create or Amend UK Property Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/6.0/oas/page#tag/Income-and-Expenses-Period-Summaries/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
-- [Create or Amend UK Property Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/6.0/oas/page#tag/Income-and-Expenses-Period-Summaries/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
+- [Create or Amend a Self-Employment Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/5.0/oas/page#tag/Self-Employment-Cumulative-Period-Summary/paths/~1individuals~1business~1self-employment~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
+- [Create or Amend a UK Property Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/6.0/oas/page#tag/Income-and-Expenses-Period-Summaries/paths/~1individuals~1business~1property~1uk~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
+- [Create or Amend a Foreign Property Cumulative Period Summary](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/6.0/oas/page#tag/Income-and-Expenses-Period-Summaries/paths/~1individuals~1business~1property~1foreign~1%7Bnino%7D~1%7BbusinessId%7D~1cumulative~1%7BtaxYear%7D/put)
 
 The difference between sending this update compared to quarterly updates will be the omittance of the dates within the submission.
 
